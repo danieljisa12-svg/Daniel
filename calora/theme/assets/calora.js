@@ -66,7 +66,7 @@
     }
 
     if (sticky && hero) {
-      var past = hero.getBoundingClientRect().bottom < 0;
+      var past = window.innerWidth < 900 ? y > 260 : hero.getBoundingClientRect().bottom < 0;
       var inBuy = false;
       if (buy) { var b = buy.getBoundingClientRect(); inBuy = b.top < vh * .6 && b.bottom > vh * .3; }
       var on = past && !inBuy;

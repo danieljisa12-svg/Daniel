@@ -7,7 +7,7 @@
   assign first_v = p.variants.first
   assign save_pct = 0
   if current.compare_at_price > current.price
-    assign save_pct = current.compare_at_price | minus: current.price | times: 100 | divided_by: current.compare_at_price
+    assign save_pct = current.compare_at_price | minus: current.price | times: 100 | divided_by: current.compare_at_price | floor
   endif
 -%}
 
@@ -140,7 +140,7 @@
             {%- liquid
               assign v_save = 0
               if v.compare_at_price > v.price
-                assign v_save = v.compare_at_price | minus: v.price | times: 100 | divided_by: v.compare_at_price
+                assign v_save = v.compare_at_price | minus: v.price | times: 100 | divided_by: v.compare_at_price | floor
               endif
             -%}
             <label class="pack{% if v.id == current.id %} is-on{% endif %}{% unless v.available %} is-off{% endunless %}">
