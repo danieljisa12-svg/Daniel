@@ -1,0 +1,9 @@
+<section class="page-simple">
+  <h1 class="sec-title">{{ collection.title }}</h1>
+  {%- paginate collection.products by 24 -%}
+    <div class="grid">
+      {%- for product in collection.products -%}{%- render 'product-card', card_product: product -%}{%- else -%}<p>No hay productos.</p>{%- endfor -%}
+    </div>
+    {%- if paginate.pages > 1 -%}<nav class="pager">{{ paginate | default_pagination }}</nav>{%- endif -%}
+  {%- endpaginate -%}
+</section>

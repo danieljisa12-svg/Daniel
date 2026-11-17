@@ -1,0 +1,21 @@
+{%- if product.handle == 'calora-calentador-de-manos' -%}
+  {%- render 'calora-landing', p: product -%}
+{%- else -%}
+  {%- assign current = product.selected_or_first_available_variant -%}
+  <section class="page-simple pdp-simple">
+    <div class="pdp-img">{%- if product.featured_image -%}<img src="{{ product.featured_image | image_url: width: 1100 }}" alt="{{ product.featured_image.alt | default: product.title | escape }}" width="1100" height="1100">{%- endif -%}</div>
+    <div>
+      <h1 class="sec-title">{{ product.title }}</h1>
+      {%- form 'product', product, class: 'buy-form', data-type: 'add-to-cart-form' -%}
+        {%- if product.has_only_default_variant -%}
+          <input type="hidden" name="id" value="{{ current.id }}">
+        {%- else -%}
+          <select name="id" class="select">{%- for v in product.variants -%}<option value="{{ v.id }}"{% if v.id == current.id %} selected{% endif %}{% unless v.available %} disabled{% endunless %}>{{ v.title }} · {{ v.price | money }}</option>{%- endfor -%}</select>
+        {%- endif -%}
+        <p class="price-line"><span class="price-now">{{ current.price | money }}</span>{% if current.compare_at_price > current.price %} <s class="price-was">{{ current.compare_at_price | money }}</s>{% endif %}</p>
+        <button class="btn btn-fire btn-lg" type="submit" data-add{% unless current.available %} disabled{% endunless %}>{% if current.available %}Añadir a la cesta{% else %}Agotado{% endif %}</button>
+      {%- endform -%}
+      <div class="rte">{{ product.description }}</div>
+    </div>
+  </section>
+{%- endif -%}

@@ -1,0 +1,6 @@
+{%- assign p = all_products['calora-calentador-de-manos'] -%}
+{%- if p and p.id -%}
+  {%- render 'calora-landing', p: p -%}
+{%- else -%}
+  <section class="page-simple"><h1 class="sec-title">Calora®</h1><p>El producto <code>calora-calentador-de-manos</code> no está disponible en la tienda online.</p></section>
+{%- endif -%}

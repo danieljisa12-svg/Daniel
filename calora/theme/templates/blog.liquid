@@ -1,0 +1,3 @@
+<section class="page-simple"><h1 class="sec-title">{{ blog.title }}</h1>
+{%- paginate blog.articles by 12 -%}<ul class="link-list">{%- for article in blog.articles -%}<li><a href="{{ article.url }}">{{ article.title }}</a> <small>{{ article.published_at | date: '%d/%m/%Y' }}</small></li>{%- endfor -%}</ul>{%- endpaginate -%}
+</section>

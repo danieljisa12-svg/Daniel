@@ -1,0 +1,7 @@
+<section class="page-simple">
+  <h1 class="sec-title">Buscar</h1>
+  <form action="{{ routes.search_url }}" method="get" class="search-form"><input class="select" type="search" name="q" value="{{ search.terms | escape }}" placeholder="Buscar…" aria-label="Buscar"><button class="btn btn-fire" type="submit">Buscar</button></form>
+  {%- if search.performed -%}
+    <div class="grid">{%- for item in search.results -%}{%- if item.object_type == 'product' -%}{%- render 'product-card', card_product: item -%}{%- else -%}<a class="card" href="{{ item.url }}">{{ item.title }}</a>{%- endif -%}{%- else -%}<p>Sin resultados.</p>{%- endfor -%}</div>
+  {%- endif -%}
+</section>

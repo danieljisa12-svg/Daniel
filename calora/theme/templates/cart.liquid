@@ -1,0 +1,24 @@
+<section class="page-simple">
+  <h1 class="sec-title">Tu cesta</h1>
+  {%- if cart.item_count == 0 -%}
+    <p>Tu cesta está vacía.</p>
+    <a class="btn btn-fire btn-lg" href="{{ routes.root_url }}#comprar">Ver Calora</a>
+  {%- else -%}
+    <form class="cart-page" action="{{ routes.cart_url }}" method="post">
+      <ul class="cart-page-items">
+        {%- for item in cart.items -%}
+          <li>
+            <a href="{{ item.url }}">{{ item.product.title }}{% unless item.product.has_only_default_variant %} · {{ item.variant.title }}{% endunless %}</a>
+            <input type="number" name="updates[]" value="{{ item.quantity }}" min="0" aria-label="Cantidad de {{ item.product.title | escape }}">
+            <span>{{ item.final_line_price | money }}</span>
+          </li>
+        {%- endfor -%}
+      </ul>
+      <p class="cart-total"><span>Total</span><strong>{{ cart.total_price | money }}</strong></p>
+      <div class="row-btns">
+        <button class="btn btn-dark" type="submit" name="update">Actualizar</button>
+        <button class="btn btn-fire btn-lg" type="submit" name="checkout">Finalizar compra →</button>
+      </div>
+    </form>
+  {%- endif -%}
+</section>
