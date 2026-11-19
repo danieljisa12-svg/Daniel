@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0" stop-color="#2a0f4a"/>
+      <stop offset="0.6" stop-color="#140826"/>
+      <stop offset="1" stop-color="#07030f"/>
+    </radialGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd36b"/>
+      <stop offset="0.5" stop-color="#ff6a8e"/>
+      <stop offset="1" stop-color="#b03cff"/>
+    </linearGradient>
+    <linearGradient id="v" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff3ea5"/>
+      <stop offset="1" stop-color="#2fd9ff"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="18" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="6"/></filter>
+    <clipPath id="sunclip"><circle cx="540" cy="600" r="250"/></clipPath>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#bg)"/>
+  <!-- sun with stripes -->
+  <g clip-path="url(#sunclip)" opacity="0.9">
+    <rect x="290" y="350" width="500" height="500" fill="url(#sun)"/>
+    <g fill="#140826">
+      <rect x="290" y="640" width="500" height="10"/>
+      <rect x="290" y="680" width="500" height="16"/>
+      <rect x="290" y="722" width="500" height="22"/>
+      <rect x="290" y="768" width="500" height="30"/>
+      <rect x="290" y="820" width="500" height="40"/>
+    </g>
+  </g>
+  <!-- palms -->
+  <g fill="#07030f">
+    <path d="M790 880 C800 760 815 680 850 600 L862 604 C830 684 816 764 808 880 Z"/>
+    <path d="M856 602 C800 570 750 585 715 620 C760 590 810 590 852 612 Z"/>
+    <path d="M856 602 C900 560 960 560 1000 590 C955 575 905 585 862 614 Z"/>
+    <path d="M856 602 C845 545 800 515 755 515 C800 530 835 560 850 610 Z"/>
+    <path d="M856 602 C880 545 930 525 975 530 C930 545 895 570 864 612 Z"/>
+    <path d="M856 602 C820 600 790 640 780 680 C800 645 830 620 860 612 Z"/>
+    <path d="M290 880 C280 790 268 720 240 650 L229 654 C255 724 266 794 272 880 Z"/>
+    <path d="M234 652 C190 625 145 630 110 660 C150 638 195 640 230 662 Z"/>
+    <path d="M234 652 C270 615 320 612 355 638 C318 628 275 636 240 664 Z"/>
+    <path d="M234 652 C228 605 195 580 155 578 C192 592 220 615 230 660 Z"/>
+    <path d="M234 652 C252 605 292 590 330 595 C292 607 262 630 240 662 Z"/>
+  </g>
+  <!-- horizon -->
+  <rect x="0" y="870" width="1080" height="210" fill="#07030f"/>
+  <rect x="140" y="868" width="800" height="4" fill="#ff3ea5" opacity="0.8" filter="url(#soft)"/>
+  <!-- neon V -->
+  <g filter="url(#glow)" fill="none" stroke="url(#v)" stroke-width="58" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M330 250 L540 790 L750 250"/>
+  </g>
+  <path d="M330 250 L540 790 L750 250" fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+</svg>
