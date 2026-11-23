@@ -1,0 +1,5330 @@
+{
+ "kitchen": [
+  {
+   "rank": "#1",
+   "asin": "B00E3862DE",
+   "title": "Philips Quitapelusas – para Todo Tipo de Prendas, Cuchilla de Alta Velocidad 8800 RPM, Compacto y Ligero, Depósito de Pelusas fácil de vacia",
+   "stars": "4,6",
+   "reviews": "152.596",
+   "price": "7,02"
+  },
+  {
+   "rank": "#1",
+   "asin": "B00E3862DE",
+   "title": "Philips Quitapelusas – para Todo Tipo de Prendas, Cuchilla de Alta Velocidad 8800 RPM, Compacto y Ligero, Depósito de Pelusas fácil de vacia",
+   "stars": "4,6",
+   "reviews": "152.596",
+   "price": "7,02"
+  },
+  {
+   "rank": "#2",
+   "asin": "B01N9XBDTI",
+   "title": "Tostadora Philips Daily Collection, 2 ranuras, 8 niveles, negra | Calentador de bollos, bandeja recogemigas, función descongelación y recale",
+   "stars": "4,5",
+   "reviews": "62.614",
+   "price": "13,21"
+  },
+  {
+   "rank": "#2",
+   "asin": "B01N9XBDTI",
+   "title": "Tostadora Philips Daily Collection, 2 ranuras, 8 niveles, negra | Calentador de bollos, bandeja recogemigas, función descongelación y recale",
+   "stars": "4,5",
+   "reviews": "62.614",
+   "price": "13,21"
+  },
+  {
+   "rank": "#3",
+   "asin": "B0GZZ96X7N",
+   "title": "roborock Qrevo 2 Pro Set Robot Aspirador Succión Extrema de 25000 Pa,Blanco | Mopa FlexiArm, secado con aire caliente a 45 °C, autolimpieza ",
+   "stars": "4,3",
+   "reviews": "255"
+  },
+  {
+   "rank": "#3",
+   "asin": "B0GZZ96X7N",
+   "title": "roborock Qrevo 2 Pro Set Robot Aspirador Succión Extrema de 25000 Pa,Blanco | Mopa FlexiArm, secado con aire caliente a 45 °C, autolimpieza ",
+   "stars": "4,3",
+   "reviews": "255"
+  },
+  {
+   "rank": "#4",
+   "asin": "B0D3VCV459",
+   "title": "edihome, Papel Freidora Aire, Air Fryer, 100 Unidades, 20-24 cm, BPA Free, Desechable, para Horno, Accesorios para Freidora sin Aceite de 5 ",
+   "stars": "4,6",
+   "reviews": "9.834",
+   "price": "6,60"
+  },
+  {
+   "rank": "#4",
+   "asin": "B0D3VCV459",
+   "title": "edihome, Papel Freidora Aire, Air Fryer, 100 Unidades, 20-24 cm, BPA Free, Desechable, para Horno, Accesorios para Freidora sin Aceite de 5 ",
+   "stars": "4,6",
+   "reviews": "9.834",
+   "price": "6,60"
+  },
+  {
+   "rank": "#5",
+   "asin": "B0BSXFFCXQ",
+   "title": "BRITA Cartuchos de filtro de agua MAXTRA PRO Pure Performance - Pack 12 | Recambio original compatible jarras BRITA - reduce microimpurezas,",
+   "stars": "4,6",
+   "reviews": "12.019",
+   "price": "46,60"
+  },
+  {
+   "rank": "#5",
+   "asin": "B0BSXFFCXQ",
+   "title": "BRITA Cartuchos de filtro de agua MAXTRA PRO Pure Performance - Pack 12 | Recambio original compatible jarras BRITA - reduce microimpurezas,",
+   "stars": "4,6",
+   "reviews": "12.019",
+   "price": "46,60"
+  },
+  {
+   "rank": "#6",
+   "asin": "B084H8X4SW",
+   "title": "Amazon Basics Cartuchos filtrantes de Agua, 6 Unidad, Paquete de 1, Aptos y compatibles con Todas Las jarras BRITA Incl. PerfectFit & Jarras",
+   "stars": "4,5",
+   "reviews": "18.039",
+   "price": "12,95"
+  },
+  {
+   "rank": "#6",
+   "asin": "B084H8X4SW",
+   "title": "Amazon Basics Cartuchos filtrantes de Agua, 6 Unidad, Paquete de 1, Aptos y compatibles con Todas Las jarras BRITA Incl. PerfectFit & Jarras",
+   "stars": "4,5",
+   "reviews": "18.039",
+   "price": "12,95"
+  },
+  {
+   "rank": "#7",
+   "asin": "B0F3JF1YBR",
+   "title": "Vileda H2Pro Sistema de Mopa Plana, Microfibra Gris y Azul | Agua limpia y sucia separadas | Escurrido con una mano | Almacenaje compacto | ",
+   "stars": "4,2",
+   "reviews": "4.759",
+   "price": "33,05"
+  },
+  {
+   "rank": "#7",
+   "asin": "B0F3JF1YBR",
+   "title": "Vileda H2Pro Sistema de Mopa Plana, Microfibra Gris y Azul | Agua limpia y sucia separadas | Escurrido con una mano | Almacenaje compacto | ",
+   "stars": "4,2",
+   "reviews": "4.759",
+   "price": "33,05"
+  },
+  {
+   "rank": "#8",
+   "asin": "B008YETL18",
+   "title": "De'Longhi Decalk Care - Descalcificador para Cafetera, 5 Dosis | Descalcificador Auténtico De'Longhi, Accesorio para Cafeteras, Botella de 5",
+   "stars": "4,7",
+   "reviews": "168.531"
+  },
+  {
+   "rank": "#8",
+   "asin": "B008YETL18",
+   "title": "De'Longhi Decalk Care - Descalcificador para Cafetera, 5 Dosis | Descalcificador Auténtico De'Longhi, Accesorio para Cafeteras, Botella de 5",
+   "stars": "4,7",
+   "reviews": "168.531"
+  },
+  {
+   "rank": "#9",
+   "asin": "B01C8ONOPS",
+   "title": "PIKOLIN Edredón Nórdico Cama 150 220x240cm 300gr Antiacaros Oeko-Tex | Cálido y suave | Antiácaros | Tacto plumón Ecolofil | 300gr Otoño-Inv",
+   "stars": "4,6",
+   "reviews": "12.698",
+   "price": "64,80"
+  },
+  {
+   "rank": "#9",
+   "asin": "B01C8ONOPS",
+   "title": "PIKOLIN Edredón Nórdico Cama 150 220x240cm 300gr Antiacaros Oeko-Tex | Cálido y suave | Antiácaros | Tacto plumón Ecolofil | 300gr Otoño-Inv",
+   "stars": "4,6",
+   "reviews": "12.698",
+   "price": "64,80"
+  },
+  {
+   "rank": "#10",
+   "asin": "B077T9VNSB",
+   "title": "Protector de Colchón Impermeable 135x190 cm, hasta 40 cm | Protector de colchón impermeable Terry Top con borde elástico, certificado Oeko-T",
+   "stars": "4,6",
+   "reviews": "50.310"
+  },
+  {
+   "rank": "#10",
+   "asin": "B077T9VNSB",
+   "title": "Protector de Colchón Impermeable 135x190 cm, hasta 40 cm | Protector de colchón impermeable Terry Top con borde elástico, certificado Oeko-T",
+   "stars": "4,6",
+   "reviews": "50.310"
+  },
+  {
+   "rank": "#11",
+   "asin": "B075JJRFVV",
+   "title": "Utopia Bedding Juego de Sabanas 4 Piezas, 150x200cm, Gris | Sábana Bajera, Sábana Plana y 2 Fundas de Almohada 50x75 - Cama 150 - Oeko-Tex C",
+   "stars": "4,5",
+   "reviews": "62.897"
+  },
+  {
+   "rank": "#11",
+   "asin": "B075JJRFVV",
+   "title": "Utopia Bedding Juego de Sabanas 4 Piezas, 150x200cm, Gris | Sábana Bajera, Sábana Plana y 2 Fundas de Almohada 50x75 - Cama 150 - Oeko-Tex C",
+   "stars": "4,5",
+   "reviews": "62.897"
+  },
+  {
+   "rank": "#12",
+   "asin": "B0D1KCLVPX",
+   "title": "VACTechPro Aspiradora sin Cable,35kPa Escoba aspiradora sin cable | 6 en 1 Inalámbrica con 35minutos de autonomía y batería extraíble,Ideal ",
+   "stars": "4,4",
+   "reviews": "6.481"
+  },
+  {
+   "rank": "#12",
+   "asin": "B0D1KCLVPX",
+   "title": "VACTechPro Aspiradora sin Cable,35kPa Escoba aspiradora sin cable | 6 en 1 Inalámbrica con 35minutos de autonomía y batería extraíble,Ideal ",
+   "stars": "4,4",
+   "reviews": "6.481"
+  },
+  {
+   "rank": "#13",
+   "asin": "B00KHFOBPS",
+   "title": "WMF Favorit - Sartén 20 cm Acero Inoxidable Cromargan® Sin Revestimiento",
+   "stars": "4,4",
+   "reviews": "4.929",
+   "price": "19,41"
+  },
+  {
+   "rank": "#13",
+   "asin": "B00KHFOBPS",
+   "title": "WMF Favorit - Sartén 20 cm Acero Inoxidable Cromargan® Sin Revestimiento",
+   "stars": "4,4",
+   "reviews": "4.929",
+   "price": "19,41"
+  },
+  {
+   "rank": "#14",
+   "asin": "B0CNTWY3VM",
+   "title": "STANLEY 1913 Quencher H2.0 FlowState Trinkbecher 1.18L - Rose Quartz | Termo Conserva el Frío 11 Horas - Helada Durante 48 Horas - Botella A",
+   "stars": "4,6",
+   "reviews": "8.177",
+   "price": "28,93"
+  },
+  {
+   "rank": "#14",
+   "asin": "B0CNTWY3VM",
+   "title": "STANLEY 1913 Quencher H2.0 FlowState Trinkbecher 1.18L - Rose Quartz | Termo Conserva el Frío 11 Horas - Helada Durante 48 Horas - Botella A",
+   "stars": "4,6",
+   "reviews": "8.177",
+   "price": "28,93"
+  },
+  {
+   "rank": "#15",
+   "asin": "B07RN64P2R",
+   "title": "Amazon Basics Paquete de 6 Bolsas de vacío para Almacenamiento de Ropa, Incluyen Bomba Manual de vacío, con Cremallera, tamaño Extragrande,J",
+   "stars": "4,5",
+   "reviews": "161.303",
+   "price": "10,40"
+  },
+  {
+   "rank": "#15",
+   "asin": "B07RN64P2R",
+   "title": "Amazon Basics Paquete de 6 Bolsas de vacío para Almacenamiento de Ropa, Incluyen Bomba Manual de vacío, con Cremallera, tamaño Extragrande,J",
+   "stars": "4,5",
+   "reviews": "161.303",
+   "price": "10,40"
+  },
+  {
+   "rank": "#16",
+   "asin": "B00FXNAAW2",
+   "title": "Amazon Basics - Perchas de terciopelo para trajes - Paquete de 50, Negro",
+   "stars": "4,7",
+   "reviews": "237.486",
+   "price": "11,15"
+  },
+  {
+   "rank": "#16",
+   "asin": "B00FXNAAW2",
+   "title": "Amazon Basics - Perchas de terciopelo para trajes - Paquete de 50, Negro",
+   "stars": "4,7",
+   "reviews": "237.486",
+   "price": "11,15"
+  },
+  {
+   "rank": "#17",
+   "asin": "B08PVDQFQQ",
+   "title": "Cecotec Batidora de mano Power TitanBlack 1200 XL Cream&Crush. Potencia 1200 W, Tecnología CrossBlades, Pie XL, Campana antisalpicaduras, Ve",
+   "stars": "4,2",
+   "reviews": "1.802",
+   "price": "24,43"
+  },
+  {
+   "rank": "#17",
+   "asin": "B08PVDQFQQ",
+   "title": "Cecotec Batidora de mano Power TitanBlack 1200 XL Cream&Crush. Potencia 1200 W, Tecnología CrossBlades, Pie XL, Campana antisalpicaduras, Ve",
+   "stars": "4,2",
+   "reviews": "1.802",
+   "price": "24,43"
+  },
+  {
+   "rank": "#18",
+   "asin": "B0GGN7Z8VX",
+   "title": "TrendPlain Pulverizador Aceite Spray 470ml - 2 en 1 Spray Aceite Cocina, Dispensadora para Freidora de Aire, Ensaladas, Vinagre y Accesorios",
+   "stars": "4,6",
+   "reviews": "35.517"
+  },
+  {
+   "rank": "#18",
+   "asin": "B0GGN7Z8VX",
+   "title": "TrendPlain Pulverizador Aceite Spray 470ml - 2 en 1 Spray Aceite Cocina, Dispensadora para Freidora de Aire, Ensaladas, Vinagre y Accesorios",
+   "stars": "4,6",
+   "reviews": "35.517"
+  },
+  {
+   "rank": "#19",
+   "asin": "B0CH8LPBSQ",
+   "title": "Aitsse - Relleno de Cojín de Fibra Hueca Siliconada Suave (2, 30x50cm) | Alta Recuperación 2/4/6 Unidades, Suave, Mullido, Antialérgico. Coj",
+   "stars": "4,5",
+   "reviews": "3.296"
+  },
+  {
+   "rank": "#19",
+   "asin": "B0CH8LPBSQ",
+   "title": "Aitsse - Relleno de Cojín de Fibra Hueca Siliconada Suave (2, 30x50cm) | Alta Recuperación 2/4/6 Unidades, Suave, Mullido, Antialérgico. Coj",
+   "stars": "4,5",
+   "reviews": "3.296"
+  },
+  {
+   "rank": "#20",
+   "asin": "B0D36DNPXN",
+   "title": "Tefal Ingenio Emotion - Juego de 3 Sartenes, Acero inoxidable | 3 Sartenes 22/24/28 cm + Mango extraíble, Apto inducción y horno, Revestimie",
+   "stars": "4,6",
+   "reviews": "1.250",
+   "price": "45,45"
+  },
+  {
+   "rank": "#20",
+   "asin": "B0D36DNPXN",
+   "title": "Tefal Ingenio Emotion - Juego de 3 Sartenes, Acero inoxidable | 3 Sartenes 22/24/28 cm + Mango extraíble, Apto inducción y horno, Revestimie",
+   "stars": "4,6",
+   "reviews": "1.250",
+   "price": "45,45"
+  },
+  {
+   "rank": "#21",
+   "asin": "B0GL27XFXV",
+   "title": "Ninja CRISPi PRO XL, Freidora de Aire con 2 Recipientes, Dorado Piedra | 5 Funciones de Cocción Predefinidas, Recipientes de Cristal CleanCr",
+   "stars": "4,4",
+   "reviews": "729",
+   "price": "156,24"
+  },
+  {
+   "rank": "#21",
+   "asin": "B0GL27XFXV",
+   "title": "Ninja CRISPi PRO XL, Freidora de Aire con 2 Recipientes, Dorado Piedra | 5 Funciones de Cocción Predefinidas, Recipientes de Cristal CleanCr",
+   "stars": "4,4",
+   "reviews": "729",
+   "price": "156,24"
+  },
+  {
+   "rank": "#22",
+   "asin": "B0044R87UA",
+   "title": "Arcos Cuchillo Jamonero con Alveolos Acero Inoxidable 240mm | Serie Universal. Mango de polioximetileno POM. Corte y tallado de alimentos co",
+   "stars": "4,7",
+   "reviews": "1.312",
+   "price": "13,38"
+  },
+  {
+   "rank": "#22",
+   "asin": "B0044R87UA",
+   "title": "Arcos Cuchillo Jamonero con Alveolos Acero Inoxidable 240mm | Serie Universal. Mango de polioximetileno POM. Corte y tallado de alimentos co",
+   "stars": "4,7",
+   "reviews": "1.312",
+   "price": "13,38"
+  },
+  {
+   "rank": "#23",
+   "asin": "B0BY93HZHR",
+   "title": "Rowenta Pure Pop, Plancha de Vapor 1300 W para Viaje, Verde | Vapor continuo 20 g/min, Plancha y Purifica, Elimina pelusas, Cabezales revers",
+   "stars": "4,3",
+   "reviews": "6.153",
+   "price": "24,79"
+  },
+  {
+   "rank": "#23",
+   "asin": "B0BY93HZHR",
+   "title": "Rowenta Pure Pop, Plancha de Vapor 1300 W para Viaje, Verde | Vapor continuo 20 g/min, Plancha y Purifica, Elimina pelusas, Cabezales revers",
+   "stars": "4,3",
+   "reviews": "6.153",
+   "price": "24,79"
+  },
+  {
+   "rank": "#24",
+   "asin": "B09G6YPGSG",
+   "title": "Juego Funda Nórdica Utopia 240x260 cm + 2 Fundas Almohada 65x65 cm, Blanco | Microfibra, cierre de cremallera, certificado Oeko-TEX, suave y",
+   "stars": "4,5",
+   "reviews": "62.934"
+  },
+  {
+   "rank": "#24",
+   "asin": "B09G6YPGSG",
+   "title": "Juego Funda Nórdica Utopia 240x260 cm + 2 Fundas Almohada 65x65 cm, Blanco | Microfibra, cierre de cremallera, certificado Oeko-TEX, suave y",
+   "stars": "4,5",
+   "reviews": "62.934"
+  },
+  {
+   "rank": "#25",
+   "asin": "B00Y0OYIFU",
+   "title": "PIKOLIN Pack 2 Almohadas Hotel Viscoelásticas 70cm Doble Funda | Pack 2 unidades | Memory Foam viscoelástico | Firmeza alta 11cm | Doble fun",
+   "stars": "4,1",
+   "reviews": "3.070"
+  },
+  {
+   "rank": "#25",
+   "asin": "B00Y0OYIFU",
+   "title": "PIKOLIN Pack 2 Almohadas Hotel Viscoelásticas 70cm Doble Funda | Pack 2 unidades | Memory Foam viscoelástico | Firmeza alta 11cm | Doble fun",
+   "stars": "4,1",
+   "reviews": "3.070"
+  },
+  {
+   "rank": "#26",
+   "asin": "B0GK928SQ4",
+   "title": "De’Longhi Nescafé Dolce Gusto Mini Me 2 – Cafetera de Cápsulas Automática, 15 Bar, Control LED, Bebidas Calientes y Frías, Diseño Compacto, ",
+   "stars": "4,6",
+   "reviews": "1.058"
+  },
+  {
+   "rank": "#26",
+   "asin": "B0GK928SQ4",
+   "title": "De’Longhi Nescafé Dolce Gusto Mini Me 2 – Cafetera de Cápsulas Automática, 15 Bar, Control LED, Bebidas Calientes y Frías, Diseño Compacto, ",
+   "stars": "4,6",
+   "reviews": "1.058"
+  },
+  {
+   "rank": "#27",
+   "asin": "B0H6GD47Y5",
+   "title": "FAMIVAC FV5 Aspiradora sin Cable 70kPa/80Min, Base de Carga, Tubo Plegable | Cepillo Antienredos, pantalla LED, doble luz verde, autolimpiez",
+   "stars": "4,8",
+   "reviews": "947"
+  },
+  {
+   "rank": "#27",
+   "asin": "B0H6GD47Y5",
+   "title": "FAMIVAC FV5 Aspiradora sin Cable 70kPa/80Min, Base de Carga, Tubo Plegable | Cepillo Antienredos, pantalla LED, doble luz verde, autolimpiez",
+   "stars": "4,8",
+   "reviews": "947"
+  },
+  {
+   "rank": "#28",
+   "asin": "B0B57J6FFY",
+   "title": "Cecotec Colchón Viscoelástico Flow PureVital 1900 Medida 90x190. Multicapa, Altura 21cm, Firmeza Alta, Núcleo FoamVital, Doble Cara Dual Sys",
+   "stars": "4,2",
+   "reviews": "14.543"
+  },
+  {
+   "rank": "#28",
+   "asin": "B0B57J6FFY",
+   "title": "Cecotec Colchón Viscoelástico Flow PureVital 1900 Medida 90x190. Multicapa, Altura 21cm, Firmeza Alta, Núcleo FoamVital, Doble Cara Dual Sys",
+   "stars": "4,2",
+   "reviews": "14.543"
+  },
+  {
+   "rank": "#29",
+   "asin": "B0822N3B24",
+   "title": "Cecotec Parrilla Eléctrica Rock'nGrill 1500 Rapid. 1500 W, Revestimiento de Piedra RockStone, Placa Superior Flotante Ajustable en Altura, B",
+   "stars": "4,5",
+   "reviews": "6.637",
+   "price": "24,71"
+  },
+  {
+   "rank": "#29",
+   "asin": "B0822N3B24",
+   "title": "Cecotec Parrilla Eléctrica Rock'nGrill 1500 Rapid. 1500 W, Revestimiento de Piedra RockStone, Placa Superior Flotante Ajustable en Altura, B",
+   "stars": "4,5",
+   "reviews": "6.637",
+   "price": "24,71"
+  },
+  {
+   "rank": "#30",
+   "asin": "B00LTT21LW",
+   "title": "BRA Prior | Sartén 24 cm, aluminio fundido con antiadherente | Apta para todo tipo de cocinas incluida inducción",
+   "stars": "4,5",
+   "reviews": "7.655",
+   "price": "13,97"
+  },
+  {
+   "rank": "#30",
+   "asin": "B00LTT21LW",
+   "title": "BRA Prior | Sartén 24 cm, aluminio fundido con antiadherente | Apta para todo tipo de cocinas incluida inducción",
+   "stars": "4,5",
+   "reviews": "7.655",
+   "price": "13,97"
+  }
+ ],
+ "beauty": [
+  {
+   "rank": "#1",
+   "asin": "B0DBF65JYY",
+   "title": "medicube PDRN Pink Peptide Serum with Salmon DNA | Sérum con Péptidos y Niacinamida para Hidratación y una Piel de Aspecto Más Firme, Mejora",
+   "stars": "4,7",
+   "reviews": "27.583"
+  },
+  {
+   "rank": "#1",
+   "asin": "B0DBF65JYY",
+   "title": "medicube PDRN Pink Peptide Serum with Salmon DNA | Sérum con Péptidos y Niacinamida para Hidratación y una Piel de Aspecto Más Firme, Mejora",
+   "stars": "4,7",
+   "reviews": "27.583"
+  },
+  {
+   "rank": "#2",
+   "asin": "B0GCC2JV65",
+   "title": "medicube NAD EGF Firming Serum for Face & Neck | Sérum Antiedad con Péptidos y Colágeno, Reduce Signos de la Edad y Mejora la Elasticidad y ",
+   "stars": "4,5",
+   "reviews": "5.639"
+  },
+  {
+   "rank": "#2",
+   "asin": "B0GCC2JV65",
+   "title": "medicube NAD EGF Firming Serum for Face & Neck | Sérum Antiedad con Péptidos y Colágeno, Reduce Signos de la Edad y Mejora la Elasticidad y ",
+   "stars": "4,5",
+   "reviews": "5.639"
+  },
+  {
+   "rank": "#3",
+   "asin": "B0DTKCN3Z4",
+   "title": "medicube Capsule Cream with Salmon DNA PDRN Pink Collagen | Crema Hidratante Ligera con PDRN y Niacinamida, Mejora el Tono y la Textura de P",
+   "stars": "4,5",
+   "reviews": "31.805"
+  },
+  {
+   "rank": "#3",
+   "asin": "B0DTKCN3Z4",
+   "title": "medicube Capsule Cream with Salmon DNA PDRN Pink Collagen | Crema Hidratante Ligera con PDRN y Niacinamida, Mejora el Tono y la Textura de P",
+   "stars": "4,5",
+   "reviews": "31.805"
+  },
+  {
+   "rank": "#4",
+   "asin": "B0B2RM68G2",
+   "title": "BIODANCE Bio-Collagen Real Deep Mask - Mascarilla Nocturna Hidratante, Minimiza Poros y Mejora la Elasticidad - Mascarilla Facial de Hidrata",
+   "stars": "4,6",
+   "reviews": "49.798"
+  },
+  {
+   "rank": "#4",
+   "asin": "B0B2RM68G2",
+   "title": "BIODANCE Bio-Collagen Real Deep Mask - Mascarilla Nocturna Hidratante, Minimiza Poros y Mejora la Elasticidad - Mascarilla Facial de Hidrata",
+   "stars": "4,6",
+   "reviews": "49.798"
+  },
+  {
+   "rank": "#5",
+   "asin": "B0GHMZXX8Y",
+   "title": "medicube PDRN Pink Collagen Volume Multi Balm Stick | PDRN yColágeno, Bálsamo Multiusos en Barra para Rostro, Ojos y Cuello, Efecto Volumini",
+   "stars": "3,7",
+   "reviews": "7.467"
+  },
+  {
+   "rank": "#5",
+   "asin": "B0GHMZXX8Y",
+   "title": "medicube PDRN Pink Collagen Volume Multi Balm Stick | PDRN yColágeno, Bálsamo Multiusos en Barra para Rostro, Ojos y Cuello, Efecto Volumini",
+   "stars": "3,7",
+   "reviews": "7.467"
+  },
+  {
+   "rank": "#6",
+   "asin": "B0DGPSZVW3",
+   "title": "medicube Collagen Jelly Cream | Crema Facial con Colágeno Hidrolizado, Hidratación y Glow 24 Horas, Piel Más Rellena y Firme, 50 ml",
+   "stars": "4,4",
+   "reviews": "43.165"
+  },
+  {
+   "rank": "#6",
+   "asin": "B0DGPSZVW3",
+   "title": "medicube Collagen Jelly Cream | Crema Facial con Colágeno Hidrolizado, Hidratación y Glow 24 Horas, Piel Más Rellena y Firme, 50 ml",
+   "stars": "4,4",
+   "reviews": "43.165"
+  },
+  {
+   "rank": "#7",
+   "asin": "B08P4YPB8Q",
+   "title": "Maybelline New York Lash Sensational Sky High Volumen y Longitud, Negro | Cepillo Flexible, Longitud sin Límites, Volumen Redefinido, Pestañ",
+   "stars": "4,2",
+   "reviews": "64.502",
+   "price": "5,45"
+  },
+  {
+   "rank": "#7",
+   "asin": "B08P4YPB8Q",
+   "title": "Maybelline New York Lash Sensational Sky High Volumen y Longitud, Negro | Cepillo Flexible, Longitud sin Límites, Volumen Redefinido, Pestañ",
+   "stars": "4,2",
+   "reviews": "64.502",
+   "price": "5,45"
+  },
+  {
+   "rank": "#8",
+   "asin": "B09V7Z4TJG",
+   "title": "medicube Toner Pads Zero Pore Pad 2.0 | Discos Tónicos de Doble Textura para Exfoliación y Poros con AHA y BHA, Todo Tipo de Piel, Cosmética",
+   "stars": "4,7",
+   "reviews": "36.533"
+  },
+  {
+   "rank": "#8",
+   "asin": "B09V7Z4TJG",
+   "title": "medicube Toner Pads Zero Pore Pad 2.0 | Discos Tónicos de Doble Textura para Exfoliación y Poros con AHA y BHA, Todo Tipo de Piel, Cosmética",
+   "stars": "4,7",
+   "reviews": "36.533"
+  },
+  {
+   "rank": "#9",
+   "asin": "B09SZ5JX2Y",
+   "title": "d'alba Piedmont Trufa Blanca Double Serum All-in-one Multi Balm | Cuidado de la piel vegano, Tratamiento 3 en 1, Bálsamo para arrugas, Skinc",
+   "stars": "4,4",
+   "reviews": "11.308"
+  },
+  {
+   "rank": "#9",
+   "asin": "B09SZ5JX2Y",
+   "title": "d'alba Piedmont Trufa Blanca Double Serum All-in-one Multi Balm | Cuidado de la piel vegano, Tratamiento 3 en 1, Bálsamo para arrugas, Skinc",
+   "stars": "4,4",
+   "reviews": "11.308"
+  },
+  {
+   "rank": "#10",
+   "asin": "B0BFQ9RD5B",
+   "title": "d'alba Piedmont Trufa Blanca Italiana First Spray Serum (100ml) | Cuidado de la piel vegano, Bruma facial hidratante, Spray multifuncional, ",
+   "stars": "4,6",
+   "reviews": "37.235"
+  },
+  {
+   "rank": "#10",
+   "asin": "B0BFQ9RD5B",
+   "title": "d'alba Piedmont Trufa Blanca Italiana First Spray Serum (100ml) | Cuidado de la piel vegano, Bruma facial hidratante, Spray multifuncional, ",
+   "stars": "4,6",
+   "reviews": "37.235"
+  },
+  {
+   "rank": "#11",
+   "asin": "B0FHBJXX9M",
+   "title": "Erborian - CC Crème con Centella Asiática - Crema Facial Iluminadora de Alta Definición y Maquillaje - Protección Solar SPF 30 - Cosmética C",
+   "stars": "4,5",
+   "reviews": "9.664"
+  },
+  {
+   "rank": "#11",
+   "asin": "B0FHBJXX9M",
+   "title": "Erborian - CC Crème con Centella Asiática - Crema Facial Iluminadora de Alta Definición y Maquillaje - Protección Solar SPF 30 - Cosmética C",
+   "stars": "4,5",
+   "reviews": "9.664"
+  },
+  {
+   "rank": "#12",
+   "asin": "B0DXLBZF4Q",
+   "title": "Philips OneBlade 360 Auténtico Barbero, afeitadora y recortadora eléctrica facial y corporal, 3x 360 cuchillas, 3x peine para barba incipien",
+   "stars": "4,4",
+   "reviews": "13.448",
+   "price": "27,26"
+  },
+  {
+   "rank": "#12",
+   "asin": "B0DXLBZF4Q",
+   "title": "Philips OneBlade 360 Auténtico Barbero, afeitadora y recortadora eléctrica facial y corporal, 3x 360 cuchillas, 3x peine para barba incipien",
+   "stars": "4,4",
+   "reviews": "13.448",
+   "price": "27,26"
+  },
+  {
+   "rank": "#13",
+   "asin": "B0DK4Y2YP3",
+   "title": "celimax The Vita A Retinal Shot Tightening Booster, 15ml | 0,1% Retinal, 3% Matryxyl, Retinoide de Alta Potencia, Anti-Edad, Minimizador de ",
+   "stars": "4,5",
+   "reviews": "32.308"
+  },
+  {
+   "rank": "#13",
+   "asin": "B0DK4Y2YP3",
+   "title": "celimax The Vita A Retinal Shot Tightening Booster, 15ml | 0,1% Retinal, 3% Matryxyl, Retinoide de Alta Potencia, Anti-Edad, Minimizador de ",
+   "stars": "4,5",
+   "reviews": "32.308"
+  },
+  {
+   "rank": "#14",
+   "asin": "B0DWMSM6Y9",
+   "title": "medicube Eye Serum with Salmon DNA PDRN & Pink Peptides | Retinol al 99% para Líneas Finas, PDRN y Niacinamida para el Tono de la Piel Irreg",
+   "stars": "4,6",
+   "reviews": "8.323"
+  },
+  {
+   "rank": "#14",
+   "asin": "B0DWMSM6Y9",
+   "title": "medicube Eye Serum with Salmon DNA PDRN & Pink Peptides | Retinol al 99% para Líneas Finas, PDRN y Niacinamida para el Tono de la Piel Irreg",
+   "stars": "4,6",
+   "reviews": "8.323"
+  },
+  {
+   "rank": "#15",
+   "asin": "B0DGTMR754",
+   "title": "medicube Jelly Gel Mask with Salmon DNA PDRN Pink Collagen | medicube Jelly Gel Mask with Salmon DNA PDRN Pink Collagen",
+   "stars": "4,6",
+   "reviews": "15.051"
+  },
+  {
+   "rank": "#15",
+   "asin": "B0DGTMR754",
+   "title": "medicube Jelly Gel Mask with Salmon DNA PDRN Pink Collagen | medicube Jelly Gel Mask with Salmon DNA PDRN Pink Collagen",
+   "stars": "4,6",
+   "reviews": "15.051"
+  },
+  {
+   "rank": "#16",
+   "asin": "B0G38FGSKL",
+   "title": "medicube Eye Patch PDRN Caffeine Collagen - Firming Gel Patches, 30 Pairs | Age-Defying Care with Retinol & Collagen - Gel Patches for the A",
+   "stars": "4,5",
+   "reviews": "2.401"
+  },
+  {
+   "rank": "#16",
+   "asin": "B0G38FGSKL",
+   "title": "medicube Eye Patch PDRN Caffeine Collagen - Firming Gel Patches, 30 Pairs | Age-Defying Care with Retinol & Collagen - Gel Patches for the A",
+   "stars": "4,5",
+   "reviews": "2.401"
+  },
+  {
+   "rank": "#17",
+   "asin": "B00KLXFUW4",
+   "title": "Maybelline New York Instant Anti-Age Corrector de Ojeras, 01 Light | Corrector Multiusos, Cobertura Modulable, Enriquecida con Bayas de Goji",
+   "stars": "4,5",
+   "reviews": "30.775",
+   "price": "5,61"
+  },
+  {
+   "rank": "#17",
+   "asin": "B00KLXFUW4",
+   "title": "Maybelline New York Instant Anti-Age Corrector de Ojeras, 01 Light | Corrector Multiusos, Cobertura Modulable, Enriquecida con Bayas de Goji",
+   "stars": "4,5",
+   "reviews": "30.775",
+   "price": "5,61"
+  },
+  {
+   "rank": "#18",
+   "asin": "B0GD6R7CFJ",
+   "title": "BIODANCE Parches de Ojos con Péptidos de Colágeno, Antiarrugas para Líneas de Expresión y Bolsas, Contorno de Ojos, Cuidado de la Piel Corea",
+   "stars": "4,5",
+   "reviews": "6.557"
+  },
+  {
+   "rank": "#18",
+   "asin": "B0GD6R7CFJ",
+   "title": "BIODANCE Parches de Ojos con Péptidos de Colágeno, Antiarrugas para Líneas de Expresión y Bolsas, Contorno de Ojos, Cuidado de la Piel Corea",
+   "stars": "4,5",
+   "reviews": "6.557"
+  },
+  {
+   "rank": "#19",
+   "asin": "B09D7QJP1M",
+   "title": "d'alba Loción Solar Tonificante Waterfull SPF50+PA++++ de Trufa Blanca italiana, Crema Solar Teñida con Filtros UV Veganos, Loción Solar Bri",
+   "stars": "4,4",
+   "reviews": "8.727"
+  },
+  {
+   "rank": "#19",
+   "asin": "B09D7QJP1M",
+   "title": "d'alba Loción Solar Tonificante Waterfull SPF50+PA++++ de Trufa Blanca italiana, Crema Solar Teñida con Filtros UV Veganos, Loción Solar Bri",
+   "stars": "4,4",
+   "reviews": "8.727"
+  },
+  {
+   "rank": "#20",
+   "asin": "B06XDS7J69",
+   "title": "L'Oréal Paris Revitalift Laser Crema SPF25 Nº1 AntiEdad y AntiManchas, 50ml | Pro Retinol, Ácido Hialurónico y Vitamina Cg, Ayuda a Reafirma",
+   "stars": "4,5",
+   "reviews": "5.687",
+   "price": "9,86"
+  },
+  {
+   "rank": "#20",
+   "asin": "B06XDS7J69",
+   "title": "L'Oréal Paris Revitalift Laser Crema SPF25 Nº1 AntiEdad y AntiManchas, 50ml | Pro Retinol, Ácido Hialurónico y Vitamina Cg, Ayuda a Reafirma",
+   "stars": "4,5",
+   "reviews": "5.687",
+   "price": "9,86"
+  },
+  {
+   "rank": "#21",
+   "asin": "B094TYNC9T",
+   "title": "L'Oréal Paris Revitalift Filler Crema Hidratante Día Nº1 con SPF 50, 50ml | Ácido Hialurónico, Crema Hidratante con Protección Solar Facial,",
+   "stars": "4,6",
+   "reviews": "3.271",
+   "price": "10,17"
+  },
+  {
+   "rank": "#21",
+   "asin": "B094TYNC9T",
+   "title": "L'Oréal Paris Revitalift Filler Crema Hidratante Día Nº1 con SPF 50, 50ml | Ácido Hialurónico, Crema Hidratante con Protección Solar Facial,",
+   "stars": "4,6",
+   "reviews": "3.271",
+   "price": "10,17"
+  },
+  {
+   "rank": "#22",
+   "asin": "B08B21PRLM",
+   "title": "L'Oréal Paris Revitalift Filler Sérum Facial Ácido Hialurónico y PDRN, 30ml | Ácido Hialurónico y PDRN, Rellena Arrugas Profundas en 1H, Hid",
+   "stars": "4,6",
+   "reviews": "6.849",
+   "price": "10,74"
+  },
+  {
+   "rank": "#22",
+   "asin": "B08B21PRLM",
+   "title": "L'Oréal Paris Revitalift Filler Sérum Facial Ácido Hialurónico y PDRN, 30ml | Ácido Hialurónico y PDRN, Rellena Arrugas Profundas en 1H, Hid",
+   "stars": "4,6",
+   "reviews": "6.849",
+   "price": "10,74"
+  },
+  {
+   "rank": "#23",
+   "asin": "B0D1G7XF9X",
+   "title": "medicube Zero Pore Blackhead Mud Facial Mask | Mascarilla de Barro Coreana Refrescante, Reafirma los Poros, Fórmula Rápida de 3 Minutos con ",
+   "stars": "4,5",
+   "reviews": "8.945"
+  },
+  {
+   "rank": "#23",
+   "asin": "B0D1G7XF9X",
+   "title": "medicube Zero Pore Blackhead Mud Facial Mask | Mascarilla de Barro Coreana Refrescante, Reafirma los Poros, Fórmula Rápida de 3 Minutos con ",
+   "stars": "4,5",
+   "reviews": "8.945"
+  },
+  {
+   "rank": "#24",
+   "asin": "B01MF9YDQN",
+   "title": "Neutrogena Hydro Boost Gel de Agua Crema Hidratante Facial ligera, 50 ml | Con Ácido Hialurónico y Aminoácidos, 72h de Hidratación, Oil-Free",
+   "stars": "4,4",
+   "reviews": "5.981",
+   "price": "6,80"
+  },
+  {
+   "rank": "#24",
+   "asin": "B01MF9YDQN",
+   "title": "Neutrogena Hydro Boost Gel de Agua Crema Hidratante Facial ligera, 50 ml | Con Ácido Hialurónico y Aminoácidos, 72h de Hidratación, Oil-Free",
+   "stars": "4,4",
+   "reviews": "5.981",
+   "price": "6,80"
+  },
+  {
+   "rank": "#25",
+   "asin": "B01MDOJGDK",
+   "title": "Neutrogena Hydro Boost Limpiador Facial Gel de Agua, 200 ml | Con Ácido Hialurónico y Glicerina, Hidratante, No Comedogénico, Desmaquillante",
+   "stars": "4,6",
+   "reviews": "15.499",
+   "price": "4,77"
+  },
+  {
+   "rank": "#25",
+   "asin": "B01MDOJGDK",
+   "title": "Neutrogena Hydro Boost Limpiador Facial Gel de Agua, 200 ml | Con Ácido Hialurónico y Glicerina, Hidratante, No Comedogénico, Desmaquillante",
+   "stars": "4,6",
+   "reviews": "15.499",
+   "price": "4,77"
+  },
+  {
+   "rank": "#26",
+   "asin": "B0CZ5VPJ81",
+   "title": "NYX PROFESSIONAL MAKEUP Rubor en polvo Buttermelt, resistente a la decoloración y a la transferencia, hasta 12 horas de uso, fórmula vegana ",
+   "stars": "4,5",
+   "reviews": "14.695",
+   "price": "4,93"
+  },
+  {
+   "rank": "#26",
+   "asin": "B0CZ5VPJ81",
+   "title": "NYX PROFESSIONAL MAKEUP Rubor en polvo Buttermelt, resistente a la decoloración y a la transferencia, hasta 12 horas de uso, fórmula vegana ",
+   "stars": "4,5",
+   "reviews": "14.695",
+   "price": "4,93"
+  },
+  {
+   "rank": "#27",
+   "asin": "B00ST2GSRK",
+   "title": "La Roche-Posay, Cicaplast Baume B5+, Bálsamo Calmante Reparador, 40 ml | Bálsamo ultrarreparador, pieles irritadas o fragilizadas; con Madec",
+   "stars": "4,7",
+   "reviews": "19.637"
+  },
+  {
+   "rank": "#27",
+   "asin": "B00ST2GSRK",
+   "title": "La Roche-Posay, Cicaplast Baume B5+, Bálsamo Calmante Reparador, 40 ml | Bálsamo ultrarreparador, pieles irritadas o fragilizadas; con Madec",
+   "stars": "4,7",
+   "reviews": "19.637"
+  },
+  {
+   "rank": "#28",
+   "asin": "B0BRMYHMS5",
+   "title": "medicube Wrapping Mask Collagen Overnight Peel Off Facial Mask | Hidrata y Reafirma, Ayuda a Mejorar la Firmeza y Luminosidad de la Piel con",
+   "stars": "4,5",
+   "reviews": "26.628"
+  },
+  {
+   "rank": "#28",
+   "asin": "B0BRMYHMS5",
+   "title": "medicube Wrapping Mask Collagen Overnight Peel Off Facial Mask | Hidrata y Reafirma, Ayuda a Mejorar la Firmeza y Luminosidad de la Piel con",
+   "stars": "4,5",
+   "reviews": "26.628"
+  },
+  {
+   "rank": "#29",
+   "asin": "B0G52CKKMT",
+   "title": "Maybelline New York Lash Sensational Sky Tubes Máscara, Very Black | Manteca de Karité y Aceite de Ricino, Fórmula Vegana, Hasta 24H, Efecto",
+   "stars": "4,5",
+   "reviews": "1.280"
+  },
+  {
+   "rank": "#29",
+   "asin": "B0G52CKKMT",
+   "title": "Maybelline New York Lash Sensational Sky Tubes Máscara, Very Black | Manteca de Karité y Aceite de Ricino, Fórmula Vegana, Hasta 24H, Efecto",
+   "stars": "4,5",
+   "reviews": "1.280"
+  },
+  {
+   "rank": "#30",
+   "asin": "B08R9NZ65K",
+   "title": "Axe Dark Temptation Desodorante - 150 ml - Pack de 6, El embalaje puede variar",
+   "stars": "4,7",
+   "reviews": "2.421"
+  },
+  {
+   "rank": "#30",
+   "asin": "B08R9NZ65K",
+   "title": "Axe Dark Temptation Desodorante - 150 ml - Pack de 6, El embalaje puede variar",
+   "stars": "4,7",
+   "reviews": "2.421"
+  }
+ ],
+ "hpc": [
+  {
+   "rank": "#1",
+   "asin": "B00KW8LZB8",
+   "title": "Renova - Maxiabsorption, Rollos de cocina XXL, Triple, Blanco - 1 Rollo | 1 rollo XXL equivale a 3 rollos estándar (1=3), resistencia extra ",
+   "stars": "4,1",
+   "reviews": "8.451",
+   "price": "0,69"
+  },
+  {
+   "rank": "#1",
+   "asin": "B00KW8LZB8",
+   "title": "Renova - Maxiabsorption, Rollos de cocina XXL, Triple, Blanco - 1 Rollo | 1 rollo XXL equivale a 3 rollos estándar (1=3), resistencia extra ",
+   "stars": "4,1",
+   "reviews": "8.451",
+   "price": "0,69"
+  },
+  {
+   "rank": "#2",
+   "asin": "B07M7L3J7Y",
+   "title": "Magnesio Bisglicinato + Citrato 2145mg - Magnesio Complex Reduce Cansancio y Fatiga, Alta Biodisponibilidad, 120 Cápsulas Veganas Nutralie",
+   "stars": "4,6",
+   "reviews": "10.577"
+  },
+  {
+   "rank": "#2",
+   "asin": "B07M7L3J7Y",
+   "title": "Magnesio Bisglicinato + Citrato 2145mg - Magnesio Complex Reduce Cansancio y Fatiga, Alta Biodisponibilidad, 120 Cápsulas Veganas Nutralie",
+   "stars": "4,6",
+   "reviews": "10.577"
+  },
+  {
+   "rank": "#3",
+   "asin": "B07Q31N9D4",
+   "title": "Healthy Fusion Whey Protein | Proteína Whey pura con Colágeno + Magnesio | Mejora tus entrenamientos | Protege y aumenta la masa muscular | ",
+   "stars": "4,1",
+   "reviews": "6.277"
+  },
+  {
+   "rank": "#3",
+   "asin": "B07Q31N9D4",
+   "title": "Healthy Fusion Whey Protein | Proteína Whey pura con Colágeno + Magnesio | Mejora tus entrenamientos | Protege y aumenta la masa muscular | ",
+   "stars": "4,1",
+   "reviews": "6.277"
+  },
+  {
+   "rank": "#4",
+   "asin": "B0976Y79KF",
+   "title": "Cabezales Oral-B iO Ultimate Clean, Negro, Pack de 6 | Recambios Diseñados para Cepillos de Dientes Eléctricos Oral B iO, Eliminación de La ",
+   "stars": "4,6",
+   "reviews": "3.736",
+   "price": "23,14"
+  },
+  {
+   "rank": "#4",
+   "asin": "B0976Y79KF",
+   "title": "Cabezales Oral-B iO Ultimate Clean, Negro, Pack de 6 | Recambios Diseñados para Cepillos de Dientes Eléctricos Oral B iO, Eliminación de La ",
+   "stars": "4,6",
+   "reviews": "3.736",
+   "price": "23,14"
+  },
+  {
+   "rank": "#5",
+   "asin": "B0CPZP48ZT",
+   "title": "Colhogar Ultra Suave Original x108 - Papel Higiénico Blanco de 2 Capas - 9 paquetes de 12 Rollos, Sin Perfume",
+   "stars": "4,3",
+   "reviews": "1.520",
+   "price": "23,38"
+  },
+  {
+   "rank": "#5",
+   "asin": "B0CPZP48ZT",
+   "title": "Colhogar Ultra Suave Original x108 - Papel Higiénico Blanco de 2 Capas - 9 paquetes de 12 Rollos, Sin Perfume",
+   "stars": "4,3",
+   "reviews": "1.520",
+   "price": "23,38"
+  },
+  {
+   "rank": "#6",
+   "asin": "B0BWNW7H47",
+   "title": "Oral-B Pro CrossAction Cabezales de Recambio Originales, Blanco, Pack de 10 | Recambios para Cepillo de Dientes Eléctrico Oral B Pro, con In",
+   "stars": "4,6",
+   "reviews": "19.323",
+   "price": "20,62"
+  },
+  {
+   "rank": "#6",
+   "asin": "B0BWNW7H47",
+   "title": "Oral-B Pro CrossAction Cabezales de Recambio Originales, Blanco, Pack de 10 | Recambios para Cepillo de Dientes Eléctrico Oral B Pro, con In",
+   "stars": "4,6",
+   "reviews": "19.323",
+   "price": "20,62"
+  },
+  {
+   "rank": "#7",
+   "asin": "B07BF9RJNV",
+   "title": "HSN Creatina Monohidrato en Polvo (200 mesh) Sin Sabor 1 Kg | 100% Puro Monohidrato de Creatina. Sin Añadidos. Libre de DCD o DHT. Incluye D",
+   "stars": "4,7",
+   "reviews": "2.956"
+  },
+  {
+   "rank": "#7",
+   "asin": "B07BF9RJNV",
+   "title": "HSN Creatina Monohidrato en Polvo (200 mesh) Sin Sabor 1 Kg | 100% Puro Monohidrato de Creatina. Sin Añadidos. Libre de DCD o DHT. Incluye D",
+   "stars": "4,7",
+   "reviews": "2.956"
+  },
+  {
+   "rank": "#8",
+   "asin": "B0B4SCYCLS",
+   "title": "Oral-B Vitality Pro Cepillo de Dientes Eléctrico con 1 Cabezal, Negro | con Mango Recargable Y 1 Recambio, 3 Modos de Cepillado, Temporizado",
+   "stars": "4,5",
+   "reviews": "45.617",
+   "price": "17,36"
+  },
+  {
+   "rank": "#8",
+   "asin": "B0B4SCYCLS",
+   "title": "Oral-B Vitality Pro Cepillo de Dientes Eléctrico con 1 Cabezal, Negro | con Mango Recargable Y 1 Recambio, 3 Modos de Cepillado, Temporizado",
+   "stars": "4,5",
+   "reviews": "45.617",
+   "price": "17,36"
+  },
+  {
+   "rank": "#9",
+   "asin": "B0C3D2DGYP",
+   "title": "Oral-B iO 3 Cepillo de Dientes Eléctrico con 3 Cabezales, Azul | Mango Recargable, 3 Modos de Cepillado con Blanqueamiento Dental, Sensor de",
+   "stars": "4,5",
+   "reviews": "790",
+   "price": "49,55"
+  },
+  {
+   "rank": "#9",
+   "asin": "B0C3D2DGYP",
+   "title": "Oral-B iO 3 Cepillo de Dientes Eléctrico con 3 Cabezales, Azul | Mango Recargable, 3 Modos de Cepillado con Blanqueamiento Dental, Sensor de",
+   "stars": "4,5",
+   "reviews": "790",
+   "price": "49,55"
+  },
+  {
+   "rank": "#10",
+   "asin": "B09WH2BXSH",
+   "title": "Natulim - Detergente en Tiras para Lavadora - 40 Lavados (Fragancia Floral) | Incluye Efecto Suavizante, Ecológico, Hipoalergénico, Made in ",
+   "stars": "4,4",
+   "reviews": "7.158"
+  },
+  {
+   "rank": "#10",
+   "asin": "B09WH2BXSH",
+   "title": "Natulim - Detergente en Tiras para Lavadora - 40 Lavados (Fragancia Floral) | Incluye Efecto Suavizante, Ecológico, Hipoalergénico, Made in ",
+   "stars": "4,4",
+   "reviews": "7.158"
+  },
+  {
+   "rank": "#11",
+   "asin": "B0CHYVN2D7",
+   "title": "Irrigador Bucal Portatil, Vimmk Irrigador Dental Inalámbrico Profesional 8 Boquillas 5 Modos, IPX7 Impermeable 300ML USB-C Recargable Para L",
+   "stars": "4,3",
+   "reviews": "8.490",
+   "price": "21,89"
+  },
+  {
+   "rank": "#11",
+   "asin": "B0CHYVN2D7",
+   "title": "Irrigador Bucal Portatil, Vimmk Irrigador Dental Inalámbrico Profesional 8 Boquillas 5 Modos, IPX7 Impermeable 300ML USB-C Recargable Para L",
+   "stars": "4,3",
+   "reviews": "8.490",
+   "price": "21,89"
+  },
+  {
+   "rank": "#12",
+   "asin": "B0DP3C6613",
+   "title": "Colgate Total Prevención Activa Cuidado de Encías 4x75ml | 3 Veces Más Eficaz contra la Placa",
+   "stars": "4,6",
+   "reviews": "591",
+   "price": "5,45"
+  },
+  {
+   "rank": "#12",
+   "asin": "B0DP3C6613",
+   "title": "Colgate Total Prevención Activa Cuidado de Encías 4x75ml | 3 Veces Más Eficaz contra la Placa",
+   "stars": "4,6",
+   "reviews": "591",
+   "price": "5,45"
+  },
+  {
+   "rank": "#13",
+   "asin": "B00XA18ANA",
+   "title": "Nicky Ultrasoft, 12 Rollos de Papel Higiénico, 2 Capas | 140 Hojas por Rollo, Delicado Aroma a Talco, Dermatológicamente Testado, Certificac",
+   "stars": "4,3",
+   "reviews": "2.752",
+   "price": "4,95"
+  },
+  {
+   "rank": "#13",
+   "asin": "B00XA18ANA",
+   "title": "Nicky Ultrasoft, 12 Rollos de Papel Higiénico, 2 Capas | 140 Hojas por Rollo, Delicado Aroma a Talco, Dermatológicamente Testado, Certificac",
+   "stars": "4,3",
+   "reviews": "2.752",
+   "price": "4,95"
+  },
+  {
+   "rank": "#14",
+   "asin": "B09PYP9L4T",
+   "title": "Finish Quantum Infinity Shine Pastillas para lavavajillas - 166 cápsulas | Pastillas eficaces contra la grasa incrustada, ofrecen disolución",
+   "stars": "4,7",
+   "reviews": "21.974"
+  },
+  {
+   "rank": "#14",
+   "asin": "B09PYP9L4T",
+   "title": "Finish Quantum Infinity Shine Pastillas para lavavajillas - 166 cápsulas | Pastillas eficaces contra la grasa incrustada, ofrecen disolución",
+   "stars": "4,7",
+   "reviews": "21.974"
+  },
+  {
+   "rank": "#15",
+   "asin": "B078WTSHCF",
+   "title": "Finish Power All in One, Pastillas para el lavavajillas todo en uno - 104 | Limpieza y brillo diarios - Eficaz frente a manchas difíciles - ",
+   "stars": "4,7",
+   "reviews": "13.944"
+  },
+  {
+   "rank": "#15",
+   "asin": "B078WTSHCF",
+   "title": "Finish Power All in One, Pastillas para el lavavajillas todo en uno - 104 | Limpieza y brillo diarios - Eficaz frente a manchas difíciles - ",
+   "stars": "4,7",
+   "reviews": "13.944"
+  },
+  {
+   "rank": "#16",
+   "asin": "B08YGCGF7L",
+   "title": "Corega Ortodoncias Y Férulas, Tabletas Limpiadoras, 36 Unidades | Tabletas limpiadoras para ortodoncias y férulas, uso diario, ayuda a elimi",
+   "stars": "4,7",
+   "reviews": "1.722",
+   "price": "3,64"
+  },
+  {
+   "rank": "#16",
+   "asin": "B08YGCGF7L",
+   "title": "Corega Ortodoncias Y Férulas, Tabletas Limpiadoras, 36 Unidades | Tabletas limpiadoras para ortodoncias y férulas, uso diario, ayuda a elimi",
+   "stars": "4,7",
+   "reviews": "1.722",
+   "price": "3,64"
+  },
+  {
+   "rank": "#17",
+   "asin": "B072C4VWZ2",
+   "title": "HSN Creatina Excell 100% Creapure® en Polvo - Sin Sabor 500 g | 100% Puro Monohidrato de Creatina. Sin Añadidos. Libre de DCD o DHT. Incluye",
+   "stars": "4,7",
+   "reviews": "3.804"
+  },
+  {
+   "rank": "#17",
+   "asin": "B072C4VWZ2",
+   "title": "HSN Creatina Excell 100% Creapure® en Polvo - Sin Sabor 500 g | 100% Puro Monohidrato de Creatina. Sin Añadidos. Libre de DCD o DHT. Incluye",
+   "stars": "4,7",
+   "reviews": "3.804"
+  },
+  {
+   "rank": "#18",
+   "asin": "B07NS14648",
+   "title": "Glicinato de magnesio - 300 mg de magnesium elemental/dosis diaria - suministro para 2 meses con 180 cápsulas - magnesio quelado - inocuo pa",
+   "stars": "4,6",
+   "reviews": "11.636"
+  },
+  {
+   "rank": "#18",
+   "asin": "B07NS14648",
+   "title": "Glicinato de magnesio - 300 mg de magnesium elemental/dosis diaria - suministro para 2 meses con 180 cápsulas - magnesio quelado - inocuo pa",
+   "stars": "4,6",
+   "reviews": "11.636"
+  },
+  {
+   "rank": "#19",
+   "asin": "B07HGHHNH9",
+   "title": "Listerine Cuidado Total Enjuague Bucal con Flúor, 1 L, 2 uds | 10 Beneficios en 1, 12 h de Protección, Fortalece el Esmalte, Protege las Enc",
+   "stars": "4,7",
+   "reviews": "7.526"
+  },
+  {
+   "rank": "#19",
+   "asin": "B07HGHHNH9",
+   "title": "Listerine Cuidado Total Enjuague Bucal con Flúor, 1 L, 2 uds | 10 Beneficios en 1, 12 h de Protección, Fortalece el Esmalte, Protege las Enc",
+   "stars": "4,7",
+   "reviews": "7.526"
+  },
+  {
+   "rank": "#20",
+   "asin": "B08MYVY82G",
+   "title": "Curcuma con Jengibre y Pimienta Negra PROBIÓTICOS - 250 cápsulas - 1460mg | BIO Cúrcuma - Curcumina y Piperina - Antiinflamatorio Natural - ",
+   "stars": "4,5",
+   "reviews": "8.537"
+  },
+  {
+   "rank": "#20",
+   "asin": "B08MYVY82G",
+   "title": "Curcuma con Jengibre y Pimienta Negra PROBIÓTICOS - 250 cápsulas - 1460mg | BIO Cúrcuma - Curcumina y Piperina - Antiinflamatorio Natural - ",
+   "stars": "4,5",
+   "reviews": "8.537"
+  },
+  {
+   "rank": "#21",
+   "asin": "B084KPJKT1",
+   "title": "Biomed Superwhite Natural Coconut Toothpaste for Gentle Whitening, Tropical flavour - 100 g (pack of 3) - New Formula and Flavour (Packaging",
+   "stars": "4,6",
+   "reviews": "3.105",
+   "price": "7,02"
+  },
+  {
+   "rank": "#21",
+   "asin": "B084KPJKT1",
+   "title": "Biomed Superwhite Natural Coconut Toothpaste for Gentle Whitening, Tropical flavour - 100 g (pack of 3) - New Formula and Flavour (Packaging",
+   "stars": "4,6",
+   "reviews": "3.105",
+   "price": "7,02"
+  },
+  {
+   "rank": "#22",
+   "asin": "B0F9X3BYG9",
+   "title": "OMRON X2 Essential Tensiómetro de brazo digital Validado clínicamente | Medidor de la tensión arterial con indicador de hipertensión y detec",
+   "stars": "4,6",
+   "reviews": "6.855"
+  },
+  {
+   "rank": "#22",
+   "asin": "B0F9X3BYG9",
+   "title": "OMRON X2 Essential Tensiómetro de brazo digital Validado clínicamente | Medidor de la tensión arterial con indicador de hipertensión y detec",
+   "stars": "4,6",
+   "reviews": "6.855"
+  },
+  {
+   "rank": "#23",
+   "asin": "B084G5XC29",
+   "title": "Omega 3 2000mg - 240 Perlas Aceite Pescado IFOS* (660mg EPA + 440mg DHA) | Ácidos Grasos Omega 3 de Anchoa para 4 Meses - Sin OGM, Sin Glute",
+   "stars": "4,7",
+   "reviews": "25.166"
+  },
+  {
+   "rank": "#23",
+   "asin": "B084G5XC29",
+   "title": "Omega 3 2000mg - 240 Perlas Aceite Pescado IFOS* (660mg EPA + 440mg DHA) | Ácidos Grasos Omega 3 de Anchoa para 4 Meses - Sin OGM, Sin Glute",
+   "stars": "4,7",
+   "reviews": "25.166"
+  },
+  {
+   "rank": "#24",
+   "asin": "B0C6M9XL5D",
+   "title": "Oral-B Pro Series 1 Cepillo de Dientes Eléctrico, 1 Cabezal, Negro | con Mango Recargable Y 1 Recambio, 3 Modos de Cepillado, Temporizador Y",
+   "stars": "4,4",
+   "reviews": "3.467",
+   "price": "26,44"
+  },
+  {
+   "rank": "#24",
+   "asin": "B0C6M9XL5D",
+   "title": "Oral-B Pro Series 1 Cepillo de Dientes Eléctrico, 1 Cabezal, Negro | con Mango Recargable Y 1 Recambio, 3 Modos de Cepillado, Temporizador Y",
+   "stars": "4,4",
+   "reviews": "3.467",
+   "price": "26,44"
+  },
+  {
+   "rank": "#25",
+   "asin": "B0BG3CC5FX",
+   "title": "Frosch - Pastillas Lavavajillas a Máquina Todo en 1 con Bicarbonato, Limpieza y Brillo, Sin Componente Animal, Ni Fosfatos, Ni Fosfonatos - ",
+   "stars": "4,6",
+   "reviews": "907"
+  },
+  {
+   "rank": "#25",
+   "asin": "B0BG3CC5FX",
+   "title": "Frosch - Pastillas Lavavajillas a Máquina Todo en 1 con Bicarbonato, Limpieza y Brillo, Sin Componente Animal, Ni Fosfatos, Ni Fosfonatos - ",
+   "stars": "4,6",
+   "reviews": "907"
+  },
+  {
+   "rank": "#26",
+   "asin": "B0GNSQYSLZ",
+   "title": "Solgar Magnesio Bisglicinato 240 mg | Alta Absorción | 60 Cápsulas | Reduce el cansancio · Apoya el sistema nervioso · Suave para el estómag",
+   "stars": "4,6",
+   "reviews": "380"
+  },
+  {
+   "rank": "#26",
+   "asin": "B0GNSQYSLZ",
+   "title": "Solgar Magnesio Bisglicinato 240 mg | Alta Absorción | 60 Cápsulas | Reduce el cansancio · Apoya el sistema nervioso · Suave para el estómag",
+   "stars": "4,6",
+   "reviews": "380"
+  },
+  {
+   "rank": "#27",
+   "asin": "B0FTTG6JNC",
+   "title": "Oral-B Pro 3D White Clinical Dentífrico Blanqueante, 3x75ml | Pasta de Dientes Blanqueadora con Sabor a Menta Siempreverde, Elimina Las Manc",
+   "stars": "4,6",
+   "reviews": "836",
+   "price": "6,75"
+  },
+  {
+   "rank": "#27",
+   "asin": "B0FTTG6JNC",
+   "title": "Oral-B Pro 3D White Clinical Dentífrico Blanqueante, 3x75ml | Pasta de Dientes Blanqueadora con Sabor a Menta Siempreverde, Elimina Las Manc",
+   "stars": "4,6",
+   "reviews": "836",
+   "price": "6,75"
+  },
+  {
+   "rank": "#28",
+   "asin": "B0BJWZ6MGP",
+   "title": "Ariel PODS Detergente Cápsulas Lavadora Original, Pack 2x70 Lavados | Cápsulas de ropa para lavadora. Pastillas que eliminan manchas y olore",
+   "stars": "4,7",
+   "reviews": "2.215"
+  },
+  {
+   "rank": "#28",
+   "asin": "B0BJWZ6MGP",
+   "title": "Ariel PODS Detergente Cápsulas Lavadora Original, Pack 2x70 Lavados | Cápsulas de ropa para lavadora. Pastillas que eliminan manchas y olore",
+   "stars": "4,7",
+   "reviews": "2.215"
+  },
+  {
+   "rank": "#29",
+   "asin": "B00T7L20EC",
+   "title": "Optimum Nutrition Creatina Monohidrato Micronizada en Polvo, 634g | Sin Sabor,186 Porciones,Suplemento para Favorece la Fuerza y la Potencia",
+   "stars": "4,6",
+   "reviews": "36.988"
+  },
+  {
+   "rank": "#29",
+   "asin": "B00T7L20EC",
+   "title": "Optimum Nutrition Creatina Monohidrato Micronizada en Polvo, 634g | Sin Sabor,186 Porciones,Suplemento para Favorece la Fuerza y la Potencia",
+   "stars": "4,6",
+   "reviews": "36.988"
+  },
+  {
+   "rank": "#30",
+   "asin": "B08X5CK7DK",
+   "title": "Finish Ultimate Infinity Shine Pastillas para lavavajillas - 160 cápsulas | Combaten las manchas resecas, otorgan limpieza profunda y eficaz",
+   "stars": "4,7",
+   "reviews": "18.689"
+  },
+  {
+   "rank": "#30",
+   "asin": "B08X5CK7DK",
+   "title": "Finish Ultimate Infinity Shine Pastillas para lavavajillas - 160 cápsulas | Combaten las manchas resecas, otorgan limpieza profunda y eficaz",
+   "stars": "4,7",
+   "reviews": "18.689"
+  }
+ ],
+ "sports": [
+  {
+   "rank": "#1",
+   "asin": "B078XXP3RH",
+   "title": "Amazon Basics Par de mancuernas de neopreno",
+   "stars": "4,7",
+   "reviews": "32.324",
+   "price": "9,83"
+  },
+  {
+   "rank": "#1",
+   "asin": "B078XXP3RH",
+   "title": "Amazon Basics Par de mancuernas de neopreno",
+   "stars": "4,7",
+   "reviews": "32.324",
+   "price": "9,83"
+  },
+  {
+   "rank": "#2",
+   "asin": "B0DYF82545",
+   "title": "Xiaomi Smartband 10, Pantalla AMOLED de 1,72”, Carga rápida, 150+ Modos Deportivos, Monitorización de Salud y sueño, HyperOS 2.0, Impermeabl",
+   "stars": "4,5",
+   "reviews": "16.076",
+   "price": "27,26"
+  },
+  {
+   "rank": "#2",
+   "asin": "B0DYF82545",
+   "title": "Xiaomi Smartband 10, Pantalla AMOLED de 1,72”, Carga rápida, 150+ Modos Deportivos, Monitorización de Salud y sueño, HyperOS 2.0, Impermeabl",
+   "stars": "4,5",
+   "reviews": "16.076",
+   "price": "27,26"
+  },
+  {
+   "rank": "#3",
+   "asin": "B0DCZ6H83Z",
+   "title": "VOSFEEL Calentador de Manos Recargable 2 en 1 Magnético para Diario | 23H Autonomía, Calienta en 2S Hasta 55°C, Ultraligero 72G, Incluye Cab",
+   "stars": "4,5",
+   "reviews": "889"
+  },
+  {
+   "rank": "#3",
+   "asin": "B0DCZ6H83Z",
+   "title": "VOSFEEL Calentador de Manos Recargable 2 en 1 Magnético para Diario | 23H Autonomía, Calienta en 2S Hasta 55°C, Ultraligero 72G, Incluye Cab",
+   "stars": "4,5",
+   "reviews": "889"
+  },
+  {
+   "rank": "#4",
+   "asin": "B07Y21GMKQ",
+   "title": "Lepro Linterna Frontal LED Recargable 2000lux Paquete de 2 | Linterna Cabeza USB Recargable D500, 6 Modos con Luz Rojo, Impermeable IPX4, Fr",
+   "stars": "4,6",
+   "reviews": "22.666"
+  },
+  {
+   "rank": "#4",
+   "asin": "B07Y21GMKQ",
+   "title": "Lepro Linterna Frontal LED Recargable 2000lux Paquete de 2 | Linterna Cabeza USB Recargable D500, 6 Modos con Luz Rojo, Impermeable IPX4, Fr",
+   "stars": "4,6",
+   "reviews": "22.666"
+  },
+  {
+   "rank": "#5",
+   "asin": "B0H86XV213",
+   "title": "XIAOMI Smart Band 11, pulsera de actividad, 1,72'', batería 21 días, Negro | Más de 150 modos deportivos, seguimiento cardíaco y sueño, marc",
+   "stars": "4,2",
+   "reviews": "81"
+  },
+  {
+   "rank": "#5",
+   "asin": "B0H86XV213",
+   "title": "XIAOMI Smart Band 11, pulsera de actividad, 1,72'', batería 21 días, Negro | Más de 150 modos deportivos, seguimiento cardíaco y sueño, marc",
+   "stars": "4,2",
+   "reviews": "81"
+  },
+  {
+   "rank": "#6",
+   "asin": "B09CTVQWK8",
+   "title": "Fokky Gomas Elasticas Musculacion [Set de 5], Látex Natural | Bandas Elasticas Musculacion con Bolsa de Transporte, Cintas Elasticas Muscula",
+   "stars": "4,4",
+   "reviews": "14.135"
+  },
+  {
+   "rank": "#6",
+   "asin": "B09CTVQWK8",
+   "title": "Fokky Gomas Elasticas Musculacion [Set de 5], Látex Natural | Bandas Elasticas Musculacion con Bolsa de Transporte, Cintas Elasticas Muscula",
+   "stars": "4,4",
+   "reviews": "14.135"
+  },
+  {
+   "rank": "#7",
+   "asin": "B07ZL1CSLW",
+   "title": "Leone 1947 Ab705 - Vendajes Unisex Adulto",
+   "stars": "4,6",
+   "reviews": "12.215",
+   "price": "5,45"
+  },
+  {
+   "rank": "#7",
+   "asin": "B07ZL1CSLW",
+   "title": "Leone 1947 Ab705 - Vendajes Unisex Adulto",
+   "stars": "4,6",
+   "reviews": "12.215",
+   "price": "5,45"
+  },
+  {
+   "rank": "#8",
+   "asin": "B01F2OGJQM",
+   "title": "Fitgriff® Straps Gym - Correas Levantamiento de Pesas para Lifting, Gimnasio - Accesorios Fitness Mujer y Hombre",
+   "stars": "4,7",
+   "reviews": "23.390"
+  },
+  {
+   "rank": "#8",
+   "asin": "B01F2OGJQM",
+   "title": "Fitgriff® Straps Gym - Correas Levantamiento de Pesas para Lifting, Gimnasio - Accesorios Fitness Mujer y Hombre",
+   "stars": "4,7",
+   "reviews": "23.390"
+  },
+  {
+   "rank": "#9",
+   "asin": "B0FHWMCNWK",
+   "title": "Camping Gas Portatil con adaptador de Bombona + 4 Cartuchos, Pack Hornillo + 4 Cartuchos, Hornillo Camping Gas Portátil, Cocinal, Infernillo",
+   "stars": "4,4",
+   "reviews": "220"
+  },
+  {
+   "rank": "#9",
+   "asin": "B0FHWMCNWK",
+   "title": "Camping Gas Portatil con adaptador de Bombona + 4 Cartuchos, Pack Hornillo + 4 Cartuchos, Hornillo Camping Gas Portátil, Cocinal, Infernillo",
+   "stars": "4,4",
+   "reviews": "220"
+  },
+  {
+   "rank": "#10",
+   "asin": "B091Z48J81",
+   "title": "UEFA Champions League Football, Size 5, Officially Licensed, Training, Match, Merchandise, Collectible For Kids and Adults, Great Gift Idea",
+   "stars": "3,7",
+   "reviews": "2.501",
+   "price": "13,21"
+  },
+  {
+   "rank": "#10",
+   "asin": "B091Z48J81",
+   "title": "UEFA Champions League Football, Size 5, Officially Licensed, Training, Match, Merchandise, Collectible For Kids and Adults, Great Gift Idea",
+   "stars": "3,7",
+   "reviews": "2.501",
+   "price": "13,21"
+  },
+  {
+   "rank": "#11",
+   "asin": "B0CP9PS9DB",
+   "title": "Beast Rage Guantes de Fitness Transpirables para Hombres y Mujeres Guantes de Levantamiento de Pesas de Entrenamiento de Gimnasia Antidesliz",
+   "stars": "4,3",
+   "reviews": "3.706"
+  },
+  {
+   "rank": "#11",
+   "asin": "B0CP9PS9DB",
+   "title": "Beast Rage Guantes de Fitness Transpirables para Hombres y Mujeres Guantes de Levantamiento de Pesas de Entrenamiento de Gimnasia Antidesliz",
+   "stars": "4,3",
+   "reviews": "3.706"
+  },
+  {
+   "rank": "#12",
+   "asin": "B0BK1Y38RD",
+   "title": "Speedo Unisex Gafas de natación Biofuse 2.0 | Ajuste fácil patentado | Antivaho | Sin goteos | Ajuste optimizado | Más comodidad",
+   "stars": "4,5",
+   "reviews": "22.127",
+   "price": "14,04"
+  },
+  {
+   "rank": "#12",
+   "asin": "B0BK1Y38RD",
+   "title": "Speedo Unisex Gafas de natación Biofuse 2.0 | Ajuste fácil patentado | Antivaho | Sin goteos | Ajuste optimizado | Más comodidad",
+   "stars": "4,5",
+   "reviews": "22.127",
+   "price": "14,04"
+  },
+  {
+   "rank": "#13",
+   "asin": "B0BJLFMT75",
+   "title": "Cecotec Pedales Estáticos DrumFit Cycle Compact, Niveles de Resistencia Regulables manualmente, Funcionamiento Sencillo e Intuitivo, Pantall",
+   "stars": "4,2",
+   "reviews": "1.680",
+   "price": "25,54"
+  },
+  {
+   "rank": "#13",
+   "asin": "B0BJLFMT75",
+   "title": "Cecotec Pedales Estáticos DrumFit Cycle Compact, Niveles de Resistencia Regulables manualmente, Funcionamiento Sencillo e Intuitivo, Pantall",
+   "stars": "4,2",
+   "reviews": "1.680",
+   "price": "25,54"
+  },
+  {
+   "rank": "#14",
+   "asin": "B0FBWG7S2Y",
+   "title": "XIAOMI Smart Band 11 Active, monitorización fitness, Negro | Pantalla 1,47\" 60Hz, acabado metálico, seguimiento de salud multidimensional, 2",
+   "stars": "3,8",
+   "reviews": "404"
+  },
+  {
+   "rank": "#14",
+   "asin": "B0FBWG7S2Y",
+   "title": "XIAOMI Smart Band 11 Active, monitorización fitness, Negro | Pantalla 1,47\" 60Hz, acabado metálico, seguimiento de salud multidimensional, 2",
+   "stars": "3,8",
+   "reviews": "404"
+  },
+  {
+   "rank": "#15",
+   "asin": "B00GOPHOSQ",
+   "title": "Aquatabs 8,5 mg | 50 Pastillas Potabilizadoras de Agua | Pastillas potabilizadoras de agua para consumo humano",
+   "stars": "4,6",
+   "reviews": "1.497"
+  },
+  {
+   "rank": "#15",
+   "asin": "B00GOPHOSQ",
+   "title": "Aquatabs 8,5 mg | 50 Pastillas Potabilizadoras de Agua | Pastillas potabilizadoras de agua para consumo humano",
+   "stars": "4,6",
+   "reviews": "1.497"
+  },
+  {
+   "rank": "#16",
+   "asin": "B082XJHQPC",
+   "title": "NirvanaShape Toalla de Microfibra | 14 Colores | 8 Dimensiones | Toalla de Viaje Ligera, Absorbente y de Secado Rápido | Toalla de Baño para",
+   "stars": "4,3",
+   "reviews": "8.684"
+  },
+  {
+   "rank": "#16",
+   "asin": "B082XJHQPC",
+   "title": "NirvanaShape Toalla de Microfibra | 14 Colores | 8 Dimensiones | Toalla de Viaje Ligera, Absorbente y de Secado Rápido | Toalla de Baño para",
+   "stars": "4,3",
+   "reviews": "8.684"
+  },
+  {
+   "rank": "#17",
+   "asin": "B0FVJ5DJZN",
+   "title": "adidas Unisex Adulto Real Madrid Home Club Ball Recreation_Ball, White/Aurora Ivy, 5",
+   "stars": "4,7",
+   "reviews": "15",
+   "price": "11,08"
+  },
+  {
+   "rank": "#17",
+   "asin": "B0FVJ5DJZN",
+   "title": "adidas Unisex Adulto Real Madrid Home Club Ball Recreation_Ball, White/Aurora Ivy, 5",
+   "stars": "4,7",
+   "reviews": "15",
+   "price": "11,08"
+  },
+  {
+   "rank": "#18",
+   "asin": "B0F9WGM4LM",
+   "title": "GHTENS 5 en 1 Electroestimulador Muscular‌ Profesional, Recargable 80 Modos de Estimulación, Con Función TENS/EMS/RUSS/IF/DIY y Masaje, 2 Ca",
+   "stars": "4,6",
+   "reviews": "3.278",
+   "price": "29,04"
+  },
+  {
+   "rank": "#18",
+   "asin": "B0F9WGM4LM",
+   "title": "GHTENS 5 en 1 Electroestimulador Muscular‌ Profesional, Recargable 80 Modos de Estimulación, Con Función TENS/EMS/RUSS/IF/DIY y Masaje, 2 Ca",
+   "stars": "4,6",
+   "reviews": "3.278",
+   "price": "29,04"
+  },
+  {
+   "rank": "#19",
+   "asin": "B09MKR6KSV",
+   "title": "Pelota de Pilates, 55, 65 y 75 cm, Ejercicio en Casa, Incluye Hinchador, Fitball, Embarazadas, Accesorios Yoga, Varios Tamaños",
+   "stars": "4,4",
+   "reviews": "4.431",
+   "price": "10,28"
+  },
+  {
+   "rank": "#19",
+   "asin": "B09MKR6KSV",
+   "title": "Pelota de Pilates, 55, 65 y 75 cm, Ejercicio en Casa, Incluye Hinchador, Fitball, Embarazadas, Accesorios Yoga, Varios Tamaños",
+   "stars": "4,4",
+   "reviews": "4.431",
+   "price": "10,28"
+  },
+  {
+   "rank": "#20",
+   "asin": "B0CMY7VF71",
+   "title": "Fitgriff® Tobilleras Poleas Gym V3 (2 Piezas) - Correas Tobillo Gimnasio para Patadas Gluteos, Fitness - Accesorios de Ejercicio",
+   "stars": "4,8",
+   "reviews": "3.400"
+  },
+  {
+   "rank": "#20",
+   "asin": "B0CMY7VF71",
+   "title": "Fitgriff® Tobilleras Poleas Gym V3 (2 Piezas) - Correas Tobillo Gimnasio para Patadas Gluteos, Fitness - Accesorios de Ejercicio",
+   "stars": "4,8",
+   "reviews": "3.400"
+  },
+  {
+   "rank": "#21",
+   "asin": "B07KQR9VXG",
+   "title": "ATERCEL Guantes Gimnasio, para Hombre y Mujer, los Mejores Guantes Gym para Levantamiento de Pesas, Ciclismo, Gimnasio, Entrenamiento, Trans",
+   "stars": "4,6",
+   "reviews": "49.180"
+  },
+  {
+   "rank": "#21",
+   "asin": "B07KQR9VXG",
+   "title": "ATERCEL Guantes Gimnasio, para Hombre y Mujer, los Mejores Guantes Gym para Levantamiento de Pesas, Ciclismo, Gimnasio, Entrenamiento, Trans",
+   "stars": "4,6",
+   "reviews": "49.180"
+  },
+  {
+   "rank": "#22",
+   "asin": "B07FF436N5",
+   "title": "Log Barn Encendedores Naturales - Caja de 200, Pastillas de Encendido para Barbacoa, Estufas de Leña, Hornos de Pizza, Chimeneas, Lana de Ma",
+   "stars": "4,6",
+   "reviews": "7.093"
+  },
+  {
+   "rank": "#22",
+   "asin": "B07FF436N5",
+   "title": "Log Barn Encendedores Naturales - Caja de 200, Pastillas de Encendido para Barbacoa, Estufas de Leña, Hornos de Pizza, Chimeneas, Lana de Ma",
+   "stars": "4,6",
+   "reviews": "7.093"
+  },
+  {
+   "rank": "#23",
+   "asin": "B0CPPBVGCC",
+   "title": "Beast Rage Guantes de Fitness parlevantamiento de Pesas para Hombres y Mujeres, Transpirables,Antideslizantes,Acolchados de Silicona,Guantes",
+   "stars": "4,6",
+   "reviews": "4.290"
+  },
+  {
+   "rank": "#23",
+   "asin": "B0CPPBVGCC",
+   "title": "Beast Rage Guantes de Fitness parlevantamiento de Pesas para Hombres y Mujeres, Transpirables,Antideslizantes,Acolchados de Silicona,Guantes",
+   "stars": "4,6",
+   "reviews": "4.290"
+  },
+  {
+   "rank": "#24",
+   "asin": "B0CR6BPSNS",
+   "title": "GUJOIN Mochila Tática 50 Litros con Sistema Molle - Gran Capacidad Militar Impermeable para Emergencias de 3 Días Caza Senderismo y Acampada",
+   "stars": "4,6",
+   "reviews": "2.169"
+  },
+  {
+   "rank": "#24",
+   "asin": "B0CR6BPSNS",
+   "title": "GUJOIN Mochila Tática 50 Litros con Sistema Molle - Gran Capacidad Militar Impermeable para Emergencias de 3 Días Caza Senderismo y Acampada",
+   "stars": "4,6",
+   "reviews": "2.169"
+  },
+  {
+   "rank": "#25",
+   "asin": "B07DNZG8ZY",
+   "title": "arena The One Gafas de Natación, Unisex Adulto",
+   "stars": "4,3",
+   "reviews": "15.215",
+   "price": "6,60"
+  },
+  {
+   "rank": "#25",
+   "asin": "B07DNZG8ZY",
+   "title": "arena The One Gafas de Natación, Unisex Adulto",
+   "stars": "4,3",
+   "reviews": "15.215",
+   "price": "6,60"
+  },
+  {
+   "rank": "#26",
+   "asin": "B08NCCG52G",
+   "title": "unycos - Mancuernas Antideslizantes de Neopreno 1-10 kg para Fitness | Con Revestimiento de Neopreno, Agarre Cómodo y E-book de Ejercicios p",
+   "stars": "4,7",
+   "reviews": "5.194"
+  },
+  {
+   "rank": "#26",
+   "asin": "B08NCCG52G",
+   "title": "unycos - Mancuernas Antideslizantes de Neopreno 1-10 kg para Fitness | Con Revestimiento de Neopreno, Agarre Cómodo y E-book de Ejercicios p",
+   "stars": "4,7",
+   "reviews": "5.194"
+  },
+  {
+   "rank": "#27",
+   "asin": "B08LPPJJ5N",
+   "title": "LA MENTE ES MARAVILLOSA - Esterilla de Yoga TPE, 183x61 cm | Colchoneta Antideslizante Grosor 6 mm para Fitness, Pilates y Gimnasio en Casa,",
+   "stars": "4,7",
+   "reviews": "6.257"
+  },
+  {
+   "rank": "#27",
+   "asin": "B08LPPJJ5N",
+   "title": "LA MENTE ES MARAVILLOSA - Esterilla de Yoga TPE, 183x61 cm | Colchoneta Antideslizante Grosor 6 mm para Fitness, Pilates y Gimnasio en Casa,",
+   "stars": "4,7",
+   "reviews": "6.257"
+  },
+  {
+   "rank": "#28",
+   "asin": "B0CT3SGHXL",
+   "title": "Garmin Forerunner 165, Reloj Inteligente para Correr con GPS, Negro | Pantalla Táctil AMOLED, Métricas Optimizadas, Planes de Entrenamiento,",
+   "stars": "4,6",
+   "reviews": "3.751",
+   "price": "139,66"
+  },
+  {
+   "rank": "#28",
+   "asin": "B0CT3SGHXL",
+   "title": "Garmin Forerunner 165, Reloj Inteligente para Correr con GPS, Negro | Pantalla Táctil AMOLED, Métricas Optimizadas, Planes de Entrenamiento,",
+   "stars": "4,6",
+   "reviews": "3.751",
+   "price": "139,66"
+  },
+  {
+   "rank": "#29",
+   "asin": "B089KT4M6P",
+   "title": "ion8 Botella Agua Inox Ligero, 600ml, Sin Aislamiento, a Prueba de Fugas, Fácil de Abrir, Cerradura Segura, Aptas para Lavavajillas, Fácil d",
+   "stars": "4,3",
+   "reviews": "9.505",
+   "price": "9,09"
+  },
+  {
+   "rank": "#29",
+   "asin": "B089KT4M6P",
+   "title": "ion8 Botella Agua Inox Ligero, 600ml, Sin Aislamiento, a Prueba de Fugas, Fácil de Abrir, Cerradura Segura, Aptas para Lavavajillas, Fácil d",
+   "stars": "4,3",
+   "reviews": "9.505",
+   "price": "9,09"
+  },
+  {
+   "rank": "#30",
+   "asin": "B0CPSD21L4",
+   "title": "GRIFEMA GA5002 Bandas Elasticas Fitness Set de 4-1.8M",
+   "stars": "4,5",
+   "reviews": "3.730",
+   "price": "6,60"
+  },
+  {
+   "rank": "#30",
+   "asin": "B0CPSD21L4",
+   "title": "GRIFEMA GA5002 Bandas Elasticas Fitness Set de 4-1.8M",
+   "stars": "4,5",
+   "reviews": "3.730",
+   "price": "6,60"
+  }
+ ],
+ "pet-supplies": [
+  {
+   "rank": "#1",
+   "asin": "B00NABTGY2",
+   "title": "Amazon Basics Bolsas de basura para perros con dispensador y clip para correa, Sin fragancia, 900 bolsas (60 paquetes de 15)",
+   "stars": "4,8",
+   "reviews": "236.278",
+   "price": "10,12"
+  },
+  {
+   "rank": "#1",
+   "asin": "B00NABTGY2",
+   "title": "Amazon Basics Bolsas de basura para perros con dispensador y clip para correa, Sin fragancia, 900 bolsas (60 paquetes de 15)",
+   "stars": "4,8",
+   "reviews": "236.278",
+   "price": "10,12"
+  },
+  {
+   "rank": "#2",
+   "asin": "B00MW8G3YU",
+   "title": "Amazon Basics Almohadillas de adiestramiento de Perros y Cachorros, diseño de 5 Capas a Prueba de Fugas con Superficie de Secado rápido, Reg",
+   "stars": "4,3",
+   "reviews": "223.363",
+   "price": "12,80"
+  },
+  {
+   "rank": "#2",
+   "asin": "B00MW8G3YU",
+   "title": "Amazon Basics Almohadillas de adiestramiento de Perros y Cachorros, diseño de 5 Capas a Prueba de Fugas con Superficie de Secado rápido, Reg",
+   "stars": "4,3",
+   "reviews": "223.363",
+   "price": "12,80"
+  },
+  {
+   "rank": "#3",
+   "asin": "B07B8Y6M4K",
+   "title": "GOURMET Gold Mousse, Comida Húmeda para Gato Adulto, Mousse de Pescado del Océano, Pack de 24 Latas de 85 g",
+   "stars": "4,7",
+   "reviews": "995"
+  },
+  {
+   "rank": "#3",
+   "asin": "B07B8Y6M4K",
+   "title": "GOURMET Gold Mousse, Comida Húmeda para Gato Adulto, Mousse de Pescado del Océano, Pack de 24 Latas de 85 g",
+   "stars": "4,7",
+   "reviews": "995"
+  },
+  {
+   "rank": "#4",
+   "asin": "B083VBXG2S",
+   "title": "by Amazon Arena Prémium de Bentonita con Aroma a Talco para Gatos, 10L (Paquete de 1)",
+   "stars": "4,0",
+   "reviews": "29.384",
+   "price": "11,69"
+  },
+  {
+   "rank": "#4",
+   "asin": "B083VBXG2S",
+   "title": "by Amazon Arena Prémium de Bentonita con Aroma a Talco para Gatos, 10L (Paquete de 1)",
+   "stars": "4,0",
+   "reviews": "29.384",
+   "price": "11,69"
+  },
+  {
+   "rank": "#5",
+   "asin": "B00O4B8ISW",
+   "title": "Sanicat - Arena para Gatos Aglomerante Sin Perfume | Hecha de minerales con Control de Olor garantizado | Absorbe la Humedad y facilita la L",
+   "stars": "4,0",
+   "reviews": "22.122",
+   "price": "6,19"
+  },
+  {
+   "rank": "#5",
+   "asin": "B00O4B8ISW",
+   "title": "Sanicat - Arena para Gatos Aglomerante Sin Perfume | Hecha de minerales con Control de Olor garantizado | Absorbe la Humedad y facilita la L",
+   "stars": "4,0",
+   "reviews": "22.122",
+   "price": "6,19"
+  },
+  {
+   "rank": "#6",
+   "asin": "B08WSYSQVL",
+   "title": "Felix Fantastic comida húmeda gato 44x85 g",
+   "stars": "4,6",
+   "reviews": "2.999"
+  },
+  {
+   "rank": "#6",
+   "asin": "B08WSYSQVL",
+   "title": "Felix Fantastic comida húmeda gato 44x85 g",
+   "stars": "4,6",
+   "reviews": "2.999"
+  },
+  {
+   "rank": "#7",
+   "asin": "B08GVXR7V9",
+   "title": "Catit Go Natural! Arena Guisantes, Aroma Vainilla 5.6 kg",
+   "stars": "4,6",
+   "reviews": "9.344",
+   "price": "11,18"
+  },
+  {
+   "rank": "#7",
+   "asin": "B08GVXR7V9",
+   "title": "Catit Go Natural! Arena Guisantes, Aroma Vainilla 5.6 kg",
+   "stars": "4,6",
+   "reviews": "9.344",
+   "price": "11,18"
+  },
+  {
+   "rank": "#8",
+   "asin": "B0DG933ZKR",
+   "title": "by Amazon Arenero Aglomerante Fino sin Perfume para Gatos, 10L (Paquete de 1)",
+   "stars": "4,2",
+   "reviews": "2.104",
+   "price": "5,64"
+  },
+  {
+   "rank": "#8",
+   "asin": "B0DG933ZKR",
+   "title": "by Amazon Arenero Aglomerante Fino sin Perfume para Gatos, 10L (Paquete de 1)",
+   "stars": "4,2",
+   "reviews": "2.104",
+   "price": "5,64"
+  },
+  {
+   "rank": "#9",
+   "asin": "B0CKPFFMHL",
+   "title": "FUKUMARU Arena de Tofu para Gatos 10.8kg - Arena aglomerante para Gatos, Mezcla de pellets de maíz, Libre de Polvo y fácil de aglomerar, Con",
+   "stars": "4,3",
+   "reviews": "2.805"
+  },
+  {
+   "rank": "#9",
+   "asin": "B0CKPFFMHL",
+   "title": "FUKUMARU Arena de Tofu para Gatos 10.8kg - Arena aglomerante para Gatos, Mezcla de pellets de maíz, Libre de Polvo y fácil de aglomerar, Con",
+   "stars": "4,3",
+   "reviews": "2.805"
+  },
+  {
+   "rank": "#10",
+   "asin": "B01980UMF0",
+   "title": "MENFORSAN Champú Aloe Vera para Perros | Hidrata en profundidad | Acción Anti Irritaciones y Anti Eczemas | 100% Natural | Herbácea | 1L",
+   "stars": "4,6",
+   "reviews": "6.133",
+   "price": "5,49"
+  },
+  {
+   "rank": "#10",
+   "asin": "B01980UMF0",
+   "title": "MENFORSAN Champú Aloe Vera para Perros | Hidrata en profundidad | Acción Anti Irritaciones y Anti Eczemas | 100% Natural | Herbácea | 1L",
+   "stars": "4,6",
+   "reviews": "6.133",
+   "price": "5,49"
+  },
+  {
+   "rank": "#11",
+   "asin": "B08Y73NM8N",
+   "title": "Nature's Variety No Grain Pienso para Gatos Esterilizados con Pollo - 3kg",
+   "stars": "4,5",
+   "reviews": "2.658"
+  },
+  {
+   "rank": "#11",
+   "asin": "B08Y73NM8N",
+   "title": "Nature's Variety No Grain Pienso para Gatos Esterilizados con Pollo - 3kg",
+   "stars": "4,5",
+   "reviews": "2.658"
+  },
+  {
+   "rank": "#12",
+   "asin": "B07NHGX19F",
+   "title": "Earth Rated Toallitas hipoalergénicas para Perros, para Limpiar y Eliminar olores de Patas, Cuerpo y Trasero, Cachorros y Perros Adultos, Ar",
+   "stars": "4,7",
+   "reviews": "58.604",
+   "price": "6,02"
+  },
+  {
+   "rank": "#12",
+   "asin": "B07NHGX19F",
+   "title": "Earth Rated Toallitas hipoalergénicas para Perros, para Limpiar y Eliminar olores de Patas, Cuerpo y Trasero, Cachorros y Perros Adultos, Ar",
+   "stars": "4,7",
+   "reviews": "58.604",
+   "price": "6,02"
+  },
+  {
+   "rank": "#13",
+   "asin": "B017NJ2CMO",
+   "title": "Applaws, latas de Comida húmeda Natural para Gatos, selección variada en Caldo, 12 x 70 g",
+   "stars": "4,6",
+   "reviews": "4.785"
+  },
+  {
+   "rank": "#13",
+   "asin": "B017NJ2CMO",
+   "title": "Applaws, latas de Comida húmeda Natural para Gatos, selección variada en Caldo, 12 x 70 g",
+   "stars": "4,6",
+   "reviews": "4.785"
+  },
+  {
+   "rank": "#14",
+   "asin": "B08K3MCHTR",
+   "title": "Gourmet Gold Mousse Comida húmeda Gato 96x85 g",
+   "stars": "4,6",
+   "reviews": "1.782"
+  },
+  {
+   "rank": "#14",
+   "asin": "B08K3MCHTR",
+   "title": "Gourmet Gold Mousse Comida húmeda Gato 96x85 g",
+   "stars": "4,6",
+   "reviews": "1.782"
+  },
+  {
+   "rank": "#15",
+   "asin": "B0047VWPNI",
+   "title": "ProDen PlaqueOff Perros y Gatos en Polvo 60g, Limpieza Dental con 100% Alga Natural, Limpiador de Sarro Dental y de Placa, Elimina Eficazmen",
+   "stars": "4,4",
+   "reviews": "33.519"
+  },
+  {
+   "rank": "#15",
+   "asin": "B0047VWPNI",
+   "title": "ProDen PlaqueOff Perros y Gatos en Polvo 60g, Limpieza Dental con 100% Alga Natural, Limpiador de Sarro Dental y de Placa, Elimina Eficazmen",
+   "stars": "4,4",
+   "reviews": "33.519"
+  },
+  {
+   "rank": "#16",
+   "asin": "B007ZY4D0W",
+   "title": "Pedigree Dentastix Snack Dental para la Higiene Oral de Perros Medianos (1 Pack de 56ud)",
+   "stars": "4,7",
+   "reviews": "9.104"
+  },
+  {
+   "rank": "#16",
+   "asin": "B007ZY4D0W",
+   "title": "Pedigree Dentastix Snack Dental para la Higiene Oral de Perros Medianos (1 Pack de 56ud)",
+   "stars": "4,7",
+   "reviews": "9.104"
+  },
+  {
+   "rank": "#17",
+   "asin": "B003ZG7HR0",
+   "title": "Applaws Alimento Seco Natural sin Granos para Gatos Adultos, Sabor a Pollo - Bolsa Resellable de 2 kg (Verpackung kann variieren)",
+   "stars": "4,4",
+   "reviews": "2.224"
+  },
+  {
+   "rank": "#17",
+   "asin": "B003ZG7HR0",
+   "title": "Applaws Alimento Seco Natural sin Granos para Gatos Adultos, Sabor a Pollo - Bolsa Resellable de 2 kg (Verpackung kann variieren)",
+   "stars": "4,4",
+   "reviews": "2.224"
+  },
+  {
+   "rank": "#18",
+   "asin": "B071HPBSHV",
+   "title": "Amazon Basics Pañales Desechables para Perros Macho, S, Paquete de 30, Color Blanco",
+   "stars": "4,2",
+   "reviews": "37.235",
+   "price": "12,55"
+  },
+  {
+   "rank": "#18",
+   "asin": "B071HPBSHV",
+   "title": "Amazon Basics Pañales Desechables para Perros Macho, S, Paquete de 30, Color Blanco",
+   "stars": "4,2",
+   "reviews": "37.235",
+   "price": "12,55"
+  },
+  {
+   "rank": "#19",
+   "asin": "B005EFUKYM",
+   "title": "Vitakraft Liquid Snack, golosina gatos, salmón MSC, omega 3 (6x 15g) | snack cremoso gatos, sticks para lamer, bajo calorías, puro o topping",
+   "stars": "4,8",
+   "reviews": "4.478"
+  },
+  {
+   "rank": "#19",
+   "asin": "B005EFUKYM",
+   "title": "Vitakraft Liquid Snack, golosina gatos, salmón MSC, omega 3 (6x 15g) | snack cremoso gatos, sticks para lamer, bajo calorías, puro o topping",
+   "stars": "4,8",
+   "reviews": "4.478"
+  },
+  {
+   "rank": "#20",
+   "asin": "B0CTCFWBQC",
+   "title": "by Amazon Arena aglomerante ultrablanca para Gatos 10 L",
+   "stars": "4,2",
+   "reviews": "5.647",
+   "price": "6,44"
+  },
+  {
+   "rank": "#20",
+   "asin": "B0CTCFWBQC",
+   "title": "by Amazon Arena aglomerante ultrablanca para Gatos 10 L",
+   "stars": "4,2",
+   "reviews": "5.647",
+   "price": "6,44"
+  },
+  {
+   "rank": "#21",
+   "asin": "B07GFYV86Z",
+   "title": "by Amazon - Alimento seco Completo para Gatos Adultos con Pollo, Pavo y Verduras, 1 Pack de 3 kg",
+   "stars": "4,4",
+   "reviews": "7.990"
+  },
+  {
+   "rank": "#21",
+   "asin": "B07GFYV86Z",
+   "title": "by Amazon - Alimento seco Completo para Gatos Adultos con Pollo, Pavo y Verduras, 1 Pack de 3 kg",
+   "stars": "4,4",
+   "reviews": "7.990"
+  },
+  {
+   "rank": "#22",
+   "asin": "B08B3VCGCH",
+   "title": "Veddelholzer Condroprotector Perros con Mejillón Verde, Colágeno y MSM | glucosamina harpagófito ácido hialurónico articulaciones 125 cápsul",
+   "stars": "4,5",
+   "reviews": "9.891"
+  },
+  {
+   "rank": "#22",
+   "asin": "B08B3VCGCH",
+   "title": "Veddelholzer Condroprotector Perros con Mejillón Verde, Colágeno y MSM | glucosamina harpagófito ácido hialurónico articulaciones 125 cápsul",
+   "stars": "4,5",
+   "reviews": "9.891"
+  },
+  {
+   "rank": "#23",
+   "asin": "B0FRSRPNH3",
+   "title": "INABA Churu Snack para Gatos, Multipack Pollo y Atún, 80 x 14g | Snack Suave y Cremoso, Delicioso y Saludable, Sticks para Lamer, Complement",
+   "stars": "4,8",
+   "reviews": "279"
+  },
+  {
+   "rank": "#23",
+   "asin": "B0FRSRPNH3",
+   "title": "INABA Churu Snack para Gatos, Multipack Pollo y Atún, 80 x 14g | Snack Suave y Cremoso, Delicioso y Saludable, Sticks para Lamer, Complement",
+   "stars": "4,8",
+   "reviews": "279"
+  },
+  {
+   "rank": "#24",
+   "asin": "B0160VM4LU",
+   "title": "TRIXIE Wild Cat rascador para gatos con hierba gatera – 41 × 24 × 7 cm",
+   "stars": "4,5",
+   "reviews": "15.740",
+   "price": "5,65"
+  },
+  {
+   "rank": "#24",
+   "asin": "B0160VM4LU",
+   "title": "TRIXIE Wild Cat rascador para gatos con hierba gatera – 41 × 24 × 7 cm",
+   "stars": "4,5",
+   "reviews": "15.740",
+   "price": "5,65"
+  },
+  {
+   "rank": "#25",
+   "asin": "B004HYU79O",
+   "title": "Simple Solution Quitaolores y manchas para perros, 4 litros | Limpiador enzimático: orina, heces y vómito. Actúa en 15 min en desechos de pe",
+   "stars": "4,2",
+   "reviews": "11.206"
+  },
+  {
+   "rank": "#25",
+   "asin": "B004HYU79O",
+   "title": "Simple Solution Quitaolores y manchas para perros, 4 litros | Limpiador enzimático: orina, heces y vómito. Actúa en 15 min en desechos de pe",
+   "stars": "4,2",
+   "reviews": "11.206"
+  },
+  {
+   "rank": "#26",
+   "asin": "B01LN4D1AM",
+   "title": "Applaws Comida Húmeda para Gatos 100% Natural Multipack de Selección de Pescado en Caldo para Gatos Adultos - 12 Sobres de 70g",
+   "stars": "4,7",
+   "reviews": "1.823"
+  },
+  {
+   "rank": "#26",
+   "asin": "B01LN4D1AM",
+   "title": "Applaws Comida Húmeda para Gatos 100% Natural Multipack de Selección de Pescado en Caldo para Gatos Adultos - 12 Sobres de 70g",
+   "stars": "4,7",
+   "reviews": "1.823"
+  },
+  {
+   "rank": "#27",
+   "asin": "B007ZY4COE",
+   "title": "Pedigree DENTASTIX Perros Pequeños 56 Masticables con Pollo y Buey",
+   "stars": "4,6",
+   "reviews": "5.475"
+  },
+  {
+   "rank": "#27",
+   "asin": "B007ZY4COE",
+   "title": "Pedigree DENTASTIX Perros Pequeños 56 Masticables con Pollo y Buey",
+   "stars": "4,6",
+   "reviews": "5.475"
+  },
+  {
+   "rank": "#28",
+   "asin": "B07DVM75C4",
+   "title": "by Amazon - Alimento seco Completo para Perro Adulto Rico en Vacuno con Guisantes, 20kg, Paquete de 1",
+   "stars": "4,0",
+   "reviews": "4.262"
+  },
+  {
+   "rank": "#28",
+   "asin": "B07DVM75C4",
+   "title": "by Amazon - Alimento seco Completo para Perro Adulto Rico en Vacuno con Guisantes, 20kg, Paquete de 1",
+   "stars": "4,0",
+   "reviews": "4.262"
+  },
+  {
+   "rank": "#29",
+   "asin": "B0G5PM19RG",
+   "title": "Fuente para Gatos Acero Inoxidable: Bebedero Gatos Automatico - Fuente Gato | 2.2L Fuentes de Agua para Gato Silencioso - Dispensador Agua G",
+   "stars": "4,4",
+   "reviews": "20.697"
+  },
+  {
+   "rank": "#29",
+   "asin": "B0G5PM19RG",
+   "title": "Fuente para Gatos Acero Inoxidable: Bebedero Gatos Automatico - Fuente Gato | 2.2L Fuentes de Agua para Gato Silencioso - Dispensador Agua G",
+   "stars": "4,4",
+   "reviews": "20.697"
+  },
+  {
+   "rank": "#30",
+   "asin": "B08XTS5LH9",
+   "title": "Feandrea Árbol para Gatos, Altura 137,7 cm, Multinivel, 4 Postes Rascadores | Torre de Gatos, 2 Plataformas, 1 Cueva, 1 Hamaca, 2 Pompones, ",
+   "stars": "4,6",
+   "reviews": "25.766"
+  },
+  {
+   "rank": "#30",
+   "asin": "B08XTS5LH9",
+   "title": "Feandrea Árbol para Gatos, Altura 137,7 cm, Multinivel, 4 Postes Rascadores | Torre de Gatos, 2 Plataformas, 1 Cueva, 1 Hamaca, 2 Pompones, ",
+   "stars": "4,6",
+   "reviews": "25.766"
+  }
+ ],
+ "automotive": [
+  {
+   "rank": "#1",
+   "asin": "B0C813PVBZ",
+   "title": "Castrol EDGE 5W-30 LL Aceite de Motor Avanzado Sintético, 5L",
+   "stars": "4,8",
+   "reviews": "17.081"
+  },
+  {
+   "rank": "#1",
+   "asin": "B0C813PVBZ",
+   "title": "Castrol EDGE 5W-30 LL Aceite de Motor Avanzado Sintético, 5L",
+   "stars": "4,8",
+   "reviews": "17.081"
+  },
+  {
+   "rank": "#2",
+   "asin": "B0FXMTMGS8",
+   "title": "Baliza V16 Homologada DGT con Geolocalización | Luz de Emergencia Coche LED 360° 1km | Conectada Plataforma DGT 3.0 | Resistente a la Lluvia",
+   "stars": "4,3",
+   "reviews": "797"
+  },
+  {
+   "rank": "#2",
+   "asin": "B0FXMTMGS8",
+   "title": "Baliza V16 Homologada DGT con Geolocalización | Luz de Emergencia Coche LED 360° 1km | Conectada Plataforma DGT 3.0 | Resistente a la Lluvia",
+   "stars": "4,3",
+   "reviews": "797"
+  },
+  {
+   "rank": "#3",
+   "asin": "B07X9ZTM79",
+   "title": "Maddox Detail - Pulimento Coche Arañazos Profundos Premium Polish 500ml | Pulimento de alto poder para eliminar arañazos profundos, oxidació",
+   "stars": "4,3",
+   "reviews": "28.998"
+  },
+  {
+   "rank": "#3",
+   "asin": "B07X9ZTM79",
+   "title": "Maddox Detail - Pulimento Coche Arañazos Profundos Premium Polish 500ml | Pulimento de alto poder para eliminar arañazos profundos, oxidació",
+   "stars": "4,3",
+   "reviews": "28.998"
+  },
+  {
+   "rank": "#4",
+   "asin": "B074Z67CCJ",
+   "title": "COFIT Guantes de Moto, Pantalla Táctil en los Dedos, Guantes de Moto de Carreras, para Bicicleta ATV BMX MTB, Escalada, Motocross y Otros De",
+   "stars": "4,4",
+   "reviews": "62.808"
+  },
+  {
+   "rank": "#4",
+   "asin": "B074Z67CCJ",
+   "title": "COFIT Guantes de Moto, Pantalla Táctil en los Dedos, Guantes de Moto de Carreras, para Bicicleta ATV BMX MTB, Escalada, Motocross y Otros De",
+   "stars": "4,4",
+   "reviews": "62.808"
+  },
+  {
+   "rank": "#5",
+   "asin": "B0FH6VVHBL",
+   "title": "HIBRON ZTE Luz Emergencia Baliza V16 Homologada DGT con Geolocalización, Baliza Coche Conectada DGT 3.0, Datos Incluidos hasta 10/2040",
+   "stars": "4,5",
+   "reviews": "2.150"
+  },
+  {
+   "rank": "#5",
+   "asin": "B0FH6VVHBL",
+   "title": "HIBRON ZTE Luz Emergencia Baliza V16 Homologada DGT con Geolocalización, Baliza Coche Conectada DGT 3.0, Datos Incluidos hasta 10/2040",
+   "stars": "4,5",
+   "reviews": "2.150"
+  },
+  {
+   "rank": "#6",
+   "asin": "B0DGH2GWDK",
+   "title": "HOVVIDA Compresor Aire Portatil, Inflador Ruedas Coche 150 PSI (10,3 Bar), Compresor Aire Coche Bicicleta, Batería Recargable, con LED, para",
+   "stars": "4,4",
+   "reviews": "4.185",
+   "price": "23,26"
+  },
+  {
+   "rank": "#6",
+   "asin": "B0DGH2GWDK",
+   "title": "HOVVIDA Compresor Aire Portatil, Inflador Ruedas Coche 150 PSI (10,3 Bar), Compresor Aire Coche Bicicleta, Batería Recargable, con LED, para",
+   "stars": "4,4",
+   "reviews": "4.185",
+   "price": "23,26"
+  },
+  {
+   "rank": "#7",
+   "asin": "B0FHBDDBNT",
+   "title": "help flash IoT+, Luz de Emergencia V16 con Geolocalización y más de 290 candelas de potencia, Exigible a partir de 2026, Conectada con DGT 3",
+   "stars": "4,5",
+   "reviews": "4.471"
+  },
+  {
+   "rank": "#7",
+   "asin": "B0FHBDDBNT",
+   "title": "help flash IoT+, Luz de Emergencia V16 con Geolocalización y más de 290 candelas de potencia, Exigible a partir de 2026, Conectada con DGT 3",
+   "stars": "4,5",
+   "reviews": "4.471"
+  },
+  {
+   "rank": "#8",
+   "asin": "B0F54G7T8F",
+   "title": "Goodyear Aditivo Limpiador Motor Diésel 5 en 1 Profesional 300ml | Limpiador Completo de Inyectores, Turbo, DPF, Válvula EGR y Admisión | Me",
+   "stars": "4,5",
+   "reviews": "1.077"
+  },
+  {
+   "rank": "#8",
+   "asin": "B0F54G7T8F",
+   "title": "Goodyear Aditivo Limpiador Motor Diésel 5 en 1 Profesional 300ml | Limpiador Completo de Inyectores, Turbo, DPF, Válvula EGR y Admisión | Me",
+   "stars": "4,5",
+   "reviews": "1.077"
+  },
+  {
+   "rank": "#9",
+   "asin": "B0D845VTG7",
+   "title": "OSRAM COOL BLUE INTENSE H7, +100% más de brillo, hasta 5.000K, lámpara de faro halógena, aspecto LED, caja plegable colgante (2 lámparas)",
+   "stars": "4,2",
+   "reviews": "3.293",
+   "price": "13,03"
+  },
+  {
+   "rank": "#9",
+   "asin": "B0D845VTG7",
+   "title": "OSRAM COOL BLUE INTENSE H7, +100% más de brillo, hasta 5.000K, lámpara de faro halógena, aspecto LED, caja plegable colgante (2 lámparas)",
+   "stars": "4,2",
+   "reviews": "3.293",
+   "price": "13,03"
+  },
+  {
+   "rank": "#10",
+   "asin": "B0CGDN6WCY",
+   "title": "Maizjok® Funda Moto Impermeable, Cubierta Moto Exterior Interior 210D | XL Poliéster, Protección Lluvia Polvo UV, para Moto Deportiva, Naked",
+   "stars": "4,6",
+   "reviews": "27.895"
+  },
+  {
+   "rank": "#10",
+   "asin": "B0CGDN6WCY",
+   "title": "Maizjok® Funda Moto Impermeable, Cubierta Moto Exterior Interior 210D | XL Poliéster, Protección Lluvia Polvo UV, para Moto Deportiva, Naked",
+   "stars": "4,6",
+   "reviews": "27.895"
+  },
+  {
+   "rank": "#11",
+   "asin": "B0D1TYLP8W",
+   "title": "Rain-X Líquido Limpiaparabrisas Coche Anti Mosquitos - Repele la Lluvia -5L | Tecnología Hidrofóbica - Mejora la Visibilidad",
+   "stars": "4,6",
+   "reviews": "2.649"
+  },
+  {
+   "rank": "#11",
+   "asin": "B0D1TYLP8W",
+   "title": "Rain-X Líquido Limpiaparabrisas Coche Anti Mosquitos - Repele la Lluvia -5L | Tecnología Hidrofóbica - Mejora la Visibilidad",
+   "stars": "4,6",
+   "reviews": "2.649"
+  },
+  {
+   "rank": "#12",
+   "asin": "B002B552T6",
+   "title": "Bosch H7 Pure Light, Lampadina Alogena para Faro Delantero, 12 V 55 W, Calidad Original - Casquillo Tipo PX26d - Recambio de Luz para Coche,",
+   "stars": "4,6",
+   "reviews": "10.361",
+   "price": "3,13"
+  },
+  {
+   "rank": "#12",
+   "asin": "B002B552T6",
+   "title": "Bosch H7 Pure Light, Lampadina Alogena para Faro Delantero, 12 V 55 W, Calidad Original - Casquillo Tipo PX26d - Recambio de Luz para Coche,",
+   "stars": "4,6",
+   "reviews": "10.361",
+   "price": "3,13"
+  },
+  {
+   "rank": "#13",
+   "asin": "B0BRVKP8H8",
+   "title": "WESTWOOD FOX WFX - Guantes de Motocicleta para Hombres y Mujeres con Nudillos Duros, Dedos completos, Pantalla táctil, Guantes de Motociclet",
+   "stars": "4,3",
+   "reviews": "4.514"
+  },
+  {
+   "rank": "#13",
+   "asin": "B0BRVKP8H8",
+   "title": "WESTWOOD FOX WFX - Guantes de Motocicleta para Hombres y Mujeres con Nudillos Duros, Dedos completos, Pantalla táctil, Guantes de Motociclet",
+   "stars": "4,3",
+   "reviews": "4.514"
+  },
+  {
+   "rank": "#14",
+   "asin": "B0D8465KLP",
+   "title": "OSRAM ORIGINAL LINE 12V, P21W, lámpara de señalización, Base Metálica, Doble Blíster, (2 lámparas)",
+   "stars": "4,7",
+   "reviews": "695",
+   "price": "1,64"
+  },
+  {
+   "rank": "#14",
+   "asin": "B0D8465KLP",
+   "title": "OSRAM ORIGINAL LINE 12V, P21W, lámpara de señalización, Base Metálica, Doble Blíster, (2 lámparas)",
+   "stars": "4,7",
+   "reviews": "695",
+   "price": "1,64"
+  },
+  {
+   "rank": "#15",
+   "asin": "B095LTWT1Y",
+   "title": "BRPOM Arrancador de Coches, 10000A Arrancador de Baterias de Coche 12V | (para 10.0L de Gasolina o 8.0L de Diésel), Jump Starter con Carga R",
+   "stars": "4,5",
+   "reviews": "1.613"
+  },
+  {
+   "rank": "#15",
+   "asin": "B095LTWT1Y",
+   "title": "BRPOM Arrancador de Coches, 10000A Arrancador de Baterias de Coche 12V | (para 10.0L de Gasolina o 8.0L de Diésel), Jump Starter con Carga R",
+   "stars": "4,5",
+   "reviews": "1.613"
+  },
+  {
+   "rank": "#16",
+   "asin": "B0HLWNXXZL",
+   "title": "Armor All Podium Series™ Hanging Car Air Freshener – Logo, Fragancia Victory Lap™, Eliminador de Olores para Coche, Hasta 40 Días de Frescur",
+   "stars": "3,6",
+   "reviews": "25",
+   "price": "2,00"
+  },
+  {
+   "rank": "#16",
+   "asin": "B0HLWNXXZL",
+   "title": "Armor All Podium Series™ Hanging Car Air Freshener – Logo, Fragancia Victory Lap™, Eliminador de Olores para Coche, Hasta 40 Días de Frescur",
+   "stars": "3,6",
+   "reviews": "25",
+   "price": "2,00"
+  },
+  {
+   "rank": "#17",
+   "asin": "B091D7KR52",
+   "title": "krafft Anticongelante Coche Rosa G12++ con Tecnología Híbrida - 5L",
+   "stars": "4,7",
+   "reviews": "594"
+  },
+  {
+   "rank": "#17",
+   "asin": "B091D7KR52",
+   "title": "krafft Anticongelante Coche Rosa G12++ con Tecnología Híbrida - 5L",
+   "stars": "4,7",
+   "reviews": "594"
+  },
+  {
+   "rank": "#18",
+   "asin": "B0HHJM5PB8",
+   "title": "DRIVON Chaleco Reflectante Moto Homologado DGT, Talla Unica Ajustable | Chaleco Reflectante Coche y Chaleco Amarillo Reflectante Alta Visibi",
+   "stars": "4,6",
+   "reviews": "427"
+  },
+  {
+   "rank": "#18",
+   "asin": "B0HHJM5PB8",
+   "title": "DRIVON Chaleco Reflectante Moto Homologado DGT, Talla Unica Ajustable | Chaleco Reflectante Coche y Chaleco Amarillo Reflectante Alta Visibi",
+   "stars": "4,6",
+   "reviews": "427"
+  },
+  {
+   "rank": "#19",
+   "asin": "B0FGNYCR2M",
+   "title": "Autreykorn Toalla Secado Coche XXL 90x60 cm 700GSM Microfibra Ultra Absorbente, Secado Rápido Sin Rayas Coches, Motos, Barcos y Detallado de",
+   "stars": "4,6",
+   "reviews": "960"
+  },
+  {
+   "rank": "#19",
+   "asin": "B0FGNYCR2M",
+   "title": "Autreykorn Toalla Secado Coche XXL 90x60 cm 700GSM Microfibra Ultra Absorbente, Secado Rápido Sin Rayas Coches, Motos, Barcos y Detallado de",
+   "stars": "4,6",
+   "reviews": "960"
+  },
+  {
+   "rank": "#20",
+   "asin": "B00XAPSQ9E",
+   "title": "Wynn's - Aditivo Diésel ITV - Limpia Inyectores y Reductor Humos - 2x325 ml | Kit pre ITV Diésel",
+   "stars": "4,6",
+   "reviews": "1.205"
+  },
+  {
+   "rank": "#20",
+   "asin": "B00XAPSQ9E",
+   "title": "Wynn's - Aditivo Diésel ITV - Limpia Inyectores y Reductor Humos - 2x325 ml | Kit pre ITV Diésel",
+   "stars": "4,6",
+   "reviews": "1.205"
+  },
+  {
+   "rank": "#21",
+   "asin": "B01N33VWJL",
+   "title": "Rain-X Limpiaparabrisas Coche y Ventanas - Repele Lluvia y Agua -500ml | Apto para Parabrisas, Ventanillas, Retrovisor Coche, Manpara Ducha,",
+   "stars": "4,4",
+   "reviews": "1.940"
+  },
+  {
+   "rank": "#21",
+   "asin": "B01N33VWJL",
+   "title": "Rain-X Limpiaparabrisas Coche y Ventanas - Repele Lluvia y Agua -500ml | Apto para Parabrisas, Ventanillas, Retrovisor Coche, Manpara Ducha,",
+   "stars": "4,4",
+   "reviews": "1.940"
+  },
+  {
+   "rank": "#22",
+   "asin": "B0G5P4LK9G",
+   "title": "R3Di Baliza V16 Homologada DGT 3.0, Conectada hasta 2038, Uso obligatorio en España desde 2026, GPS + IoT incluidos 12 años, Luz LED 360° de",
+   "stars": "4,6",
+   "reviews": "512"
+  },
+  {
+   "rank": "#22",
+   "asin": "B0G5P4LK9G",
+   "title": "R3Di Baliza V16 Homologada DGT 3.0, Conectada hasta 2038, Uso obligatorio en España desde 2026, GPS + IoT incluidos 12 años, Luz LED 360° de",
+   "stars": "4,6",
+   "reviews": "512"
+  },
+  {
+   "rank": "#23",
+   "asin": "B073JCMTW2",
+   "title": "Amazon Basics Cortador de cinturón de Seguridad y Martillo rompecristales de Emergencia, Paquete de 2",
+   "stars": "4,6",
+   "reviews": "36.323",
+   "price": "6,17"
+  },
+  {
+   "rank": "#23",
+   "asin": "B073JCMTW2",
+   "title": "Amazon Basics Cortador de cinturón de Seguridad y Martillo rompecristales de Emergencia, Paquete de 2",
+   "stars": "4,6",
+   "reviews": "36.323",
+   "price": "6,17"
+  },
+  {
+   "rank": "#24",
+   "asin": "B00FZWPO5Y",
+   "title": "Bosch Aerotwin A 863 S Limpiaparabrisas Frontal, 650 mm / 450 mm | Set de Escobillas de Recambio para una Mayor Seguridad en la Conducción -",
+   "stars": "4,7",
+   "reviews": "25.407",
+   "price": "15,06"
+  },
+  {
+   "rank": "#24",
+   "asin": "B00FZWPO5Y",
+   "title": "Bosch Aerotwin A 863 S Limpiaparabrisas Frontal, 650 mm / 450 mm | Set de Escobillas de Recambio para una Mayor Seguridad en la Conducción -",
+   "stars": "4,7",
+   "reviews": "25.407",
+   "price": "15,06"
+  },
+  {
+   "rank": "#25",
+   "asin": "B0D4QSM4CL",
+   "title": "OSRAM NIGHT BREAKER 220, H7, 220% más brillo, lámpara de faro halógeno, 64210NB220-2HB, Caja plegable (2 lámparas)",
+   "stars": "4,3",
+   "reviews": "6.362",
+   "price": "23,05"
+  },
+  {
+   "rank": "#25",
+   "asin": "B0D4QSM4CL",
+   "title": "OSRAM NIGHT BREAKER 220, H7, 220% más brillo, lámpara de faro halógeno, 64210NB220-2HB, Caja plegable (2 lámparas)",
+   "stars": "4,3",
+   "reviews": "6.362",
+   "price": "23,05"
+  },
+  {
+   "rank": "#26",
+   "asin": "B0025272PW",
+   "title": "MANN-FILTER, HU 719/7 x Filtro de aceite",
+   "stars": "4,7",
+   "reviews": "10.097"
+  },
+  {
+   "rank": "#26",
+   "asin": "B0025272PW",
+   "title": "MANN-FILTER, HU 719/7 x Filtro de aceite",
+   "stars": "4,7",
+   "reviews": "10.097"
+  },
+  {
+   "rank": "#27",
+   "asin": "B0BZ27SV9Z",
+   "title": "Allstric® Obd2 Diagnosis Coche Multimarca. ELM 327 Lector y Herramienta de Análisis y Diagnostico. Obd2 Bluetooth OBD Original para Escaner.",
+   "stars": "4,1",
+   "reviews": "2.922"
+  },
+  {
+   "rank": "#27",
+   "asin": "B0BZ27SV9Z",
+   "title": "Allstric® Obd2 Diagnosis Coche Multimarca. ELM 327 Lector y Herramienta de Análisis y Diagnostico. Obd2 Bluetooth OBD Original para Escaner.",
+   "stars": "4,1",
+   "reviews": "2.922"
+  },
+  {
+   "rank": "#28",
+   "asin": "B0C813TSXN",
+   "title": "Castrol POWER1 2T Aceite de moto, 1L",
+   "stars": "4,7",
+   "reviews": "1.325"
+  },
+  {
+   "rank": "#28",
+   "asin": "B0C813TSXN",
+   "title": "Castrol POWER1 2T Aceite de moto, 1L",
+   "stars": "4,7",
+   "reviews": "1.325"
+  },
+  {
+   "rank": "#29",
+   "asin": "B00BXM7ALG",
+   "title": "Wynn’s Limpia Inyectores Diésel – Motores Diésel Hasta B30 –325ml | Reduce Consumo de Combustible – Mejora Rendimiento del Motor – Fácil Apl",
+   "stars": "4,6",
+   "reviews": "1.834"
+  },
+  {
+   "rank": "#29",
+   "asin": "B00BXM7ALG",
+   "title": "Wynn’s Limpia Inyectores Diésel – Motores Diésel Hasta B30 –325ml | Reduce Consumo de Combustible – Mejora Rendimiento del Motor – Fácil Apl",
+   "stars": "4,6",
+   "reviews": "1.834"
+  },
+  {
+   "rank": "#30",
+   "asin": "B0CGRH73TS",
+   "title": "Wynn's Anticristalizante AdBlue – Protege el Sistema SCR – 125 ml | Motores Diésel",
+   "stars": "4,6",
+   "reviews": "1.121"
+  },
+  {
+   "rank": "#30",
+   "asin": "B0CGRH73TS",
+   "title": "Wynn's Anticristalizante AdBlue – Protege el Sistema SCR – 125 ml | Motores Diésel",
+   "stars": "4,6",
+   "reviews": "1.121"
+  }
+ ],
+ "electronics": [
+  {
+   "rank": "#1",
+   "asin": "B0DJGCX6Q2",
+   "title": "Amazon Fire TV Stick HD (última generación), con TV en directo gratuita, mando por voz Alexa, alimentación directa desde tu TV y configuraci",
+   "stars": "4,2",
+   "reviews": "7.454"
+  },
+  {
+   "rank": "#1",
+   "asin": "B0DJGCX6Q2",
+   "title": "Amazon Fire TV Stick HD (última generación), con TV en directo gratuita, mando por voz Alexa, alimentación directa desde tu TV y configuraci",
+   "stars": "4,2",
+   "reviews": "7.454"
+  },
+  {
+   "rank": "#2",
+   "asin": "B00NTCH52W",
+   "title": "Amazon Basics - Paquete de 20 pilas alcalinas AA de alto rendimiento, 1,5 voltios, vida útil de 10 años",
+   "stars": "4,6",
+   "reviews": "292.554",
+   "price": "6,55"
+  },
+  {
+   "rank": "#2",
+   "asin": "B00NTCH52W",
+   "title": "Amazon Basics - Paquete de 20 pilas alcalinas AA de alto rendimiento, 1,5 voltios, vida útil de 10 años",
+   "stars": "4,6",
+   "reviews": "292.554",
+   "price": "6,55"
+  },
+  {
+   "rank": "#3",
+   "asin": "B0F7ZFWVTC",
+   "title": "Amazon Fire TV Stick 4K Plus, compatible con Wi-Fi 6, Dolby Vision, Dolby Atmos y HDR10+, encuentra series más rápido con Alexa+",
+   "stars": "4,6",
+   "reviews": "41.620"
+  },
+  {
+   "rank": "#3",
+   "asin": "B0F7ZFWVTC",
+   "title": "Amazon Fire TV Stick 4K Plus, compatible con Wi-Fi 6, Dolby Vision, Dolby Atmos y HDR10+, encuentra series más rápido con Alexa+",
+   "stars": "4,6",
+   "reviews": "41.620"
+  },
+  {
+   "rank": "#4",
+   "asin": "B09B8X9RGM",
+   "title": "Echo Dot (modelo de 2022) | Altavoz inteligente wifi y Bluetooth, con sonido más potente y de mayor amplitud | Antracita, con Acceso Anticip",
+   "stars": "4,7",
+   "reviews": "196.352"
+  },
+  {
+   "rank": "#4",
+   "asin": "B09B8X9RGM",
+   "title": "Echo Dot (modelo de 2022) | Altavoz inteligente wifi y Bluetooth, con sonido más potente y de mayor amplitud | Antracita, con Acceso Anticip",
+   "stars": "4,7",
+   "reviews": "196.352"
+  },
+  {
+   "rank": "#5",
+   "asin": "B06VW5BH2K",
+   "title": "DURACELL 2032 Pilas de Botón de Litio (Paquete de 8) 3V, CR2032 | Hasta un 70 % extra duración - Baby Secure - Para Apple AirTag, llaves rem",
+   "stars": "4,7",
+   "reviews": "139.773"
+  },
+  {
+   "rank": "#5",
+   "asin": "B06VW5BH2K",
+   "title": "DURACELL 2032 Pilas de Botón de Litio (Paquete de 8) 3V, CR2032 | Hasta un 70 % extra duración - Baby Secure - Para Apple AirTag, llaves rem",
+   "stars": "4,7",
+   "reviews": "139.773"
+  },
+  {
+   "rank": "#6",
+   "asin": "B0H44KWKRS",
+   "title": "XIAOMI TV 32 Pulgadas (81 cm) 2026, HD Smart TV, Fire OS14, L32MB-FAVEU | Alexa Voice Control, Dolby Audio, DTS Virtual:X, DTS-HD, Compatibl",
+   "stars": "4,3",
+   "reviews": "5.096",
+   "price": "98,35"
+  },
+  {
+   "rank": "#6",
+   "asin": "B0H44KWKRS",
+   "title": "XIAOMI TV 32 Pulgadas (81 cm) 2026, HD Smart TV, Fire OS14, L32MB-FAVEU | Alexa Voice Control, Dolby Audio, DTS Virtual:X, DTS-HD, Compatibl",
+   "stars": "4,3",
+   "reviews": "5.096",
+   "price": "98,35"
+  },
+  {
+   "rank": "#7",
+   "asin": "B07MLDJF3B",
+   "title": "Amazon Basics - Paquete de 40 pilas industriales alcalinas AAA, 1,5 voltios, vida útil de 5 años",
+   "stars": "4,6",
+   "reviews": "65.608",
+   "price": "7,11"
+  },
+  {
+   "rank": "#7",
+   "asin": "B07MLDJF3B",
+   "title": "Amazon Basics - Paquete de 40 pilas industriales alcalinas AAA, 1,5 voltios, vida útil de 5 años",
+   "stars": "4,6",
+   "reviews": "65.608",
+   "price": "7,11"
+  },
+  {
+   "rank": "#8",
+   "asin": "B095CLQ1PT",
+   "title": "Tapo C210 - Cámara de Vigilancia WiFi Interior 360º, 2K 3MP, Detección IA | Detección Movimiento, Personas y Llanto de Bebé. Visión Nocturna",
+   "stars": "4,7",
+   "reviews": "54.722",
+   "price": "19,00"
+  },
+  {
+   "rank": "#8",
+   "asin": "B095CLQ1PT",
+   "title": "Tapo C210 - Cámara de Vigilancia WiFi Interior 360º, 2K 3MP, Detección IA | Detección Movimiento, Personas y Llanto de Bebé. Visión Nocturna",
+   "stars": "4,7",
+   "reviews": "54.722",
+   "price": "19,00"
+  },
+  {
+   "rank": "#9",
+   "asin": "B0CN41GMDK",
+   "title": "Amazon Fire TV Stick 4K Select: comienza a reproducir contenido 4K en streaming, ve cientos de miles de películas y episodios de series, enc",
+   "stars": "4,2",
+   "reviews": "14.218"
+  },
+  {
+   "rank": "#9",
+   "asin": "B0CN41GMDK",
+   "title": "Amazon Fire TV Stick 4K Select: comienza a reproducir contenido 4K en streaming, ve cientos de miles de películas y episodios de series, enc",
+   "stars": "4,2",
+   "reviews": "14.218"
+  },
+  {
+   "rank": "#10",
+   "asin": "B07RXJ4S7Z",
+   "title": "Amazon Basics - Paquete de 10 pilas de litio de botón CR2032, 3 voltios, larga duración, sin mercurio",
+   "stars": "4,7",
+   "reviews": "47.862"
+  },
+  {
+   "rank": "#10",
+   "asin": "B07RXJ4S7Z",
+   "title": "Amazon Basics - Paquete de 10 pilas de litio de botón CR2032, 3 voltios, larga duración, sin mercurio",
+   "stars": "4,7",
+   "reviews": "47.862"
+  },
+  {
+   "rank": "#11",
+   "asin": "B0H4H89QXV",
+   "title": "REDMI Note 17 Pro 5G, Smartphone 8+512GB, Negro, batería de 8340mAh | Cámara OIS de 50 MP, carga de 67 W, Snapdragon® 6s Gen 4, pantalla fla",
+   "stars": "4,4",
+   "reviews": "407",
+   "price": "289,17"
+  },
+  {
+   "rank": "#11",
+   "asin": "B0H4H89QXV",
+   "title": "REDMI Note 17 Pro 5G, Smartphone 8+512GB, Negro, batería de 8340mAh | Cámara OIS de 50 MP, carga de 67 W, Snapdragon® 6s Gen 4, pantalla fla",
+   "stars": "4,4",
+   "reviews": "407",
+   "price": "289,17"
+  },
+  {
+   "rank": "#12",
+   "asin": "B0DKLFHZDH",
+   "title": "Amazon Echo Dot Max (última generación): altavoz con sonido envolvente y controlador de Hogar digital integrado, Grafito, con Acceso Anticip",
+   "stars": "4,4",
+   "reviews": "4.151"
+  },
+  {
+   "rank": "#12",
+   "asin": "B0DKLFHZDH",
+   "title": "Amazon Echo Dot Max (última generación): altavoz con sonido envolvente y controlador de Hogar digital integrado, Grafito, con Acceso Anticip",
+   "stars": "4,4",
+   "reviews": "4.151"
+  },
+  {
+   "rank": "#13",
+   "asin": "B0GVJDZYVN",
+   "title": "Xiaomi POCO C81 Pro Smartphone 4+256 GB Negro Batería de 6000 mAh | Pantalla inmersiva de 6,9\", Teléfono con diseño elegante y refinado, Cám",
+   "stars": "3,8",
+   "reviews": "423",
+   "price": "96,94"
+  },
+  {
+   "rank": "#13",
+   "asin": "B0GVJDZYVN",
+   "title": "Xiaomi POCO C81 Pro Smartphone 4+256 GB Negro Batería de 6000 mAh | Pantalla inmersiva de 6,9\", Teléfono con diseño elegante y refinado, Cám",
+   "stars": "3,8",
+   "reviews": "423",
+   "price": "96,94"
+  },
+  {
+   "rank": "#14",
+   "asin": "B0CW4HD359",
+   "title": "Amazon Fire TV Stick 4K Max (Última generación), Dispositivo de streaming compatible con Wi-Fi 6E y fondo ambiental, encuentra series más rá",
+   "stars": "4,6",
+   "reviews": "26.941"
+  },
+  {
+   "rank": "#14",
+   "asin": "B0CW4HD359",
+   "title": "Amazon Fire TV Stick 4K Max (Última generación), Dispositivo de streaming compatible con Wi-Fi 6E y fondo ambiental, encuentra series más rá",
+   "stars": "4,6",
+   "reviews": "26.941"
+  },
+  {
+   "rank": "#15",
+   "asin": "B0DTQF1MQT",
+   "title": "Amazon Echo Show 8 (última generación): pantalla HD de 8,7\" con audio espacial (gris grafito), con Acceso Anticipado a Alexa+",
+   "stars": "4,2",
+   "reviews": "4.397"
+  },
+  {
+   "rank": "#15",
+   "asin": "B0DTQF1MQT",
+   "title": "Amazon Echo Show 8 (última generación): pantalla HD de 8,7\" con audio espacial (gris grafito), con Acceso Anticipado a Alexa+",
+   "stars": "4,2",
+   "reviews": "4.397"
+  },
+  {
+   "rank": "#16",
+   "asin": "B0C2S2J7JP",
+   "title": "Amazon Echo Spot (última generación) | Despertador inteligente con sonido de calidad| Negro, con Acceso Anticipado a Alexa+",
+   "stars": "4,6",
+   "reviews": "23.560"
+  },
+  {
+   "rank": "#16",
+   "asin": "B0C2S2J7JP",
+   "title": "Amazon Echo Spot (última generación) | Despertador inteligente con sonido de calidad| Negro, con Acceso Anticipado a Alexa+",
+   "stars": "4,6",
+   "reviews": "23.560"
+  },
+  {
+   "rank": "#17",
+   "asin": "B093C9B1HK",
+   "title": "DURACELL Plus AA Pilas Alcalinas (Paquete de 24) 1.5V, LR06 | Hasta un 150% de extra duración con POWER BOOST ACTIVES – Mandos para videojue",
+   "stars": "4,6",
+   "reviews": "42.562",
+   "price": "14,87"
+  },
+  {
+   "rank": "#17",
+   "asin": "B093C9B1HK",
+   "title": "DURACELL Plus AA Pilas Alcalinas (Paquete de 24) 1.5V, LR06 | Hasta un 150% de extra duración con POWER BOOST ACTIVES – Mandos para videojue",
+   "stars": "4,6",
+   "reviews": "42.562",
+   "price": "14,87"
+  },
+  {
+   "rank": "#18",
+   "asin": "B07NXG4NV9",
+   "title": "Amazon Basics paquete de 24 pilas AAA NiMH recargables, 800 mAh, 1,2 V, se recargan hasta 1000 veces, precargadas",
+   "stars": "4,5",
+   "reviews": "225.471",
+   "price": "10,35"
+  },
+  {
+   "rank": "#18",
+   "asin": "B07NXG4NV9",
+   "title": "Amazon Basics paquete de 24 pilas AAA NiMH recargables, 800 mAh, 1,2 V, se recargan hasta 1000 veces, precargadas",
+   "stars": "4,5",
+   "reviews": "225.471",
+   "price": "10,35"
+  },
+  {
+   "rank": "#19",
+   "asin": "B0CKGQ5913",
+   "title": "Ring Intercom Audio | Haz que tu interfono sea más inteligente, Transmisión de audio, llaves virtuales y acceso a distancia, Fácil instalaci",
+   "stars": "4,1",
+   "reviews": "14.200"
+  },
+  {
+   "rank": "#19",
+   "asin": "B0CKGQ5913",
+   "title": "Ring Intercom Audio | Haz que tu interfono sea más inteligente, Transmisión de audio, llaves virtuales y acceso a distancia, Fácil instalaci",
+   "stars": "4,1",
+   "reviews": "14.200"
+  },
+  {
+   "rank": "#20",
+   "asin": "B0H7BF91XG",
+   "title": "XIAOMI TV Pro 32 Pulgadas 2026, QLED Smart TV, Fire OS14, L32MB-FPVEU | Alexa Voice Control, Dolby Audio™, DTS Virtual:X, DTS-HD, Compatible",
+   "stars": "4,2",
+   "reviews": "2.686",
+   "price": "106,61"
+  },
+  {
+   "rank": "#20",
+   "asin": "B0H7BF91XG",
+   "title": "XIAOMI TV Pro 32 Pulgadas 2026, QLED Smart TV, Fire OS14, L32MB-FPVEU | Alexa Voice Control, Dolby Audio™, DTS Virtual:X, DTS-HD, Compatible",
+   "stars": "4,2",
+   "reviews": "2.686",
+   "price": "106,61"
+  },
+  {
+   "rank": "#21",
+   "asin": "B0H6WPFMTN",
+   "title": "XIAOMI Redmi Watch 6 Active, Seguimiento fitness, 18 días de batería, Plata | Reloj inteligente para hombre y mujer, AMOLED 1,85\", 9,9 mm, l",
+   "stars": "4,5",
+   "reviews": "625"
+  },
+  {
+   "rank": "#21",
+   "asin": "B0H6WPFMTN",
+   "title": "XIAOMI Redmi Watch 6 Active, Seguimiento fitness, 18 días de batería, Plata | Reloj inteligente para hombre y mujer, AMOLED 1,85\", 9,9 mm, l",
+   "stars": "4,5",
+   "reviews": "625"
+  },
+  {
+   "rank": "#22",
+   "asin": "B09B2S8WKD",
+   "title": "Echo Show 5 (Última generación) | Pantalla táctil inteligente diseñada para controlar tus dispositivos de Hogar digital y más | Antracita, c",
+   "stars": "4,2",
+   "reviews": "26.601"
+  },
+  {
+   "rank": "#22",
+   "asin": "B09B2S8WKD",
+   "title": "Echo Show 5 (Última generación) | Pantalla táctil inteligente diseñada para controlar tus dispositivos de Hogar digital y más | Antracita, c",
+   "stars": "4,2",
+   "reviews": "26.601"
+  },
+  {
+   "rank": "#23",
+   "asin": "B093CBBKG8",
+   "title": "DURACELL Optimum AA Pilas Alcalinas (Paquete de 12) 1.5V, LR06 | 200% más POWER BOOST ACTIVES – Para dispositivos de alto drenaje – Sistemas",
+   "stars": "4,8",
+   "reviews": "20.371",
+   "price": "8,26"
+  },
+  {
+   "rank": "#23",
+   "asin": "B093CBBKG8",
+   "title": "DURACELL Optimum AA Pilas Alcalinas (Paquete de 12) 1.5V, LR06 | 200% más POWER BOOST ACTIVES – Para dispositivos de alto drenaje – Sistemas",
+   "stars": "4,8",
+   "reviews": "20.371",
+   "price": "8,26"
+  },
+  {
+   "rank": "#24",
+   "asin": "B07XLML2YS",
+   "title": "Tapo C200 - Cámara de Vigilancia WiFi Interior 360º, 1080p, Detección IA | Detección Movimiento, Personas y Llanto de Bebé. Visión Nocturna.",
+   "stars": "4,6",
+   "reviews": "158.931",
+   "price": "16,52"
+  },
+  {
+   "rank": "#24",
+   "asin": "B07XLML2YS",
+   "title": "Tapo C200 - Cámara de Vigilancia WiFi Interior 360º, 1080p, Detección IA | Detección Movimiento, Personas y Llanto de Bebé. Visión Nocturna.",
+   "stars": "4,6",
+   "reviews": "158.931",
+   "price": "16,52"
+  },
+  {
+   "rank": "#25",
+   "asin": "B0CG19QXWD",
+   "title": "DJI Osmo Pocket 3, cámara con CMOS 1'' y vídeo 4K/120 fps | estabilización en 3 ejes, enfoque rápido, seguimiento de caras/objetivos, pantal",
+   "stars": "4,6",
+   "reviews": "3.947",
+   "price": "210,74"
+  },
+  {
+   "rank": "#25",
+   "asin": "B0CG19QXWD",
+   "title": "DJI Osmo Pocket 3, cámara con CMOS 1'' y vídeo 4K/120 fps | estabilización en 3 ejes, enfoque rápido, seguimiento de caras/objetivos, pantal",
+   "stars": "4,6",
+   "reviews": "3.947",
+   "price": "210,74"
+  },
+  {
+   "rank": "#26",
+   "asin": "B0BZLR766G",
+   "title": "Denver Radio Solar de Emergencia con Manivela, Radio Portátil Recargable | AM/FM, Panel solar, Manivela, Batería 2000mAh, Powerbank USB-A, L",
+   "stars": "4,8",
+   "reviews": "12"
+  },
+  {
+   "rank": "#26",
+   "asin": "B0BZLR766G",
+   "title": "Denver Radio Solar de Emergencia con Manivela, Radio Portátil Recargable | AM/FM, Panel solar, Manivela, Batería 2000mAh, Powerbank USB-A, L",
+   "stars": "4,8",
+   "reviews": "12"
+  },
+  {
+   "rank": "#27",
+   "asin": "B0H6XTP3WL",
+   "title": "POCO X8, Smartphone 8G+256GB, Negro, batería de 8340mAh, carga de 67 W | Pantalla AMOLED de 6,83\" 1,5K con protección ocular, Snapdragon® 6s",
+   "stars": "4,2",
+   "reviews": "46",
+   "price": "401,82"
+  },
+  {
+   "rank": "#27",
+   "asin": "B0H6XTP3WL",
+   "title": "POCO X8, Smartphone 8G+256GB, Negro, batería de 8340mAh, carga de 67 W | Pantalla AMOLED de 6,83\" 1,5K con protección ocular, Snapdragon® 6s",
+   "stars": "4,2",
+   "reviews": "46",
+   "price": "401,82"
+  },
+  {
+   "rank": "#28",
+   "asin": "B0DY1JKTRD",
+   "title": "HUAWEI Band 10 Smartwatch, Monitorización de Actividad Física con IA, Negro | Análisis del Sueño a Nivel Profesional, VFC Promedio y Datos s",
+   "stars": "4,4",
+   "reviews": "1.564",
+   "price": "21,49"
+  },
+  {
+   "rank": "#28",
+   "asin": "B0DY1JKTRD",
+   "title": "HUAWEI Band 10 Smartwatch, Monitorización de Actividad Física con IA, Negro | Análisis del Sueño a Nivel Profesional, VFC Promedio y Datos s",
+   "stars": "4,4",
+   "reviews": "1.564",
+   "price": "21,49"
+  },
+  {
+   "rank": "#29",
+   "asin": "B00LN803K0",
+   "title": "VARTA Pilas AAA, paquete de 40, Industrial Pro, Baterías Alcalinas, 1,5V, paquete de almacenamiento de embalaje ecológico, Made in Germany [",
+   "stars": "4,6",
+   "reviews": "41.104",
+   "price": "7,21"
+  },
+  {
+   "rank": "#29",
+   "asin": "B00LN803K0",
+   "title": "VARTA Pilas AAA, paquete de 40, Industrial Pro, Baterías Alcalinas, 1,5V, paquete de almacenamiento de embalaje ecológico, Made in Germany [",
+   "stars": "4,6",
+   "reviews": "41.104",
+   "price": "7,21"
+  },
+  {
+   "rank": "#30",
+   "asin": "B0DBL3DP5Q",
+   "title": "GRIFEMA Regleta enchufes 4 tomas con interruptor, 1,5 m | 3500W, 16A, blanco, protección infantil, 45 grados y evita consumos fantasma",
+   "stars": "4,6",
+   "reviews": "781",
+   "price": "6,52"
+  },
+  {
+   "rank": "#30",
+   "asin": "B0DBL3DP5Q",
+   "title": "GRIFEMA Regleta enchufes 4 tomas con interruptor, 1,5 m | 3500W, 16A, blanco, protección infantil, 45 grados y evita consumos fantasma",
+   "stars": "4,6",
+   "reviews": "781",
+   "price": "6,52"
+  }
+ ],
+ "toys": [
+  {
+   "rank": "#1",
+   "asin": "B0F33P8VJ6",
+   "title": "Quickstop Family - Juegos de Mesa Familiar - Regalos Originales | Juego de cartas rápido y divertido para niños y adultos | Diversión sin pa",
+   "stars": "4,8",
+   "reviews": "1.320",
+   "price": "9,83"
+  },
+  {
+   "rank": "#1",
+   "asin": "B0F33P8VJ6",
+   "title": "Quickstop Family - Juegos de Mesa Familiar - Regalos Originales | Juego de cartas rápido y divertido para niños y adultos | Diversión sin pa",
+   "stars": "4,8",
+   "reviews": "1.320",
+   "price": "9,83"
+  },
+  {
+   "rank": "#2",
+   "asin": "B0C34RZ84M",
+   "title": "Play-Doh Hasbro Peluquería, Manualidades para Niñas y Niños a Partir de 3 Años, Set con Herramientas y 6 Botes de Plastilina de Colores, Reg",
+   "stars": "4,6",
+   "reviews": "4.419"
+  },
+  {
+   "rank": "#2",
+   "asin": "B0C34RZ84M",
+   "title": "Play-Doh Hasbro Peluquería, Manualidades para Niñas y Niños a Partir de 3 Años, Set con Herramientas y 6 Botes de Plastilina de Colores, Reg",
+   "stars": "4,6",
+   "reviews": "4.419"
+  },
+  {
+   "rank": "#3",
+   "asin": "B0B29N9D96",
+   "title": "Mattel Disney Princesa Rapunzel Muñeca de Moda Look Clásico | Moda brillante con falda, tiara y zapatos removibles, articulada y coleccionab",
+   "stars": "4,7",
+   "reviews": "24.583"
+  },
+  {
+   "rank": "#3",
+   "asin": "B0B29N9D96",
+   "title": "Mattel Disney Princesa Rapunzel Muñeca de Moda Look Clásico | Moda brillante con falda, tiara y zapatos removibles, articulada y coleccionab",
+   "stars": "4,7",
+   "reviews": "24.583"
+  },
+  {
+   "rank": "#4",
+   "asin": "B0797GCR6W",
+   "title": "Play-Doh Pack 24 Botes (Hasbro 20383F03), Exclusivo en Amazon, Plastilina de Colores Variados para Hacer Manualidades para Niños y Niñas de ",
+   "stars": "4,8",
+   "reviews": "15.872"
+  },
+  {
+   "rank": "#4",
+   "asin": "B0797GCR6W",
+   "title": "Play-Doh Pack 24 Botes (Hasbro 20383F03), Exclusivo en Amazon, Plastilina de Colores Variados para Hacer Manualidades para Niños y Niñas de ",
+   "stars": "4,8",
+   "reviews": "15.872"
+  },
+  {
+   "rank": "#5",
+   "asin": "B0DCBV8RFB",
+   "title": "Paw Patrol Patrulla Canina Camión Bomberos y Marshall Juguetes niños +3 | Camión de bomberos Marshall de 15 cm con figura de Marshall para r",
+   "stars": "4,8",
+   "reviews": "5.958"
+  },
+  {
+   "rank": "#5",
+   "asin": "B0DCBV8RFB",
+   "title": "Paw Patrol Patrulla Canina Camión Bomberos y Marshall Juguetes niños +3 | Camión de bomberos Marshall de 15 cm con figura de Marshall para r",
+   "stars": "4,8",
+   "reviews": "5.958"
+  },
+  {
+   "rank": "#6",
+   "asin": "B0CQN38M8W",
+   "title": "Bitzee Disney Mascota Virtual 30 Personajes Interactivos Luces y Sonidos | Mascota virtual Bitzee Disney con 30 personajes interactivos que ",
+   "stars": "4,6",
+   "reviews": "7.681",
+   "price": "21,73"
+  },
+  {
+   "rank": "#6",
+   "asin": "B0CQN38M8W",
+   "title": "Bitzee Disney Mascota Virtual 30 Personajes Interactivos Luces y Sonidos | Mascota virtual Bitzee Disney con 30 personajes interactivos que ",
+   "stars": "4,6",
+   "reviews": "7.681",
+   "price": "21,73"
+  },
+  {
+   "rank": "#7",
+   "asin": "B0DLH5XMRH",
+   "title": "Disney Store Official, Toy Story, Buzz Lightyear, figura parlante, 36 cm | Figura interactiva de Buzz Lightyear con más de 15 frases en ingl",
+   "stars": "4,6",
+   "reviews": "44.154"
+  },
+  {
+   "rank": "#7",
+   "asin": "B0DLH5XMRH",
+   "title": "Disney Store Official, Toy Story, Buzz Lightyear, figura parlante, 36 cm | Figura interactiva de Buzz Lightyear con más de 15 frases en ingl",
+   "stars": "4,6",
+   "reviews": "44.154"
+  },
+  {
+   "rank": "#8",
+   "asin": "B0DHSBBV6R",
+   "title": "LEGO Speed Champions Coche de Carreras Ferrari SF-24 F1 77242 | Juguetes para niños de 10+ años, maqueta de vehículo rojo de Fórmula 1 con m",
+   "stars": "4,8",
+   "reviews": "23.940"
+  },
+  {
+   "rank": "#8",
+   "asin": "B0DHSBBV6R",
+   "title": "LEGO Speed Champions Coche de Carreras Ferrari SF-24 F1 77242 | Juguetes para niños de 10+ años, maqueta de vehículo rojo de Fórmula 1 con m",
+   "stars": "4,8",
+   "reviews": "23.940"
+  },
+  {
+   "rank": "#9",
+   "asin": "B07MKCZJNJ",
+   "title": "Perplexus Rebel Bola Laberinto 3D con 70 Obstáculos Rompecabezas +8 Años | Laberinto 3D Perplexus Rebel con 70 obstáculos. Rompecabezas de h",
+   "stars": "4,7",
+   "reviews": "14.049"
+  },
+  {
+   "rank": "#9",
+   "asin": "B07MKCZJNJ",
+   "title": "Perplexus Rebel Bola Laberinto 3D con 70 Obstáculos Rompecabezas +8 Años | Laberinto 3D Perplexus Rebel con 70 obstáculos. Rompecabezas de h",
+   "stars": "4,7",
+   "reviews": "14.049"
+  },
+  {
+   "rank": "#10",
+   "asin": "B0FD42XTTH",
+   "title": "Clementoni - Idea - Laboratorio de Bolígrafos Disney Stitch - Kit Creativo con 5 Plumas y 25+ Accesorios, 6+ años, Desarrollo Creatividad y ",
+   "stars": "4,6",
+   "reviews": "1.266",
+   "price": "8,34"
+  },
+  {
+   "rank": "#10",
+   "asin": "B0FD42XTTH",
+   "title": "Clementoni - Idea - Laboratorio de Bolígrafos Disney Stitch - Kit Creativo con 5 Plumas y 25+ Accesorios, 6+ años, Desarrollo Creatividad y ",
+   "stars": "4,6",
+   "reviews": "1.266",
+   "price": "8,34"
+  },
+  {
+   "rank": "#11",
+   "asin": "B0DG63KMRH",
+   "title": "Play Hit El Viaje Musical - Juegos de Mesa de Música - Regalos Originales | Quiz musical | Adultos, amigos y familia | Anima cualquier fiest",
+   "stars": "4,5",
+   "reviews": "1.011",
+   "price": "10,98"
+  },
+  {
+   "rank": "#11",
+   "asin": "B0DG63KMRH",
+   "title": "Play Hit El Viaje Musical - Juegos de Mesa de Música - Regalos Originales | Quiz musical | Adultos, amigos y familia | Anima cualquier fiest",
+   "stars": "4,5",
+   "reviews": "1.011",
+   "price": "10,98"
+  },
+  {
+   "rank": "#12",
+   "asin": "B0GHPVM5KT",
+   "title": "Juego Monopoly Panini Prizm: Copa Mundial de la FIFA I Juego de Mesa con Tema de fútbol y con Cartas coleccionables Monopoly Panini Prizm Co",
+   "stars": "4,2",
+   "reviews": "78"
+  },
+  {
+   "rank": "#12",
+   "asin": "B0GHPVM5KT",
+   "title": "Juego Monopoly Panini Prizm: Copa Mundial de la FIFA I Juego de Mesa con Tema de fútbol y con Cartas coleccionables Monopoly Panini Prizm Co",
+   "stars": "4,2",
+   "reviews": "78"
+  },
+  {
+   "rank": "#13",
+   "asin": "B01BMW645O",
+   "title": "Hot Wheels Pack de 20 (estilos pueden variar) | Set de 20 coches o camiones a escala 1:64 para jugar o exhibir, colección instantánea, DXY59",
+   "stars": "4,7",
+   "reviews": "89.351"
+  },
+  {
+   "rank": "#13",
+   "asin": "B01BMW645O",
+   "title": "Hot Wheels Pack de 20 (estilos pueden variar) | Set de 20 coches o camiones a escala 1:64 para jugar o exhibir, colección instantánea, DXY59",
+   "stars": "4,7",
+   "reviews": "89.351"
+  },
+  {
+   "rank": "#14",
+   "asin": "B09RNG5QRL",
+   "title": "La Casa De Muñecas De Gabby - Dormitorio De Sueñigata Con 1 Figura Sueñigata, 3 Accesorios, 2 Caja Sorpresa Y 3 Muebles | Juguetes Niñas 3 A",
+   "stars": "4,7",
+   "reviews": "14.330"
+  },
+  {
+   "rank": "#14",
+   "asin": "B09RNG5QRL",
+   "title": "La Casa De Muñecas De Gabby - Dormitorio De Sueñigata Con 1 Figura Sueñigata, 3 Accesorios, 2 Caja Sorpresa Y 3 Muebles | Juguetes Niñas 3 A",
+   "stars": "4,7",
+   "reviews": "14.330"
+  },
+  {
+   "rank": "#15",
+   "asin": "B0G8J6CHTH",
+   "title": "Cool MAKER - Pulseras Niña Heishi K Pop Demon Hunters | Kit Para Hacer Pulseras De K Pop | Juguetes Niña 7 Años O Más | Regalos Niñas 7 Años",
+   "stars": "4,3",
+   "reviews": "233"
+  },
+  {
+   "rank": "#15",
+   "asin": "B0G8J6CHTH",
+   "title": "Cool MAKER - Pulseras Niña Heishi K Pop Demon Hunters | Kit Para Hacer Pulseras De K Pop | Juguetes Niña 7 Años O Más | Regalos Niñas 7 Años",
+   "stars": "4,3",
+   "reviews": "233"
+  },
+  {
+   "rank": "#16",
+   "asin": "B0DTJ1ZYDB",
+   "title": "Gabby's Dollhouse - La casa de muñecas de Gabby | Regalo niña 3 años | Más de 60 cm de altura, 3 plantas y 6 habitaciones con muebles, gatoa",
+   "stars": "4,3",
+   "reviews": "1.816"
+  },
+  {
+   "rank": "#16",
+   "asin": "B0DTJ1ZYDB",
+   "title": "Gabby's Dollhouse - La casa de muñecas de Gabby | Regalo niña 3 años | Más de 60 cm de altura, 3 plantas y 6 habitaciones con muebles, gatoa",
+   "stars": "4,3",
+   "reviews": "1.816"
+  },
+  {
+   "rank": "#17",
+   "asin": "B0GFVPS2YN",
+   "title": "VTech - LeapMove, Consola de Aprendizaje en Movimiento, Juguete para niños +4 años, Versión ESP",
+   "stars": "4,4",
+   "reviews": "8"
+  },
+  {
+   "rank": "#17",
+   "asin": "B0GFVPS2YN",
+   "title": "VTech - LeapMove, Consola de Aprendizaje en Movimiento, Juguete para niños +4 años, Versión ESP",
+   "stars": "4,4",
+   "reviews": "8"
+  },
+  {
+   "rank": "#18",
+   "asin": "B0BGLTYW59",
+   "title": "Bloques Magnéticos de Construcción Juguete Educativo Montessori para Niños y Niñas de 3 y 4 Años Bloques Magnéticos para Construcción Infant",
+   "stars": "4,8",
+   "reviews": "12.778"
+  },
+  {
+   "rank": "#18",
+   "asin": "B0BGLTYW59",
+   "title": "Bloques Magnéticos de Construcción Juguete Educativo Montessori para Niños y Niñas de 3 y 4 Años Bloques Magnéticos para Construcción Infant",
+   "stars": "4,8",
+   "reviews": "12.778"
+  },
+  {
+   "rank": "#19",
+   "asin": "B0CRVW3LZF",
+   "title": "Hasbro Gaming Juego de Mesa Tragabolas Comilón de 2 a 4 Jugadores - Versión Español-Portuguesa Juguete Infantil para Jugar con Familia y Ami",
+   "stars": "4,6",
+   "reviews": "340"
+  },
+  {
+   "rank": "#19",
+   "asin": "B0CRVW3LZF",
+   "title": "Hasbro Gaming Juego de Mesa Tragabolas Comilón de 2 a 4 Jugadores - Versión Español-Portuguesa Juguete Infantil para Jugar con Familia y Ami",
+   "stars": "4,6",
+   "reviews": "340"
+  },
+  {
+   "rank": "#20",
+   "asin": "B00PY3EYQO",
+   "title": "LEGO Classic Caja de Ladrillos Creativos Grande 10698 | Juguetes para niños de 4+ años, juego con 2 bases verdes, animales, casas y coches, ",
+   "stars": "4,8",
+   "reviews": "4.220"
+  },
+  {
+   "rank": "#20",
+   "asin": "B00PY3EYQO",
+   "title": "LEGO Classic Caja de Ladrillos Creativos Grande 10698 | Juguetes para niños de 4+ años, juego con 2 bases verdes, animales, casas y coches, ",
+   "stars": "4,8",
+   "reviews": "4.220"
+  },
+  {
+   "rank": "#21",
+   "asin": "B0G8J64978",
+   "title": "Bitzee KPop Demon Hunters Mascota Virtual 13 Personajes Luces y Sonidos | Mascota virtual Bitzee KPop con 13 personajes interactivos, luces,",
+   "stars": "4,6",
+   "reviews": "119"
+  },
+  {
+   "rank": "#21",
+   "asin": "B0G8J64978",
+   "title": "Bitzee KPop Demon Hunters Mascota Virtual 13 Personajes Luces y Sonidos | Mascota virtual Bitzee KPop con 13 personajes interactivos, luces,",
+   "stars": "4,6",
+   "reviews": "119"
+  },
+  {
+   "rank": "#22",
+   "asin": "B0FR8DSTWR",
+   "title": "Paw Patrol Patrulla Canina Dino Movie Rescue Camión Marshall y 2 Figuras | Camión Marshall Dino Movie Rescue con 2 figuras, Marshall y dinos",
+   "stars": "4,8",
+   "reviews": "474",
+   "price": "10,90"
+  },
+  {
+   "rank": "#22",
+   "asin": "B0FR8DSTWR",
+   "title": "Paw Patrol Patrulla Canina Dino Movie Rescue Camión Marshall y 2 Figuras | Camión Marshall Dino Movie Rescue con 2 figuras, Marshall y dinos",
+   "stars": "4,8",
+   "reviews": "474",
+   "price": "10,90"
+  },
+  {
+   "rank": "#23",
+   "asin": "B07JLFJKPQ",
+   "title": "PLAYMOBIL Family Fun 70088 Caravana de Verano, A Partir de 4 años",
+   "stars": "4,8",
+   "reviews": "8.531"
+  },
+  {
+   "rank": "#23",
+   "asin": "B07JLFJKPQ",
+   "title": "PLAYMOBIL Family Fun 70088 Caravana de Verano, A Partir de 4 años",
+   "stars": "4,8",
+   "reviews": "8.531"
+  },
+  {
+   "rank": "#24",
+   "asin": "B0FRGG3H2L",
+   "title": "Gamely El Impostor | Divertidísimo Juego de Fiesta de mímica y engañ | Rápido y fácil de aprender, Ideal para amigos y familia, Perfecto par",
+   "stars": "4,6",
+   "reviews": "509"
+  },
+  {
+   "rank": "#24",
+   "asin": "B0FRGG3H2L",
+   "title": "Gamely El Impostor | Divertidísimo Juego de Fiesta de mímica y engañ | Rápido y fácil de aprender, Ideal para amigos y familia, Perfecto par",
+   "stars": "4,6",
+   "reviews": "509"
+  },
+  {
+   "rank": "#25",
+   "asin": "B0CPKXVTPM",
+   "title": "Monster High x Wednesday Addams Muñeca | Muñeca de coleccionista Wednesday con uniforme negro de Nevermore, Dedos, accesorios y soporte, HXJ",
+   "stars": "4,8",
+   "reviews": "7.321"
+  },
+  {
+   "rank": "#25",
+   "asin": "B0CPKXVTPM",
+   "title": "Monster High x Wednesday Addams Muñeca | Muñeca de coleccionista Wednesday con uniforme negro de Nevermore, Dedos, accesorios y soporte, HXJ",
+   "stars": "4,8",
+   "reviews": "7.321"
+  },
+  {
+   "rank": "#26",
+   "asin": "B0GCBV5MZT",
+   "title": "Mattel KPop Demon Hunters HUNTR/X Rumi Muñeca de Moda | Luce el look 'Cómo se hace', accesorio espada, inspirada en la película, JRN35",
+   "stars": "4,6",
+   "reviews": "2.435"
+  },
+  {
+   "rank": "#26",
+   "asin": "B0GCBV5MZT",
+   "title": "Mattel KPop Demon Hunters HUNTR/X Rumi Muñeca de Moda | Luce el look 'Cómo se hace', accesorio espada, inspirada en la película, JRN35",
+   "stars": "4,6",
+   "reviews": "2.435"
+  },
+  {
+   "rank": "#27",
+   "asin": "B0D87P1RKS",
+   "title": "Beyblade X, Arena de Combate Beystadium portátil",
+   "stars": "4,7",
+   "reviews": "1.372"
+  },
+  {
+   "rank": "#27",
+   "asin": "B0D87P1RKS",
+   "title": "Beyblade X, Arena de Combate Beystadium portátil",
+   "stars": "4,7",
+   "reviews": "1.372"
+  },
+  {
+   "rank": "#28",
+   "asin": "B0CD311Q6J",
+   "title": "5 Surprise My Mini Baby Series 1, 2 Capsules, by ZURU, Collectible Mystery Capsule, Toy for Girls, Realistic Miniature Baby, Playset and Acc",
+   "stars": "4,6",
+   "reviews": "5.012"
+  },
+  {
+   "rank": "#28",
+   "asin": "B0CD311Q6J",
+   "title": "5 Surprise My Mini Baby Series 1, 2 Capsules, by ZURU, Collectible Mystery Capsule, Toy for Girls, Realistic Miniature Baby, Playset and Acc",
+   "stars": "4,6",
+   "reviews": "5.012"
+  },
+  {
+   "rank": "#29",
+   "asin": "B002ZCZ0F6",
+   "title": "Hot Wheels - Paquete de 5 autos a escala 1:64, regalo para coleccionistas y niños a partir de 3 años (los estilos pueden variar), 01806",
+   "stars": "4,6",
+   "reviews": "33.367"
+  },
+  {
+   "rank": "#29",
+   "asin": "B002ZCZ0F6",
+   "title": "Hot Wheels - Paquete de 5 autos a escala 1:64, regalo para coleccionistas y niños a partir de 3 años (los estilos pueden variar), 01806",
+   "stars": "4,6",
+   "reviews": "33.367"
+  },
+  {
+   "rank": "#30",
+   "asin": "B0B3RVC43L",
+   "title": "Hitster Original - Juego de cartas musical para adultos (16+, español) | Escanea cartas con la app gratuita y ordena canciones por año, 2-10",
+   "stars": "4,7",
+   "reviews": "1.063",
+   "price": "15,30"
+  },
+  {
+   "rank": "#30",
+   "asin": "B0B3RVC43L",
+   "title": "Hitster Original - Juego de cartas musical para adultos (16+, español) | Escanea cartas con la app gratuita y ordena canciones por año, 2-10",
+   "stars": "4,7",
+   "reviews": "1.063",
+   "price": "15,30"
+  }
+ ],
+ "luggage": [],
+ "lighting": [
+  {
+   "rank": "#1",
+   "asin": "B09DP2XV1V",
+   "title": "OUILA Luz LED Armario Magnética con Sensor Movimiento Blanco Natural 5000K 36 LEDs 4 Modos Luz LED Adhesiva USB Recargable 1000mAh Luce para",
+   "stars": "4,4",
+   "reviews": "18.680"
+  },
+  {
+   "rank": "#1",
+   "asin": "B09DP2XV1V",
+   "title": "OUILA Luz LED Armario Magnética con Sensor Movimiento Blanco Natural 5000K 36 LEDs 4 Modos Luz LED Adhesiva USB Recargable 1000mAh Luce para",
+   "stars": "4,4",
+   "reviews": "18.680"
+  },
+  {
+   "rank": "#2",
+   "asin": "B0CL6KNT72",
+   "title": "Govee TV Backlight 3 Lite, 3,6m para TVs 55-65 pulgadas | Corrección de ojo de pez de cámara, Retroiluminación LED RGBICW 4en1, WiFi, Compat",
+   "stars": "4,5",
+   "reviews": "7.206"
+  },
+  {
+   "rank": "#2",
+   "asin": "B0CL6KNT72",
+   "title": "Govee TV Backlight 3 Lite, 3,6m para TVs 55-65 pulgadas | Corrección de ojo de pez de cámara, Retroiluminación LED RGBICW 4en1, WiFi, Compat",
+   "stars": "4,5",
+   "reviews": "7.206"
+  },
+  {
+   "rank": "#3",
+   "asin": "B0HN5BK1CJ",
+   "title": "Christmas Projector Lights USB Proyector Navidad Interior 360 Grados | Lights USB Plug and Play Dynamic Rotating LED Night Light Projector P",
+   "stars": "2,9",
+   "reviews": "3"
+  },
+  {
+   "rank": "#3",
+   "asin": "B0HN5BK1CJ",
+   "title": "Christmas Projector Lights USB Proyector Navidad Interior 360 Grados | Lights USB Plug and Play Dynamic Rotating LED Night Light Projector P",
+   "stars": "2,9",
+   "reviews": "3"
+  },
+  {
+   "rank": "#4",
+   "asin": "B0CQQ6R3G4",
+   "title": "HOVVIDA Tira LED 1x5m, RGB Luces LED, 150 LED, LED, 30 LED/Metro | 24V, APP y Mando a distancia, Modo de Música, LED para Habitación, Sala, ",
+   "stars": "4,0",
+   "reviews": "20.836",
+   "price": "7,65"
+  },
+  {
+   "rank": "#4",
+   "asin": "B0CQQ6R3G4",
+   "title": "HOVVIDA Tira LED 1x5m, RGB Luces LED, 150 LED, LED, 30 LED/Metro | 24V, APP y Mando a distancia, Modo de Música, LED para Habitación, Sala, ",
+   "stars": "4,0",
+   "reviews": "20.836",
+   "price": "7,65"
+  },
+  {
+   "rank": "#5",
+   "asin": "B0DL5SHWZM",
+   "title": "NIWOHOM Lamparas de Mesita de Noche, 256 RGB Color y 5 Modos,Recargable USB | Brillo Regulable, Función de Memoria, Temporizador, Protección",
+   "stars": "4,4",
+   "reviews": "3.099"
+  },
+  {
+   "rank": "#5",
+   "asin": "B0DL5SHWZM",
+   "title": "NIWOHOM Lamparas de Mesita de Noche, 256 RGB Color y 5 Modos,Recargable USB | Brillo Regulable, Función de Memoria, Temporizador, Protección",
+   "stars": "4,4",
+   "reviews": "3.099"
+  },
+  {
+   "rank": "#6",
+   "asin": "B0CBPL4RKH",
+   "title": "Gritin 19 LED Luz de Lectura, 360° Flexible Ajustable Lámpara de Lectura | Recargable, 3 Colores de Luz & 5 Brillos, Protección Ocular Lampa",
+   "stars": "4,8",
+   "reviews": "21.089"
+  },
+  {
+   "rank": "#6",
+   "asin": "B0CBPL4RKH",
+   "title": "Gritin 19 LED Luz de Lectura, 360° Flexible Ajustable Lámpara de Lectura | Recargable, 3 Colores de Luz & 5 Brillos, Protección Ocular Lampa",
+   "stars": "4,8",
+   "reviews": "21.089"
+  },
+  {
+   "rank": "#7",
+   "asin": "B08QRQQ53T",
+   "title": "Tapo L530E (2-Pack) - Bombilla Inteligente WiFi, RGB Multicolor, 800lm, E27 | Regulable. 16M de Colores. Horarios/Temporizador. No Requiere ",
+   "stars": "4,4",
+   "reviews": "11.545",
+   "price": "12,39"
+  },
+  {
+   "rank": "#7",
+   "asin": "B08QRQQ53T",
+   "title": "Tapo L530E (2-Pack) - Bombilla Inteligente WiFi, RGB Multicolor, 800lm, E27 | Regulable. 16M de Colores. Horarios/Temporizador. No Requiere ",
+   "stars": "4,4",
+   "reviews": "11.545",
+   "price": "12,39"
+  },
+  {
+   "rank": "#8",
+   "asin": "B0F9W6G1TC",
+   "title": "Tira LED 15 Metros, Luces Led Habitacion, RGB Luces LED Bluetooth Adhesivas | Tira LED con Control Remoto y Inteligente Control de APP, Camb",
+   "stars": "3,9",
+   "reviews": "2.454"
+  },
+  {
+   "rank": "#8",
+   "asin": "B0F9W6G1TC",
+   "title": "Tira LED 15 Metros, Luces Led Habitacion, RGB Luces LED Bluetooth Adhesivas | Tira LED con Control Remoto y Inteligente Control de APP, Camb",
+   "stars": "3,9",
+   "reviews": "2.454"
+  },
+  {
+   "rank": "#9",
+   "asin": "B0FG6LK3YR",
+   "title": "2 Luces Nocturnas de Enchufe, Sensor de Movimiento, Luz Nocturna Infantil | 2700K, Detección Automática, 3 Modos ON/AUTO/OFF, Brillo Táctil ",
+   "stars": "4,5",
+   "reviews": "1.371"
+  },
+  {
+   "rank": "#9",
+   "asin": "B0FG6LK3YR",
+   "title": "2 Luces Nocturnas de Enchufe, Sensor de Movimiento, Luz Nocturna Infantil | 2700K, Detección Automática, 3 Modos ON/AUTO/OFF, Brillo Táctil ",
+   "stars": "4,5",
+   "reviews": "1.371"
+  },
+  {
+   "rank": "#10",
+   "asin": "B0DZXKMGQ2",
+   "title": "Feliigo Luz Nocturna con Sensor de Movimiento, 2 Piezas Luz Nocturna Infantil Enchufe Regulable con 3 Modos, Brillo Ajustables para Habitaci",
+   "stars": "4,4",
+   "reviews": "2.169"
+  },
+  {
+   "rank": "#10",
+   "asin": "B0DZXKMGQ2",
+   "title": "Feliigo Luz Nocturna con Sensor de Movimiento, 2 Piezas Luz Nocturna Infantil Enchufe Regulable con 3 Modos, Brillo Ajustables para Habitaci",
+   "stars": "4,4",
+   "reviews": "2.169"
+  },
+  {
+   "rank": "#11",
+   "asin": "B0CWLRK4DH",
+   "title": "LEDUNI Ventilador con Luz 72W 7590lm Ventilador Invisible Ultra Silencioso con Mando a Distancia y Palas Retráctiles Decoración Luz Fría/Neu",
+   "stars": "4,1",
+   "reviews": "3.744"
+  },
+  {
+   "rank": "#11",
+   "asin": "B0CWLRK4DH",
+   "title": "LEDUNI Ventilador con Luz 72W 7590lm Ventilador Invisible Ultra Silencioso con Mando a Distancia y Palas Retráctiles Decoración Luz Fría/Neu",
+   "stars": "4,1",
+   "reviews": "3.744"
+  },
+  {
+   "rank": "#12",
+   "asin": "B09FSG3PQS",
+   "title": "Jsdoin Cadena de Luces,5M 50 LED Guirnalda Luces, para Navidad, Habitacion, Fiesta, Jardín, Bodas, Compleaños Luces interior de Hadas (Blanc",
+   "stars": "4,1",
+   "reviews": "11.977"
+  },
+  {
+   "rank": "#12",
+   "asin": "B09FSG3PQS",
+   "title": "Jsdoin Cadena de Luces,5M 50 LED Guirnalda Luces, para Navidad, Habitacion, Fiesta, Jardín, Bodas, Compleaños Luces interior de Hadas (Blanc",
+   "stars": "4,1",
+   "reviews": "11.977"
+  },
+  {
+   "rank": "#13",
+   "asin": "B0H26LB25S",
+   "title": "2 Piezas Luz Nocturnas infantil con Enchufe, Sensor de Luz Inteligente Crepuscular, 5 Brillos Regulables, 3 Modos, Blanca Cálida Noche para ",
+   "stars": "4,5",
+   "reviews": "500"
+  },
+  {
+   "rank": "#13",
+   "asin": "B0H26LB25S",
+   "title": "2 Piezas Luz Nocturnas infantil con Enchufe, Sensor de Luz Inteligente Crepuscular, 5 Brillos Regulables, 3 Modos, Blanca Cálida Noche para ",
+   "stars": "4,5",
+   "reviews": "500"
+  },
+  {
+   "rank": "#14",
+   "asin": "B098FJ6LXB",
+   "title": "Tira LED inteligente Wi-Fi TP-Link Tapo L900-5, 5 m, multicolor | Para dormitorio, salón y fiestas, 16 millones de colores, regulable, sincr",
+   "stars": "4,5",
+   "reviews": "16.474",
+   "price": "14,04"
+  },
+  {
+   "rank": "#14",
+   "asin": "B098FJ6LXB",
+   "title": "Tira LED inteligente Wi-Fi TP-Link Tapo L900-5, 5 m, multicolor | Para dormitorio, salón y fiestas, 16 millones de colores, regulable, sincr",
+   "stars": "4,5",
+   "reviews": "16.474",
+   "price": "14,04"
+  },
+  {
+   "rank": "#15",
+   "asin": "B0BN438Z97",
+   "title": "OUILA Luz de Armario con Sensor Movimiento 6500K Recargable Luz Nocturna, 41CM Regulable Lampara LED Adhesiva para Gabinete, Pasillo, Escale",
+   "stars": "4,4",
+   "reviews": "16.009"
+  },
+  {
+   "rank": "#15",
+   "asin": "B0BN438Z97",
+   "title": "OUILA Luz de Armario con Sensor Movimiento 6500K Recargable Luz Nocturna, 41CM Regulable Lampara LED Adhesiva para Gabinete, Pasillo, Escale",
+   "stars": "4,4",
+   "reviews": "16.009"
+  },
+  {
+   "rank": "#16",
+   "asin": "B0CR5FD97N",
+   "title": "LQWELL Lámpara de techo LED Ultra Delgada Blanco 22cm 18W 6000K | Diseño minimalista moderno, protección IP44, ahorro energético. Ideal para",
+   "stars": "4,6",
+   "reviews": "7.705"
+  },
+  {
+   "rank": "#16",
+   "asin": "B0CR5FD97N",
+   "title": "LQWELL Lámpara de techo LED Ultra Delgada Blanco 22cm 18W 6000K | Diseño minimalista moderno, protección IP44, ahorro energético. Ideal para",
+   "stars": "4,6",
+   "reviews": "7.705"
+  },
+  {
+   "rank": "#17",
+   "asin": "B0FB9KGC2W",
+   "title": "Tira LED 5M para TV de 50\"- 75\", Tira LED TV Bluetooth – 16 Millones de Colores | Sincronización con Música y Juegos | Mando a Distancia 2.4",
+   "stars": "4,1",
+   "reviews": "1.149"
+  },
+  {
+   "rank": "#17",
+   "asin": "B0FB9KGC2W",
+   "title": "Tira LED 5M para TV de 50\"- 75\", Tira LED TV Bluetooth – 16 Millones de Colores | Sincronización con Música y Juegos | Mando a Distancia 2.4",
+   "stars": "4,1",
+   "reviews": "1.149"
+  },
+  {
+   "rank": "#18",
+   "asin": "B0F1C56SR1",
+   "title": "Gritin Luz de Armario Recargable, 26CM Superbrillantes Luces Cocina, 2 uds. | 3 Colores & 5 Niveles de Brillo, 4 Modos, Sensor Movimiento, L",
+   "stars": "4,7",
+   "reviews": "25.320"
+  },
+  {
+   "rank": "#18",
+   "asin": "B0F1C56SR1",
+   "title": "Gritin Luz de Armario Recargable, 26CM Superbrillantes Luces Cocina, 2 uds. | 3 Colores & 5 Niveles de Brillo, 4 Modos, Sensor Movimiento, L",
+   "stars": "4,7",
+   "reviews": "25.320"
+  },
+  {
+   "rank": "#19",
+   "asin": "B0DTHP24C1",
+   "title": "10M Cortina Luces Navidad Exterior, LED Luzes Natal Exterior Blanco Cálido | Control Remote, IP65 Impermeable, Conectable, 8 Modos, Memoria,",
+   "stars": "4,4",
+   "reviews": "412"
+  },
+  {
+   "rank": "#19",
+   "asin": "B0DTHP24C1",
+   "title": "10M Cortina Luces Navidad Exterior, LED Luzes Natal Exterior Blanco Cálido | Control Remote, IP65 Impermeable, Conectable, 8 Modos, Memoria,",
+   "stars": "4,4",
+   "reviews": "412"
+  },
+  {
+   "rank": "#20",
+   "asin": "B0FGJ8MZVN",
+   "title": "Swoieltr Proyector Estrellas Techo LED Astronauta con Mando a Distancia, 8 Modos de Nebulosa y 5 Modos de Luminosidad y Velocidad, Luz Noctu",
+   "stars": "4,3",
+   "reviews": "1.660"
+  },
+  {
+   "rank": "#20",
+   "asin": "B0FGJ8MZVN",
+   "title": "Swoieltr Proyector Estrellas Techo LED Astronauta con Mando a Distancia, 8 Modos de Nebulosa y 5 Modos de Luminosidad y Velocidad, Luz Noctu",
+   "stars": "4,3",
+   "reviews": "1.660"
+  },
+  {
+   "rank": "#21",
+   "asin": "B0FCS4D8P1",
+   "title": "ZAPLIT Lámpara de escritorio LED de 15W con USB-A y USB-C – Regulable, 3 temperaturas de color, 5 niveles de brillo, 4 temporizadores, cuell",
+   "stars": "4,5",
+   "reviews": "1.469"
+  },
+  {
+   "rank": "#21",
+   "asin": "B0FCS4D8P1",
+   "title": "ZAPLIT Lámpara de escritorio LED de 15W con USB-A y USB-C – Regulable, 3 temperaturas de color, 5 niveles de brillo, 4 temporizadores, cuell",
+   "stars": "4,5",
+   "reviews": "1.469"
+  },
+  {
+   "rank": "#22",
+   "asin": "B0DP89JTSC",
+   "title": "JandCase Luz Nocturna con Sensor de Movimiento y Crepuscular, 1 Unidad | Luz Nocturna Enchufe Regulable 0-100 lm, 3 Modos (ON/AUTO/OFF), Luz",
+   "stars": "4,4",
+   "reviews": "405"
+  },
+  {
+   "rank": "#22",
+   "asin": "B0DP89JTSC",
+   "title": "JandCase Luz Nocturna con Sensor de Movimiento y Crepuscular, 1 Unidad | Luz Nocturna Enchufe Regulable 0-100 lm, 3 Modos (ON/AUTO/OFF), Luz",
+   "stars": "4,4",
+   "reviews": "405"
+  },
+  {
+   "rank": "#23",
+   "asin": "B0CFXZ2GV2",
+   "title": "Luces de Navidad, 38.2M 320 LED Luces de Arbol de Navidad | 8 Modos con Función de Memoria y Control Remoto Luz Cadena Ligera para Jardín, B",
+   "stars": "4,6",
+   "reviews": "1.796"
+  },
+  {
+   "rank": "#23",
+   "asin": "B0CFXZ2GV2",
+   "title": "Luces de Navidad, 38.2M 320 LED Luces de Arbol de Navidad | 8 Modos con Función de Memoria y Control Remoto Luz Cadena Ligera para Jardín, B",
+   "stars": "4,6",
+   "reviews": "1.796"
+  },
+  {
+   "rank": "#24",
+   "asin": "B0C8RSF66J",
+   "title": "GY Bombillas Led E27 Luz Fría 6500K - 9,5W Equivalente a 100W - 1521 Lúmenes, No Regulable - A60 Bombilla Led Esférica Caja de 2 Unidad",
+   "stars": "4,7",
+   "reviews": "1.557"
+  },
+  {
+   "rank": "#24",
+   "asin": "B0C8RSF66J",
+   "title": "GY Bombillas Led E27 Luz Fría 6500K - 9,5W Equivalente a 100W - 1521 Lúmenes, No Regulable - A60 Bombilla Led Esférica Caja de 2 Unidad",
+   "stars": "4,7",
+   "reviews": "1.557"
+  },
+  {
+   "rank": "#25",
+   "asin": "B0GGRM7RKR",
+   "title": "Luz Nocturna Infantil LED 2 Pcs, Luz LED Nocturna con Sensor de Movimiento | Lámpara de Noche Enchufable Brillo Ajustables, 3 Modos (AUTO/ON",
+   "stars": "4,5",
+   "reviews": "344"
+  },
+  {
+   "rank": "#25",
+   "asin": "B0GGRM7RKR",
+   "title": "Luz Nocturna Infantil LED 2 Pcs, Luz LED Nocturna con Sensor de Movimiento | Lámpara de Noche Enchufable Brillo Ajustables, 3 Modos (AUTO/ON",
+   "stars": "4,5",
+   "reviews": "344"
+  },
+  {
+   "rank": "#26",
+   "asin": "B0D6724RJM",
+   "title": "Luz Solar LED Exterior Jardin - 248 LED Luces Solares Sensor de Movimiento | 270° Foco Lampara, IP65 Impermeable, Aplique Potente con Ilumin",
+   "stars": "4,3",
+   "reviews": "3.405"
+  },
+  {
+   "rank": "#26",
+   "asin": "B0D6724RJM",
+   "title": "Luz Solar LED Exterior Jardin - 248 LED Luces Solares Sensor de Movimiento | 270° Foco Lampara, IP65 Impermeable, Aplique Potente con Ilumin",
+   "stars": "4,3",
+   "reviews": "3.405"
+  },
+  {
+   "rank": "#27",
+   "asin": "B0F4DJCSTB",
+   "title": "daphomeu 5 Pack 20CM Luces led Cocina Recargables, Atenuable tipo C carga | Luz Armario Sensor Movimiento,Blanco frío Luz Sensor Movimiento ",
+   "stars": "4,3",
+   "reviews": "2.729"
+  },
+  {
+   "rank": "#27",
+   "asin": "B0F4DJCSTB",
+   "title": "daphomeu 5 Pack 20CM Luces led Cocina Recargables, Atenuable tipo C carga | Luz Armario Sensor Movimiento,Blanco frío Luz Sensor Movimiento ",
+   "stars": "4,3",
+   "reviews": "2.729"
+  },
+  {
+   "rank": "#28",
+   "asin": "B0D9PVTQW1",
+   "title": "Luz LED Sensor Movimiento Cocina - Armario Luces Pilas Adhesiva Recargable | Magnetica Lampara sin Cables Bajo Mueble Interior Armarios Tira",
+   "stars": "4,3",
+   "reviews": "6.105"
+  },
+  {
+   "rank": "#28",
+   "asin": "B0D9PVTQW1",
+   "title": "Luz LED Sensor Movimiento Cocina - Armario Luces Pilas Adhesiva Recargable | Magnetica Lampara sin Cables Bajo Mueble Interior Armarios Tira",
+   "stars": "4,3",
+   "reviews": "6.105"
+  },
+  {
+   "rank": "#29",
+   "asin": "B0H1M15XFX",
+   "title": "20M Luces Navidad Exterior, 200 LED Luces Árbol Navidad Blanco/Multicolor | 11 Modos con Remoto, Temporizador, Conectable, Impermeable Luz A",
+   "stars": "4,4",
+   "reviews": "1.777"
+  },
+  {
+   "rank": "#29",
+   "asin": "B0H1M15XFX",
+   "title": "20M Luces Navidad Exterior, 200 LED Luces Árbol Navidad Blanco/Multicolor | 11 Modos con Remoto, Temporizador, Conectable, Impermeable Luz A",
+   "stars": "4,4",
+   "reviews": "1.777"
+  },
+  {
+   "rank": "#30",
+   "asin": "B0FHKTC8FV",
+   "title": "Luci Albero Di Natale a Pilas, Guirlanda Luminosa de 21M 210 LED Impermeable con Caja de Batería Verde Oscuro - 8 Modos, Temporizador, Blanc",
+   "stars": "4,3",
+   "reviews": "333"
+  },
+  {
+   "rank": "#30",
+   "asin": "B0FHKTC8FV",
+   "title": "Luci Albero Di Natale a Pilas, Guirlanda Luminosa de 21M 210 LED Impermeable con Caja de Batería Verde Oscuro - 8 Modos, Temporizador, Blanc",
+   "stars": "4,3",
+   "reviews": "333"
+  }
+ ],
+ "lawn-garden": [
+  {
+   "rank": "#1",
+   "asin": "B08CC9JM62",
+   "title": "NOVAR ECOGEL Jeringuilla contra cucarachas | Eficacia Profesional| Elimina 50 cucarachas con una Sola Gota, insectos | 10 gr Ecopack",
+   "stars": "4,6",
+   "reviews": "3.054"
+  },
+  {
+   "rank": "#1",
+   "asin": "B08CC9JM62",
+   "title": "NOVAR ECOGEL Jeringuilla contra cucarachas | Eficacia Profesional| Elimina 50 cucarachas con una Sola Gota, insectos | 10 gr Ecopack",
+   "stars": "4,6",
+   "reviews": "3.054"
+  },
+  {
+   "rank": "#2",
+   "asin": "B08CRV3XXV",
+   "title": "NOKLEAD Higrómetro Termómetro Digital Interior con Temperatura y Humedad | Monitor de temperatura y humedad para mesa con indicador de confo",
+   "stars": "4,5",
+   "reviews": "37.918"
+  },
+  {
+   "rank": "#2",
+   "asin": "B08CRV3XXV",
+   "title": "NOKLEAD Higrómetro Termómetro Digital Interior con Temperatura y Humedad | Monitor de temperatura y humedad para mesa con indicador de confo",
+   "stars": "4,5",
+   "reviews": "37.918"
+  },
+  {
+   "rank": "#3",
+   "asin": "B08V1KXBQD",
+   "title": "TempPro TP49 Mini Termómetro Higrómetro Digital, 3 Piezas Blanco | Termohigrómetro de Interior Medidor de Temperatura y Humedad para Medir A",
+   "stars": "4,6",
+   "reviews": "27.104"
+  },
+  {
+   "rank": "#3",
+   "asin": "B08V1KXBQD",
+   "title": "TempPro TP49 Mini Termómetro Higrómetro Digital, 3 Piezas Blanco | Termohigrómetro de Interior Medidor de Temperatura y Humedad para Medir A",
+   "stars": "4,6",
+   "reviews": "27.104"
+  },
+  {
+   "rank": "#4",
+   "asin": "B0BM5L4DKK",
+   "title": "SEESII 6'' Mini Motosierra Bateria 8000mAh, Motosierra Eléctrica Bateria con Depósito Para El Aceite y Cadena Reemplazable, Motosierra Inalá",
+   "stars": "4,4",
+   "reviews": "20.390"
+  },
+  {
+   "rank": "#4",
+   "asin": "B0BM5L4DKK",
+   "title": "SEESII 6'' Mini Motosierra Bateria 8000mAh, Motosierra Eléctrica Bateria con Depósito Para El Aceite y Cadena Reemplazable, Motosierra Inalá",
+   "stars": "4,4",
+   "reviews": "20.390"
+  },
+  {
+   "rank": "#5",
+   "asin": "B00U8SA6NA",
+   "title": "S&M 321771 - Kit completo butano: Regulador de gas butano + Tubo Goma 1,5 metros + 2 abrazaderas de seguridad | Homologado para España | Apt",
+   "stars": "4,5",
+   "reviews": "9.684",
+   "price": "8,26"
+  },
+  {
+   "rank": "#5",
+   "asin": "B00U8SA6NA",
+   "title": "S&M 321771 - Kit completo butano: Regulador de gas butano + Tubo Goma 1,5 metros + 2 abrazaderas de seguridad | Homologado para España | Apt",
+   "stars": "4,5",
+   "reviews": "9.684",
+   "price": "8,26"
+  },
+  {
+   "rank": "#6",
+   "asin": "B07TV364MZ",
+   "title": "TempPro TP49 Pequeño higrómetro digital, termómetro de interior, Blanco | controlar temperatura y medir humedad para comodidad en la oficina",
+   "stars": "4,6",
+   "reviews": "5.596"
+  },
+  {
+   "rank": "#6",
+   "asin": "B07TV364MZ",
+   "title": "TempPro TP49 Pequeño higrómetro digital, termómetro de interior, Blanco | controlar temperatura y medir humedad para comodidad en la oficina",
+   "stars": "4,6",
+   "reviews": "5.596"
+  },
+  {
+   "rank": "#7",
+   "asin": "B0BQ13M562",
+   "title": "Cecotec Aspirador de Cenizas Compacto de 4L Conga Ash 1000 Home. 600W de Potencia, Ultraligero, Poder de Succión 13 kPa, Tubo con Recubrimie",
+   "stars": "4,1",
+   "reviews": "820",
+   "price": "24,71"
+  },
+  {
+   "rank": "#7",
+   "asin": "B0BQ13M562",
+   "title": "Cecotec Aspirador de Cenizas Compacto de 4L Conga Ash 1000 Home. 600W de Potencia, Ultraligero, Poder de Succión 13 kPa, Tubo con Recubrimie",
+   "stars": "4,1",
+   "reviews": "820",
+   "price": "24,71"
+  },
+  {
+   "rank": "#8",
+   "asin": "B0FS22V5KJ",
+   "title": "U UNNI Estación Meteorológica Interior Exterior con 1 Sensor Exterior | Termómetro Exterior Alimentado por Batería, Monitor de Humedad con R",
+   "stars": "4,5",
+   "reviews": "9.631"
+  },
+  {
+   "rank": "#8",
+   "asin": "B0FS22V5KJ",
+   "title": "U UNNI Estación Meteorológica Interior Exterior con 1 Sensor Exterior | Termómetro Exterior Alimentado por Batería, Monitor de Humedad con R",
+   "stars": "4,5",
+   "reviews": "9.631"
+  },
+  {
+   "rank": "#9",
+   "asin": "B0G1M6TKD4",
+   "title": "TempPro TP50 Termómetro Higrometro Digital para Interior | Termohigrómetro Medidor Profesional para Medición de Temperatura y Humedad del Ca",
+   "stars": "4,5",
+   "reviews": "7.285"
+  },
+  {
+   "rank": "#9",
+   "asin": "B0G1M6TKD4",
+   "title": "TempPro TP50 Termómetro Higrometro Digital para Interior | Termohigrómetro Medidor Profesional para Medición de Temperatura y Humedad del Ca",
+   "stars": "4,5",
+   "reviews": "7.285"
+  },
+  {
+   "rank": "#10",
+   "asin": "B002X3IDBK",
+   "title": "Oregon Aceite Orgánico y Biodegradable para Cadena de Motosierra, 1 L | Aceite de motosierra para cadenas, lubricante premium, antioxidante,",
+   "stars": "4,6",
+   "reviews": "14.017"
+  },
+  {
+   "rank": "#10",
+   "asin": "B002X3IDBK",
+   "title": "Oregon Aceite Orgánico y Biodegradable para Cadena de Motosierra, 1 L | Aceite de motosierra para cadenas, lubricante premium, antioxidante,",
+   "stars": "4,6",
+   "reviews": "14.017"
+  },
+  {
+   "rank": "#11",
+   "asin": "B08D246QL2",
+   "title": "Catchmaster 100i – Trampas para Cucarachas 30 Piezas – Trampas Cucarachas Adhesivas de máxima Calidad – Sin Veneno ni Biocidas – Seguras par",
+   "stars": "4,4",
+   "reviews": "4.602"
+  },
+  {
+   "rank": "#11",
+   "asin": "B08D246QL2",
+   "title": "Catchmaster 100i – Trampas para Cucarachas 30 Piezas – Trampas Cucarachas Adhesivas de máxima Calidad – Sin Veneno ni Biocidas – Seguras par",
+   "stars": "4,4",
+   "reviews": "4.602"
+  },
+  {
+   "rank": "#12",
+   "asin": "B00RD0KTZQ",
+   "title": "Spear & Jackson 5LPAPS Pulverizador a presión con Bomba de 5 litros",
+   "stars": "4,3",
+   "reviews": "54.178",
+   "price": "9,88"
+  },
+  {
+   "rank": "#12",
+   "asin": "B00RD0KTZQ",
+   "title": "Spear & Jackson 5LPAPS Pulverizador a presión con Bomba de 5 litros",
+   "stars": "4,3",
+   "reviews": "54.178",
+   "price": "9,88"
+  },
+  {
+   "rank": "#13",
+   "asin": "B09CH5Z79K",
+   "title": "Aipwerer Funda para Muebles de Jardín Exterior 420D Oxford 213x132x72cm | Negro, 420D Oxford, Impermeable, Anti-UV y Resistente al Desgarro,",
+   "stars": "4,4",
+   "reviews": "3.729"
+  },
+  {
+   "rank": "#13",
+   "asin": "B09CH5Z79K",
+   "title": "Aipwerer Funda para Muebles de Jardín Exterior 420D Oxford 213x132x72cm | Negro, 420D Oxford, Impermeable, Anti-UV y Resistente al Desgarro,",
+   "stars": "4,4",
+   "reviews": "3.729"
+  },
+  {
+   "rank": "#14",
+   "asin": "B0CW9VK4MD",
+   "title": "Sanytol - Spray Antiácaros Tejidos No Lavables Pack 3 x 300 ml | Elimina 100% Ácaros, Sarna y Chinches, Colchón, Sofá y Alfombra, Eficacia 4",
+   "stars": "4,6",
+   "reviews": "1.784"
+  },
+  {
+   "rank": "#14",
+   "asin": "B0CW9VK4MD",
+   "title": "Sanytol - Spray Antiácaros Tejidos No Lavables Pack 3 x 300 ml | Elimina 100% Ácaros, Sarna y Chinches, Colchón, Sofá y Alfombra, Eficacia 4",
+   "stars": "4,6",
+   "reviews": "1.784"
+  },
+  {
+   "rank": "#15",
+   "asin": "B0BQM9G18F",
+   "title": "Enzeno Funda Mesa Exterior Impermeable,Cubierta Muebles Impermeable 180x120x74cm,Funda Conjunto Jardin Exterior Aplicable a Mesa y Sillas,An",
+   "stars": "4,6",
+   "reviews": "5.934"
+  },
+  {
+   "rank": "#15",
+   "asin": "B0BQM9G18F",
+   "title": "Enzeno Funda Mesa Exterior Impermeable,Cubierta Muebles Impermeable 180x120x74cm,Funda Conjunto Jardin Exterior Aplicable a Mesa y Sillas,An",
+   "stars": "4,6",
+   "reviews": "5.934"
+  },
+  {
+   "rank": "#16",
+   "asin": "B06XRDTQFP",
+   "title": "Bosch limpiadora de alta presión UniversalAquatak 135 (1900 W, presión: 135 bar, caudal máx.: 410 l/h, en caja)",
+   "stars": "4,4",
+   "reviews": "4.681",
+   "price": "89,62"
+  },
+  {
+   "rank": "#16",
+   "asin": "B06XRDTQFP",
+   "title": "Bosch limpiadora de alta presión UniversalAquatak 135 (1900 W, presión: 135 bar, caudal máx.: 410 l/h, en caja)",
+   "stars": "4,4",
+   "reviews": "4.681",
+   "price": "89,62"
+  },
+  {
+   "rank": "#17",
+   "asin": "B06XD87XJD",
+   "title": "YA! Pastillas de Encendido para Chimenea y Barbacoa | 48 Unidades | Para chimeneas, estufas y barbacoas · Estuche de 48 pastillas",
+   "stars": "4,4",
+   "reviews": "521"
+  },
+  {
+   "rank": "#17",
+   "asin": "B06XD87XJD",
+   "title": "YA! Pastillas de Encendido para Chimenea y Barbacoa | 48 Unidades | Para chimeneas, estufas y barbacoas · Estuche de 48 pastillas",
+   "stars": "4,4",
+   "reviews": "521"
+  },
+  {
+   "rank": "#18",
+   "asin": "B01LZPDDC5",
+   "title": "Flower - Sustrato Universal Premium 10 L | Tierra para Plantas Interior y Exterior | con Perlita y Fibra de Coco | Óptimo Drenaje, Enraizado",
+   "stars": "4,5",
+   "reviews": "1.868"
+  },
+  {
+   "rank": "#18",
+   "asin": "B01LZPDDC5",
+   "title": "Flower - Sustrato Universal Premium 10 L | Tierra para Plantas Interior y Exterior | con Perlita y Fibra de Coco | Óptimo Drenaje, Enraizado",
+   "stars": "4,5",
+   "reviews": "1.868"
+  },
+  {
+   "rank": "#19",
+   "asin": "B0DVZR5YTK",
+   "title": "Raid Essentials Trampa LED Antimoscas, Antimoscas de Fruta y Antipollilas, Sin Insecticida, Seguro para Toda la Familia, Inodoro y Sin Resid",
+   "stars": "3,5",
+   "reviews": "438"
+  },
+  {
+   "rank": "#19",
+   "asin": "B0DVZR5YTK",
+   "title": "Raid Essentials Trampa LED Antimoscas, Antimoscas de Fruta y Antipollilas, Sin Insecticida, Seguro para Toda la Familia, Inodoro y Sin Resid",
+   "stars": "3,5",
+   "reviews": "438"
+  },
+  {
+   "rank": "#20",
+   "asin": "B0F9FN228S",
+   "title": "BLUETTI Elite 30 V2 Estación de Energía Portátil 288Wh, Generador Solar | 600W CA con Power Lifting 1500W, batería LiFePO4 con carga rápida ",
+   "stars": "4,5",
+   "reviews": "253"
+  },
+  {
+   "rank": "#20",
+   "asin": "B0F9FN228S",
+   "title": "BLUETTI Elite 30 V2 Estación de Energía Portátil 288Wh, Generador Solar | 600W CA con Power Lifting 1500W, batería LiFePO4 con carga rápida ",
+   "stars": "4,5",
+   "reviews": "253"
+  },
+  {
+   "rank": "#21",
+   "asin": "B07MZJML8G",
+   "title": "Protect Home atrayente de ratas y ratones, en formato de bloque, indicado para zonas humedas, Ratas y Ratones",
+   "stars": "4,2",
+   "reviews": "2.643"
+  },
+  {
+   "rank": "#21",
+   "asin": "B07MZJML8G",
+   "title": "Protect Home atrayente de ratas y ratones, en formato de bloque, indicado para zonas humedas, Ratas y Ratones",
+   "stars": "4,2",
+   "reviews": "2.643"
+  },
+  {
+   "rank": "#22",
+   "asin": "B08FD89RPD",
+   "title": "Govee Termómetro Higrómetro Digital Bluetooth, 1 Unidades | Medidor de Humedad y Temperatura, Digital Pantalla, Almacenamiento de Datos, Ale",
+   "stars": "4,5",
+   "reviews": "2.153"
+  },
+  {
+   "rank": "#22",
+   "asin": "B08FD89RPD",
+   "title": "Govee Termómetro Higrómetro Digital Bluetooth, 1 Unidades | Medidor de Humedad y Temperatura, Digital Pantalla, Almacenamiento de Datos, Ale",
+   "stars": "4,5",
+   "reviews": "2.153"
+  },
+  {
+   "rank": "#23",
+   "asin": "B0GHNZR95V",
+   "title": "SONOFF AirGuard TH SNZB-02DR2 Sensor Zigbee Temperatura y Humedad, Pantalla LCD de 3,6 Pulgadas, Termómetro e Higrómetro con Alertas en la A",
+   "stars": "4,5",
+   "reviews": "801"
+  },
+  {
+   "rank": "#23",
+   "asin": "B0GHNZR95V",
+   "title": "SONOFF AirGuard TH SNZB-02DR2 Sensor Zigbee Temperatura y Humedad, Pantalla LCD de 3,6 Pulgadas, Termómetro e Higrómetro con Alertas en la A",
+   "stars": "4,5",
+   "reviews": "801"
+  },
+  {
+   "rank": "#24",
+   "asin": "B0FL62NQ15",
+   "title": "Trampas Adhesivas para Plantas 26 Unidades, Atrapa Moscas de Doble Cara para Interior y Exterior, Potente Control de Plagas No Tóxico para M",
+   "stars": "4,5",
+   "reviews": "706"
+  },
+  {
+   "rank": "#24",
+   "asin": "B0FL62NQ15",
+   "title": "Trampas Adhesivas para Plantas 26 Unidades, Atrapa Moscas de Doble Cara para Interior y Exterior, Potente Control de Plagas No Tóxico para M",
+   "stars": "4,5",
+   "reviews": "706"
+  },
+  {
+   "rank": "#25",
+   "asin": "B0D45QB15W",
+   "title": "ZenGreens® Set de Semillas de Hierbas Aromáticas eco - 12 variedades | para cocina & alféizar, aromas frescos, idea de regalo para jardinero",
+   "stars": "4,4",
+   "reviews": "6.607"
+  },
+  {
+   "rank": "#25",
+   "asin": "B0D45QB15W",
+   "title": "ZenGreens® Set de Semillas de Hierbas Aromáticas eco - 12 variedades | para cocina & alféizar, aromas frescos, idea de regalo para jardinero",
+   "stars": "4,4",
+   "reviews": "6.607"
+  },
+  {
+   "rank": "#26",
+   "asin": "B0F4N6J5Y1",
+   "title": "Dokon Funda Mesa Exterior Impermeable, Funda Muebles y Sofa de Jardín | Oxford 420D, Capa PU Impermeable, Correas y Cordón Antiviento, Respi",
+   "stars": "4,5",
+   "reviews": "1.720"
+  },
+  {
+   "rank": "#26",
+   "asin": "B0F4N6J5Y1",
+   "title": "Dokon Funda Mesa Exterior Impermeable, Funda Muebles y Sofa de Jardín | Oxford 420D, Capa PU Impermeable, Correas y Cordón Antiviento, Respi",
+   "stars": "4,5",
+   "reviews": "1.720"
+  },
+  {
+   "rank": "#27",
+   "asin": "B0D1CBV5ZQ",
+   "title": "SANSI Lámpara de Plantas 20W Espectro Completo, Blanco, Sin Timer | 300W eq. Lámpara LED de cultivo con 2 cabezales para plantas de interior",
+   "stars": "4,5",
+   "reviews": "1.088"
+  },
+  {
+   "rank": "#27",
+   "asin": "B0D1CBV5ZQ",
+   "title": "SANSI Lámpara de Plantas 20W Espectro Completo, Blanco, Sin Timer | 300W eq. Lámpara LED de cultivo con 2 cabezales para plantas de interior",
+   "stars": "4,5",
+   "reviews": "1.088"
+  },
+  {
+   "rank": "#28",
+   "asin": "B0BYSTLTRZ",
+   "title": "JARDIN202 - Toldo Reforzado Impermeable | Lona Multiusos | con Ojales | Seleccione Medida | 2X3M. (Verde Oscuro)",
+   "stars": "3,5",
+   "reviews": "2.182"
+  },
+  {
+   "rank": "#28",
+   "asin": "B0BYSTLTRZ",
+   "title": "JARDIN202 - Toldo Reforzado Impermeable | Lona Multiusos | con Ojales | Seleccione Medida | 2X3M. (Verde Oscuro)",
+   "stars": "3,5",
+   "reviews": "2.182"
+  },
+  {
+   "rank": "#29",
+   "asin": "B0F3X6MLQG",
+   "title": "Bamworld Soporte alto para plantas con luz de crecimiento, soporte esquinero para plantas de interior, estante de esquina de metal y madera ",
+   "stars": "4,6",
+   "reviews": "6.181"
+  },
+  {
+   "rank": "#29",
+   "asin": "B0F3X6MLQG",
+   "title": "Bamworld Soporte alto para plantas con luz de crecimiento, soporte esquinero para plantas de interior, estante de esquina de metal y madera ",
+   "stars": "4,6",
+   "reviews": "6.181"
+  },
+  {
+   "rank": "#30",
+   "asin": "B09J4PSWV5",
+   "title": "Biotop - Paño de Tela Caliente de protección Frente al frío para Todo Tipo de Plantas y arbustos. 2 Metros de Ancho por 10 Metros de Largo, ",
+   "stars": "4,4",
+   "reviews": "1.514",
+   "price": "11,26"
+  },
+  {
+   "rank": "#30",
+   "asin": "B09J4PSWV5",
+   "title": "Biotop - Paño de Tela Caliente de protección Frente al frío para Todo Tipo de Plantas y arbustos. 2 Metros de Ancho por 10 Metros de Largo, ",
+   "stars": "4,4",
+   "reviews": "1.514",
+   "price": "11,26"
+  }
+ ],
+ "diy": [],
+ "computers": [
+  {
+   "rank": "#1",
+   "asin": "B094WLFGD3",
+   "title": "PlayStation 5 - Mando inalámbrico DualSense Midnight Black - Exclusivo para PS5",
+   "stars": "4,5",
+   "reviews": "27.863",
+   "price": "45,37"
+  },
+  {
+   "rank": "#1",
+   "asin": "B094WLFGD3",
+   "title": "PlayStation 5 - Mando inalámbrico DualSense Midnight Black - Exclusivo para PS5",
+   "stars": "4,5",
+   "reviews": "27.863",
+   "price": "45,37"
+  },
+  {
+   "rank": "#2",
+   "asin": "B015CH1NAQ",
+   "title": "SanDisk Ultra Flair Memoria flash USB 3.0 de 64 GB, con carcasa de metal duradera y elegante y hasta 150 MB/s de velocidad de lectura, Color",
+   "stars": "4,6",
+   "reviews": "170.808"
+  },
+  {
+   "rank": "#2",
+   "asin": "B015CH1NAQ",
+   "title": "SanDisk Ultra Flair Memoria flash USB 3.0 de 64 GB, con carcasa de metal duradera y elegante y hasta 150 MB/s de velocidad de lectura, Color",
+   "stars": "4,6",
+   "reviews": "170.808"
+  },
+  {
+   "rank": "#3",
+   "asin": "B07YYJRXQR",
+   "title": "SANDISK Ultra Dual Drive Go USB-C y USB-A, 128 GB, lectura hasta 400 MB/s | Pendrive con Conectores Reversibles, para Smartphones, Tabletas,",
+   "stars": "4,5",
+   "reviews": "52.688"
+  },
+  {
+   "rank": "#3",
+   "asin": "B07YYJRXQR",
+   "title": "SANDISK Ultra Dual Drive Go USB-C y USB-A, 128 GB, lectura hasta 400 MB/s | Pendrive con Conectores Reversibles, para Smartphones, Tabletas,",
+   "stars": "4,5",
+   "reviews": "52.688"
+  },
+  {
+   "rank": "#4",
+   "asin": "B0CX9CT3ZF",
+   "title": "PHILIPS 24E1N1100A Monitor 24 Pulgadas 120Hz Panel IPS, 4ms GtG, Altavoces, (1920x1080 HDMI 1x 1.4) Negro",
+   "stars": "4,5",
+   "reviews": "3.500",
+   "price": "56,62"
+  },
+  {
+   "rank": "#4",
+   "asin": "B0CX9CT3ZF",
+   "title": "PHILIPS 24E1N1100A Monitor 24 Pulgadas 120Hz Panel IPS, 4ms GtG, Altavoces, (1920x1080 HDMI 1x 1.4) Negro",
+   "stars": "4,5",
+   "reviews": "3.500",
+   "price": "56,62"
+  },
+  {
+   "rank": "#5",
+   "asin": "B08X19VZN8",
+   "title": "TP-Link RE330 - Repetidor WiFi 5 AC1200 de Doble Banda, Puerto Ethernet | Amplificador de Señal WiFi. Compatible con EasyMesh. Modo Punto de",
+   "stars": "4,3",
+   "reviews": "23.287",
+   "price": "22,31"
+  },
+  {
+   "rank": "#5",
+   "asin": "B08X19VZN8",
+   "title": "TP-Link RE330 - Repetidor WiFi 5 AC1200 de Doble Banda, Puerto Ethernet | Amplificador de Señal WiFi. Compatible con EasyMesh. Modo Punto de",
+   "stars": "4,3",
+   "reviews": "23.287",
+   "price": "22,31"
+  },
+  {
+   "rank": "#6",
+   "asin": "B091FS79T8",
+   "title": "UnionSine Disco Duro Externo 500GB 2.5\" USB3.0 Ultra Slim Portátil HDD | Almacenamiento para PC, Mac, MacBook, Chromebook, Xbox, PS4 (Color ",
+   "stars": "4,5",
+   "reviews": "52.840"
+  },
+  {
+   "rank": "#6",
+   "asin": "B091FS79T8",
+   "title": "UnionSine Disco Duro Externo 500GB 2.5\" USB3.0 Ultra Slim Portátil HDD | Almacenamiento para PC, Mac, MacBook, Chromebook, Xbox, PS4 (Color ",
+   "stars": "4,5",
+   "reviews": "52.840"
+  },
+  {
+   "rank": "#7",
+   "asin": "B0H3C6XHGK",
+   "title": "Samsung 990 SSD PCIe 4.0 x4, NVMe M.2(2280), 1TB | SSD interno, NVMe 2.0, PCIe 4.0 x4, velocidad de lectura/escritura de hasta 7.150/6.450 M",
+   "stars": "4,7",
+   "reviews": "145",
+   "price": "129,15"
+  },
+  {
+   "rank": "#7",
+   "asin": "B0H3C6XHGK",
+   "title": "Samsung 990 SSD PCIe 4.0 x4, NVMe M.2(2280), 1TB | SSD interno, NVMe 2.0, PCIe 4.0 x4, velocidad de lectura/escritura de hasta 7.150/6.450 M",
+   "stars": "4,7",
+   "reviews": "145",
+   "price": "129,15"
+  },
+  {
+   "rank": "#8",
+   "asin": "B0G14W2ZWW",
+   "title": "Samsung Galaxy Tab A11+ 128GB, Tableta con IA, Pantalla de 11\" con 90 Hz, 6GB de Memoria, Altavoces Cuádruples Dolby, Garantía del Fabricant",
+   "stars": "4,6",
+   "reviews": "309",
+   "price": "189,26"
+  },
+  {
+   "rank": "#8",
+   "asin": "B0G14W2ZWW",
+   "title": "Samsung Galaxy Tab A11+ 128GB, Tableta con IA, Pantalla de 11\" con 90 Hz, 6GB de Memoria, Altavoces Cuádruples Dolby, Garantía del Fabricant",
+   "stars": "4,6",
+   "reviews": "309",
+   "price": "189,26"
+  },
+  {
+   "rank": "#9",
+   "asin": "B0GX9SBDKC",
+   "title": "XIAOMI REDMI Pad 2 4+256GB Tablet de 11\" 2.5K Gris Batería de 9000 mAh | Pantalla crystal-clear, MediaTek G100-Ultra, Xiaomi HyperOS 2, WiFi",
+   "stars": "4,5",
+   "reviews": "99"
+  },
+  {
+   "rank": "#9",
+   "asin": "B0GX9SBDKC",
+   "title": "XIAOMI REDMI Pad 2 4+256GB Tablet de 11\" 2.5K Gris Batería de 9000 mAh | Pantalla crystal-clear, MediaTek G100-Ultra, Xiaomi HyperOS 2, WiFi",
+   "stars": "4,5",
+   "reviews": "99"
+  },
+  {
+   "rank": "#10",
+   "asin": "B0BGXWT3GL",
+   "title": "Toshiba Canvio Partner 1TB - Disco Duro Externo portátil de 2,5'', USB 3.2, Compatible con Mac y Windows. (HDTB510EK3AB)",
+   "stars": "4,6",
+   "reviews": "13.100",
+   "price": "71,07"
+  },
+  {
+   "rank": "#10",
+   "asin": "B0BGXWT3GL",
+   "title": "Toshiba Canvio Partner 1TB - Disco Duro Externo portátil de 2,5'', USB 3.2, Compatible con Mac y Windows. (HDTB510EK3AB)",
+   "stars": "4,6",
+   "reviews": "13.100",
+   "price": "71,07"
+  },
+  {
+   "rank": "#11",
+   "asin": "B0DZ75RKZH",
+   "title": "Apple iPad de 11 Pulgadas: Chip A16, Modelo de 11 Pulgadas, Pantalla Liquid Retina, 128 GB, Wi Fi 6, cámaras Frontal y Trasera de 12 Mpx, To",
+   "stars": "4,8",
+   "reviews": "11.405"
+  },
+  {
+   "rank": "#11",
+   "asin": "B0DZ75RKZH",
+   "title": "Apple iPad de 11 Pulgadas: Chip A16, Modelo de 11 Pulgadas, Pantalla Liquid Retina, 128 GB, Wi Fi 6, cámaras Frontal y Trasera de 12 Mpx, To",
+   "stars": "4,8",
+   "reviews": "11.405"
+  },
+  {
+   "rank": "#12",
+   "asin": "B0BBMYF8XD",
+   "title": "Canon SELPHY CP1500 Impresora Fotográfica Mini Portátil Inalámbrica | Configuración sencilla con la app SELPHY foto Layout; impresión desde ",
+   "stars": "4,4",
+   "reviews": "5.410",
+   "price": "90,08"
+  },
+  {
+   "rank": "#12",
+   "asin": "B0BBMYF8XD",
+   "title": "Canon SELPHY CP1500 Impresora Fotográfica Mini Portátil Inalámbrica | Configuración sencilla con la app SELPHY foto Layout; impresión desde ",
+   "stars": "4,4",
+   "reviews": "5.410",
+   "price": "90,08"
+  },
+  {
+   "rank": "#13",
+   "asin": "B0FT2XSPSN",
+   "title": "ARCTIC MX-7 (4 g) - Pasta térmica de alto rendimiento para CPUs | Para consolas, procesadores, tarjetas gráficas y portátiles, alta conducti",
+   "stars": "4,6",
+   "reviews": "2.011"
+  },
+  {
+   "rank": "#13",
+   "asin": "B0FT2XSPSN",
+   "title": "ARCTIC MX-7 (4 g) - Pasta térmica de alto rendimiento para CPUs | Para consolas, procesadores, tarjetas gráficas y portátiles, alta conducti",
+   "stars": "4,6",
+   "reviews": "2.011"
+  },
+  {
+   "rank": "#14",
+   "asin": "B0FKH5XJ4G",
+   "title": "Lenovo Idea Tab – Tablet 11\" 2.5K (MediaTek Dimensity 6300, 8 GB RAM, 256 GB UFS, 90 Hz, 4 Altavoces, Wi-Fi 5, Bluetooth 5.2, Android 15) Co",
+   "stars": "4,6",
+   "reviews": "386",
+   "price": "186,73"
+  },
+  {
+   "rank": "#14",
+   "asin": "B0FKH5XJ4G",
+   "title": "Lenovo Idea Tab – Tablet 11\" 2.5K (MediaTek Dimensity 6300, 8 GB RAM, 256 GB UFS, 90 Hz, 4 Altavoces, Wi-Fi 5, Bluetooth 5.2, Android 15) Co",
+   "stars": "4,6",
+   "reviews": "386",
+   "price": "186,73"
+  },
+  {
+   "rank": "#15",
+   "asin": "B098K3H92Z",
+   "title": "TP-Link UB500 - Adaptador Bluetooth USB para PC, Plug & Play, Tamaño Mini | Ideal para PC sin Bluetooth. No Necesita Configuración. Conecta ",
+   "stars": "4,6",
+   "reviews": "60.319",
+   "price": "6,27"
+  },
+  {
+   "rank": "#15",
+   "asin": "B098K3H92Z",
+   "title": "TP-Link UB500 - Adaptador Bluetooth USB para PC, Plug & Play, Tamaño Mini | Ideal para PC sin Bluetooth. No Necesita Configuración. Conecta ",
+   "stars": "4,6",
+   "reviews": "60.319",
+   "price": "6,27"
+  },
+  {
+   "rank": "#16",
+   "asin": "B0FCSSNXT4",
+   "title": "HP DeskJet 2920, Impresora Multifunción de Inyección de Tinta a Color | Wi-Fi de Doble Banda, Panel LCD, HP Smart App, Impresión, Copia y Es",
+   "stars": "3,8",
+   "reviews": "2.452"
+  },
+  {
+   "rank": "#16",
+   "asin": "B0FCSSNXT4",
+   "title": "HP DeskJet 2920, Impresora Multifunción de Inyección de Tinta a Color | Wi-Fi de Doble Banda, Panel LCD, HP Smart App, Impresión, Copia y Es",
+   "stars": "3,8",
+   "reviews": "2.452"
+  },
+  {
+   "rank": "#17",
+   "asin": "B00DQGBYDC",
+   "title": "Memoria USB 3.0 SanDisk Ultra de 64 GB, Negro | Para portátiles y ordenadores, hasta 10 veces más rápida que USB 2.0, diseño retráctil, soft",
+   "stars": "4,6",
+   "reviews": "188.569"
+  },
+  {
+   "rank": "#17",
+   "asin": "B00DQGBYDC",
+   "title": "Memoria USB 3.0 SanDisk Ultra de 64 GB, Negro | Para portátiles y ordenadores, hasta 10 veces más rápida que USB 2.0, diseño retráctil, soft",
+   "stars": "4,6",
+   "reviews": "188.569"
+  },
+  {
+   "rank": "#18",
+   "asin": "B0CGQ466W8",
+   "title": "Samsung Portable SSD T9, 1 TB, Disco Duro Externo, Lectura y escritura 2.000 MB/s, USB 3.2 Gen.2x2, Para Profesionales y Creativos, Compatib",
+   "stars": "4,7",
+   "reviews": "2.299",
+   "price": "124,97"
+  },
+  {
+   "rank": "#18",
+   "asin": "B0CGQ466W8",
+   "title": "Samsung Portable SSD T9, 1 TB, Disco Duro Externo, Lectura y escritura 2.000 MB/s, USB 3.2 Gen.2x2, Para Profesionales y Creativos, Compatib",
+   "stars": "4,7",
+   "reviews": "2.299",
+   "price": "124,97"
+  },
+  {
+   "rank": "#19",
+   "asin": "B077VYCV37",
+   "title": "SANDISK Ultra Fit Memoria USB-A, 64 GB, lectura hasta 300 MB/s | Memoria USB 3.2 Gen 1, Formato compacto plug-and-stay, Protección con Contr",
+   "stars": "4,5",
+   "reviews": "114.123"
+  },
+  {
+   "rank": "#19",
+   "asin": "B077VYCV37",
+   "title": "SANDISK Ultra Fit Memoria USB-A, 64 GB, lectura hasta 300 MB/s | Memoria USB 3.2 Gen 1, Formato compacto plug-and-stay, Protección con Contr",
+   "stars": "4,5",
+   "reviews": "114.123"
+  },
+  {
+   "rank": "#20",
+   "asin": "B09PRG6MJX",
+   "title": "TP-Link RE700X - Repetidor WiFi 6 AX3000, Doble Banda, Puerto GE, EasyMesh | Amplificador de Señal WiFi. Ancho de Banda de 160 MHz. Modo Pun",
+   "stars": "4,5",
+   "reviews": "25.915",
+   "price": "49,58"
+  },
+  {
+   "rank": "#20",
+   "asin": "B09PRG6MJX",
+   "title": "TP-Link RE700X - Repetidor WiFi 6 AX3000, Doble Banda, Puerto GE, EasyMesh | Amplificador de Señal WiFi. Ancho de Banda de 160 MHz. Modo Pun",
+   "stars": "4,5",
+   "reviews": "25.915",
+   "price": "49,58"
+  },
+  {
+   "rank": "#21",
+   "asin": "B00A128S24",
+   "title": "TP-Link TL-SG105 - Switch Gigabit de 5 Puertos, Plug & Play, Carcasa Acero | Plug & Play, No Necesita Configuración. Diseño sin Ventilador, ",
+   "stars": "4,7",
+   "reviews": "128.472",
+   "price": "13,31"
+  },
+  {
+   "rank": "#21",
+   "asin": "B00A128S24",
+   "title": "TP-Link TL-SG105 - Switch Gigabit de 5 Puertos, Plug & Play, Carcasa Acero | Plug & Play, No Necesita Configuración. Diseño sin Ventilador, ",
+   "stars": "4,7",
+   "reviews": "128.472",
+   "price": "13,31"
+  },
+  {
+   "rank": "#22",
+   "asin": "B0CK77HQYC",
+   "title": "Brother DCP-L2627DWE Impresora Láser Monocromo 3en 1, Eficiente Fácil de Configurar y Conectar con Una Impresión Rápida y Sin Errores",
+   "stars": "4,6",
+   "reviews": "842",
+   "price": "125,61"
+  },
+  {
+   "rank": "#22",
+   "asin": "B0CK77HQYC",
+   "title": "Brother DCP-L2627DWE Impresora Láser Monocromo 3en 1, Eficiente Fácil de Configurar y Conectar con Una Impresión Rápida y Sin Errores",
+   "stars": "4,6",
+   "reviews": "842",
+   "price": "125,61"
+  },
+  {
+   "rank": "#23",
+   "asin": "B0BHZGT2FY",
+   "title": "Uyubao Soporte Tarjeta Grafica GPU, Soporte Tarjeta De Video,GPU Holder, L(70mm-120mm)",
+   "stars": "4,6",
+   "reviews": "3.752"
+  },
+  {
+   "rank": "#23",
+   "asin": "B0BHZGT2FY",
+   "title": "Uyubao Soporte Tarjeta Grafica GPU, Soporte Tarjeta De Video,GPU Holder, L(70mm-120mm)",
+   "stars": "4,6",
+   "reviews": "3.752"
+  },
+  {
+   "rank": "#24",
+   "asin": "B00HQE9NM4",
+   "title": "Canon RP-108 - Papel fotográfico y cartucho de tinta original para Selphy CP, color blanco.",
+   "stars": "4,6",
+   "reviews": "25.367",
+   "price": "28,92"
+  },
+  {
+   "rank": "#24",
+   "asin": "B00HQE9NM4",
+   "title": "Canon RP-108 - Papel fotográfico y cartucho de tinta original para Selphy CP, color blanco.",
+   "stars": "4,6",
+   "reviews": "25.367",
+   "price": "28,92"
+  },
+  {
+   "rank": "#25",
+   "asin": "B0859MDSFX",
+   "title": "TP-Link TL-PA7017P Kit - Kit PLC, Adaptador Powerline AV1000, 1 Puerto GE | Amplía tu Red a Través del Cableado Eléctrico. Sin Obras ni Cabl",
+   "stars": "4,4",
+   "reviews": "7.786",
+   "price": "42,97"
+  },
+  {
+   "rank": "#25",
+   "asin": "B0859MDSFX",
+   "title": "TP-Link TL-PA7017P Kit - Kit PLC, Adaptador Powerline AV1000, 1 Puerto GE | Amplía tu Red a Través del Cableado Eléctrico. Sin Obras ni Cabl",
+   "stars": "4,4",
+   "reviews": "7.786",
+   "price": "42,97"
+  },
+  {
+   "rank": "#26",
+   "asin": "B0GVNTCQFR",
+   "title": "STRONG Repetidor WiFi N300, Amplificador WiFi Largo Alcance | 300 Mbps, Repetidor WiFi, Amplificador señal WiFi, WPS, Puerto LAN, Modo Punto",
+   "stars": "3,8",
+   "reviews": "451",
+   "price": "9,59"
+  },
+  {
+   "rank": "#26",
+   "asin": "B0GVNTCQFR",
+   "title": "STRONG Repetidor WiFi N300, Amplificador WiFi Largo Alcance | 300 Mbps, Repetidor WiFi, Amplificador señal WiFi, WPS, Puerto LAN, Modo Punto",
+   "stars": "3,8",
+   "reviews": "451",
+   "price": "9,59"
+  },
+  {
+   "rank": "#27",
+   "asin": "B0F3DSJWBG",
+   "title": "CORSAIR RM850e (2025) Fuente de Alimentación ATX con 12V-2x6 – Blanco | Compatible con ATX 3.1 y PCIe 5.1, Bajo Ruido, Totalmente Modular, E",
+   "stars": "4,6",
+   "reviews": "1.103",
+   "price": "70,21"
+  },
+  {
+   "rank": "#27",
+   "asin": "B0F3DSJWBG",
+   "title": "CORSAIR RM850e (2025) Fuente de Alimentación ATX con 12V-2x6 – Blanco | Compatible con ATX 3.1 y PCIe 5.1, Bajo Ruido, Totalmente Modular, E",
+   "stars": "4,6",
+   "reviews": "1.103",
+   "price": "70,21"
+  },
+  {
+   "rank": "#28",
+   "asin": "B09BC44T8K",
+   "title": "ORIGBELIE Lector CD DVD Externo, USB 3.0 y Type-C CD/DVD +/-RW Drive | Plug&Play Grabadora CD DVD Externa para PC, Portátil, Escritorio, Mac",
+   "stars": "4,4",
+   "reviews": "22.322"
+  },
+  {
+   "rank": "#28",
+   "asin": "B09BC44T8K",
+   "title": "ORIGBELIE Lector CD DVD Externo, USB 3.0 y Type-C CD/DVD +/-RW Drive | Plug&Play Grabadora CD DVD Externa para PC, Portátil, Escritorio, Mac",
+   "stars": "4,4",
+   "reviews": "22.322"
+  },
+  {
+   "rank": "#29",
+   "asin": "B0GQVLW917",
+   "title": "Apple iPad Air de 11 Pulgadas (M4): Pantalla Liquid Retina, 128 GB, cámaras Frontal/Trasera de 12 Mpx, Wi‑Fi 7 con el Chip N1 de Apple, Touc",
+   "stars": "4,8",
+   "reviews": "751"
+  },
+  {
+   "rank": "#29",
+   "asin": "B0GQVLW917",
+   "title": "Apple iPad Air de 11 Pulgadas (M4): Pantalla Liquid Retina, 128 GB, cámaras Frontal/Trasera de 12 Mpx, Wi‑Fi 7 con el Chip N1 de Apple, Touc",
+   "stars": "4,8",
+   "reviews": "751"
+  },
+  {
+   "rank": "#30",
+   "asin": "B0FN549BVL",
+   "title": "LG 32U721SA-W - Smart Monitor, Panel VA, 4K Ultra HD, 60 Hz, 32\" | Resolución 3840x2160, Formato 16:9, HDR10, Brillo 250 cd/m², DCI-P3 90%, ",
+   "stars": "4,4",
+   "reviews": "48"
+  },
+  {
+   "rank": "#30",
+   "asin": "B0FN549BVL",
+   "title": "LG 32U721SA-W - Smart Monitor, Panel VA, 4K Ultra HD, 60 Hz, 32\" | Resolución 3840x2160, Formato 16:9, HDR10, Brillo 250 cd/m², DCI-P3 90%, ",
+   "stars": "4,4",
+   "reviews": "48"
+  }
+ ],
+ "fashion": [
+  {
+   "rank": "#1",
+   "asin": "B077M8W8YQ",
+   "title": "Puma St Runner NL ZapatillasUnisex Adulto",
+   "stars": "4,5",
+   "reviews": "25.492",
+   "price": "18,17"
+  },
+  {
+   "rank": "#1",
+   "asin": "B077M8W8YQ",
+   "title": "Puma St Runner NL ZapatillasUnisex Adulto",
+   "stars": "4,5",
+   "reviews": "25.492",
+   "price": "18,17"
+  },
+  {
+   "rank": "#2",
+   "asin": "B00124Y9K0",
+   "title": "Calvin Klein Low Rise Trunk 3PK",
+   "stars": "4,4",
+   "reviews": "65.555"
+  },
+  {
+   "rank": "#2",
+   "asin": "B00124Y9K0",
+   "title": "Calvin Klein Low Rise Trunk 3PK",
+   "stars": "4,4",
+   "reviews": "65.555"
+  },
+  {
+   "rank": "#3",
+   "asin": "B0D44WM77X",
+   "title": "Búfalo - Spray Impermeabilizante Calzado 250ml - Spray Protector Zapatillas Transparente- 100% Repelente al Agua y a la Suciedad | Para Zapa",
+   "stars": "4,6",
+   "reviews": "3.262"
+  },
+  {
+   "rank": "#3",
+   "asin": "B0D44WM77X",
+   "title": "Búfalo - Spray Impermeabilizante Calzado 250ml - Spray Protector Zapatillas Transparente- 100% Repelente al Agua y a la Suciedad | Para Zapa",
+   "stars": "4,6",
+   "reviews": "3.262"
+  },
+  {
+   "rank": "#4",
+   "asin": "B00J28D2ZQ",
+   "title": "Joma - Camiseta Deportiva Manga Corta Hombre , 6XS - 3XL - Transpirable y Secado Rápido, Ideal para Running y Gym - Combi",
+   "stars": "4,5",
+   "reviews": "27.104",
+   "price": "5,48"
+  },
+  {
+   "rank": "#4",
+   "asin": "B00J28D2ZQ",
+   "title": "Joma - Camiseta Deportiva Manga Corta Hombre , 6XS - 3XL - Transpirable y Secado Rápido, Ideal para Running y Gym - Combi",
+   "stars": "4,5",
+   "reviews": "27.104",
+   "price": "5,48"
+  },
+  {
+   "rank": "#5",
+   "asin": "B0D8TCJGVL",
+   "title": "SINGULARU - Pendientes Dana Dots. Acero con Acabado en Baño Oro de 18Kt. Aro Ovalados con Cierre Congo/Click. Joyas para Mujer",
+   "stars": "4,5",
+   "reviews": "404"
+  },
+  {
+   "rank": "#5",
+   "asin": "B0D8TCJGVL",
+   "title": "SINGULARU - Pendientes Dana Dots. Acero con Acabado en Baño Oro de 18Kt. Aro Ovalados con Cierre Congo/Click. Joyas para Mujer",
+   "stars": "4,5",
+   "reviews": "404"
+  },
+  {
+   "rank": "#6",
+   "asin": "B09KHGSLJB",
+   "title": "HAWKERS Gafas de Sol ONE POLARIZED para hombre y mujer",
+   "stars": "4,2",
+   "reviews": "9.260",
+   "price": "12,06"
+  },
+  {
+   "rank": "#6",
+   "asin": "B09KHGSLJB",
+   "title": "HAWKERS Gafas de Sol ONE POLARIZED para hombre y mujer",
+   "stars": "4,2",
+   "reviews": "9.260",
+   "price": "12,06"
+  },
+  {
+   "rank": "#7",
+   "asin": "B07SZFGQ18",
+   "title": "Skechers Mujer Graceful Get Connected Trainers",
+   "stars": "4,6",
+   "reviews": "76.527",
+   "price": "30,54"
+  },
+  {
+   "rank": "#7",
+   "asin": "B07SZFGQ18",
+   "title": "Skechers Mujer Graceful Get Connected Trainers",
+   "stars": "4,6",
+   "reviews": "76.527",
+   "price": "30,54"
+  },
+  {
+   "rank": "#8",
+   "asin": "B07P5MVLXY",
+   "title": "Joma Pantalón Largo Deportivo Hombre, 5XS - 3XL - Bolsillos y Cintura Elástica con Cordón - Cleo II",
+   "stars": "4,5",
+   "reviews": "6.549",
+   "price": "11,53"
+  },
+  {
+   "rank": "#8",
+   "asin": "B07P5MVLXY",
+   "title": "Joma Pantalón Largo Deportivo Hombre, 5XS - 3XL - Bolsillos y Cintura Elástica con Cordón - Cleo II",
+   "stars": "4,5",
+   "reviews": "6.549",
+   "price": "11,53"
+  },
+  {
+   "rank": "#9",
+   "asin": "B077M8YXL2",
+   "title": "Puma Smash V2 L, Zapatillas de Deporte Unisex Adulto",
+   "stars": "4,4",
+   "reviews": "99.706"
+  },
+  {
+   "rank": "#9",
+   "asin": "B077M8YXL2",
+   "title": "Puma Smash V2 L, Zapatillas de Deporte Unisex Adulto",
+   "stars": "4,4",
+   "reviews": "99.706"
+  },
+  {
+   "rank": "#10",
+   "asin": "B0D7J4TJKH",
+   "title": "SINGULARU - Pendientes Samba. Acero con Acabado en Baño Oro de 18Kt. Minimalistas de Aro con Cierre Congo/Click. Joyas para Mujer",
+   "stars": "4,5",
+   "reviews": "519"
+  },
+  {
+   "rank": "#10",
+   "asin": "B0D7J4TJKH",
+   "title": "SINGULARU - Pendientes Samba. Acero con Acabado en Baño Oro de 18Kt. Minimalistas de Aro con Cierre Congo/Click. Joyas para Mujer",
+   "stars": "4,5",
+   "reviews": "519"
+  },
+  {
+   "rank": "#11",
+   "asin": "B0F8BRDPXB",
+   "title": "adidas Mujer BREAKNET Sleek Zapatos | Zapatos informales",
+   "stars": "4,2",
+   "reviews": "5.613",
+   "price": "31,20"
+  },
+  {
+   "rank": "#11",
+   "asin": "B0F8BRDPXB",
+   "title": "adidas Mujer BREAKNET Sleek Zapatos | Zapatos informales",
+   "stars": "4,2",
+   "reviews": "5.613",
+   "price": "31,20"
+  },
+  {
+   "rank": "#12",
+   "asin": "B0DNP2FPSQ",
+   "title": "Levi's Hombre 501 Original Fit Vaqueros",
+   "stars": "4,4",
+   "reviews": "45.607",
+   "price": "92,99"
+  },
+  {
+   "rank": "#12",
+   "asin": "B0DNP2FPSQ",
+   "title": "Levi's Hombre 501 Original Fit Vaqueros",
+   "stars": "4,4",
+   "reviews": "45.607",
+   "price": "92,99"
+  },
+  {
+   "rank": "#13",
+   "asin": "B0876PFLFQ",
+   "title": "Under Armour Ua Knit Track Suit Chándal Hombre | fácil de limpiar | secado rápido | regulador de la humedad | Elástico | Logotipo aplicado |",
+   "stars": "4,3",
+   "reviews": "5.171",
+   "price": "30,99"
+  },
+  {
+   "rank": "#13",
+   "asin": "B0876PFLFQ",
+   "title": "Under Armour Ua Knit Track Suit Chándal Hombre | fácil de limpiar | secado rápido | regulador de la humedad | Elástico | Logotipo aplicado |",
+   "stars": "4,3",
+   "reviews": "5.171",
+   "price": "30,99"
+  },
+  {
+   "rank": "#14",
+   "asin": "B0HRZL51LC",
+   "title": "Jersey Navideño Mujer con Estampado y Estrellas en las Mangas | Estampado frontal y estrellas en las mangas para un conjunto de temporada co"
+  },
+  {
+   "rank": "#14",
+   "asin": "B0HRZL51LC",
+   "title": "Jersey Navideño Mujer con Estampado y Estrellas en las Mangas | Estampado frontal y estrellas en las mangas para un conjunto de temporada co"
+  },
+  {
+   "rank": "#15",
+   "asin": "B082N4QNR4",
+   "title": "Skechers Uno Stand On Air ZapatillasHombre",
+   "stars": "4,6",
+   "reviews": "24.530",
+   "price": "35,41"
+  },
+  {
+   "rank": "#15",
+   "asin": "B082N4QNR4",
+   "title": "Skechers Uno Stand On Air ZapatillasHombre",
+   "stars": "4,6",
+   "reviews": "24.530",
+   "price": "35,41"
+  },
+  {
+   "rank": "#16",
+   "asin": "B0DQF4P3PH",
+   "title": "SOXCO Calcetines Térmicos para Hombres y Mujeres - Calcetines de Invierno Calientes, Paquete de 6 Pares",
+   "stars": "4,4",
+   "reviews": "1.758"
+  },
+  {
+   "rank": "#16",
+   "asin": "B0DQF4P3PH",
+   "title": "SOXCO Calcetines Térmicos para Hombres y Mujeres - Calcetines de Invierno Calientes, Paquete de 6 Pares",
+   "stars": "4,4",
+   "reviews": "1.758"
+  },
+  {
+   "rank": "#17",
+   "asin": "B0BLCPJWTY",
+   "title": "PUMA Zapatillas Caven 2.0 Unisex | Zapatos casuales",
+   "stars": "4,5",
+   "reviews": "12.233"
+  },
+  {
+   "rank": "#17",
+   "asin": "B0BLCPJWTY",
+   "title": "PUMA Zapatillas Caven 2.0 Unisex | Zapatos casuales",
+   "stars": "4,5",
+   "reviews": "12.233"
+  },
+  {
+   "rank": "#18",
+   "asin": "B003U378VS",
+   "title": "Calvin Klein Top de Bikini Mujer Bralette con Relleno extraíble",
+   "stars": "4,5",
+   "reviews": "49.815"
+  },
+  {
+   "rank": "#18",
+   "asin": "B003U378VS",
+   "title": "Calvin Klein Top de Bikini Mujer Bralette con Relleno extraíble",
+   "stars": "4,5",
+   "reviews": "49.815"
+  },
+  {
+   "rank": "#19",
+   "asin": "B0C66VQDFC",
+   "title": "SOXCO 10 Pares Calcetines de Trabajo Hombre WORK Socks",
+   "stars": "4,6",
+   "reviews": "27.297"
+  },
+  {
+   "rank": "#19",
+   "asin": "B0C66VQDFC",
+   "title": "SOXCO 10 Pares Calcetines de Trabajo Hombre WORK Socks",
+   "stars": "4,6",
+   "reviews": "27.297"
+  },
+  {
+   "rank": "#20",
+   "asin": "B0FG7V555Y",
+   "title": "Yankony Mochila Viaje Cabina Avion 40x30x20 para Ryanair 24L | con Bolsillo Antirrobo 40x20x25 Bolsa Viaje para Vueling Equipaje de Mano Hom",
+   "stars": "4,7",
+   "reviews": "2.057"
+  },
+  {
+   "rank": "#20",
+   "asin": "B0FG7V555Y",
+   "title": "Yankony Mochila Viaje Cabina Avion 40x30x20 para Ryanair 24L | con Bolsillo Antirrobo 40x20x25 Bolsa Viaje para Vueling Equipaje de Mano Hom",
+   "stars": "4,7",
+   "reviews": "2.057"
+  },
+  {
+   "rank": "#21",
+   "asin": "B0FWD8LW66",
+   "title": "adidas Men's Zapatilla DE Running Galaxy 8",
+   "stars": "4,7",
+   "reviews": "1.004",
+   "price": "26,70"
+  },
+  {
+   "rank": "#21",
+   "asin": "B0FWD8LW66",
+   "title": "adidas Men's Zapatilla DE Running Galaxy 8",
+   "stars": "4,7",
+   "reviews": "1.004",
+   "price": "26,70"
+  },
+  {
+   "rank": "#22",
+   "asin": "B0CXGKFH6L",
+   "title": "Crocs A Través De Zuecos Forrados, Zapatillas Ligeras Y Peludas para Mujeres Y Hombres",
+   "stars": "4,7",
+   "reviews": "1.638"
+  },
+  {
+   "rank": "#22",
+   "asin": "B0CXGKFH6L",
+   "title": "Crocs A Través De Zuecos Forrados, Zapatillas Ligeras Y Peludas para Mujeres Y Hombres",
+   "stars": "4,7",
+   "reviews": "1.638"
+  },
+  {
+   "rank": "#23",
+   "asin": "B0DKHYLPHJ",
+   "title": "TRAMAS+ Pijama Hombre de Invierno, Pijama de Coralina con Manga Larga Polar y Pantalón Largo, Conjunto de Pijama Cómodo y calentito",
+   "stars": "4,2",
+   "reviews": "1.484"
+  },
+  {
+   "rank": "#23",
+   "asin": "B0DKHYLPHJ",
+   "title": "TRAMAS+ Pijama Hombre de Invierno, Pijama de Coralina con Manga Larga Polar y Pantalón Largo, Conjunto de Pijama Cómodo y calentito",
+   "stars": "4,2",
+   "reviews": "1.484"
+  },
+  {
+   "rank": "#24",
+   "asin": "B01MR32LQT",
+   "title": "RockDove Zapatilla de dos tonos y espuma viscoelástica para Hombre | Sin cordones, interior/exterior, uso doméstico, antideslizante, lavable",
+   "stars": "4,4",
+   "reviews": "188.483"
+  },
+  {
+   "rank": "#24",
+   "asin": "B01MR32LQT",
+   "title": "RockDove Zapatilla de dos tonos y espuma viscoelástica para Hombre | Sin cordones, interior/exterior, uso doméstico, antideslizante, lavable",
+   "stars": "4,4",
+   "reviews": "188.483"
+  },
+  {
+   "rank": "#25",
+   "asin": "B0DJ98JPSD",
+   "title": "Puma Skyrocket Lite Adult Zapatillas para Correr de carreteraUnisex Adulto",
+   "stars": "4,5",
+   "reviews": "2.998"
+  },
+  {
+   "rank": "#25",
+   "asin": "B0DJ98JPSD",
+   "title": "Puma Skyrocket Lite Adult Zapatillas para Correr de carreteraUnisex Adulto",
+   "stars": "4,5",
+   "reviews": "2.998"
+  },
+  {
+   "rank": "#26",
+   "asin": "B0F5BB4TZP",
+   "title": "adidas Unisex adulto Cushioned Sportswear Crew Socks 3 Pair Pack Socks",
+   "stars": "4,6",
+   "reviews": "2.617",
+   "price": "7,26"
+  },
+  {
+   "rank": "#26",
+   "asin": "B0F5BB4TZP",
+   "title": "adidas Unisex adulto Cushioned Sportswear Crew Socks 3 Pair Pack Socks",
+   "stars": "4,6",
+   "reviews": "2.617",
+   "price": "7,26"
+  },
+  {
+   "rank": "#27",
+   "asin": "B0823BZ6S5",
+   "title": "JACK & JONES Trunks 7-Pack Trunks",
+   "stars": "4,5",
+   "reviews": "8.779",
+   "price": "20,66"
+  },
+  {
+   "rank": "#27",
+   "asin": "B0823BZ6S5",
+   "title": "JACK & JONES Trunks 7-Pack Trunks",
+   "stars": "4,5",
+   "reviews": "8.779",
+   "price": "20,66"
+  },
+  {
+   "rank": "#28",
+   "asin": "B07CHR942F",
+   "title": "Levi's Original - Camiseta para hombre, talla regular",
+   "stars": "4,6",
+   "reviews": "26.928"
+  },
+  {
+   "rank": "#28",
+   "asin": "B07CHR942F",
+   "title": "Levi's Original - Camiseta para hombre, talla regular",
+   "stars": "4,6",
+   "reviews": "26.928"
+  },
+  {
+   "rank": "#29",
+   "asin": "B0DK3WY5KP",
+   "title": "FM London Pack de 3/5 Camisetas Ricas en Algodón para Hombre, Entalladas",
+   "stars": "4,4",
+   "reviews": "15.295",
+   "price": "15,12"
+  },
+  {
+   "rank": "#29",
+   "asin": "B0DK3WY5KP",
+   "title": "FM London Pack de 3/5 Camisetas Ricas en Algodón para Hombre, Entalladas",
+   "stars": "4,4",
+   "reviews": "15.295",
+   "price": "15,12"
+  },
+  {
+   "rank": "#30",
+   "asin": "B07H5X7RH5",
+   "title": "Skechers Uno Stand On Air ZapatillasMujer",
+   "stars": "4,5",
+   "reviews": "60.336",
+   "price": "33,05"
+  },
+  {
+   "rank": "#30",
+   "asin": "B07H5X7RH5",
+   "title": "Skechers Uno Stand On Air ZapatillasMujer",
+   "stars": "4,5",
+   "reviews": "60.336",
+   "price": "33,05"
+  }
+ ]
+}

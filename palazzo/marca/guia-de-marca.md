@@ -1,7 +1,7 @@
-# Palazzo · Guía de identidad (versión 0.1, PROVISIONAL)
+# Palazzo · Guía de identidad (versión 1.0, APROBADA el 23/11/2026)
 
 > El nombre **Palazzo** ya existe: es el nombre de tu tienda y de tu dominio (palaazzo.shop), y se conserva.
-> Lo que aquí se propone (posicionamiento, logotipo, colores y tono) es una **propuesta pendiente de tu aprobación**.
+> Lo que aquí se propone (posicionamiento, logotipo, colores y tono) fue aprobado por el titular el 23/11/2026.
 > **No se ha comprobado si la marca está registrada.** Antes de invertir en ella, busca "Palazzo" en clases 18, 25 y 35 en la
 > [OEPM](https://consultas2.oepm.es/LocalizadorWeb/) y en la [EUIPO](https://euipo.europa.eu/eSearch/). Palazzo es una palabra común en italiano y
 > es probable que existan registros parecidos. La revisión de un profesional de propiedad industrial es recomendable.

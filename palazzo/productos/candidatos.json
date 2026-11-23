@@ -1,29 +1,285 @@
 {
-  "_nota": "Productos que ya están en la tienda. Las notas (0-5) son una VALORACIÓN PRELIMINAR del equipo a partir de la ficha y las fotos, no datos de mercado. Demanda y competencia quedan vacías hasta hacer la investigación con fuentes. Costes en null: no se conocen y no se inventan. Rellena supplierCost y shippingCost con lo que confirme el proveedor.",
+  "_nota": "Notas 0-5. 'demanda' sale del ranking oficial 'Los más vendidos' de Amazon.es (23/11/2026, ver datos/): top 5 de categoría = 5, top 30 = 4, varias fichas del mismo producto en el top 30 = +1 (máx. 5). 'competencia' es baja nota si hay muchas fichas iguales o marcas fuertes. El resto es valoración del equipo. Costes en null: no se conocen y no se inventan; los precios de competencia son los mostrados en Amazon.es ese día.",
   "candidates": [
-    { "id": "calora", "name": "Calora® Calentador de manos 2 en 1", "supplierCost": null, "shippingCost": null, "competitorPrices": [],
-      "supplierVerified": {}, "complianceChecked": false,
-      "scores": { "diferenciacion": 4, "potencial_publicitario": 5, "transporte": 4, "devoluciones": 4, "precio": 4, "visuales": 5, "legal": 2 },
-      "notas": "Lleva batería de litio: requiere CE, RAEE, pilas/baterías y condiciones de transporte. Estacional (oct-feb)." },
-    { "id": "pantalon-bombacho", "name": "PALAZZO® Pantalón Bombacho", "supplierCost": null, "shippingCost": null, "competitorPrices": [],
-      "supplierVerified": {}, "complianceChecked": false,
-      "scores": { "transporte": 5, "devoluciones": 2, "precio": 4, "visuales": 2, "legal": 4 },
-      "notas": "Fue el más vendido (4 de 6 pedidos). Está en borrador. Ropa: riesgo de devolución por talla; etiquetado textil obligatorio. Fotos son capturas de pantalla." },
-    { "id": "carzen-kit-completo", "name": "Kit Completo Carzen (limpieza coche)", "supplierCost": null, "shippingCost": null, "competitorPrices": [],
-      "supplierVerified": {}, "complianceChecked": false,
-      "scores": { "diferenciacion": 3, "potencial_publicitario": 4, "transporte": 2, "devoluciones": 4, "precio": 4, "visuales": 3, "legal": 1 },
-      "notas": "Productos químicos en 1 L: ficha de datos de seguridad, etiquetado CLP y posibles restricciones de transporte. Compra recurrente (bueno para email)." },
-    { "id": "fuente-mascotas", "name": "Fuente de agua para mascotas", "supplierCost": null, "shippingCost": null, "competitorPrices": [],
-      "supplierVerified": {}, "complianceChecked": false,
-      "scores": { "potencial_publicitario": 3, "transporte": 3, "devoluciones": 3, "precio": 4, "visuales": 3, "legal": 3 },
-      "notas": "Eléctrico (USB): CE y RAEE. Consumible recurrente (filtros) si el proveedor los tiene." },
-    { "id": "paraguas-nublo", "name": "Paraguas Nublo®", "supplierCost": null, "shippingCost": null, "competitorPrices": [],
-      "supplierVerified": {}, "complianceChecked": false,
-      "scores": { "potencial_publicitario": 3, "transporte": 3, "devoluciones": 4, "precio": 4, "visuales": 3, "legal": 4 },
-      "notas": "URL con ® (ver auditoría)." },
-    { "id": "limer", "name": "Limer 6 en 1", "supplierCost": null, "shippingCost": null, "competitorPrices": [],
-      "supplierVerified": {}, "complianceChecked": false,
-      "scores": { "transporte": 4, "precio": 4, "visuales": 2 },
-      "notas": "Tema publicado actualmente. Falta descripción en la ficha." }
+    {
+      "id": "calentador-manos",
+      "name": "Calentador de manos recargable 2 en 1 magnético (Calora)",
+      "supplierCost": null,
+      "shippingCost": null,
+      "competitorPrices": [],
+      "evidencia": "Amazon.es: nº3 en TODO Deportes y aire libre y nº1 en Calentadores de manos recargables (ficha VOSFEEL B0DCZ6H83Z, 889 valoraciones).",
+      "supplierVerified": {},
+      "complianceChecked": false,
+      "scores": {
+        "demanda": 5,
+        "competencia": 3,
+        "diferenciacion": 4,
+        "potencial_publicitario": 5,
+        "transporte": 4,
+        "devoluciones": 4,
+        "precio": 4,
+        "visuales": 5,
+        "legal": 2
+      }
+    },
+    {
+      "id": "compresor-ruedas",
+      "name": "Compresor de aire portátil / inflador de ruedas",
+      "supplierCost": null,
+      "shippingCost": null,
+      "competitorPrices": [
+        23.26
+      ],
+      "evidencia": "Amazon.es: nº6 en Coche y moto (HOVVIDA B0DGH2GWDK, 4.185 valoraciones, 23,26 €).",
+      "supplierVerified": {},
+      "complianceChecked": false,
+      "scores": {
+        "demanda": 4,
+        "competencia": 3,
+        "diferenciacion": 3,
+        "potencial_publicitario": 4,
+        "transporte": 4,
+        "devoluciones": 4,
+        "precio": 4,
+        "visuales": 3,
+        "legal": 3
+      }
+    },
+    {
+      "id": "luz-armario-sensor",
+      "name": "Luz LED magnética con sensor de movimiento (armario/cocina), pack",
+      "supplierCost": null,
+      "shippingCost": null,
+      "competitorPrices": [],
+      "evidencia": "Amazon.es Iluminación: nº1 (OUILA B09DP2XV1V, 18.680 val.), y 4 fichas más del mismo producto en el top 30 (#15, #18, #27, #28).",
+      "supplierVerified": {},
+      "complianceChecked": false,
+      "scores": {
+        "demanda": 5,
+        "competencia": 2,
+        "diferenciacion": 3,
+        "potencial_publicitario": 4,
+        "transporte": 5,
+        "devoluciones": 5,
+        "precio": 2,
+        "visuales": 3,
+        "legal": 4
+      }
+    },
+    {
+      "id": "mochila-cabina",
+      "name": "Mochila de cabina 40x30x20 (medida Ryanair)",
+      "supplierCost": null,
+      "shippingCost": null,
+      "competitorPrices": [],
+      "evidencia": "Amazon.es: nº20 en TODA la categoría Moda (Yankony B0FG7V555Y, 2.057 valoraciones). Encaja con las mochilas que ya vendes.",
+      "supplierVerified": {},
+      "complianceChecked": false,
+      "scores": {
+        "demanda": 4,
+        "competencia": 2,
+        "diferenciacion": 3,
+        "potencial_publicitario": 4,
+        "transporte": 4,
+        "devoluciones": 4,
+        "precio": 4,
+        "visuales": 3,
+        "legal": 5
+      }
+    },
+    {
+      "id": "proyector-estrellas",
+      "name": "Proyector de estrellas / proyector de Navidad",
+      "supplierCost": null,
+      "shippingCost": null,
+      "competitorPrices": [],
+      "evidencia": "Amazon.es Iluminación: nº3 (proyector de Navidad B0HN5BK1CJ, ficha nueva) y nº20 (proyector astronauta B0FGJ8MZVN, 1.660 val.).",
+      "supplierVerified": {},
+      "complianceChecked": false,
+      "scores": {
+        "demanda": 4,
+        "competencia": 3,
+        "diferenciacion": 3,
+        "potencial_publicitario": 5,
+        "transporte": 4,
+        "devoluciones": 3,
+        "precio": 4,
+        "visuales": 4,
+        "legal": 3
+      }
+    },
+    {
+      "id": "irrigador-bucal",
+      "name": "Irrigador bucal portátil inalámbrico",
+      "supplierCost": null,
+      "shippingCost": null,
+      "competitorPrices": [
+        21.89
+      ],
+      "evidencia": "Amazon.es: nº11 en Salud y cuidado personal (Vimmk B0CHYVN2D7, 8.490 valoraciones, 21,89 €).",
+      "supplierVerified": {},
+      "complianceChecked": false,
+      "scores": {
+        "demanda": 4,
+        "competencia": 2,
+        "diferenciacion": 2,
+        "potencial_publicitario": 3,
+        "transporte": 4,
+        "devoluciones": 3,
+        "precio": 4,
+        "visuales": 3,
+        "legal": 3
+      }
+    },
+    {
+      "id": "baliza-v16",
+      "name": "Baliza V16 homologada DGT con geolocalización",
+      "supplierCost": null,
+      "shippingCost": null,
+      "competitorPrices": [],
+      "evidencia": "Amazon.es Coche y moto: 4 fichas en el top 22 (#2, #5, #7, #22). Demanda muy alta, pero solo se puede vender un modelo homologado y conectado a DGT 3.0 con certificado.",
+      "supplierVerified": {},
+      "complianceChecked": false,
+      "scores": {
+        "demanda": 5,
+        "competencia": 1,
+        "diferenciacion": 1,
+        "potencial_publicitario": 3,
+        "transporte": 5,
+        "devoluciones": 4,
+        "precio": 3,
+        "visuales": 2,
+        "legal": 0
+      }
+    },
+    {
+      "id": "arrancador-bateria",
+      "name": "Arrancador de baterías de coche portátil",
+      "supplierCost": null,
+      "shippingCost": null,
+      "competitorPrices": [],
+      "evidencia": "Amazon.es: nº15 en Coche y moto (BRPOM B095LTWT1Y, 1.613 valoraciones). Estacional (frío).",
+      "supplierVerified": {},
+      "complianceChecked": false,
+      "scores": {
+        "demanda": 4,
+        "competencia": 3,
+        "diferenciacion": 2,
+        "potencial_publicitario": 4,
+        "transporte": 2,
+        "devoluciones": 4,
+        "precio": 4,
+        "visuales": 3,
+        "legal": 2
+      }
+    },
+    {
+      "id": "mini-motosierra",
+      "name": "Mini motosierra de batería 6''",
+      "supplierCost": null,
+      "shippingCost": null,
+      "competitorPrices": [],
+      "evidencia": "Amazon.es: nº4 en Jardín (SEESII B0BM5L4DKK, 20.390 valoraciones).",
+      "supplierVerified": {},
+      "complianceChecked": false,
+      "scores": {
+        "demanda": 5,
+        "competencia": 2,
+        "diferenciacion": 2,
+        "potencial_publicitario": 5,
+        "transporte": 2,
+        "devoluciones": 3,
+        "precio": 4,
+        "visuales": 3,
+        "legal": 1
+      }
+    },
+    {
+      "id": "pantalon-bombacho",
+      "name": "PALAZZO® Pantalón Bombacho",
+      "supplierCost": null,
+      "shippingCost": null,
+      "competitorPrices": [],
+      "supplierVerified": {},
+      "complianceChecked": false,
+      "scores": {
+        "transporte": 5,
+        "devoluciones": 2,
+        "precio": 4,
+        "visuales": 2,
+        "legal": 4
+      },
+      "notas": "Fue el más vendido (4 de 6 pedidos). Está en borrador. Ropa: riesgo de devolución por talla; etiquetado textil obligatorio. Fotos son capturas de pantalla."
+    },
+    {
+      "id": "carzen-kit-completo",
+      "name": "Kit Completo Carzen (limpieza coche)",
+      "supplierCost": null,
+      "shippingCost": null,
+      "competitorPrices": [],
+      "supplierVerified": {},
+      "complianceChecked": false,
+      "scores": {
+        "diferenciacion": 3,
+        "potencial_publicitario": 4,
+        "transporte": 2,
+        "devoluciones": 4,
+        "precio": 4,
+        "visuales": 3,
+        "legal": 1
+      },
+      "notas": "Productos químicos en 1 L: ficha de datos de seguridad, etiquetado CLP y posibles restricciones de transporte. Compra recurrente (bueno para email)."
+    },
+    {
+      "id": "fuente-mascotas",
+      "name": "Fuente de agua para mascotas",
+      "supplierCost": null,
+      "shippingCost": null,
+      "competitorPrices": [],
+      "supplierVerified": {},
+      "complianceChecked": false,
+      "scores": {
+        "potencial_publicitario": 3,
+        "transporte": 3,
+        "devoluciones": 3,
+        "precio": 4,
+        "visuales": 3,
+        "legal": 3
+      },
+      "notas": "Eléctrico (USB): CE y RAEE. Consumible recurrente (filtros) si el proveedor los tiene."
+    },
+    {
+      "id": "paraguas-nublo",
+      "name": "Paraguas Nublo®",
+      "supplierCost": null,
+      "shippingCost": null,
+      "competitorPrices": [],
+      "supplierVerified": {},
+      "complianceChecked": false,
+      "scores": {
+        "potencial_publicitario": 3,
+        "transporte": 3,
+        "devoluciones": 4,
+        "precio": 4,
+        "visuales": 3,
+        "legal": 4
+      },
+      "notas": "URL con ® (ver auditoría)."
+    },
+    {
+      "id": "limer",
+      "name": "Limer 6 en 1",
+      "supplierCost": null,
+      "shippingCost": null,
+      "competitorPrices": [],
+      "supplierVerified": {},
+      "complianceChecked": false,
+      "scores": {
+        "transporte": 4,
+        "precio": 4,
+        "visuales": 2
+      },
+      "notas": "Tema publicado actualmente. Falta descripción en la ficha."
+    }
   ]
 }

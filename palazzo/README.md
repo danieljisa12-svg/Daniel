@@ -118,14 +118,14 @@ Estados: ✅ hecho y verificado · 🔄 en curso · ⏳ pendiente · ⛔ bloquea
 |---|---|---|---|---|
 | 1 Auditoría | Inspección del repositorio, la tienda y las herramientas | Director | ✅ | Este documento |
 | 1 | Arquitectura, accesos y costes | Director | ✅ | §4–§6 |
-| 2 Marca | Posicionamiento, colores, tipografías, logotipo y tono | Branding | 🔄 propuesta | Aprobación tuya y búsqueda en OEPM y EUIPO |
+| 2 Marca | Posicionamiento, colores, tipografías, logotipo y tono | Branding | ✅ aprobada 23/11 | Pendiente: búsqueda en OEPM y EUIPO |
 | 2 | Aplicaciones: redes, plantillas de anuncio y newsletter | Branding / Contenido | ⏳ | Tras aprobar la marca |
 | 3 Tienda | Tema de desarrollo sin publicar | Diseñador | 🔄 | ✅ Creado y Theme Check limpio · ⛔ faltan capturas móvil y escritorio (necesita el permiso §4.1) |
 | 3 | Páginas: envíos y devoluciones, FAQ, aviso legal | Diseñador / Legal | ⛔ | Faltan tus datos (§4.3) y los del proveedor (§4.2) |
 | 3 | Menú principal y pie: colecciones, ayuda y legal | Catálogo | ⏳ | Tras decidir el nicho (§7.1) |
 | 3 | Publicación del tema | Director | ⛔ | Solo con tu aprobación explícita y tras la compra de prueba |
 | 4 Catálogo | Puntuación y precios | Investigador / Finanzas | ✅ | Pruebas en verde |
-| 4 | Investigación de tendencias con fuentes | Investigador | ⏳ | Informe con fuentes citadas y puntuaciones |
+| 4 | Investigación de productos con venta real | Investigador | ✅ 23/11 | `productos/investigacion-2026-11.md` |
 | 4 | Fichas completas: copy, SEO y texto alternativo de imágenes | Catálogo | ⏳ | Primero como borradores; se publican tras tu aprobación |
 | 4 | Costes reales en Shopify | Catálogo / Finanzas | ⛔ | Datos del proveedor |
 | 5 Integraciones | Píxeles de Meta, TikTok y Google con consentimiento | Ads | ⛔ | Accesos §4.5–4.7 |
