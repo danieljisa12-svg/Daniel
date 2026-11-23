@@ -1,0 +1,43 @@
+# Despliegue en Render (https://render.com) con disco persistente para la base de datos.
+# Una sola instancia: evita que dos procesos atiendan la misma cola a la vez.
+services:
+  - type: web
+    name: palazzo-ops
+    runtime: docker
+    rootDir: ops
+    plan: starter
+    region: frankfurt
+    healthCheckPath: /health
+    disk:
+      name: data
+      mountPath: /data
+      sizeGB: 1
+    envVars:
+      - key: DATA_DIR
+        value: /data
+      - key: TIMEZONE
+        value: Europe/Madrid
+      - key: PUBLIC_URL
+        sync: false
+      - key: PANEL_PASSWORD
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: SHOPIFY_SHOP
+        sync: false
+      - key: SHOPIFY_CLIENT_ID
+        sync: false
+      - key: SHOPIFY_CLIENT_SECRET
+        sync: false
+      - key: WHATSAPP_TOKEN
+        sync: false
+      - key: WHATSAPP_PHONE_NUMBER_ID
+        sync: false
+      - key: WHATSAPP_APP_SECRET
+        sync: false
+      - key: WHATSAPP_VERIFY_TOKEN
+        sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: NTFY_TOPIC
+        sync: false
