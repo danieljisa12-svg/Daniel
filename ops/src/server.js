@@ -13,6 +13,8 @@ import { orderEconomics, periodSummary } from "./finance.js";
 import { agentsStatus, runDailyReport, dailyReport, localDate } from "./director.js";
 import { STATES } from "./orders/states.js";
 import { DEFAULT_SETTINGS } from "./orders/service.js";
+import { diagnostics, ensureWebhooks } from "./setup.js";
+import { syncCatalog } from "./shopify/catalog.js";
 
 const PUBLIC_DIR = path.join(path.dirname(fileURLToPath(import.meta.url)), "..", "public");
 const MAX_BODY = 1024 * 1024;
@@ -105,7 +107,7 @@ export function createServer(app) {
         const r = db.run("INSERT INTO webhook_events(source, event_id, topic) VALUES('whatsapp', ?, 'message') ON CONFLICT DO NOTHING", m.id);
         if (!r.changes) continue;
         if (!m.text) { await app.alert("aviso", "El proveedor envió un mensaje no textual", `Tipo: ${m.type}. Revísalo en WhatsApp.`); continue; }
-        await orders.receiveSupplierMessage({ from: m.from, text: m.text, waId: m.id, contextId: m.contextId, channel: "whatsapp_api" });
+        app.queue.enqueue("whatsapp.incoming", { from: m.from, text: m.text, waId: m.id, contextId: m.contextId }, { dedupeKey: `wa.in:${m.id}` });
       }
       return send(res, 200, "ok");
     }
@@ -128,7 +130,7 @@ export function createServer(app) {
     if (!p.startsWith("/api/")) return send(res, 404, "No encontrado");
 
     if (p === "/api/login" && method === "POST") {
-      const ip = req.socket.remoteAddress || "?";
+      const ip = String(req.headers["x-forwarded-for"] || "").split(",")[0].trim() || req.socket.remoteAddress || "?";
       const a = loginAttempts.get(ip) || { n: 0, t: Date.now() };
       if (Date.now() - a.t > 15 * 60 * 1000) { a.n = 0; a.t = Date.now(); }
       if (a.n >= 5) return send(res, 429, { error: "Demasiados intentos. Espera 15 minutos." });
@@ -226,6 +228,28 @@ export function createServer(app) {
     if (method === "GET" && p === "/api/audit") return send(res, 200, db.all("SELECT * FROM audit_log ORDER BY id DESC LIMIT 300"));
     if (method === "GET" && p === "/api/agents") return send(res, 200, agentsStatus(db, config));
     if (method === "GET" && p === "/api/jobs") return send(res, 200, db.all("SELECT id, type, status, attempts, last_error, run_at, updated_at FROM jobs WHERE type != 'noop' ORDER BY id DESC LIMIT 100"));
+
+    // ---------- Puesta en marcha ----------
+    if (method === "GET" && p === "/api/diagnostics") return send(res, 200, await diagnostics(app));
+    if (method === "POST" && p === "/api/setup/webhooks") {
+      if (!app.shopify) return send(res, 400, { error: "Shopify no está conectado" });
+      return send(res, 200, await ensureWebhooks(db, config, app.shopify));
+    }
+    if (method === "POST" && p === "/api/setup/sync-catalog") {
+      if (!app.shopify) return send(res, 400, { error: "Shopify no está conectado" });
+      return send(res, 200, await syncCatalog(db, app.shopify));
+    }
+    if (method === "POST" && p === "/api/setup/test-alert") {
+      await app.alert("info", "Alerta de prueba", "Si ves esto en el móvil, las alertas funcionan.");
+      return send(res, 200, { ok: true, ntfy: !!config.alerts.ntfyTopic });
+    }
+    if (method === "POST" && p === "/api/catalog/assign-all") {
+      const { supplier_id } = await json();
+      if (!db.get("SELECT id FROM suppliers WHERE id = ?", supplier_id)) return send(res, 400, { error: "Proveedor no válido" });
+      const r = db.run("UPDATE supplier_products SET supplier_id = ?, updated_at = datetime('now') WHERE supplier_id IS NULL", supplier_id);
+      audit(db, { actor: "propietario", action: "catalogo.asignar_todo", details: { supplier_id, rows: r.changes } });
+      return send(res, 200, { ok: true, updated: r.changes });
+    }
 
     if (method === "GET" && p === "/api/suppliers") return send(res, 200, db.all("SELECT * FROM suppliers ORDER BY id"));
     if (method === "POST" && p === "/api/suppliers") {

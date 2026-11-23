@@ -15,6 +15,7 @@ export function createAlerter(db, config, fetchImpl = globalThis.fetch) {
       // Publicación JSON de ntfy (admite acentos en título y mensaje).
       await fetchImpl(config.alerts.ntfyServer + "/", {
         method: "POST",
+        signal: AbortSignal.timeout(5000),
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           topic: config.alerts.ntfyTopic,

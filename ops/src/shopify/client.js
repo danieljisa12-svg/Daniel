@@ -10,6 +10,7 @@ export function createShopifyClient(config, fetchImpl = globalThis.fetch) {
     if (token && Date.now() < tokenExpiresAt - 5 * 60 * 1000) return token;
     const res = await fetchImpl(`${base}/admin/oauth/access_token`, {
       method: "POST",
+      signal: AbortSignal.timeout(20000),
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams({ grant_type: "client_credentials", client_id: clientId, client_secret: clientSecret }),
     });
@@ -25,6 +26,7 @@ export function createShopifyClient(config, fetchImpl = globalThis.fetch) {
     for (let attempt = 0; attempt < 3; attempt++) {
       const res = await fetchImpl(`${base}/admin/api/${apiVersion}/graphql.json`, {
         method: "POST",
+        signal: AbortSignal.timeout(30000),
         headers: { "Content-Type": "application/json", "X-Shopify-Access-Token": await getToken() },
         body: JSON.stringify({ query, variables }),
       });

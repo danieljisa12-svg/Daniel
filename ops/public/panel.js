@@ -86,6 +86,23 @@
     try { await refreshHeader(); v.innerHTML = await views[tab](); } catch (e) { v.innerHTML = `<p class="err">${esc(e.message)}</p>`; }
   }
 
+  views.setup = async () => {
+    const d = await api("/diagnostics");
+    $("#setup-count").textContent = d.checks.filter((c) => c.ok === false).length || "";
+    const icon = (ok) => (ok === true ? '<span class="badge ok">✔ listo</span>' : ok === false ? '<span class="badge err">✖ falta</span>' : ok === "demo" ? '<span class="badge warn">simulado</span>' : '<span class="badge">opcional</span>');
+    return `<section class="card ${d.ready ? "" : "missing"}"><h2>${d.ready ? "✅ Todo listo para funcionar" : "Puesta en marcha"}</h2>
+        <p class="mute small">Comprobación real de cada conexión (${when(d.at)}). Los puntos ✖ impiden el funcionamiento; los opcionales mejoran la automatización.</p></section>
+      <div class="list">${d.checks.map((c) => `
+        <div class="card"><div class="row between"><b>${esc(c.name)}</b>${icon(c.ok)}</div>
+        <div class="small">${esc(c.detail)}</div>${c.ok === false && c.fix ? `<div class="small missing">${esc(c.fix)}</div>` : ""}</div>`).join("")}</div>
+      <section class="card"><h3>Acciones</h3><div class="row">
+        <button class="btn" data-setup="webhooks">Registrar webhooks</button>
+        <button class="btn" data-setup="sync-catalog">Sincronizar catálogo</button>
+        <button class="btn" data-setup="test-alert">Enviar alerta de prueba</button>
+        <button class="btn ghost" data-setup="refresh">↻ Volver a comprobar</button>
+      </div>${d.lastCatalogSync ? `<p class="small mute">Última sincronización: ${when(d.lastCatalogSync.at)} · ${d.lastCatalogSync.total} variantes</p>` : ""}</section>`;
+  };
+
   views.resumen = async () => {
     const s = summary, t = s.today, m = s.month, st = s.byStatus;
     const k = (l, v, sub = "") => `<div class="kpi"><div class="l">${l}</div><div class="v">${v}</div>${sub ? `<div class="mute small">${sub}</div>` : ""}</div>`;
@@ -221,6 +238,7 @@
       </section>
       <section class="card"><h2>Catálogo del proveedor</h2>
         <p class="small mute">Relaciona cada variante de Shopify con la referencia y el coste de tu proveedor. Sin coste no hay cálculo de beneficio; sin proveedor el pedido queda en incidencia.</p>
+        ${sups.length && cat.some((c) => !c.supplier_id) ? `<div class="row"><select id="assign-all-supplier">${opts(null)}</select><button class="btn small" data-assign-all="1">Asignar proveedor a todas las variantes sin proveedor</button></div>` : ""}
         <div class="list">${cat.map((c) => `
           <form class="card cat-row" data-cat="${c.id}">
             <div><b>${esc(c.title)}</b><div class="mute small">${esc(c.variant_title || "")} ${c.sku ? "· " + esc(c.sku) : ""}</div></div>
@@ -281,8 +299,25 @@
 
   // ---------- Acciones (delegadas) ----------
   document.addEventListener("click", act(async (e) => {
-    const t = e.target.closest("[data-open-order],[data-filter],[data-sent],[data-retry],[data-resume],[data-ask-tracking],[data-delivered],[data-demo-order],[data-run-report],#logout");
+    const t = e.target.closest("[data-setup],[data-assign-all],[data-open-order],[data-filter],[data-sent],[data-retry],[data-resume],[data-ask-tracking],[data-delivered],[data-demo-order],[data-run-report],#logout");
     if (!t) return;
+    if (t.dataset.setup) {
+      if (t.dataset.setup !== "refresh") {
+        t.disabled = true;
+        const r = await api(`/setup/${t.dataset.setup}`, { method: "POST" }).finally(() => (t.disabled = false));
+        toast(t.dataset.setup === "webhooks" ? (r.created.length ? "Registrados: " + r.created.join(", ") : "Ya estaban registrados")
+          : t.dataset.setup === "sync-catalog" ? `Catálogo: ${r.added} nuevas, ${r.updated} actualizadas`
+          : r.ntfy ? "Alerta enviada al móvil" : "Alerta creada (configura ntfy para recibirla en el móvil)");
+      }
+      return render();
+    }
+    if (t.dataset.assignAll) {
+      const sel = $("#assign-all-supplier");
+      if (!sel.value) return toast("Elige un proveedor");
+      const r = await api("/catalog/assign-all", { method: "POST", body: { supplier_id: Number(sel.value) } });
+      toast(`Asignado a ${r.updated} variante(s)`);
+      return render();
+    }
     if (t.dataset.openOrder) return openOrder(t.dataset.openOrder);
     if (t.dataset.filter !== undefined) { orderFilter = t.dataset.filter; return render(); }
     if (t.dataset.sent) { await api(`/messages/${t.dataset.sent}/sent`, { method: "POST" }); toast("Marcado como enviado"); return reopen(); }
@@ -344,6 +379,11 @@
 
   async function start() {
     $("#login").hidden = true; $("#app").hidden = false;
+    try {
+      const d = await api("/diagnostics");
+      if (!d.ready) { tab = "setup"; $$("#tabs button").forEach((x) => x.classList.toggle("on", x.dataset.tab === "setup")); }
+      $("#setup-count").textContent = d.checks.filter((c) => c.ok === false).length || "";
+    } catch {}
     await render();
     clearInterval(start.t);
     start.t = setInterval(() => { if ($("#drawer").hidden && !document.hidden && tab !== "ajustes" && tab !== "catalogo") render(); }, 60000);

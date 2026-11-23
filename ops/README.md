@@ -2,8 +2,8 @@
 
 Servicio que funciona en la nube las 24 h. Recibe los pedidos pagados de Shopify y gestiona la relación con el proveedor por WhatsApp: consulta, compra, seguimiento e incidencias. Pide tu aprobación para todo lo que comprometa dinero y te deja verlo todo desde un panel privado en el móvil.
 
-> **Estado actual (fase 2):** el núcleo de pedidos y proveedor, el panel, las aprobaciones, el registro de acciones, las alertas, el informe diario y el cálculo de beneficio están construidos y probados con datos de demostración (`npm test`: 15 pruebas).
-> **Todavía no está conectado a tu tienda real ni a WhatsApp:** falta lo que se explica en [Qué tienes que conectar](#qué-tienes-que-conectar).
+> **Estado:** construido y probado (`npm test`: 22 pruebas). Las consultas a Shopify se han verificado contra tu tienda real en modo lectura.
+> **Para que funcione con tu tienda sigue [docs/puesta-en-marcha.md](docs/puesta-en-marcha.md)** (unos 30–40 minutos). Al arrancar, el servidor registra solo los webhooks e importa el catálogo. La pestaña **Puesta en marcha** del panel comprueba cada conexión de verdad.
 
 ## Cómo funciona
 
@@ -52,7 +52,7 @@ Necesitas Node.js 22.13 o superior.
 
 ```bash
 cd ops
-npm test                      # 15 pruebas automáticas
+npm test                      # 22 pruebas automáticas
 DEMO_MODE=1 npm start         # panel en http://localhost:8080/panel (en demo no pide contraseña)
 ```
 En el panel, pulsa **Resumen → Simular pedido pagado** y recorre el flujo:
@@ -91,6 +91,7 @@ ops/
 │   ├── whatsapp/          Cloud API oficial, plantillas y redacción de mensajes
 │   ├── ai/parser.js       Interpretación de respuestas (reglas + Claude verificado)
 │   ├── tracking.js        Validación de números de seguimiento (UPU S10, UPS, YunExpress…)
+│   ├── setup.js           Puesta en marcha: diagnóstico real, webhooks y catálogo automáticos
 │   ├── finance.js         Agente financiero: facturación ≠ beneficio
 │   └── director.js        Agente director: informe diario, prioridades y estado de los agentes
 ├── public/                Panel (HTML/CSS/JS sin dependencias, para el móvil)

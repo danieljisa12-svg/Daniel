@@ -58,6 +58,16 @@ export function createOrderService({ db, config, shopify, whatsapp, queue, alert
   }
 
   function createApproval(type, order, title, details, amount = null) {
+    // Si ya hay una pendiente del mismo tipo para el pedido, se actualiza con la información nueva
+    // (así un segundo mensaje del proveedor no se pierde).
+    const prev = order ? db.get("SELECT * FROM approvals WHERE type = ? AND order_id = ? AND status = 'pendiente'", type, order.id) : null;
+    if (prev) {
+      const old = JSON.parse(prev.details_json);
+      const history = [...(old.previous || []), ...(old.text ? [old.text] : [])].slice(-5);
+      db.run("UPDATE approvals SET title = ?, details_json = ?, amount = ? WHERE id = ?", title, JSON.stringify({ ...details, previous: history }), amount, prev.id);
+      audit(db, { action: "aprobacion.actualizada", entity: "approval", entityId: prev.id, details: { type, order: order.name } });
+      return true;
+    }
     const r = db.run(
       `INSERT INTO approvals(type, order_id, title, details_json, amount) VALUES(?,?,?,?,?)
        ON CONFLICT DO NOTHING`, type, order?.id ?? null, title, JSON.stringify(details), amount
@@ -77,11 +87,11 @@ export function createOrderService({ db, config, shopify, whatsapp, queue, alert
       }
       const r = db.run(
         `INSERT INTO orders(shopify_order_id, name, status, financial_status, currency, total_price, shipping_price,
-          customer_name, customer_email, ship_name, ship_address1, ship_address2, ship_zip, ship_city, ship_province, ship_country, ship_phone, created_at)
-         VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
+          customer_name, customer_email, ship_name, ship_address1, ship_address2, ship_zip, ship_city, ship_province, ship_country, ship_phone, created_at, is_test)
+         VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
         o.shopifyOrderId, o.name, "nuevo", o.financialStatus, o.currency, o.totalPrice, o.shippingPrice,
         o.customer.name, o.customer.email, o.shipping.name, o.shipping.address1, o.shipping.address2, o.shipping.zip,
-        o.shipping.city, o.shipping.province, o.shipping.country, o.shipping.phone, o.createdAt
+        o.shipping.city, o.shipping.province, o.shipping.country, o.shipping.phone, o.createdAt, o.test && !config.demo ? 1 : 0
       );
       const orderId = Number(r.lastInsertRowid);
       for (const it of o.items) {
@@ -116,6 +126,12 @@ export function createOrderService({ db, config, shopify, whatsapp, queue, alert
       return raiseIncident(order, `El pago no está confirmado (estado: ${order.financial_status})`);
     }
 
+    // Vuelve a buscar en el catálogo las líneas sin proveedor (p. ej. tras asignarlo y reprocesar).
+    for (const it of db.all("SELECT * FROM order_items WHERE order_id = ? AND supplier_product_id IS NULL", orderId)) {
+      const sp = (it.shopify_variant_id && db.get("SELECT id FROM supplier_products WHERE shopify_variant_id = ?", it.shopify_variant_id)) ||
+        (it.sku && db.get("SELECT id FROM supplier_products WHERE sku = ?", it.sku));
+      if (sp) db.run("UPDATE order_items SET supplier_product_id = ? WHERE id = ?", sp.id, it.id);
+    }
     const items = physicalItems(orderId);
     if (!items.length) return raiseIncident(order, "El pedido no tiene productos físicos que pedir al proveedor");
     const unmapped = items.filter((i) => !i.supplier_product_id);
@@ -136,7 +152,9 @@ export function createOrderService({ db, config, shopify, whatsapp, queue, alert
   async function sendToSupplier(order, kind, body, { actor = "sistema" } = {}) {
     const supplier = supplierOf(order);
     if (!supplier) throw Object.assign(new Error("Pedido sin proveedor"), { permanent: true });
-    const useApi = !!(whatsapp && config.whatsapp.apiConfigured && supplier.consent_at && !config.demo);
+    // Los pedidos de prueba de Shopify nunca salen por la API: se preparan en modo manual y marcados.
+    const useApi = !!(whatsapp && config.whatsapp.apiConfigured && supplier.consent_at && !config.demo && !order.is_test);
+    if (order.is_test) body = "⚠️ PEDIDO DE PRUEBA (no tramitar)\n\n" + body;
 
     // Un mensaje saliente por tipo y pedido (salvo "seguimiento", que puede repetirse).
     const existing = kind === "seguimiento" ? null
@@ -172,7 +190,7 @@ export function createOrderService({ db, config, shopify, whatsapp, queue, alert
     const order = getOrder(m.order_id);
     const supplier = db.get("SELECT * FROM suppliers WHERE id = ?", m.supplier_id);
     const lastIn = db.get("SELECT max(created_at) AS t FROM messages WHERE supplier_id = ? AND direction = 'in'", supplier.id)?.t;
-    const windowOpen = lastIn && Date.now() - Date.parse(lastIn + "Z") < 23.5 * 3600 * 1000;
+    const windowOpen = !!lastIn && Date.now() - Date.parse(lastIn.replace(" ", "T") + "Z") < 23.5 * 3600 * 1000;
     let waId;
     try {
       const summary = physicalItems(order.id).map((i) => `${i.title}${i.variant_title ? " (" + i.variant_title + ")" : ""} x${i.quantity}${i.supplier_ref ? " ref " + i.supplier_ref : ""}`).join("; ");
@@ -221,13 +239,14 @@ export function createOrderService({ db, config, shopify, whatsapp, queue, alert
     }
     // Identificar el pedido: el que indica el panel, la referencia "#1234", el mensaje citado o el único abierto.
     let order = orderId ? getOrder(orderId) : null;
+    if (orderId && !order) throw Object.assign(new Error("Pedido no encontrado"), { status: 404 });
     const parsed = await parseSupplierReply(text, { config, fetchImpl });
-    if (!order && parsed.orderRefs.length === 1) order = db.get("SELECT * FROM orders WHERE name = ? AND supplier_id = ?", parsed.orderRefs[0], supplier.id);
+    if (!order && supplier && parsed.orderRefs.length === 1) order = db.get("SELECT * FROM orders WHERE name = ? AND supplier_id = ?", parsed.orderRefs[0], supplier.id);
     if (!order && contextId) {
       const ref = db.get("SELECT order_id FROM messages WHERE wa_message_id = ?", contextId);
       if (ref) order = getOrder(ref.order_id);
     }
-    if (!order) {
+    if (!order && supplier) {
       const open = db.all(
         `SELECT * FROM orders WHERE supplier_id = ? AND status IN ('pendiente_consulta','solicitado_proveedor','confirmado_proveedor','preparando_envio')`,
         supplier.id
@@ -386,8 +405,18 @@ export function createOrderService({ db, config, shopify, whatsapp, queue, alert
     const details = JSON.parse(a.details_json);
     db.run("UPDATE approvals SET status = ?, decided_at = datetime('now'), decision_note = ? WHERE id = ?",
       decision === "aprobar" ? "aprobada" : "rechazada", note, approvalId);
+    try {
+      await executeDecision(a, order, details, decision, note, overrides);
+    } catch (e) {
+      // Si la acción falla, la aprobación vuelve a quedar pendiente: nada se da por hecho.
+      db.run("UPDATE approvals SET status = 'pendiente', decided_at = NULL WHERE id = ?", approvalId);
+      audit(db, { actor: "propietario", action: `aprobacion.${decision}`, entity: "approval", entityId: approvalId, result: "error", details: { error: e.message } });
+      throw e;
+    }
     audit(db, { actor: "propietario", action: `aprobacion.${decision}`, entity: "approval", entityId: approvalId, details: { type: a.type, order: order?.name, note } });
+  }
 
+  async function executeDecision(a, order, details, decision, note, overrides) {
     if (decision !== "aprobar") {
       if (a.type === "compra_proveedor" && order) await raiseIncident(order, `Compra rechazada por ti${note ? ": " + note : ""}`, { actor: "propietario", level: "info" });
       return;
@@ -454,6 +483,15 @@ export function createOrderService({ db, config, shopify, whatsapp, queue, alert
     const hNoReply = Number(S("hours_no_reply_alert"));
     const hNoTrack = Number(S("hours_no_tracking_alert"));
     const dShip = Number(S("days_shipped_check"));
+    // Modo manual: mensajes preparados que nadie ha enviado todavía.
+    const unsent = db.all(
+      `SELECT m.id, o.id AS order_id, o.name FROM messages m JOIN orders o ON o.id = m.order_id
+       WHERE m.direction = 'out' AND m.channel = 'whatsapp_manual' AND m.status = 'listo_para_enviar'
+       AND m.created_at < datetime('now', '-2 hours') AND o.status NOT IN ('cancelado','incidencia')`);
+    for (const m of unsent) {
+      const fresh = queue.enqueue("noop", {}, { dedupeKey: `alert.unsent:${m.id}:${new Date().toISOString().slice(0, 10)}` });
+      if (fresh) await alert("aviso", `${m.name}: mensaje al proveedor sin enviar`, "Hay un mensaje preparado desde hace más de 2 h. Ábrelo en el panel y pulsa «Enviar por WhatsApp».", m.order_id);
+    }
     const noReply = db.all(
       `SELECT * FROM orders WHERE status = 'pendiente_consulta' AND last_supplier_contact_at IS NOT NULL
        AND last_supplier_contact_at < datetime('now', ?)`, `-${hNoReply} hours`);

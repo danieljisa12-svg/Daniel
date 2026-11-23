@@ -192,7 +192,7 @@ test("Modo API: plantilla fuera de ventana, pago verificado en Shopify y envío 
     createFulfillmentWithTracking: async (gid, t) => { fulfilled.push({ gid, ...t }); return { id: "gid://shopify/Fulfillment/1" }; },
   };
   const app = makeApp({ demo: false, whatsappApi: true, shopify, whatsapp, settings: { auto_tracking_to_shopify: true } });
-  const { id } = app.orders.ingestPaidOrder(normalizeOrderWebhook(demoOrderPayload(2010)));
+  const { id } = app.orders.ingestPaidOrder(normalizeOrderWebhook(demoOrderPayload(2010, { test: false })));
   await app.queue.runDue();
   await app.queue.runDue();
   assert.equal(sent[0].type, "template", "sin conversación abierta se usa plantilla");
@@ -299,4 +299,141 @@ test("Sin dirección de entrega (datos protegidos desactivados) no se pide al pr
   assert.equal(o.status, "incidencia");
   assert.match(o.incident, /datos protegidos/);
   assert.equal(app.db.get("SELECT count(*) n FROM messages WHERE order_id=? AND kind='pedido'", id).n, 0);
+});
+
+// ---------- Puesta en marcha, aprobaciones robustas y WhatsApp entrante ----------
+import { diagnostics, ensureWebhooks } from "../src/setup.js";
+import { syncCatalog } from "../src/shopify/catalog.js";
+
+function fakeShopify({ subs = [], withAddress = true, scopes = ["read_orders", "read_products", "write_merchant_managed_fulfillment_orders"] } = {}) {
+  const created = [];
+  return {
+    created,
+    registerWebhook: async (topic, uri) => { subs.push({ topic, uri }); created.push(topic); return { webhookSubscription: { id: "w" + created.length, topic }, userErrors: [] }; },
+    listProducts: async () => ({ products: { pageInfo: { hasNextPage: false }, nodes: [
+      { id: "p1", title: "Calora", status: "ACTIVE", variants: { nodes: [{ id: "gid://shopify/ProductVariant/9001", title: "1 pack", sku: "C1", inventoryItem: { unitCost: { amount: "8.40" } } }] } },
+      { id: "p2", title: "Envío rápido.", status: "ACTIVE", variants: { nodes: [{ id: "gid://shopify/ProductVariant/9002", title: "Default Title", sku: null, inventoryItem: { unitCost: null } }] } },
+      { id: "p3", title: "Borrador", status: "DRAFT", variants: { nodes: [{ id: "gid://shopify/ProductVariant/9003", title: "Default Title", sku: null, inventoryItem: null }] } },
+    ] } }),
+    graphql: async (q) => {
+      if (q.includes("webhookSubscriptions")) return { webhookSubscriptions: { nodes: subs } };
+      if (q.includes("currentAppInstallation")) return { shop: { name: "Palazzo", myshopifyDomain: "tex377-xd.myshopify.com" }, currentAppInstallation: { accessScopes: scopes.map((handle) => ({ handle })) } };
+      if (q.includes("shippingAddress")) return { orders: { nodes: [{ name: "#1006", shippingAddress: withAddress ? { address1: "Calle 1", zip: "28001" } : null }] } };
+      throw new Error("consulta no esperada");
+    },
+  };
+}
+
+test("Puesta en marcha: webhooks idempotentes, catálogo sin servicios ni borradores, diagnóstico real", async () => {
+  const shopify = fakeShopify();
+  const app = makeApp({ demo: false, shopify });
+  app.config.publicUrl = "https://ops.example.com";
+  app.config.shopify.configured = true;
+  let r = await ensureWebhooks(app.db, app.config, shopify);
+  assert.deepEqual(r.created, ["ORDERS_PAID", "ORDERS_CANCELLED"]);
+  r = await ensureWebhooks(app.db, app.config, shopify);
+  assert.deepEqual(r.created, [], "la segunda vez no duplica");
+
+  const c = await syncCatalog(app.db, shopify);
+  assert.deepEqual([c.added, c.skipped], [1, 1]);
+  assert.equal(app.db.get("SELECT unit_cost FROM supplier_products WHERE shopify_variant_id='gid://shopify/ProductVariant/9001'").unit_cost, 8.4);
+  assert.equal(app.db.get("SELECT count(*) n FROM supplier_products WHERE shopify_variant_id IN ('gid://shopify/ProductVariant/9002','gid://shopify/ProductVariant/9003')").n, 0);
+
+  let d = await diagnostics(app);
+  const by = (id) => d.checks.find((x) => x.id === id);
+  assert.equal(by("shopify").ok, true);
+  assert.equal(by("scopes").ok, true);
+  assert.equal(by("pii").ok, true);
+  assert.equal(by("webhooks").ok, true);
+  assert.equal(by("catalog").ok, false, "la variante nueva no tiene proveedor");
+
+  const noPii = makeApp({ demo: false, shopify: fakeShopify({ withAddress: false, scopes: ["read_orders"] }) });
+  noPii.config.shopify.configured = true;
+  d = await diagnostics(noPii);
+  assert.equal(d.checks.find((x) => x.id === "pii").ok, false);
+  assert.match(d.checks.find((x) => x.id === "scopes").detail, /write_merchant_managed_fulfillment_orders/);
+  assert.equal(d.ready, false);
+});
+
+test("Si la acción aprobada falla, la aprobación vuelve a quedar pendiente", async () => {
+  const app = makeApp();
+  const { id } = app.orders.ingestPaidOrder(normalizeOrderWebhook(demoOrderPayload(2020)));
+  await app.queue.runDue();
+  await app.orders.receiveSupplierMessage({ text: "Sí hay, 11€ total con envío", orderId: id });
+  const ap = app.db.get("SELECT id FROM approvals WHERE order_id=? AND status='pendiente'", id);
+  app.db.run("UPDATE orders SET status='cancelado' WHERE id=?", id); // estado que no permite pedir
+  await assert.rejects(() => app.orders.decideApproval(ap.id, "aprobar"));
+  assert.equal(app.db.get("SELECT status FROM approvals WHERE id=?", ap.id).status, "pendiente");
+});
+
+test("Un segundo mensaje dudoso del proveedor actualiza la revisión pendiente (no se pierde)", async () => {
+  const app = makeApp();
+  const { id } = app.orders.ingestPaidOrder(normalizeOrderWebhook(demoOrderPayload(2021)));
+  await app.queue.runDue();
+  await app.orders.receiveSupplierMessage({ text: "hola", orderId: id });
+  await app.orders.receiveSupplierMessage({ text: "te digo luego el precio", orderId: id });
+  const rows = app.db.all("SELECT * FROM approvals WHERE order_id=? AND status='pendiente'", id);
+  assert.equal(rows.length, 1);
+  const d = JSON.parse(rows[0].details_json);
+  assert.equal(d.text, "te digo luego el precio");
+  assert.deepEqual(d.previous, ["hola"]);
+});
+
+test("WhatsApp entrante firmado: se responde al instante y se procesa en la cola, sin duplicados", async () => {
+  const whatsapp = { sendText: async () => "wamid.T", sendConsultaTemplate: async () => "wamid.P1" };
+  const shopify = { getOrderPaymentStatus: async () => ({ displayFinancialStatus: "PAID" }) };
+  const app = makeApp({ demo: false, whatsappApi: true, whatsapp, shopify });
+  const { id } = app.orders.ingestPaidOrder(normalizeOrderWebhook(demoOrderPayload(2022, { test: false })));
+  await app.queue.runDue(); await app.queue.runDue();
+  const server = createServer(app);
+  await new Promise((r) => server.listen(0, r));
+  const base = `http://127.0.0.1:${server.address().port}`;
+  try {
+    const body = JSON.stringify({ entry: [{ changes: [{ value: { messages: [{ id: "wamid.IN9", from: "34600000000", timestamp: "1", type: "text", text: { body: "#2022 Sí hay, 10€ total con envío, 2 días" } }] } }] }] });
+    const sig = "sha256=" + crypto.createHmac("sha256", APP_SECRET).update(body).digest("hex");
+    for (let i = 0; i < 2; i++) {
+      const r = await fetch(base + "/webhooks/whatsapp", { method: "POST", headers: { "X-Hub-Signature-256": sig }, body });
+      assert.equal(r.status, 200);
+    }
+    await app.queue.runDue();
+    const o = order(app, id);
+    assert.equal(o.status, "pendiente_autorizacion");
+    assert.equal(o.supplier_total_cost, 10);
+    assert.equal(app.db.get("SELECT count(*) n FROM messages WHERE direction='in'").n, 1, "el reenvío de Meta no duplica");
+  } finally { server.close(); app.stop(); }
+});
+
+test("Reprocesar tras asignar el proveedor en el catálogo funciona", async () => {
+  const app = makeApp();
+  const r = app.orders.ingestPaidOrder(normalizeOrderWebhook(demoOrderPayload(2030, { variant: 4242, sku: null, title: "Nuevo producto", variantTitle: null })));
+  await app.queue.runDue();
+  assert.equal(order(app, r.id).status, "incidencia");
+  const sid = app.db.get("SELECT id FROM suppliers").id;
+  app.db.run("INSERT INTO supplier_products(shopify_variant_id, title, supplier_id, unit_cost) VALUES('gid://shopify/ProductVariant/4242','Nuevo producto',?,5)", sid);
+  await app.orders.resumeOrder(r.id);
+  await app.queue.runDue();
+  assert.equal(order(app, r.id).status, "pendiente_consulta");
+});
+
+test("Pedir seguimiento varias veces no rompe nada", async () => {
+  const app = makeApp();
+  const { id } = app.orders.ingestPaidOrder(normalizeOrderWebhook(demoOrderPayload(2031)));
+  await app.queue.runDue();
+  app.db.run("UPDATE orders SET status='solicitado_proveedor' WHERE id=?", id);
+  await app.orders.requestTracking(id);
+  await app.orders.requestTracking(id);
+  assert.equal(app.db.get("SELECT count(*) n FROM messages WHERE order_id=? AND kind='seguimiento'", id).n, 2);
+});
+
+test("Los pedidos de prueba de Shopify nunca salen por la API y van marcados", async () => {
+  const sent = [];
+  const whatsapp = { sendText: async (...a) => { sent.push(a); return "w"; }, sendConsultaTemplate: async (...a) => { sent.push(a); return "w"; } };
+  const shopify = { getOrderPaymentStatus: async () => ({ displayFinancialStatus: "PAID" }) };
+  const app = makeApp({ demo: false, whatsappApi: true, whatsapp, shopify });
+  const { id } = app.orders.ingestPaidOrder(normalizeOrderWebhook(demoOrderPayload(2032))); // test: true
+  await app.queue.runDue(); await app.queue.runDue();
+  assert.equal(sent.length, 0);
+  const m = app.db.get("SELECT * FROM messages WHERE order_id=?", id);
+  assert.equal(m.channel, "whatsapp_manual");
+  assert.match(m.body, /PEDIDO DE PRUEBA/);
 });

@@ -130,6 +130,7 @@ export async function parseSupplierReply(text, { config, fetchImpl = globalThis.
   try {
     const res = await fetchImpl("https://api.anthropic.com/v1/messages", {
       method: "POST",
+      signal: AbortSignal.timeout(25000),
       headers: { "x-api-key": config.claude.apiKey, "anthropic-version": "2023-06-01", "content-type": "application/json" },
       body: JSON.stringify({
         model: config.claude.model,

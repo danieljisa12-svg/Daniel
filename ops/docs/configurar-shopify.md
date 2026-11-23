@@ -14,23 +14,18 @@ El sistema usa una **app propia** creada en el Dev Dashboard de Shopify. Shopify
 5. Publica la versión e **instala la app** en tu tienda desde la tarjeta *Installs*.
 6. Copia el **Client ID** y el **Client secret** y ponlos como secretos en el servidor (no en el código):
    ```
-   SHOPIFY_SHOP=palaazzo   # tu subdominio de *.myshopify.com, sin ".myshopify.com"
+   SHOPIFY_SHOP=tex377-xd  # el identificador interno de tu tienda (tex377-xd.myshopify.com)
    SHOPIFY_CLIENT_ID=...
    SHOPIFY_CLIENT_SECRET=...
    ```
-   Para ver tu subdominio exacto: Configuración → Dominios → el dominio que termina en `.myshopify.com`.
+   Tu dominio visible es palaazzo.shop, pero la API usa el interno `tex377-xd`.
 
-## 2. Registrar los webhooks (una vez, con el servidor ya publicado)
-```bash
-PUBLIC_URL=https://tu-servicio.onrender.com npm run shopify:webhooks
-```
-Da de alta `ORDERS_PAID` y `ORDERS_CANCELLED` apuntando a `PUBLIC_URL/webhooks/shopify`. Todos van firmados con tu *client secret*, y el servidor rechaza cualquier petición sin firma válida.
+## 2. Webhooks y catálogo: automáticos
+Al arrancar, el servidor hace dos cosas por sí mismo:
+- Registra los webhooks `ORDERS_PAID` y `ORDERS_CANCELLED` en `PUBLIC_URL/webhooks/shopify`, solo los que falten. Van firmados con tu *client secret* y se rechaza cualquier petición sin firma válida.
+- Importa las variantes activas al catálogo del proveedor sin tocar lo que ya hayas rellenado. Repite la importación cada noche.
 
-## 3. Cargar el catálogo
-```bash
-npm run shopify:sync-products
-```
-Copia todas las variantes activas al panel. Después, en **Panel → Proveedor**, asigna a cada variante su proveedor, su referencia y su coste.
+También puedes lanzarlo a mano desde **Panel → Puesta en marcha**, o desde la terminal con `npm run shopify:webhooks` y `npm run shopify:sync-products`.
 
 ## Errores frecuentes
 - **`shop_not_permitted`**: la app y la tienda están en organizaciones distintas. Crea la app desde el Dev Dashboard de la organización de tu tienda.

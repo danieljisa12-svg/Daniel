@@ -1,10 +1,12 @@
+# Blueprint de Render para el sistema de operaciones (carpeta ops/).
 # Despliegue en Render (https://render.com) con disco persistente para la base de datos.
 # Una sola instancia: evita que dos procesos atiendan la misma cola a la vez.
 services:
   - type: web
     name: palazzo-ops
     runtime: docker
-    rootDir: ops
+    dockerfilePath: ./ops/Dockerfile
+    dockerContext: ./ops
     plan: starter
     region: frankfurt
     healthCheckPath: /health
@@ -24,7 +26,7 @@ services:
       - key: SESSION_SECRET
         generateValue: true
       - key: SHOPIFY_SHOP
-        sync: false
+        value: tex377-xd
       - key: SHOPIFY_CLIENT_ID
         sync: false
       - key: SHOPIFY_CLIENT_SECRET

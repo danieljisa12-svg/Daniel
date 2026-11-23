@@ -68,6 +68,7 @@ CREATE TABLE IF NOT EXISTS orders (
   ship_name TEXT, ship_address1 TEXT, ship_address2 TEXT, ship_zip TEXT,
   ship_city TEXT, ship_province TEXT, ship_country TEXT, ship_phone TEXT,
   pii_purged_at TEXT,
+  is_test INTEGER NOT NULL DEFAULT 0,  -- pedido de prueba de Shopify
   -- Respuesta del proveedor
   supplier_available INTEGER,
   supplier_total_cost REAL,
@@ -113,7 +114,7 @@ CREATE TABLE IF NOT EXISTS messages (
   sent_at TEXT,
   UNIQUE(order_id, kind, direction, wa_message_id)
 );
-CREATE UNIQUE INDEX IF NOT EXISTS idx_messages_out_once ON messages(order_id, kind) WHERE direction = 'out' AND status != 'fallido';
+CREATE UNIQUE INDEX IF NOT EXISTS idx_messages_out_once2 ON messages(order_id, kind) WHERE direction = 'out' AND status != 'fallido' AND kind != 'seguimiento';
 
 -- Centro de aprobaciones: nada económico o delicado se ejecuta sin una fila aprobada aquí.
 CREATE TABLE IF NOT EXISTS approvals (
@@ -197,7 +198,15 @@ export function openDb(dataDir, file = "ops.db") {
   }
   const db = new DatabaseSync(target);
   db.exec(SCHEMA);
+  migrate(db);
   return wrap(db);
+}
+
+// Migraciones sencillas para bases de datos creadas con versiones anteriores.
+function migrate(db) {
+  const cols = db.prepare("PRAGMA table_info(orders)").all().map((c) => c.name);
+  if (!cols.includes("is_test")) db.exec("ALTER TABLE orders ADD COLUMN is_test INTEGER NOT NULL DEFAULT 0");
+  db.exec("DROP INDEX IF EXISTS idx_messages_out_once");
 }
 
 function wrap(db) {

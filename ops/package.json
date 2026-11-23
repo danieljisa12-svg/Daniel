@@ -4,7 +4,9 @@
   "private": true,
   "description": "Sistema de operaciones con IA para la tienda Shopify Palazzo: pedidos, proveedor por WhatsApp, aprobaciones y panel.",
   "type": "module",
-  "engines": { "node": ">=22.13" },
+  "engines": {
+    "node": ">=22.13"
+  },
   "scripts": {
     "start": "node --disable-warning=ExperimentalWarning src/server.js",
     "dev": "DEMO_MODE=1 node --disable-warning=ExperimentalWarning --watch src/server.js",
@@ -13,6 +15,7 @@
     "simulate:order": "node scripts/simulate-order.js",
     "shopify:webhooks": "node --disable-warning=ExperimentalWarning scripts/register-webhooks.js",
     "shopify:sync-products": "node --disable-warning=ExperimentalWarning scripts/sync-products.js",
-    "backup": "node --disable-warning=ExperimentalWarning scripts/backup.js"
+    "backup": "node --disable-warning=ExperimentalWarning scripts/backup.js",
+    "check": "node --disable-warning=ExperimentalWarning scripts/check.js"
   }
 }

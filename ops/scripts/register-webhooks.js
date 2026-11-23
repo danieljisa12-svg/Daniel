@@ -1,12 +1,10 @@
-// Da de alta los webhooks en Shopify apuntando a PUBLIC_URL. Ejecutar una vez tras desplegar.
+// Registra (si faltan) los webhooks de Shopify en PUBLIC_URL. El servidor también lo hace solo al arrancar.
 import { loadConfig } from "../src/config.js";
+import { openDb } from "../src/db.js";
 import { createShopifyClient } from "../src/shopify/client.js";
+import { ensureWebhooks } from "../src/setup.js";
 const config = loadConfig();
 if (!config.shopify.configured) { console.error("Faltan SHOPIFY_SHOP / SHOPIFY_CLIENT_ID / SHOPIFY_CLIENT_SECRET"); process.exit(1); }
-const shopify = createShopifyClient(config);
-const uri = `${config.publicUrl}/webhooks/shopify`;
-for (const topic of ["ORDERS_PAID", "ORDERS_CANCELLED"]) {
-  const r = await shopify.registerWebhook(topic, uri);
-  if (r.userErrors?.length) console.log(topic, "→", r.userErrors.map((e) => e.message).join("; "));
-  else console.log(topic, "→ registrado", r.webhookSubscription.id);
-}
+const r = await ensureWebhooks(openDb(config.dataDir), config, createShopifyClient(config));
+console.log(r.created.length ? `Registrados: ${r.created.join(", ")}` : "Los webhooks ya estaban registrados.");
+if (r.stale.length) console.log("Aviso: hay webhooks apuntando a otras URL:", r.stale.join(", "));

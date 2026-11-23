@@ -6,8 +6,8 @@ COPY package.json ./
 COPY src ./src
 COPY public ./public
 COPY scripts ./scripts
-RUN mkdir -p /data && chown -R node:node /data /app
-USER node
+# Sin "USER node": el disco persistente de Render se monta como root y la app debe poder escribir en /data.
+RUN mkdir -p /data
 EXPOSE 8080
 HEALTHCHECK --interval=60s --timeout=5s CMD node -e "fetch('http://127.0.0.1:'+process.env.PORT+'/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"
 CMD ["node", "--disable-warning=ExperimentalWarning", "src/server.js"]

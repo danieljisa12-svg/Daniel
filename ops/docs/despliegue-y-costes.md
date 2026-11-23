@@ -4,7 +4,7 @@ El sistema es **un único servicio Node.js con una base de datos en un archivo (
 
 ## Opción recomendada: Render
 1. Crea una cuenta en render.com y conecta tu repositorio de GitHub.
-2. **New → Blueprint** y elige este repositorio: Render lee `ops/render.yaml`.
+2. **New → Blueprint** y elige este repositorio: Render lee `render.yaml` (en la raíz del repositorio).
    - Servicio web **Starter** (no el gratuito: el gratuito se duerme y no tiene disco), región Fráncfort (UE).
    - **Disco persistente** de 1 GB en `/data` para la base de datos y las copias diarias.
 3. Rellena los secretos que pide:
@@ -12,10 +12,7 @@ El sistema es **un único servicio Node.js con una base de datos en un archivo (
    - `PANEL_PASSWORD`: una contraseña larga.
    - Las credenciales de Shopify y, si las tienes, las de WhatsApp.
    - `SESSION_SECRET` se genera solo.
-4. Cuando esté en marcha:
-   - Ejecuta `npm run shopify:webhooks` desde la consola *Shell* de Render.
-   - Ejecuta `npm run shopify:sync-products`.
-   - Entra en `https://TU-SERVICIO/panel`.
+4. Cuando esté en marcha entra en `https://TU-SERVICIO/panel`. Los webhooks y el catálogo se configuran solos al arrancar; la pestaña **Puesta en marcha** te confirma que todo está en verde.
 
 > Usa una sola instancia: el disco lo garantiza y evita que dos procesos atiendan la misma cola.
 

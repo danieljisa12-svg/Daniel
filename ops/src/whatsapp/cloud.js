@@ -9,6 +9,7 @@ export function createWhatsAppClient(config, fetchImpl = globalThis.fetch) {
     if (!w.apiConfigured) throw new Error("WhatsApp Cloud API no configurada");
     const res = await fetchImpl(url(), {
       method: "POST",
+      signal: AbortSignal.timeout(20000),
       headers: { Authorization: `Bearer ${w.token}`, "Content-Type": "application/json" },
       body: JSON.stringify({ messaging_product: "whatsapp", ...body }),
     });

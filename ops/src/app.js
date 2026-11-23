@@ -8,6 +8,8 @@ import { createShopifyClient } from "./shopify/client.js";
 import { createWhatsAppClient } from "./whatsapp/cloud.js";
 import { createOrderService, DEFAULT_SETTINGS } from "./orders/service.js";
 import { runDailyReport, localDate } from "./director.js";
+import { bootstrap } from "./setup.js";
+import { syncCatalog } from "./shopify/catalog.js";
 
 export function createApp(config, { db = null, fetchImpl = globalThis.fetch, shopify = null, whatsapp = null } = {}) {
   db = db || openDb(config.dataDir);
@@ -19,11 +21,15 @@ export function createApp(config, { db = null, fetchImpl = globalThis.fetch, sho
   shopify = shopify || (config.shopify.configured ? createShopifyClient(config, fetchImpl) : null);
   whatsapp = whatsapp || (config.whatsapp.apiConfigured ? createWhatsAppClient(config, fetchImpl) : null);
   const orders = createOrderService({ db, config, shopify, whatsapp, queue, alert, fetchImpl });
+  // Mensajes entrantes de WhatsApp: se procesan en la cola para responder a Meta al instante.
+  queue.register("whatsapp.incoming", (m) => orders.receiveSupplierMessage({ ...m, channel: "whatsapp_api" }));
 
   // Planificador interno (el servicio corre 24/7 en la nube, no depende de tu ordenador).
   const timers = [];
   function startScheduler() {
     queue.start(5000);
+    // Al arrancar: registra los webhooks que falten y sincroniza el catálogo (si Shopify está conectado).
+    bootstrap(app).catch((e) => audit(db, { action: "arranque", result: "error", details: { error: e.message } }));
     const every = (ms, fn) => { const t = setInterval(() => fn().catch((e) => audit(db, { action: "programador", result: "error", details: { error: e.message } })), ms); t.unref?.(); timers.push(t); };
     every(15 * 60 * 1000, () => orders.watchdog());
     every(60 * 1000, async () => {
@@ -37,14 +43,16 @@ export function createApp(config, { db = null, fetchImpl = globalThis.fetch, sho
         db.setSetting("last_maintenance", today);
         orders.purgePii();
         backup(db, config);
+        if (shopify && !config.demo) await syncCatalog(db, shopify).catch((e) => alert("aviso", "Sincronización de catálogo fallida", e.message));
       }
     });
   }
 
-  return {
+  const app = {
     config, db, queue, orders, alert, shopify, whatsapp, startScheduler,
     stop() { queue.stop(); timers.forEach(clearInterval); },
   };
+  return app;
 }
 
 // Copia de seguridad diaria de la base de datos (se conservan 14).

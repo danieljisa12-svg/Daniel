@@ -14,7 +14,7 @@ export function seedDemo(db) {
             VALUES(?,?,?,?,?,?,?,?,?,?)`, ...r, sid);
 }
 
-export function demoOrderPayload(n, { variant = 56669830054230, qty = 1, price = "29.95", title = "Calora® Calentador de Manos Recargable 2 en 1", variantTitle = "1 pack (2 piezas)", sku = "CALORA-1P", extra = [] } = {}) {
+export function demoOrderPayload(n, { test = true, variant = 56669830054230, qty = 1, price = "29.95", title = "Calora® Calentador de Manos Recargable 2 en 1", variantTitle = "1 pack (2 piezas)", sku = "CALORA-1P", extra = [] } = {}) {
   return {
     id: 7000000000 + n,
     admin_graphql_api_id: `gid://shopify/Order/${7000000000 + n}`,
@@ -25,7 +25,7 @@ export function demoOrderPayload(n, { variant = 56669830054230, qty = 1, price =
     currency: "EUR",
     total_price: String((Number(price) * qty + extra.reduce((a, e) => a + Number(e.price), 0)).toFixed(2)),
     created_at: new Date().toISOString(),
-    test: true,
+    test,
     customer: { first_name: "Lucía", last_name: "Demo" },
     shipping_address: { name: "Lucía Demo", address1: "Calle Falsa 123", address2: "2ºB", zip: "28001", city: "Madrid", province: "Madrid", country: "Spain", phone: "+34 600 000 001" },
     shipping_lines: [{ price: "0.00" }],
