@@ -1,0 +1,15 @@
+{
+  "current": {
+    "color_bg": "#F6F2EB",
+    "color_surface": "#FFFFFF",
+    "color_ink": "#1B1712",
+    "color_muted": "#6B6258",
+    "color_accent": "#1F3D31",
+    "color_accent_ink": "#F6F2EB",
+    "color_brass": "#A9844F",
+    "color_sale": "#9C3B2B",
+    "logo_width": 140,
+    "tagline": "Cosas útiles, bien elegidas.",
+    "cart_note": "Pago seguro procesado por Shopify."
+  }
+}

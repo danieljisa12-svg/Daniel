@@ -1,0 +1,151 @@
+{%- liquid
+  assign current = product.selected_or_first_available_variant
+  assign first_col = product.collections.first
+-%}
+<section class="wrap" data-product data-section="{{ section.id }}">
+  <div class="pdp">
+    <div class="pdp__gallery" aria-label="Imágenes de {{ product.title | escape }}">
+      {%- for media in product.media -%}
+        {%- if media.media_type == 'image' -%}
+          {%- assign ld = 'lazy' -%}{%- if forloop.first -%}{%- assign ld = 'eager' -%}{%- endif -%}
+          <figure data-media-id="{{ media.id }}">{{ media | image_url: width: 1600 | image_tag: loading: ld, widths: '480,720,960,1200,1600', sizes: '(min-width: 900px) 55vw, 86vw', alt: media.alt | default: product.title }}</figure>
+        {%- elsif media.media_type == 'video' or media.media_type == 'external_video' -%}
+          <figure>{{ media | media_tag: image_size: '1200x', autoplay: false, loop: true, controls: true, muted: true }}</figure>
+        {%- endif -%}
+      {%- else -%}
+        <figure>{{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}</figure>
+      {%- endfor -%}
+    </div>
+
+    <div class="pdp__info">
+      <nav class="crumbs" aria-label="Migas de pan"><a href="{{ routes.root_url }}">{{ 'general.home' | t }}</a>{% if first_col %} / <a href="{{ first_col.url }}">{{ first_col.title }}</a>{% endif %}</nav>
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'vendor' -%}
+            {%- if product.vendor != shop.name and product.vendor != 'Mi tienda' -%}<p class="pdp__vendor" {{ block.shopify_attributes }}>{{ product.vendor }}</p>{%- endif -%}
+          {%- when 'title' -%}<h1 {{ block.shopify_attributes }}>{{ product.title }}</h1>
+          {%- when 'subtitle' -%}
+            {%- assign sub = product.metafields.custom.subtitulo.value | default: block.settings.fallback -%}
+            {%- if sub != blank -%}<p class="pdp__sub" {{ block.shopify_attributes }}>{{ sub }}</p>{%- endif -%}
+          {%- when 'price' -%}
+            <div {{ block.shopify_attributes }} data-price-wrap>{%- render 'price', variant: current -%}</div>
+            <p class="pdp__tax">{{ 'products.tax_included' | t }} {{ 'products.shipping_at_checkout' | t }}</p>
+          {%- when 'buy' -%}
+            <div {{ block.shopify_attributes }}>
+            {%- form 'product', product, data-product-form: '', novalidate: 'novalidate' -%}
+              <input type="hidden" name="id" value="{{ current.id }}" data-variant-id>
+              {%- unless product.has_only_default_variant -%}
+                {%- for option in product.options_with_values -%}
+                  <fieldset class="opt">
+                    <legend>{{ option.name }}: <span data-opt-label="{{ forloop.index0 }}">{{ option.selected_value }}</span></legend>
+                    <div class="opt__vals">
+                      {%- assign oi = forloop.index0 -%}
+                      {%- for value in option.values -%}
+                        <input type="radio" id="o-{{ section.id }}-{{ oi }}-{{ forloop.index0 }}" name="opt-{{ oi }}" value="{{ value | escape }}" data-opt="{{ oi }}"{% if option.selected_value == value %} checked{% endif %}>
+                        <label for="o-{{ section.id }}-{{ oi }}-{{ forloop.index0 }}">{{ value }}</label>
+                      {%- endfor -%}
+                    </div>
+                  </fieldset>
+                {%- endfor -%}
+              {%- endunless -%}
+              <div class="buy">
+                <div class="qty">
+                  <button type="button" data-qty-step="-1" aria-label="Menos">−</button>
+                  <input type="number" name="quantity" value="1" min="1" aria-label="{{ 'products.quantity' | t }}">
+                  <button type="button" data-qty-step="1" aria-label="Más">+</button>
+                </div>
+                <button class="btn btn--primary" type="submit" name="add" data-add{% unless current.available %} disabled{% endunless %}>
+                  <span data-add-label>{% if current.available %}{{ 'products.add' | t }}{% else %}{{ 'products.sold_out' | t }}{% endif %}</span>
+                </button>
+              </div>
+              {%- if block.settings.dynamic_checkout -%}{{ form | payment_button }}{%- endif -%}
+              <p class="notice notice--error" role="alert" data-form-error hidden></p>
+            {%- endform -%}
+            </div>
+          {%- when 'assurance' -%}
+            <ul class="assure" {{ block.shopify_attributes }}>
+              {%- if block.settings.l1 != blank -%}<li>{% render 'icon', name: 'truck' %}<span>{{ block.settings.l1 }}</span></li>{%- endif -%}
+              {%- if block.settings.l2 != blank -%}<li>{% render 'icon', name: 'return' %}<span>{{ block.settings.l2 }}</span></li>{%- endif -%}
+              {%- if block.settings.l3 != blank -%}<li>{% render 'icon', name: 'lock' %}<span>{{ block.settings.l3 }}</span></li>{%- endif -%}
+            </ul>
+          {%- when 'description' -%}
+            <div class="acc" {{ block.shopify_attributes }}>
+              {%- if product.description != blank -%}
+              <details{% if block.settings.open %} open{% endif %}><summary>{{ block.settings.title }}</summary><div class="rte">{{ product.description }}</div></details>
+              {%- endif -%}
+            </div>
+          {%- when 'collapsible' -%}
+            {%- assign body = block.settings.page.content | default: block.settings.content -%}
+            {%- if body != blank -%}
+            <div class="acc" {{ block.shopify_attributes }}><details><summary>{{ block.settings.title }}</summary><div class="rte">{{ body }}</div></details></div>
+            {%- endif -%}
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+  </div>
+
+  <div class="sticky-buy" data-sticky-buy aria-hidden="true">
+    <span class="sticky-buy__t">{{ product.title }} · <span data-sticky-price>{{ current.price | money }}</span></span>
+    <button class="btn btn--primary" type="button" data-sticky-add tabindex="-1"{% unless current.available %} disabled{% endunless %}>{{ 'products.add' | t }}</button>
+  </div>
+
+  <script type="application/json" data-variants>{{ product.variants | json }}</script>
+  <script type="application/json" data-i18n>{{ 'products' | t | json }}</script>
+</section>
+
+{%- comment -%} Datos estructurados (Google Shopping / resultados enriquecidos). Sin valoraciones inventadas. {%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": {{ product.title | json }},
+  "url": {{ request.origin | append: product.url | json }},
+  {%- if product.featured_media -%}"image": [{{ product.featured_media | image_url: width: 1200 | prepend: 'https:' | json }}],{%- endif -%}
+  "description": {{ product.description | strip_html | strip_newlines | truncate: 500 | json }},
+  {%- if current.sku != blank -%}"sku": {{ current.sku | json }},{%- endif -%}
+  {%- if current.barcode != blank -%}"gtin": {{ current.barcode | json }},{%- endif -%}
+  "brand": { "@type": "Brand", "name": {{ product.vendor | json }} },
+  "offers": [
+    {%- for v in product.variants -%}
+    {
+      "@type": "Offer",
+      {%- if v.sku != blank -%}"sku": {{ v.sku | json }},{%- endif -%}
+      "availability": "http://schema.org/{% if v.available %}InStock{% else %}OutOfStock{% endif %}",
+      "price": {{ v.price | divided_by: 100.00 | json }},
+      "priceCurrency": {{ cart.currency.iso_code | json }},
+      "url": {{ request.origin | append: v.url | json }}
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  ]
+}
+</script>
+{% schema %}
+{
+  "name": "Ficha de producto",
+  "blocks": [
+    { "type": "vendor", "name": "Marca", "limit": 1 },
+    { "type": "title", "name": "Título", "limit": 1 },
+    { "type": "subtitle", "name": "Subtítulo", "limit": 1, "settings": [
+      { "type": "text", "id": "fallback", "label": "Subtítulo por defecto", "info": "Cada producto puede tener el suyo en el metacampo custom.subtitulo." }
+    ] },
+    { "type": "price", "name": "Precio", "limit": 1 },
+    { "type": "buy", "name": "Compra", "limit": 1, "settings": [
+      { "type": "checkbox", "id": "dynamic_checkout", "label": "Botón de pago rápido (Shop Pay, Apple Pay…)", "default": true }
+    ] },
+    { "type": "assurance", "name": "Garantías", "limit": 1, "settings": [
+      { "type": "text", "id": "l1", "label": "Línea 1 (envío)", "default": "Te enviamos el número de seguimiento por email", "info": "Pon el plazo real solo cuando el proveedor lo haya confirmado." },
+      { "type": "text", "id": "l2", "label": "Línea 2 (devolución)", "default": "14 días para desistir de la compra" },
+      { "type": "text", "id": "l3", "label": "Línea 3 (pago)", "default": "Pago seguro procesado por Shopify" }
+    ] },
+    { "type": "description", "name": "Descripción", "limit": 1, "settings": [
+      { "type": "text", "id": "title", "label": "Título", "default": "Descripción" },
+      { "type": "checkbox", "id": "open", "label": "Abierta por defecto", "default": true }
+    ] },
+    { "type": "collapsible", "name": "Desplegable", "settings": [
+      { "type": "text", "id": "title", "label": "Título", "default": "Envíos y devoluciones" },
+      { "type": "page", "id": "page", "label": "Contenido desde una página" },
+      { "type": "richtext", "id": "content", "label": "o texto" }
+    ] }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,44 @@
+{%- if section.blocks.size > 0 -%}
+<section class="section" {{ section.shopify_attributes }}>
+  <div class="wrap">
+    {%- if section.settings.heading != blank -%}<h2 style="text-align:center;margin-bottom:32px">{{ section.settings.heading }}</h2>{%- endif -%}
+    <div class="faq">
+      {%- for block in section.blocks -%}
+        <details {{ block.shopify_attributes }}>
+          <summary>{{ block.settings.q }}</summary>
+          <div class="rte">{{ block.settings.a }}</div>
+        </details>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {%- for block in section.blocks -%}
+    { "@type": "Question", "name": {{ block.settings.q | json }}, "acceptedAnswer": { "@type": "Answer", "text": {{ block.settings.a | strip_html | json }} } }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  ]
+}
+</script>
+{%- endif -%}
+{% schema %}
+{
+  "name": "Preguntas frecuentes",
+  "settings": [{ "type": "text", "id": "heading", "label": "Título", "default": "Preguntas frecuentes" }],
+  "blocks": [
+    { "type": "q", "name": "Pregunta", "settings": [
+      { "type": "text", "id": "q", "label": "Pregunta" },
+      { "type": "richtext", "id": "a", "label": "Respuesta" }
+    ] }
+  ],
+  "presets": [{ "name": "Preguntas frecuentes", "blocks": [
+    { "type": "q", "settings": { "q": "¿Cuándo recibiré mi pedido?", "a": "<p>El plazo de entrega se muestra en la ficha y en la página de envíos. Cuando tu pedido salga, te enviaremos por email el número de seguimiento.</p>" } },
+    { "type": "q", "settings": { "q": "¿Puedo devolver un producto?", "a": "<p>Sí. Tienes 14 días naturales desde que lo recibes para desistir de la compra sin dar explicaciones. Consulta los pasos en la política de devoluciones.</p>" } },
+    { "type": "q", "settings": { "q": "¿Qué métodos de pago aceptáis?", "a": "<p>Los que ves al finalizar la compra. El pago se procesa en la pasarela segura de Shopify; no guardamos los datos de tu tarjeta.</p>" } },
+    { "type": "q", "settings": { "q": "¿Cómo contacto con vosotros?", "a": "<p>Desde la página de contacto o respondiendo al email de confirmación de tu pedido.</p>" } }
+  ] }]
+}
+{% endschema %}

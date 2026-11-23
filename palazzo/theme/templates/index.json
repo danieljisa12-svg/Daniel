@@ -1,0 +1,31 @@
+{
+  "sections": {
+    "hero": { "type": "hero", "blocks": {
+      "h": { "type": "heading", "settings": { "text": "Cosas útiles, <em>bien elegidas</em>." } },
+      "t": { "type": "text", "settings": { "text": "<p>Una selección corta de productos prácticos para casa, viaje y día a día. Precio final claro antes de pagar.</p>" } },
+      "b": { "type": "buttons", "settings": { "label_1": "Ver la selección", "label_2": "Colecciones" } },
+      "p": { "type": "points", "settings": { "p1": "Pago seguro", "p2": "14 días para devolver", "p3": "Seguimiento del envío" } }
+    }, "block_order": ["h", "t", "b", "p"], "settings": {} },
+    "trust": { "type": "trust", "settings": { "spaced": false }, "blocks": {
+      "a": { "type": "item", "settings": { "icon": "lock", "title": "Pago seguro", "text": "Pago cifrado procesado por Shopify." } },
+      "b": { "type": "item", "settings": { "icon": "return", "title": "14 días para desistir", "text": "Tu derecho de desistimiento, sin dar explicaciones." } },
+      "c": { "type": "item", "settings": { "icon": "truck", "title": "Seguimiento del envío", "text": "Te enviamos el número de seguimiento por email." } },
+      "d": { "type": "item", "settings": { "icon": "chat", "title": "Atención en español", "text": "Escríbenos y te respondemos personalmente." } }
+    }, "block_order": ["a", "b", "c", "d"] },
+    "featured": { "type": "featured-collection", "settings": { "heading": "La selección", "text": "Lo más útil de la tienda, en un vistazo.", "limit": 8, "columns": 4, "show_vendor": true, "link_label": "Ver todo" } },
+    "story": { "type": "image-text", "settings": { "product": "calora-calentador-de-manos", "reverse": false }, "blocks": {
+      "h": { "type": "heading", "settings": { "text": "Menos cosas. Mejor elegidas." } },
+      "t": { "type": "text", "settings": { "text": "<p>No queremos un catálogo infinito. Elegimos pocos productos, explicamos para qué sirven y qué incluyen, y te mostramos el precio final antes de pagar.</p>" } },
+      "b": { "type": "button", "settings": { "label": "Descubrir Calora" } }
+    }, "block_order": ["h", "t", "b"] },
+    "collections": { "type": "collection-list", "settings": { "heading": "Explora por categoría" } },
+    "faq": { "type": "faq", "settings": { "heading": "Preguntas frecuentes" }, "blocks": {
+      "q1": { "type": "q", "settings": { "q": "¿Cuándo recibiré mi pedido?", "a": "<p>El plazo de entrega figura en la página de envíos. Cuando tu pedido salga te enviaremos por email el número de seguimiento.</p>" } },
+      "q2": { "type": "q", "settings": { "q": "¿Puedo devolver un producto?", "a": "<p>Sí. Tienes 14 días naturales desde que lo recibes para desistir de la compra sin dar explicaciones. Los pasos están en la política de devoluciones.</p>" } },
+      "q3": { "type": "q", "settings": { "q": "¿Qué métodos de pago aceptáis?", "a": "<p>Los que ves al finalizar la compra. El pago se procesa en la pasarela segura de Shopify; no guardamos los datos de tu tarjeta.</p>" } },
+      "q4": { "type": "q", "settings": { "q": "¿Cómo contacto con vosotros?", "a": "<p>Desde la página de contacto o respondiendo al email de confirmación de tu pedido.</p>" } }
+    }, "block_order": ["q1", "q2", "q3", "q4"] },
+    "news": { "type": "newsletter", "settings": {} }
+  },
+  "order": ["hero", "trust", "featured", "story", "collections", "faq", "news"]
+}

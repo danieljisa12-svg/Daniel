@@ -1,0 +1,40 @@
+{%- assign col = section.settings.collection | default: collections.all -%}
+<section class="section{% if section.settings.tight %} section--tight{% endif %}" {{ section.shopify_attributes }}>
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        {%- if section.settings.heading != blank -%}<h2>{{ section.settings.heading }}</h2>{%- endif -%}
+        {%- if section.settings.text != blank -%}<p>{{ section.settings.text }}</p>{%- endif -%}
+      </div>
+      {%- if section.settings.link_label != blank -%}<a class="link-arrow" href="{{ col.url }}">{{ section.settings.link_label }}</a>{%- endif -%}
+    </div>
+    <div class="grid" style="--cols:{{ section.settings.columns }}">
+      {%- assign shown = 0 -%}
+      {%- for product in col.products -%}
+        {%- assign hide = false -%}{%- if settings.hidden_tag != blank and product.tags contains settings.hidden_tag -%}{%- assign hide = true -%}{%- endif -%}
+        {%- if shown < section.settings.limit and hide == false -%}
+          {%- assign shown = shown | plus: 1 -%}
+          {%- render 'product-card', card: product, show_vendor: section.settings.show_vendor -%}
+        {%- endif -%}
+      {%- else -%}
+        <p class="muted">{{ 'collections.empty' | t }}</p>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Productos destacados",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Título", "default": "La selección" },
+    { "type": "text", "id": "text", "label": "Subtítulo", "default": "Lo más útil de la tienda, en un vistazo." },
+    { "type": "collection", "id": "collection", "label": "Colección" },
+    { "type": "range", "id": "limit", "label": "Número de productos", "min": 2, "max": 16, "step": 1, "default": 8 },
+    { "type": "range", "id": "columns", "label": "Columnas (escritorio)", "min": 2, "max": 5, "step": 1, "default": 4 },
+    { "type": "checkbox", "id": "show_vendor", "label": "Mostrar marca", "default": true },
+    { "type": "text", "id": "link_label", "label": "Texto del enlace", "default": "Ver todo" },
+    { "type": "checkbox", "id": "tight", "label": "Espaciado reducido", "default": false }
+  ],
+  "presets": [{ "name": "Productos destacados" }]
+}
+{% endschema %}

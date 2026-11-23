@@ -1,0 +1,56 @@
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="logo" href="{{ routes.root_url }}">{{ shop.name }}</a>
+        {%- if settings.tagline != blank -%}<p class="muted">{{ settings.tagline }}</p>{%- endif -%}
+        {%- if settings.support_email != blank -%}<p><a href="mailto:{{ settings.support_email }}">{{ settings.support_email }}</a>{% if settings.support_hours != blank %}<br><span class="muted">{{ settings.support_hours }}</span>{% endif %}</p>{%- endif -%}
+      </div>
+      {%- assign m1 = linklists[section.settings.menu_shop] -%}
+      {%- if m1.links.size > 0 -%}
+      <div>
+        <h2>{{ section.settings.title_shop }}</h2>
+        <ul>{%- for link in m1.links -%}<li><a href="{{ link.url }}">{{ link.title }}</a></li>{%- endfor -%}</ul>
+      </div>
+      {%- endif -%}
+      {%- assign m2 = linklists[section.settings.menu_help] -%}
+      <div>
+        <h2>{{ section.settings.title_help }}</h2>
+        <ul>
+          {%- for link in m2.links -%}<li><a href="{{ link.url }}">{{ link.title }}</a></li>{%- endfor -%}
+          {%- if shop.shipping_policy -%}<li><a href="{{ shop.shipping_policy.url }}">{{ shop.shipping_policy.title }}</a></li>{%- endif -%}
+          {%- if shop.refund_policy -%}<li><a href="{{ shop.refund_policy.url }}">{{ shop.refund_policy.title }}</a></li>{%- endif -%}
+          {%- if shop.contact_page_url -%}<li><a href="{{ shop.contact_page_url }}">Contacto</a></li>{%- endif -%}
+        </ul>
+      </div>
+      <div>
+        <h2>{{ section.settings.title_legal }}</h2>
+        <ul>
+          {%- if shop.legal_notice_policy -%}<li><a href="{{ shop.legal_notice_policy.url }}">{{ shop.legal_notice_policy.title }}</a></li>{%- endif -%}
+          {%- if shop.terms_of_service -%}<li><a href="{{ shop.terms_of_service.url }}">{{ shop.terms_of_service.title }}</a></li>{%- endif -%}
+          {%- if shop.privacy_policy -%}<li><a href="{{ shop.privacy_policy.url }}">{{ shop.privacy_policy.title }}</a></li>{%- endif -%}
+          {%- if shop.subscription_policy -%}<li><a href="{{ shop.subscription_policy.url }}">{{ shop.subscription_policy.title }}</a></li>{%- endif -%}
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p style="margin:0">© {{ 'now' | date: '%Y' }} {{ shop.name }}</p>
+      {%- if shop.enabled_payment_types.size > 0 -%}
+      <div class="pay" aria-label="Métodos de pago">{%- for type in shop.enabled_payment_types -%}{{ type | payment_type_svg_tag }}{%- endfor -%}</div>
+      {%- endif -%}
+    </div>
+  </div>
+</footer>
+{% schema %}
+{
+  "name": "Pie de página",
+  "enabled_on": { "groups": ["footer"] },
+  "settings": [
+    { "type": "text", "id": "title_shop", "label": "Título columna 1", "default": "Tienda" },
+    { "type": "link_list", "id": "menu_shop", "label": "Menú columna 1", "default": "main-menu" },
+    { "type": "text", "id": "title_help", "label": "Título columna 2", "default": "Ayuda" },
+    { "type": "link_list", "id": "menu_help", "label": "Menú columna 2", "default": "footer" },
+    { "type": "text", "id": "title_legal", "label": "Título columna legal", "default": "Legal" }
+  ]
+}
+{% endschema %}

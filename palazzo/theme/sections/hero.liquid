@@ -1,0 +1,73 @@
+{%- liquid
+  assign col = section.settings.collection | default: collections.all
+  assign imgs = ''
+-%}
+<section class="wrap" {{ section.shopify_attributes }}>
+  <div class="hero">
+    <div>
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'heading' -%}<h1 {{ block.shopify_attributes }}>{{ block.settings.text }}</h1>
+          {%- when 'text' -%}<div class="hero__lead" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+          {%- when 'buttons' -%}
+            <div class="hero__ctas" {{ block.shopify_attributes }}>
+              {%- if block.settings.label_1 != blank -%}<a class="btn btn--primary" href="{{ block.settings.link_1 | default: col.url }}">{{ block.settings.label_1 }} {% render 'icon', name: 'arrow' %}</a>{%- endif -%}
+              {%- if block.settings.label_2 != blank -%}<a class="btn btn--ghost" href="{{ block.settings.link_2 | default: routes.collections_url }}">{{ block.settings.label_2 }}</a>{%- endif -%}
+            </div>
+          {%- when 'points' -%}
+            <div class="hero__note" {{ block.shopify_attributes }}>
+              {%- if block.settings.p1 != blank -%}<span>{{ block.settings.p1 }}</span>{%- endif -%}
+              {%- if block.settings.p2 != blank -%}<span>{{ block.settings.p2 }}</span>{%- endif -%}
+              {%- if block.settings.p3 != blank -%}<span>{{ block.settings.p3 }}</span>{%- endif -%}
+            </div>
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+    {%- if section.settings.image_1 -%}
+      <div class="hero__media{% unless section.settings.image_2 %} hero__media--single{% endunless %}">
+        <div>{{ section.settings.image_1 | image_url: width: 1400 | image_tag: loading: 'eager', fetchpriority: 'high', widths: '600,900,1200,1400', sizes: '(min-width: 820px) 50vw, 100vw' }}</div>
+        {%- if section.settings.image_2 -%}<div>{{ section.settings.image_2 | image_url: width: 800 | image_tag: loading: 'eager', widths: '400,800', sizes: '25vw' }}</div>{%- endif -%}
+        {%- if section.settings.image_3 -%}<div>{{ section.settings.image_3 | image_url: width: 800 | image_tag: loading: 'eager', widths: '400,800', sizes: '25vw' }}</div>{%- endif -%}
+      </div>
+    {%- else -%}
+      {%- comment -%} Sin imágenes elegidas: mosaico con las fotos reales de los productos de la colección. {%- endcomment -%}
+      <div class="hero__media">
+        {%- assign shown = 0 -%}
+        {%- for p in col.products -%}
+          {%- if p.featured_media and shown < 3 -%}
+            {%- assign shown = shown | plus: 1 -%}
+            <a href="{{ p.url }}" aria-label="{{ p.title | escape }}">{{ p.featured_media.preview_image | image_url: width: 1200 | image_tag: loading: 'eager', widths: '400,800,1200', sizes: '(min-width: 820px) 40vw, 100vw', alt: p.title }}</a>
+          {%- endif -%}
+        {%- endfor -%}
+        {%- if shown == 0 -%}<div>{{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}</div>{%- endif -%}
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Portada (hero)",
+  "settings": [
+    { "type": "image_picker", "id": "image_1", "label": "Imagen principal", "info": "Si no eliges imágenes, se usan las fotos de los productos de la colección." },
+    { "type": "image_picker", "id": "image_2", "label": "Imagen 2" },
+    { "type": "image_picker", "id": "image_3", "label": "Imagen 3" },
+    { "type": "collection", "id": "collection", "label": "Colección destacada" }
+  ],
+  "blocks": [
+    { "type": "heading", "name": "Titular", "limit": 1, "settings": [{ "type": "inline_richtext", "id": "text", "label": "Titular", "default": "Cosas útiles, <em>bien elegidas</em>." }] },
+    { "type": "text", "name": "Texto", "limit": 1, "settings": [{ "type": "richtext", "id": "text", "label": "Texto", "default": "<p>Una selección corta de productos prácticos para casa, viaje y día a día.</p>" }] },
+    { "type": "buttons", "name": "Botones", "limit": 1, "settings": [
+      { "type": "text", "id": "label_1", "label": "Botón principal", "default": "Ver la selección" },
+      { "type": "url", "id": "link_1", "label": "Enlace principal" },
+      { "type": "text", "id": "label_2", "label": "Botón secundario", "default": "Colecciones" },
+      { "type": "url", "id": "link_2", "label": "Enlace secundario" }
+    ] },
+    { "type": "points", "name": "Garantías", "limit": 1, "settings": [
+      { "type": "text", "id": "p1", "label": "Punto 1", "default": "Pago seguro" },
+      { "type": "text", "id": "p2", "label": "Punto 2", "default": "14 días para devolver" },
+      { "type": "text", "id": "p3", "label": "Punto 3", "default": "Seguimiento del envío" }
+    ] }
+  ],
+  "presets": [{ "name": "Portada (hero)", "blocks": [{ "type": "heading" }, { "type": "text" }, { "type": "buttons" }, { "type": "points" }] }]
+}
+{% endschema %}

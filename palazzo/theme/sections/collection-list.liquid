@@ -1,0 +1,39 @@
+<section class="section" {{ section.shopify_attributes }}>
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        {%- if section.settings.heading != blank -%}<h2>{{ section.settings.heading }}</h2>{%- endif -%}
+        {%- if section.settings.text != blank -%}<p>{{ section.settings.text }}</p>{%- endif -%}
+      </div>
+    </div>
+    <div class="collections">
+      {%- if section.blocks.size > 0 -%}
+        {%- for block in section.blocks -%}
+          {%- assign c = block.settings.collection -%}
+          {%- if c -%}{%- render 'collection-card', c: c, image: block.settings.image, attrs: block.shopify_attributes -%}{%- endif -%}
+        {%- endfor -%}
+      {%- else -%}
+        {%- comment -%} Sin bloques: muestra automáticamente las colecciones que tienen productos. {%- endcomment -%}
+        {%- for c in collections -%}
+          {%- if c.handle != 'frontpage' and c.all_products_count > 0 -%}{%- render 'collection-card', c: c -%}{%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Colecciones",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Título", "default": "Explora por categoría" },
+    { "type": "text", "id": "text", "label": "Subtítulo" }
+  ],
+  "blocks": [
+    { "type": "collection", "name": "Colección", "settings": [
+      { "type": "collection", "id": "collection", "label": "Colección" },
+      { "type": "image_picker", "id": "image", "label": "Imagen (opcional)" }
+    ] }
+  ],
+  "presets": [{ "name": "Colecciones" }]
+}
+{% endschema %}

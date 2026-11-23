@@ -1,0 +1,23 @@
+<div class="wrap">
+  <header class="page-head"><h1>{{ page.title }}</h1></header>
+  <div class="contact page-body">
+    <div class="rte">
+      {{ page.content }}
+      {%- if settings.support_email != blank -%}<p><strong>Email:</strong> <a href="mailto:{{ settings.support_email }}">{{ settings.support_email }}</a></p>{%- endif -%}
+      {%- if settings.support_hours != blank -%}<p><strong>Horario:</strong> {{ settings.support_hours }}</p>{%- endif -%}
+    </div>
+    {%- form 'contact', id: 'ContactForm' -%}
+      {%- if form.posted_successfully? -%}<p class="notice" role="status">{{ 'contact.success' | t }}</p>{%- endif -%}
+      {%- if form.errors -%}<p class="notice notice--error" role="alert">{{ form.errors | default_errors }}</p>{%- endif -%}
+      <label class="field"><span>{{ 'contact.name' | t }}</span><input class="input" name="contact[name]" autocomplete="name" required value="{{ form.name }}"></label>
+      <label class="field"><span>{{ 'contact.email' | t }}</span><input class="input" type="email" name="contact[email]" autocomplete="email" required value="{{ form.email }}"></label>
+      <label class="field"><span>{{ 'contact.order' | t }}</span><input class="input" name="contact[pedido]" placeholder="#1007"></label>
+      <label class="field"><span>{{ 'contact.message' | t }}</span><textarea class="textarea" name="contact[body]" required>{{ form.body }}</textarea></label>
+      <p class="check" style="margin-top:0">{{ 'contact.privacy' | t }}{% if shop.privacy_policy %} <a href="{{ shop.privacy_policy.url }}">{{ shop.privacy_policy.title }}</a>{% endif %}</p>
+      <button class="btn btn--primary" type="submit">{{ 'contact.send' | t }}</button>
+    {%- endform -%}
+  </div>
+</div>
+{% schema %}
+{ "name": "Formulario de contacto" }
+{% endschema %}

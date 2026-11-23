@@ -1,0 +1,30 @@
+<div class="wrap">
+  <header class="page-head">
+    <h1>{{ collection.title }}</h1>
+    {%- if collection.description != blank -%}<div class="rte muted" style="margin-top:12px">{{ collection.description }}</div>{%- endif -%}
+  </header>
+  {%- paginate collection.products by section.settings.per_page -%}
+    <div class="toolbar">
+      <span class="muted">{{ 'collections.count' | t: count: collection.products_count }}</span>
+      <form method="get" data-sort-form>
+        <label class="visually-hidden" for="SortBy">{{ 'collections.sort' | t }}</label>
+        <select class="select" id="SortBy" name="sort_by" data-sort>
+          {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
+          {%- for option in collection.sort_options -%}<option value="{{ option.value }}"{% if option.value == sort_by %} selected{% endif %}>{{ option.name }}</option>{%- endfor -%}
+        </select>
+        <noscript><button class="btn btn--ghost" type="submit">{{ 'collections.sort' | t }}</button></noscript>
+      </form>
+    </div>
+    <div class="grid">
+      {%- for product in collection.products -%}{%- render 'product-card', card: product, show_vendor: true -%}{%- else -%}<p class="empty">{{ 'collections.empty' | t }}</p>{%- endfor -%}
+    </div>
+    {%- render 'pagination', paginate: paginate -%}
+  {%- endpaginate -%}
+</div>
+<div style="height:clamp(48px,7vw,96px)"></div>
+{% schema %}
+{
+  "name": "Colección",
+  "settings": [{ "type": "range", "id": "per_page", "label": "Productos por página", "min": 8, "max": 48, "step": 4, "default": 24 }]
+}
+{% endschema %}

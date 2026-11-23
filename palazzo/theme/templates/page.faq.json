@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "main": { "type": "main-page", "settings": {} },
+    "faq": { "type": "faq", "settings": { "heading": "" }, "blocks": {
+      "q1": { "type": "q", "settings": { "q": "¿Cuándo recibiré mi pedido?", "a": "<p>El plazo de entrega figura en la página de envíos. Cuando tu pedido salga te enviaremos por email el número de seguimiento.</p>" } },
+      "q2": { "type": "q", "settings": { "q": "¿Puedo devolver un producto?", "a": "<p>Sí. Tienes 14 días naturales desde que lo recibes para desistir de la compra sin dar explicaciones.</p>" } },
+      "q3": { "type": "q", "settings": { "q": "¿Qué métodos de pago aceptáis?", "a": "<p>Los que ves al finalizar la compra, procesados por la pasarela segura de Shopify.</p>" } },
+      "q4": { "type": "q", "settings": { "q": "¿Puedo cambiar o cancelar mi pedido?", "a": "<p>Escríbenos cuanto antes desde la página de contacto con tu número de pedido. Si aún no ha salido, lo modificamos o cancelamos.</p>" } }
+    }, "block_order": ["q1", "q2", "q3", "q4"] }
+  },
+  "order": ["main", "faq"]
+}

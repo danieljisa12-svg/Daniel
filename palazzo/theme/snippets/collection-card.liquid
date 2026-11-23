@@ -1,0 +1,10 @@
+{%- liquid
+  assign img = image | default: c.featured_image
+  if img == blank
+    assign img = c.products.first.featured_media.preview_image
+  endif
+-%}
+<a class="ccard" href="{{ c.url }}" {{ attrs }}>
+  {%- if img -%}{{ img | image_url: width: 800 | image_tag: loading: 'lazy', widths: '400,600,800', sizes: '(min-width: 720px) 25vw, 50vw', alt: c.title }}{%- else -%}{{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}{%- endif -%}
+  <span class="ccard__label"><span>{{ c.title }}</span>{% render 'icon', name: 'arrow' %}</span>
+</a>

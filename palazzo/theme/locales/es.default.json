@@ -1,0 +1,65 @@
+{
+  "general": {
+    "skip": "Saltar al contenido",
+    "menu": "Menú",
+    "close": "Cerrar",
+    "search": "Buscar",
+    "cart": "Cesta",
+    "home": "Inicio"
+  },
+  "products": {
+    "add": "Añadir a la cesta",
+    "sold_out": "Agotado",
+    "unavailable": "No disponible",
+    "quantity": "Cantidad",
+    "from": "Desde",
+    "sale": "Oferta",
+    "tax_included": "IVA incluido.",
+    "shipping_at_checkout": "Gastos de envío calculados al finalizar la compra.",
+    "related": "También te puede interesar",
+    "view": "Ver producto"
+  },
+  "cart": {
+    "title": "Tu cesta",
+    "empty": "Tu cesta está vacía.",
+    "continue": "Seguir comprando",
+    "subtotal": "Subtotal",
+    "checkout": "Finalizar compra",
+    "remove": "Quitar",
+    "update": "Actualizar"
+  },
+  "collections": {
+    "empty": "Todavía no hay productos en esta colección.",
+    "sort": "Ordenar",
+    "count": {
+      "one": "{{ count }} producto",
+      "other": "{{ count }} productos"
+    }
+  },
+  "search": {
+    "placeholder": "¿Qué estás buscando?",
+    "results": "Resultados para «{{ terms }}»",
+    "none": "No hemos encontrado nada para «{{ terms }}». Prueba con otra palabra."
+  },
+  "newsletter": {
+    "email": "Tu email",
+    "submit": "Suscribirme",
+    "success": "¡Listo! Revisa tu correo.",
+    "consent": "Acepto recibir comunicaciones comerciales de {{ shop }} por email. Puedo darme de baja cuando quiera."
+  },
+  "contact": {
+    "name": "Nombre",
+    "email": "Email",
+    "phone": "Teléfono (opcional)",
+    "order": "Número de pedido (si lo tienes)",
+    "message": "Mensaje",
+    "send": "Enviar",
+    "success": "Gracias. Te responderemos lo antes posible.",
+    "privacy": "Usaremos tus datos solo para responder a tu consulta."
+  },
+  "404": {
+    "title": "Esta página no existe",
+    "text": "Puede que el enlace haya cambiado.",
+    "cta": "Ir a la tienda"
+  }
+}

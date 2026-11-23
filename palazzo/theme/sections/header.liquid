@@ -1,0 +1,46 @@
+{%- assign menu = linklists[section.settings.menu] -%}
+<header class="header" data-header>
+  <div class="wrap header__in">
+    <div style="display:flex;align-items:center;gap:8px">
+      <button class="icon-btn menu-toggle" type="button" data-menu-open aria-controls="MobileNav" aria-expanded="false" aria-label="{{ 'general.menu' | t }}">{% render 'icon', name: 'menu' %}</button>
+      <nav class="nav" aria-label="Principal">
+        {%- for link in menu.links -%}
+          <a href="{{ link.url }}"{% if link.current %} aria-current="page"{% endif %}>{{ link.title }}</a>
+        {%- endfor -%}
+      </nav>
+    </div>
+    <a class="logo" href="{{ routes.root_url }}" aria-label="{{ shop.name }}, {{ 'general.home' | t }}"{% if settings.logo %} style="--logo-w:{{ settings.logo_width }}px"{% endif %}>
+      {%- if settings.logo -%}
+        {{ settings.logo | image_url: width: 520 | image_tag: alt: shop.name, loading: 'eager', widths: '260,520' }}
+      {%- else -%}
+        {{ shop.name }}
+      {%- endif -%}
+    </a>
+    <div class="header__tools">
+      <a class="icon-btn" href="{{ routes.search_url }}" aria-label="{{ 'general.search' | t }}">{% render 'icon', name: 'search' %}</a>
+      <a class="icon-btn" href="{{ routes.cart_url }}" data-cart-open aria-label="{{ 'general.cart' | t }} ({{ cart.item_count }})">
+        {% render 'icon', name: 'cart' %}
+        <span class="cart-count" data-cart-count{% if cart.item_count == 0 %} hidden{% endif %}>{{ cart.item_count }}</span>
+      </a>
+    </div>
+  </div>
+</header>
+<div class="mnav" id="MobileNav" data-mnav aria-label="{{ 'general.menu' | t }}">
+  <div class="mnav__top">
+    <span class="logo" style="justify-self:start;padding:0">{{ shop.name }}</span>
+    <button class="icon-btn" type="button" data-menu-close aria-label="{{ 'general.close' | t }}">{% render 'icon', name: 'close' %}</button>
+  </div>
+  <nav aria-label="Móvil">
+    {%- for link in menu.links -%}<a href="{{ link.url }}">{{ link.title }}</a>{%- endfor -%}
+    <a href="{{ routes.search_url }}">{{ 'general.search' | t }}</a>
+  </nav>
+</div>
+{% schema %}
+{
+  "name": "Cabecera",
+  "enabled_on": { "groups": ["header"] },
+  "settings": [
+    { "type": "link_list", "id": "menu", "label": "Menú", "default": "main-menu" }
+  ]
+}
+{% endschema %}

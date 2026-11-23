@@ -1,0 +1,27 @@
+{%- comment -%} Tarjeta de producto. Uso: {% render 'product-card', card: product, eager: false %} {%- endcomment -%}
+{%- assign card_hidden = false -%}
+{%- if settings.hidden_tag != blank and card.tags contains settings.hidden_tag -%}{%- assign card_hidden = true -%}{%- endif -%}
+{%- if card and card_hidden == false -%}
+<a class="card" href="{{ card.url }}">
+  <div class="card__media">
+    {%- if card.featured_media -%}
+      {{ card.featured_media.preview_image | image_url: width: 900 | image_tag: loading: 'lazy', widths: '360,540,720,900', sizes: '(min-width: 990px) 25vw, 50vw', alt: card.featured_media.alt | default: card.title }}
+      {%- if card.media[1] -%}
+        {{ card.media[1].preview_image | image_url: width: 900 | image_tag: loading: 'lazy', widths: '360,540,720,900', sizes: '(min-width: 990px) 25vw, 50vw', alt: '' }}
+      {%- endif -%}
+    {%- else -%}
+      {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+    {%- endif -%}
+    {%- if card.available == false -%}
+      <span class="card__badge card__badge--out">{{ 'products.sold_out' | t }}</span>
+    {%- elsif card.compare_at_price > card.price -%}
+      <span class="card__badge">{{ 'products.sale' | t }}</span>
+    {%- endif -%}
+  </div>
+  <div class="card__body">
+    {%- if show_vendor and card.vendor != shop.name -%}<p class="card__vendor">{{ card.vendor }}</p>{%- endif -%}
+    <h3 class="card__title">{{ card.title }}</h3>
+    {%- render 'price', product: card -%}
+  </div>
+</a>
+{%- endif -%}

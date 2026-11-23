@@ -1,0 +1,16 @@
+{%- if section.settings.text != blank -%}
+<div class="announce" {{ section.shopify_attributes }}>
+  <p>{%- if section.settings.link != blank -%}<a href="{{ section.settings.link }}">{{ section.settings.text }}</a>{%- else -%}{{ section.settings.text }}{%- endif -%}</p>
+</div>
+{%- endif -%}
+{% schema %}
+{
+  "name": "Barra de anuncio",
+  "enabled_on": { "groups": ["header"] },
+  "settings": [
+    { "type": "text", "id": "text", "label": "Texto", "info": "Solo promesas reales: no anuncies envío gratis o plazos que no estén configurados." },
+    { "type": "url", "id": "link", "label": "Enlace" }
+  ],
+  "presets": [{ "name": "Barra de anuncio" }]
+}
+{% endschema %}

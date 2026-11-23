@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "main": { "type": "main-product", "blocks": {
+      "vendor": { "type": "vendor" },
+      "title": { "type": "title" },
+      "sub": { "type": "subtitle", "settings": { "fallback": "" } },
+      "price": { "type": "price" },
+      "buy": { "type": "buy", "settings": { "dynamic_checkout": true } },
+      "assure": { "type": "assurance", "settings": { "l1": "Te enviamos el número de seguimiento por email", "l2": "14 días para desistir de la compra", "l3": "Pago seguro procesado por Shopify" } },
+      "desc": { "type": "description", "settings": { "title": "Descripción", "open": true } },
+      "ship": { "type": "collapsible", "settings": { "title": "Envíos y devoluciones", "page": "envios-y-devoluciones" } }
+    }, "block_order": ["vendor", "title", "sub", "price", "buy", "assure", "desc", "ship"] },
+    "related": { "type": "related-products", "settings": { "heading": "También te puede interesar", "limit": 4 } }
+  },
+  "order": ["main", "related"]
+}

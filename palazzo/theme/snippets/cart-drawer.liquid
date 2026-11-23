@@ -1,0 +1,18 @@
+<div class="drawer-scrim" data-drawer-scrim></div>
+<aside class="drawer" id="CartDrawer" role="dialog" aria-modal="true" aria-labelledby="CartDrawerTitle" data-drawer tabindex="-1">
+  <div class="drawer__head">
+    <h2 id="CartDrawerTitle">{{ 'cart.title' | t }}</h2>
+    <button class="icon-btn" type="button" data-drawer-close aria-label="{{ 'general.close' | t }}">{% render 'icon', name: 'close' %}</button>
+  </div>
+  <div class="drawer__body" data-drawer-items>
+    {%- render 'cart-lines' -%}
+  </div>
+  <div class="drawer__foot">
+    <div class="summary__row"><span>{{ 'cart.subtotal' | t }}</span><span data-cart-subtotal>{{ cart.total_price | money }}</span></div>
+    <small class="muted">{{ 'products.tax_included' | t }} {{ 'products.shipping_at_checkout' | t }}</small>
+    <form action="{{ routes.cart_url }}" method="post" style="margin-top:14px">
+      <button class="btn btn--primary btn--block" type="submit" name="checkout" data-drawer-checkout{% if cart.item_count == 0 %} disabled{% endif %}>{% render 'icon', name: 'lock' %} {{ 'cart.checkout' | t }}</button>
+    </form>
+    {%- if settings.cart_note != blank -%}<p class="muted" style="font-size:12px;text-align:center;margin:10px 0 0">{{ settings.cart_note }}</p>{%- endif -%}
+  </div>
+</aside>

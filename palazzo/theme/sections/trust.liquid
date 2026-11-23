@@ -1,0 +1,37 @@
+{%- if section.blocks.size > 0 -%}
+<section class="{% if section.settings.spaced %}section section--tight{% endif %}" {{ section.shopify_attributes }}>
+  <div class="{% if section.settings.spaced %}wrap{% endif %}">
+    <div class="trust" style="--n:{{ section.blocks.size | at_most: 4 }}">
+      {%- for block in section.blocks -%}
+        <div class="trust__item" {{ block.shopify_attributes }}>
+          {% render 'icon', name: block.settings.icon %}
+          <h3>{{ block.settings.title }}</h3>
+          {%- if block.settings.text != blank -%}<p>{{ block.settings.text }}</p>{%- endif -%}
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+{%- endif -%}
+{% schema %}
+{
+  "name": "Garantías",
+  "settings": [{ "type": "checkbox", "id": "spaced", "label": "Con márgenes", "default": true }],
+  "blocks": [
+    { "type": "item", "name": "Garantía", "settings": [
+      { "type": "select", "id": "icon", "label": "Icono", "default": "lock", "options": [
+        { "value": "lock", "label": "Candado" }, { "value": "return", "label": "Devolución" }, { "value": "truck", "label": "Envío" },
+        { "value": "chat", "label": "Atención" }, { "value": "check", "label": "Check" }, { "value": "box", "label": "Caja" }, { "value": "leaf", "label": "Hoja" }
+      ] },
+      { "type": "text", "id": "title", "label": "Título", "default": "Pago seguro" },
+      { "type": "text", "id": "text", "label": "Texto", "info": "Escribe solo lo que puedas cumplir." }
+    ] }
+  ],
+  "presets": [{ "name": "Garantías", "blocks": [
+    { "type": "item", "settings": { "icon": "lock", "title": "Pago seguro", "text": "Pago cifrado procesado por Shopify." } },
+    { "type": "item", "settings": { "icon": "return", "title": "14 días para desistir", "text": "Tu derecho de desistimiento, sin dar explicaciones." } },
+    { "type": "item", "settings": { "icon": "truck", "title": "Seguimiento del envío", "text": "Te enviamos el número de seguimiento por email." } },
+    { "type": "item", "settings": { "icon": "chat", "title": "Atención en español", "text": "Escríbenos y te respondemos personalmente." } }
+  ] }]
+}
+{% endschema %}

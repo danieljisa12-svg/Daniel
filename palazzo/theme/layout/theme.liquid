@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page_title }}{% if current_tags %} · {{ current_tags | join: ', ' }}{% endif %}{% if current_page != 1 %} · Página {{ current_page }}{% endif %}{% unless page_title contains shop.name %} · {{ shop.name }}{% endunless %}</title>
+  {%- if page_description -%}<meta name="description" content="{{ page_description | escape }}">{%- endif -%}
+  <link rel="canonical" href="{{ canonical_url }}">
+  <meta name="theme-color" content="{{ settings.color_bg }}">
+  {%- render 'social-meta' -%}
+  {%- if settings.favicon -%}<link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 64, height: 64 }}">{%- endif -%}
+  <link rel="preload" href="{{ 'manrope.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ 'fraunces.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin>
+  <style>
+    @font-face{font-family:"Fraunces";src:url({{ 'fraunces.woff2' | asset_url }}) format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
+    @font-face{font-family:"Fraunces";src:url({{ 'fraunces-italic.woff2' | asset_url }}) format("woff2");font-weight:100 900;font-style:italic;font-display:swap}
+    @font-face{font-family:"Manrope";src:url({{ 'manrope.woff2' | asset_url }}) format("woff2");font-weight:200 800;font-style:normal;font-display:swap}
+    :root{
+      --bg:{{ settings.color_bg }};--surface:{{ settings.color_surface }};--ink:{{ settings.color_ink }};--muted:{{ settings.color_muted }};
+      --accent:{{ settings.color_accent }};--accent-ink:{{ settings.color_accent_ink }};--brass:{{ settings.color_brass }};--sale:{{ settings.color_sale }};
+      --line:{{ settings.color_ink | color_modify: 'alpha', 0.12 }};--soft:{{ settings.color_ink | color_modify: 'alpha', 0.05 }};
+    }
+  </style>
+  {{ 'palazzo.css' | asset_url | stylesheet_tag }}
+  <script>document.documentElement.classList.add('js');</script>
+  {{ content_for_header }}
+</head>
+<body class="t-{{ template.name }}">
+  <a class="skip" href="#main">{{ 'general.skip' | t }}</a>
+  {% sections 'header-group' %}
+  <main id="main" tabindex="-1">
+    {{ content_for_layout }}
+  </main>
+  {% sections 'footer-group' %}
+  {%- render 'cart-drawer' -%}
+  <script>
+    window.Palazzo = { routes: { cart: {{ routes.cart_url | json }}, add: {{ routes.cart_add_url | json }}, change: {{ routes.cart_change_url | json }}, root: {{ routes.root_url | json }} }, money: {{ shop.money_format | json }} };
+  </script>
+  <script src="{{ 'palazzo.js' | asset_url }}" defer></script>
+</body>
+</html>

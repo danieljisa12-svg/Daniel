@@ -1,0 +1,34 @@
+<div class="wrap">
+  <header class="page-head"><h1>{{ 'cart.title' | t }}</h1></header>
+  {%- if cart.item_count == 0 -%}
+    <div class="empty"><p>{{ 'cart.empty' | t }}</p><a class="btn btn--primary" href="{{ routes.all_products_collection_url }}">{{ 'cart.continue' | t }}</a></div>
+  {%- else -%}
+  <form class="cart-page" action="{{ routes.cart_url }}" method="post" novalidate>
+    <div>
+      {%- for item in cart.items -%}
+        <div class="line">
+          <a href="{{ item.url }}">{%- if item.image -%}{{ item.image | image_url: width: 240 | image_tag: loading: 'lazy', alt: item.product.title }}{%- endif -%}</a>
+          <div>
+            <a class="line__t" href="{{ item.url }}">{{ item.product.title }}</a>
+            {%- unless item.product.has_only_default_variant -%}<div class="line__v">{{ item.variant.title }}</div>{%- endunless -%}
+            <label class="visually-hidden" for="Q-{{ forloop.index }}">{{ 'products.quantity' | t }}</label>
+            <input class="input" style="width:90px;min-height:42px;margin-top:8px" id="Q-{{ forloop.index }}" type="number" name="updates[]" value="{{ item.quantity }}" min="0">
+          </div>
+          <div style="text-align:right;font-weight:700">{{ item.final_line_price | money }}<br><a class="line__rm" href="{{ item.url_to_remove }}">{{ 'cart.remove' | t }}</a></div>
+        </div>
+      {%- endfor -%}
+      <button class="btn btn--ghost" style="margin-top:20px" type="submit" name="update">{{ 'cart.update' | t }}</button>
+    </div>
+    <aside class="summary">
+      <div class="summary__row"><span>{{ 'cart.subtotal' | t }}</span><span>{{ cart.total_price | money }}</span></div>
+      <small>{{ 'products.tax_included' | t }} {{ 'products.shipping_at_checkout' | t }}</small>
+      <button class="btn btn--primary btn--block" type="submit" name="checkout">{% render 'icon', name: 'lock' %} {{ 'cart.checkout' | t }}</button>
+      {%- if additional_checkout_buttons -%}<div style="margin-top:12px">{{ content_for_additional_checkout_buttons }}</div>{%- endif -%}
+      {%- if settings.cart_note != blank -%}<p class="muted" style="font-size:12px;text-align:center;margin:12px 0 0">{{ settings.cart_note }}</p>{%- endif -%}
+    </aside>
+  </form>
+  {%- endif -%}
+</div>
+{% schema %}
+{ "name": "Cesta" }
+{% endschema %}

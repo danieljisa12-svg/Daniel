@@ -1,0 +1,27 @@
+<div class="wrap">
+  <header class="page-head">
+    <h1>{% if search.performed %}{{ 'search.results' | t: terms: search.terms }}{% else %}{{ 'general.search' | t }}{% endif %}</h1>
+    <form class="searchbar" action="{{ routes.search_url }}" method="get" role="search" style="margin-top:24px">
+      <input type="hidden" name="type" value="product">
+      <label class="visually-hidden" for="Q">{{ 'general.search' | t }}</label>
+      <input class="input" id="Q" type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ 'search.placeholder' | t }}" autofocus>
+      <button class="btn btn--primary" type="submit">{{ 'general.search' | t }}</button>
+    </form>
+  </header>
+  {%- if search.performed -%}
+    {%- paginate search.results by 24 -%}
+      {%- if search.results_count == 0 -%}
+        <p class="empty">{{ 'search.none' | t: terms: search.terms }}</p>
+      {%- else -%}
+        <div class="grid">
+          {%- for item in search.results -%}{%- if item.object_type == 'product' -%}{%- render 'product-card', card: item, show_vendor: true -%}{%- endif -%}{%- endfor -%}
+        </div>
+        {%- render 'pagination', paginate: paginate -%}
+      {%- endif -%}
+    {%- endpaginate -%}
+  {%- endif -%}
+</div>
+<div style="height:clamp(48px,7vw,96px)"></div>
+{% schema %}
+{ "name": "Búsqueda" }
+{% endschema %}
