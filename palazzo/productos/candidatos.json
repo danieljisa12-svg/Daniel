@@ -195,23 +195,6 @@
       }
     },
     {
-      "id": "pantalon-bombacho",
-      "name": "PALAZZO® Pantalón Bombacho",
-      "supplierCost": null,
-      "shippingCost": null,
-      "competitorPrices": [],
-      "supplierVerified": {},
-      "complianceChecked": false,
-      "scores": {
-        "transporte": 5,
-        "devoluciones": 2,
-        "precio": 4,
-        "visuales": 2,
-        "legal": 4
-      },
-      "notas": "Fue el más vendido (4 de 6 pedidos). Está en borrador. Ropa: riesgo de devolución por talla; etiquetado textil obligatorio. Fotos son capturas de pantalla."
-    },
-    {
       "id": "carzen-kit-completo",
       "name": "Kit Completo Carzen (limpieza coche)",
       "supplierCost": null,
@@ -280,6 +263,13 @@
         "visuales": 2
       },
       "notas": "Tema publicado actualmente. Falta descripción en la ficha."
+    }
+  ],
+  "descartados": [
+    {
+      "id": "pantalon-bombacho",
+      "name": "PALAZZO® Pantalón Bombacho",
+      "motivo": "Descartado por el titular el 23/11/2026. Se queda en borrador en Shopify, sin borrar."
     }
   ]
 }

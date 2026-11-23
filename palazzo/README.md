@@ -109,7 +109,7 @@ Nada de esto se ha contratado. Cada gasto pasa por tu aprobación.
    - **C)** **Una marca por nicho**: Carzen para el coche y Calora para el calor, con Palazzo como tienda general.
 2. **Marca.** ¿Apruebas la propuesta de `palazzo/marca/` (verde, marfil y latón; Fraunces y Manrope; "Cosas útiles, bien elegidas.")?
 3. **Productos auxiliares.** ¿Puedo poner la etiqueta `oculto` a "Envío rápido/protegido" y "Fast shipping/Protected shipment" para que no salgan en las listas? No se borra nada.
-4. **Pantalón bombacho.** ¿Sigue disponible en tu proveedor? Era el más vendido y está en borrador.
+4. ~~Pantalón bombacho~~: descartado el 23/11. Se queda en borrador en Shopify.
 
 ## 8. Tablero de tareas
 Estados: ✅ hecho y verificado · 🔄 en curso · ⏳ pendiente · ⛔ bloqueado (se indica por qué).
