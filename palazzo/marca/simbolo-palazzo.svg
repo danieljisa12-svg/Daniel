@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104 104" role="img" aria-label="Palazzo">
+  <rect width="104" height="104" rx="24" fill="#1F3D31"/>
+  <g fill="none" stroke="#F6F2EB" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M28 80V46a24 24 0 0 1 48 0v34"/>
+    <path d="M42 80V52a10 10 0 0 1 20 0v28"/>
+    <path d="M20 80h64"/>
+  </g>
+</svg>

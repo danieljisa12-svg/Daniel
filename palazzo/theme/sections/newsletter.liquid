@@ -6,7 +6,8 @@
         {%- if section.settings.text != blank -%}<div style="margin-top:14px">{{ section.settings.text }}</div>{%- endif -%}
       </div>
       <div>
-        {%- form 'customer', id: 'Newsletter-' | append: section.id -%}
+        {%- assign form_id = 'Newsletter-' | append: section.id -%}
+        {%- form 'customer', id: form_id -%}
           <input type="hidden" name="contact[tags]" value="newsletter">
           {%- if form.posted_successfully? -%}
             <p class="notice" role="status">{{ 'newsletter.success' | t }}</p>

@@ -183,7 +183,7 @@ p{margin:0 0 1em}
 .pdp__info{position:sticky;top:96px;align-self:start}
 .crumbs{font-size:13px;color:var(--muted);margin-bottom:18px}
 .crumbs a{text-decoration:none}
-.pdp__vendor{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);font-weight:700;margin:0 0 10px}
+.pdp__vendor{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:700;margin:0 0 10px}
 .pdp h1{font-size:clamp(30px,3.4vw,46px);margin-bottom:16px}
 .pdp .price{font-size:22px;margin-bottom:4px}
 .pdp__tax{font-size:13px;color:var(--muted);margin-bottom:24px}

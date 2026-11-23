@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" role="img" aria-label="Palazzo">
+  <title>Palazzo</title>
+  <!-- Símbolo: arco de palacio (puerta) con base. Trazo único, se lee a 16 px. -->
+  <g fill="none" stroke="#1F3D31" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 100V52a30 30 0 0 1 60 0v48"/>
+    <path d="M40 100V60a12 12 0 0 1 24 0v40"/>
+    <path d="M12 100h80"/>
+  </g>
+  <text x="118" y="84" font-family="Fraunces, Georgia, serif" font-size="58" font-weight="500" letter-spacing="14" fill="#1B1712">PALAZZO</text>
+</svg>
