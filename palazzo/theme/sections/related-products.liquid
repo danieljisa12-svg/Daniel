@@ -1,7 +1,7 @@
 <section class="section section--tight" data-related data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ section.settings.limit }}&intent=related" {{ section.shopify_attributes }}>
   {%- if recommendations.performed? and recommendations.products_count > 0 -%}
   <div class="wrap">
-    <div class="section-head"><h2>{{ section.settings.heading | default: 'products.related' | t }}</h2></div>
+    <div class="section-head">{%- assign rel_heading = section.settings.heading -%}{%- if rel_heading == blank -%}{%- assign rel_heading = 'products.related' | t -%}{%- endif -%}<h2>{{ rel_heading }}</h2></div>
     <div class="grid">
       {%- for p in recommendations.products -%}{%- render 'product-card', card: p, show_vendor: true -%}{%- endfor -%}
     </div>
