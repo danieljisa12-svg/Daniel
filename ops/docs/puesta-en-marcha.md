@@ -46,11 +46,10 @@ Entra en `https://TU-DIRECCION/panel` con tu contraseña.
 ## Paso 4 · Probar con un pedido de verdad
 1. Haz un pedido de prueba en tu tienda (Shopify → *Configuración → Pagos → Modo de prueba*), o un pedido real barato que luego reembolses tú.
 2. En unos segundos aparece en **Pedidos**. Los pedidos de prueba de Shopify llegan marcados como "PEDIDO DE PRUEBA" y nunca se envían solos al proveedor.
-3. Recorre el flujo:
-   - Abre el pedido y pulsa *Enviar por WhatsApp*.
-   - Pega la respuesta del proveedor.
-   - Aprueba la compra.
-   - Pega el número de seguimiento.
+3. Recorre el flujo en el modo directo, el que tienes por defecto:
+   - Abre el pedido. Verás el mensaje con productos y datos de envío ya redactado.
+   - Pulsa *Enviar por WhatsApp*, envíalo y pulsa *Ya lo he enviado*.
+   - Cuando el proveedor te pase el número de seguimiento, pégalo en el pedido (con la API de WhatsApp llega solo).
    - Aprueba el seguimiento: Shopify marca el pedido como enviado y avisa al cliente.
 
 ## Cuando quieras más automatización (opcional)

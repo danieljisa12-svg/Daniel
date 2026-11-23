@@ -43,6 +43,7 @@ export function loadConfig(overrides = {}) {
       verifyToken: env("WHATSAPP_VERIFY_TOKEN"),
       graphVersion: env("WHATSAPP_GRAPH_VERSION", "v23.0"),
       templateConsulta: env("WHATSAPP_TEMPLATE_CONSULTA", "consulta_pedido_proveedor"),
+      templatePedido: env("WHATSAPP_TEMPLATE_PEDIDO", "pedido_nuevo_proveedor"),
       templateLang: env("WHATSAPP_TEMPLATE_LANG", "es"),
     },
     claude: {

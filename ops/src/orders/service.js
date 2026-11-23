@@ -3,12 +3,16 @@
 // -> aprobación (o regla automática) -> pedido con dirección -> seguimiento verificado -> Shopify.
 import { audit } from "../audit.js";
 import { canTransition, STATES, SUPPLIER_HAS_ORDER } from "./states.js";
-import { buildConsultaMessage, buildPedidoMessage, buildSeguimientoMessage, waLink } from "../whatsapp/messages.js";
+import { buildConsultaMessage, buildPedidoMessage, buildPedidoDirectoMessage, buildSeguimientoMessage, waLink, itemsOneLine, shippingBlock } from "../whatsapp/messages.js";
 import { parseSupplierReply } from "../ai/parser.js";
 import { classifyTracking, trackingUrl } from "../tracking.js";
 import { orderEconomics } from "../finance.js";
 
 export const DEFAULT_SETTINGS = {
+  // "directo": el proveedor tiene stock y envía → se le manda el pedido con los datos de envío al momento.
+  // "consulta": primero se pregunta disponibilidad y precio, y se compra tras tu aprobación.
+  order_flow: "directo",
+  direct_requires_approval: false,    // en modo directo, pedir tu OK antes de enviar cada pedido
   automation_paused: false,
   auto_purchase_enabled: false,       // compras automáticas al proveedor (fase 4, tú lo activas)
   auto_tracking_to_shopify: false,    // subir seguimiento a Shopify sin aprobación (si es fiable)
@@ -143,10 +147,37 @@ export function createOrderService({ db, config, shopify, whatsapp, queue, alert
     if (!supplier) return raiseIncident(order, "El proveedor asignado no está activo");
 
     db.run("UPDATE orders SET supplier_id = ? WHERE id = ?", supplier.id, orderId);
+
+    if (S("order_flow") === "directo") return directOrder(getOrder(orderId), items);
+
     if (!order.ship_address1) await alert("error", `${order.name}: Shopify no ha enviado la dirección`, "Activa el acceso a datos protegidos del cliente en tu app del Dev Dashboard. Sin dirección no se podrá pedir al proveedor.", orderId);
     order = setStatus(getOrder(orderId), "pendiente_consulta");
     await sendToSupplier(order, "consulta", buildConsultaMessage(order, items));
   }
+
+  // Modo directo: un único mensaje con productos y datos de envío. Coste estimado con el catálogo.
+  async function directOrder(order, items) {
+    if (!hasShipping(order)) {
+      return raiseIncident(order, "Faltan los datos de envío del cliente. Activa en el Dev Dashboard el acceso a datos protegidos (nombre, dirección, teléfono, email) y reprocesa el pedido.", { level: "error" });
+    }
+    const catalogCost = items.every((i) => i.unit_cost != null)
+      ? items.reduce((a, i) => a + i.unit_cost * i.quantity, 0) + Math.max(0, ...items.map((i) => i.shipping_cost ?? 0))
+      : null;
+    if (catalogCost != null) db.run("UPDATE orders SET supplier_total_cost = ? WHERE id = ?", catalogCost, order.id);
+    order = getOrder(order.id);
+    if (S("direct_requires_approval")) {
+      const econ = orderEconomics(db, config, order, { supplierCost: catalogCost });
+      setStatus(order, "pendiente_autorizacion");
+      createApproval("compra_proveedor", order, `Enviar ${order.name} al proveedor`, {
+        items: items.map((i) => ({ title: i.title, variant: i.variant_title, qty: i.quantity })),
+        cost: { total: catalogCost, source: "catálogo", confirmed: catalogCost != null }, economics: econ, lowMargin: false,
+      }, catalogCost);
+      return void (await alert("info", `${order.name}: pendiente de tu OK para enviarlo al proveedor`, "Revísalo en Aprobaciones.", order.id));
+    }
+    const o = setStatus(order, "solicitado_proveedor", { note: "modo directo" });
+    await sendToSupplier(o, "pedido", buildPedidoDirectoMessage(o, items));
+  }
+  const hasShipping = (o) => !!(o.ship_address1 && o.ship_zip && o.ship_name);
 
   // ---------- 3. Envío de mensajes al proveedor (API oficial o enlace manual) ----------
   async function sendToSupplier(order, kind, body, { actor = "sistema" } = {}) {
@@ -193,9 +224,10 @@ export function createOrderService({ db, config, shopify, whatsapp, queue, alert
     const windowOpen = !!lastIn && Date.now() - Date.parse(lastIn.replace(" ", "T") + "Z") < 23.5 * 3600 * 1000;
     let waId;
     try {
-      const summary = physicalItems(order.id).map((i) => `${i.title}${i.variant_title ? " (" + i.variant_title + ")" : ""} x${i.quantity}${i.supplier_ref ? " ref " + i.supplier_ref : ""}`).join("; ");
+      const summary = itemsOneLine(physicalItems(order.id));
       if (windowOpen) waId = await whatsapp.sendText(supplier.whatsapp, m.body);
       else if (m.kind === "consulta") waId = await whatsapp.sendConsultaTemplate(supplier.whatsapp, order.name, summary);
+      else if (m.kind === "pedido") waId = await whatsapp.sendPedidoTemplate(supplier.whatsapp, (order.is_test ? "PRUEBA " : "") + order.name, summary, shippingBlock(order));
       else {
         // Fuera de ventana y no es una consulta: se reabre con la plantilla y el texto se manda al contestar.
         await whatsapp.sendConsultaTemplate(supplier.whatsapp, order.name, summary);
@@ -309,6 +341,8 @@ export function createOrderService({ db, config, shopify, whatsapp, queue, alert
       case "confirmado_proveedor":
       case "preparando_envio": {
         if (p.tracking) return void (await handleTracking(order, p, { actor, text }));
+        if (p.available === false)
+          return void (await raiseIncident(order, `El proveedor indica que no puede enviarlo: "${text.slice(0, 200)}". Decide si buscar alternativa o reembolsar (el reembolso lo haces tú).`, { actor }));
         if (p.status === "preparando" && order.status !== "preparando_envio")
           return void setStatus(order, "preparando_envio", { actor, extra: { supplier_eta_days: p.etaDays ?? order.supplier_eta_days } });
         if ((p.status === "confirmado" || p.available === true) && order.status === "solicitado_proveedor")
@@ -357,11 +391,12 @@ export function createOrderService({ db, config, shopify, whatsapp, queue, alert
 
   // Aprobada la compra: se envía al proveedor el pedido con la dirección de entrega.
   async function confirmPurchase(order, actor) {
-    if (!order.ship_address1 || !order.ship_zip || !order.ship_name) {
+    if (!hasShipping(order)) {
       return raiseIncident(order, "Faltan los datos de entrega del cliente. Activa en el Dev Dashboard el acceso a datos protegidos (nombre, dirección, teléfono, email) y reprocesa el pedido.", { actor, level: "error" });
     }
     const o = setStatus(order, "solicitado_proveedor", { actor });
-    await sendToSupplier(o, "pedido", buildPedidoMessage(o, physicalItems(o.id)), { actor });
+    const build = S("order_flow") === "directo" ? buildPedidoDirectoMessage : buildPedidoMessage;
+    await sendToSupplier(o, "pedido", build(o, physicalItems(o.id)), { actor });
     return o;
   }
 

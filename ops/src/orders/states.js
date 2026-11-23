@@ -14,7 +14,7 @@ export const STATES = {
 };
 
 const T = {
-  nuevo: ["pendiente_consulta", "incidencia", "cancelado"],
+  nuevo: ["pendiente_consulta", "pendiente_autorizacion", "solicitado_proveedor", "incidencia", "cancelado"],
   pendiente_consulta: ["disponibilidad_confirmada", "incidencia", "cancelado"],
   disponibilidad_confirmada: ["pendiente_autorizacion", "solicitado_proveedor", "incidencia", "cancelado"],
   pendiente_autorizacion: ["solicitado_proveedor", "incidencia", "cancelado"],

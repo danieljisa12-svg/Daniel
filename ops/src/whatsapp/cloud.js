@@ -28,6 +28,19 @@ export function createWhatsAppClient(config, fetchImpl = globalThis.fetch) {
   return {
     sendText: (to, text) => post({ to: digits(to), type: "text", text: { body: text, preview_url: false } }),
 
+    // Plantilla "pedido_nuevo_proveedor" (Utilidad) con 3 parámetros:
+    // {{1}} referencia, {{2}} productos en una línea, {{3}} datos de envío en una línea. Ver docs/whatsapp.md.
+    sendPedidoTemplate: (to, orderName, items, shipping) =>
+      post({
+        to: digits(to),
+        type: "template",
+        template: {
+          name: w.templatePedido,
+          language: { code: w.templateLang },
+          components: [{ type: "body", parameters: [orderName, items, shipping].map((t) => ({ type: "text", text: oneLine(t) })) }],
+        },
+      }),
+
     // Plantilla "consulta_pedido_proveedor" (categoría Utilidad) con 2 parámetros:
     // {{1}} referencia del pedido, {{2}} resumen de productos en una línea. Ver docs/whatsapp.md.
     sendConsultaTemplate: (to, orderName, summary) =>

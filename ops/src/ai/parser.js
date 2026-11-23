@@ -8,7 +8,7 @@ import { findTrackingCandidates, detectCarrierName } from "../tracking.js";
 const NEG = /\b(no (lo )?(hay|tengo|tenemos|queda|quedan|me queda)|agotad[oa]s?|sin stock|sin existencias|no disponible|no est[aá] disponible|rotura de stock|descatalogad[oa])\b/i;
 const POS = /\b(disponible|s[ií] (hay|tengo|tenemos|queda)|hay stock|en stock|tengo stock|lo tengo|los tengo|las tengo|sin problema|perfecto|ok|vale|claro|de acuerdo)\b/i;
 const STRONG_POS = /\b(disponible|s[ií] (hay|tengo|tenemos|queda)|hay stock|en stock|tengo stock|lo tengo|los tengo|las tengo)\b/i;
-const CONFIRM = /\b(pedido (hecho|confirmado|realizado|registrado|apuntado)|confirmado|apuntado|lo (preparo|mando|env[ií]o|enviamos)|te lo (mando|env[ií]o))\b/i;
+const CONFIRM = /\b(pedido (hecho|confirmado|realizado|registrado|apuntado|recibido)|confirmado|apuntado|anotado|recibido|marchando|lo (preparo|mando|env[ií]o|enviamos)|te lo (mando|env[ií]o))\b/i;
 const PREPARING = /\b(preparando|en preparaci[oó]n|lo estoy preparando|sale (ma[ñn]ana|hoy|el lunes|el martes|el mi[eé]rcoles|el jueves|el viernes))\b/i;
 const SHIPPED = /\b(enviado|ya (ha )?salido|ya sali[oó]|ha salido|despachado|entregado a (la )?(agencia|transportista)|seguimiento|tracking|localizador)\b/i;
 const PROBLEM = /\b(problema|incidencia|retraso|roto|rota|da[ñn]ado|devuelto|perdido|no llega|aduana)\b/i;

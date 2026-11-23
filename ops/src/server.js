@@ -284,6 +284,7 @@ export function createServer(app) {
         const def = DEFAULT_SETTINGS[k];
         const val = typeof def === "boolean" ? !!v : typeof def === "number" ? Number(v) : String(v);
         if (typeof def === "number" && !Number.isFinite(val)) continue;
+        if (k === "order_flow" && !["directo", "consulta"].includes(val)) continue;
         db.setSetting(k, val);
         audit(db, { actor: "propietario", action: "ajuste.cambiar", details: { key: k, value: val } });
       }

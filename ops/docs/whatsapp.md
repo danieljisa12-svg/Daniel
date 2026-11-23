@@ -23,11 +23,13 @@ Tu proveedor **no tiene que cambiar nada**: sigue usando su WhatsApp normal. Qui
    - URL de devolución: `https://TU-SERVICIO/webhooks/whatsapp`
    - Token de verificación: el valor que pongas en `WHATSAPP_VERIFY_TOKEN`.
    - Suscríbete al campo **messages**.
-6. Crea esta **plantilla** en *WhatsApp Manager → Plantillas*:
-   - Nombre: `consulta_pedido_proveedor` · Categoría: **Utilidad** · Idioma: **Español (es)**
+6. Crea esta **plantilla** en *WhatsApp Manager → Plantillas*. Es la que usa el modo directo, el que tienes por defecto:
+   - Nombre: `pedido_nuevo_proveedor` · Categoría: **Utilidad** · Idioma: **Español (es)**
    - Cuerpo:
+     `Buenas, tengo un pedido nuevo para enviar. Referencia: {{1}}. Productos: {{2}}. Datos de envío: {{3}}. Cuando salga, pásame el número de seguimiento y la empresa de transporte, por favor. ¡Gracias!`
+   - Ejemplo para la revisión: `{{1}}` = `#1007`, `{{2}}` = `Calentador de manos (1 pack) x1`, `{{3}}` = `Ana López, Calle Mayor 1, 28001 Madrid, Teléfono: 600000000`.
+   - Solo si usas el modo "consulta", crea también `consulta_pedido_proveedor` con este cuerpo:
      `Hola, tengo un pedido nuevo con referencia {{1}}: {{2}}. ¿Me confirmas disponibilidad, precio final con envío y plazo de envío? Gracias.`
-   - Ejemplo para la revisión: `{{1}}` = `#1007`, `{{2}}` = `Calentador de manos (1 pack) x1`.
 7. Pon los secretos en el servidor:
    ```
    WHATSAPP_TOKEN=...            # token permanente del usuario del sistema
@@ -37,7 +39,7 @@ Tu proveedor **no tiene que cambiar nada**: sigue usando su WhatsApp normal. Qui
    ```
 
 ### Cómo se comporta
-- **Primer mensaje de un pedido:** si el proveedor no te ha escrito en las últimas 24 h, Meta obliga a usar la plantilla, y el sistema lo hace solo. Si la conversación está abierta, envía el texto completo.
+- **Mensaje del pedido:** si la conversación con el proveedor está abierta (te ha escrito en las últimas 24 h), se envía el texto completo. Si no, Meta obliga a usar la plantilla `pedido_nuevo_proveedor`, que lleva los mismos datos en una línea. El sistema elige solo.
 - **Respuestas del proveedor:** llegan por webhook firmado. El pedido se identifica por la referencia (`#1007`), por el mensaje citado o porque es el único pedido abierto con ese proveedor. Si no está claro, va a **Aprobaciones**.
 - **Mensaje sin texto (foto o audio):** te llega una alerta para que lo revises.
 - Si la API falla, el mensaje queda como *fallido*, el sistema reintenta y te avisa. Desde el panel puedes pulsar **Reintentar**.

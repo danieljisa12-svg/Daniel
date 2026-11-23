@@ -274,7 +274,12 @@
     const num = (k, l) => `<label>${l}<input name="${k}" inputmode="decimal" value="${esc(s[k])}"></label>`;
     return `
       <form class="card list" id="settings-form"><h2>Reglas y límites</h2>
-        ${chk("auto_purchase_enabled", "Compras automáticas al proveedor", "Solo para productos marcados en el catálogo, con coste confirmado, por debajo del máximo y con margen suficiente. Desactivado = todo pasa por tu aprobación.")}
+        <label>Cómo se tramitan los pedidos<select name="order_flow">
+          <option value="directo" ${s.order_flow === "directo" ? "selected" : ""}>Directo: el proveedor tiene stock y envía → se le manda el pedido con los datos de envío</option>
+          <option value="consulta" ${s.order_flow === "consulta" ? "selected" : ""}>Consulta: primero se le pregunta disponibilidad y precio, y compras tras tu aprobación</option>
+        </select></label>
+        ${chk("direct_requires_approval", "Modo directo: pedir mi OK antes de enviar cada pedido", "Desactivado = el pedido se manda al proveedor en cuanto Shopify confirma el pago.")}
+        ${chk("auto_purchase_enabled", "Modo consulta: compras automáticas al proveedor", "Solo para productos marcados en el catálogo, con coste confirmado, por debajo del máximo y con margen suficiente. Desactivado = todo pasa por tu aprobación.")}
         ${chk("auto_tracking_to_shopify", "Subir seguimiento a Shopify sin aprobación", "Solo si el número tiene un formato fiable y transportista identificado.")}
         <div class="cat-row">${num("min_margin_percent", "Margen mínimo %")}${num("vat_percent", "IVA incluido en tus precios %")}${num("hours_no_reply_alert", "Avisar si el proveedor no responde (h)")}${num("hours_no_tracking_alert", "Avisar sin seguimiento (h)")}${num("days_shipped_check", "Revisar entrega tras (días)")}</div>
         <label>Productos de servicio que no se piden al proveedor (expresión)<input name="service_item_pattern" value="${esc(s.service_item_pattern)}"></label>
@@ -366,7 +371,7 @@
       toast("Proveedor guardado"); return render();
     }
     if (f.id === "settings-form") {
-      const body = { ...data, auto_purchase_enabled: !!data.auto_purchase_enabled, auto_tracking_to_shopify: !!data.auto_tracking_to_shopify };
+      const body = { ...data, auto_purchase_enabled: !!data.auto_purchase_enabled, auto_tracking_to_shopify: !!data.auto_tracking_to_shopify, direct_requires_approval: !!data.direct_requires_approval };
       if (body.auto_purchase_enabled && !confirm("Las compras automáticas comprometen dinero sin preguntarte (dentro de los límites del catálogo). ¿Activar?")) return;
       await api("/settings", { method: "POST", body });
       toast("Ajustes guardados"); return render();

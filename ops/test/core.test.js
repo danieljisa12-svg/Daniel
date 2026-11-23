@@ -21,13 +21,13 @@ function makeApp({ demo = true, whatsappApi = false, shopify = null, whatsapp = 
     sessionSecret: "x".repeat(40),
     publicUrl: "http://localhost",
     shopify: { shop: demo ? "" : "tienda", clientId: demo ? "" : "id", clientSecret: SECRET, apiVersion: "2026-10" },
-    whatsapp: { token: whatsappApi ? "t" : "", phoneNumberId: whatsappApi ? "123" : "", appSecret: whatsappApi ? APP_SECRET : "", verifyToken: "verif", graphVersion: "v23.0", templateConsulta: "consulta_pedido_proveedor", templateLang: "es" },
+    whatsapp: { token: whatsappApi ? "t" : "", phoneNumberId: whatsappApi ? "123" : "", appSecret: whatsappApi ? APP_SECRET : "", verifyToken: "verif", graphVersion: "v23.0", templateConsulta: "consulta_pedido_proveedor", templatePedido: "pedido_nuevo_proveedor", templateLang: "es" },
     claude: { apiKey: "", model: "x" },
     alerts: { ntfyTopic: "", ntfyServer: "https://ntfy.sh" },
   });
   const app = createApp(config, { shopify, whatsapp });
   seedDemo(app.db);
-  for (const [k, v] of Object.entries(settings)) app.db.setSetting(k, v);
+  for (const [k, v] of Object.entries({ order_flow: "consulta", ...settings })) app.db.setSetting(k, v);
   return app;
 }
 const order = (app, id) => app.orders.getOrder(id);
@@ -436,4 +436,74 @@ test("Los pedidos de prueba de Shopify nunca salen por la API y van marcados", a
   const m = app.db.get("SELECT * FROM messages WHERE order_id=?", id);
   assert.equal(m.channel, "whatsapp_manual");
   assert.match(m.body, /PEDIDO DE PRUEBA/);
+});
+
+// ---------- Modo directo (por defecto): el proveedor tiene stock y envía ----------
+test("Modo directo: pedido pagado → mensaje al proveedor con datos de envío → seguimiento → Shopify", async () => {
+  const app = makeApp({ settings: { order_flow: "directo" } });
+  const { id } = app.orders.ingestPaidOrder(normalizeOrderWebhook(demoOrderPayload(3100)));
+  await app.queue.runDue();
+  let o = order(app, id);
+  assert.equal(o.status, "solicitado_proveedor");
+  assert.equal(o.supplier_total_cost, 8.4 + 3.5, "coste estimado con el catálogo");
+  assert.equal(app.db.get("SELECT count(*) n FROM approvals").n, 0, "sin aprobaciones por defecto");
+  const m = app.db.get("SELECT * FROM messages WHERE order_id = ?", id);
+  assert.equal(m.kind, "pedido");
+  for (const re of [/Referencia: #3100/, /Calora/, /Cantidad: 1/, /Lucía Demo/, /Calle Falsa 123/, /28001 Madrid/, /Teléfono: \+34 600 000 001/, /seguimiento/])
+    assert.match(m.body, re);
+  assert.doesNotMatch(m.body, /example\.com/, "el email del cliente no se comparte");
+  app.orders.markManualSent(m.id);
+
+  await app.orders.receiveSupplierMessage({ text: "Recibido, gracias", orderId: id });
+  assert.equal(order(app, id).status, "confirmado_proveedor");
+  await app.orders.receiveSupplierMessage({ text: "Enviado por Correos: PK123456785ES", orderId: id });
+  const ap = app.db.get("SELECT id FROM approvals WHERE order_id=? AND type='seguimiento'", id);
+  await app.orders.decideApproval(ap.id, "aprobar");
+  await app.queue.runDue();
+  o = order(app, id);
+  assert.equal(o.status, "enviado");
+  assert.equal(o.tracking_number, "PK123456785ES");
+});
+
+test("Modo directo con aprobación previa opcional", async () => {
+  const app = makeApp({ settings: { order_flow: "directo", direct_requires_approval: true } });
+  const { id } = app.orders.ingestPaidOrder(normalizeOrderWebhook(demoOrderPayload(3101)));
+  await app.queue.runDue();
+  assert.equal(order(app, id).status, "pendiente_autorizacion");
+  assert.equal(app.db.get("SELECT count(*) n FROM messages WHERE order_id=?", id).n, 0);
+  const ap = app.db.get("SELECT id FROM approvals WHERE order_id=?", id);
+  await app.orders.decideApproval(ap.id, "aprobar");
+  assert.equal(order(app, id).status, "solicitado_proveedor");
+  assert.match(app.db.get("SELECT body FROM messages WHERE order_id=?", id).body, /tengo un pedido nuevo para enviar/);
+});
+
+test("Modo directo sin dirección: no se envía nada e incidencia", async () => {
+  const app = makeApp({ settings: { order_flow: "directo" } });
+  const p = demoOrderPayload(3102); delete p.shipping_address;
+  const { id } = app.orders.ingestPaidOrder(normalizeOrderWebhook(p));
+  await app.queue.runDue();
+  assert.equal(order(app, id).status, "incidencia");
+  assert.equal(app.db.get("SELECT count(*) n FROM messages WHERE order_id=?", id).n, 0);
+});
+
+test("Modo directo por API: fuera de la ventana de 24 h usa la plantilla de pedido con los datos de envío", async () => {
+  const sent = [];
+  const whatsapp = {
+    sendText: async (to, text) => { sent.push({ type: "text", text }); return "wamid.T"; },
+    sendPedidoTemplate: async (to, ref, items, shipping) => { sent.push({ type: "pedido", ref, items, shipping }); return "wamid.P"; },
+    sendConsultaTemplate: async () => { throw new Error("no debería consultar"); },
+  };
+  const shopify = { getOrderPaymentStatus: async () => ({ displayFinancialStatus: "PAID" }) };
+  const app = makeApp({ demo: false, whatsappApi: true, whatsapp, shopify, settings: { order_flow: "directo" } });
+  const { id } = app.orders.ingestPaidOrder(normalizeOrderWebhook(demoOrderPayload(3103, { test: false })));
+  await app.queue.runDue(); await app.queue.runDue();
+  assert.equal(sent.length, 1);
+  assert.equal(sent[0].type, "pedido");
+  assert.equal(sent[0].ref, "#3103");
+  assert.match(sent[0].items, /Calora.*x1/);
+  assert.match(sent[0].shipping, /Calle Falsa 123/);
+  assert.equal(app.db.get("SELECT status FROM messages WHERE order_id=?", id).status, "enviado");
+
+  await app.orders.receiveSupplierMessage({ from: "34600000000", text: "No me queda, lo siento", waId: "in1" });
+  assert.equal(order(app, id).status, "incidencia");
 });

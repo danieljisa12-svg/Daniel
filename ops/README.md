@@ -1,6 +1,9 @@
 # Palazzo Ops · Sistema de operaciones con IA para la tienda Shopify
 
-Servicio que funciona en la nube las 24 h. Recibe los pedidos pagados de Shopify y gestiona la relación con el proveedor por WhatsApp: consulta, compra, seguimiento e incidencias. Pide tu aprobación para todo lo que comprometa dinero y te deja verlo todo desde un panel privado en el móvil.
+Servicio que funciona en la nube las 24 h. Cuando Shopify confirma un pedido pagado, **manda a tu proveedor por WhatsApp los productos y los datos de envío**. Después recoge el número de seguimiento, lo registra en Shopify (que avisa al cliente) y te avisa si algo se tuerce. Todo se ve desde un panel privado en el móvil.
+
+**Modo directo (por defecto):** tu proveedor tiene el stock y hace el envío. Hay un único mensaje por pedido, sin consultas previas.
+**Modo consulta (opcional, en Ajustes):** primero se pregunta disponibilidad y precio, y se compra tras tu aprobación. El diagrama de abajo describe este modo completo; en el modo directo se salta los pasos 2 y 3.
 
 > **Estado:** construido y probado (`npm test`: 22 pruebas). Las consultas a Shopify se han verificado contra tu tienda real en modo lectura.
 > **Para que funcione con tu tienda sigue [docs/puesta-en-marcha.md](docs/puesta-en-marcha.md)** (unos 30–40 minutos). Al arrancar, el servidor registra solo los webhooks e importa el catálogo. La pestaña **Puesta en marcha** del panel comprueba cada conexión de verdad.
