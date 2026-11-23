@@ -34,7 +34,7 @@
       </div>
       <div class="hero-ctas">
         <a class="btn btn-fire btn-lg" href="#comprar" data-scrollto>Lo quiero ahora →</a>
-        <p class="hero-note">✔ Envío gratis &nbsp; ✔ 30 días de devolución &nbsp; ✔ Pago seguro</p>
+        <p class="hero-note">✔ Envío gratis &nbsp; ✔ {{ settings.return_days }} días de devolución &nbsp; ✔ Pago seguro</p>
       </div>
       <ul class="hero-chips" aria-label="En resumen">
         <li><b>3 s</b><span>calienta</span></li>
@@ -124,14 +124,16 @@
     <div class="buy-box reveal">
       <p class="eyebrow"><span class="dot"></span> Oferta Black Friday</p>
       <h2 class="buy-title">{{ p.title }}</h2>
-      <p class="buy-rating">Envío gratis a toda España · Devolución en 30 días</p>
+      <p class="buy-rating">Envío gratis a toda España · Devolución en {{ settings.return_days }} días</p>
 
+      {%- if settings.promo_countdown -%}
       <div class="buy-timer" data-promo-inline>
         <span>⏰ La oferta termina en</span>
         <div class="timer" data-clock-boxes>
           <span><b data-d>00</b><i>días</i></span><span><b data-h>00</b><i>h</i></span><span><b data-m>00</b><i>min</i></span><span><b data-s>00</b><i>s</i></span>
         </div>
       </div>
+      {%- endif -%}
 
       {%- form 'product', p, class: 'buy-form', data-type: 'add-to-cart-form', data-buy-form: '' -%}
         <fieldset class="packs">
@@ -165,7 +167,7 @@
 
       <ul class="buy-trust">
         <li>🚚 <b>Envío gratis</b> a toda España</li>
-        <li>↩️ <b>30 días</b> para devolverlo</li>
+        <li>↩️ <b>{{ settings.return_days }} días</b> para devolverlo</li>
         <li>🔒 <b>Pago seguro</b> con Shopify</li>
         <li>🛡️ <b>Garantía</b> legal de 3 años</li>
       </ul>
@@ -202,7 +204,7 @@
       <details><summary>¿Cuánto dura la batería?</summary><p>Hasta 10 horas en el nivel suave (45 °C). En el nivel intenso dura menos, como cualquier calentador recargable. Se carga por USB-C.</p></details>
       <details><summary>¿Es seguro?</summary><p>Tiene protección contra sobrecalentamiento, sobrecarga y cortocircuito. La temperatura máxima es de 55 °C.</p></details>
       <details><summary>¿Cuándo llega mi pedido?</summary><p>Preparamos tu pedido enseguida y te enviamos el número de seguimiento por correo. El envío es gratis.</p></details>
-      <details><summary>¿Y si no me convence?</summary><p>Tienes 30 días para devolverlo y te devolvemos el dinero.</p></details>
+      <details><summary>¿Y si no me convence?</summary><p>Tienes {{ settings.return_days }} días desde que lo recibes para devolverlo y te devolvemos el dinero.</p></details>
       <details><summary>¿Qué incluye la caja?</summary><p>2 calentadores Calora® magnéticos por pack, cable USB-C, caja regalo y manual en español.</p></details>
     </div>
   </section>

@@ -27,9 +27,11 @@
   <div class="progress" aria-hidden="true"><span data-progress></span></div>
 
   {%- comment -%} Oferta con fecha de fin real: cuando termina, la barra desaparece (no se reinicia). Cambia la fecha en data-deadline. {%- endcomment -%}
-  <div class="promo" data-promo data-deadline="2026-11-30T23:59:59+01:00">
-    <p><strong>BLACK FRIDAY −50%</strong> <span class="promo-sep">·</span> Termina en <span class="promo-clock" data-clock>--:--:--</span> <span class="promo-sep">·</span> <span class="promo-ship">Envío gratis</span></p>
+  {%- if settings.promo_text != blank -%}
+  <div class="promo"{% if settings.promo_countdown %} data-promo data-deadline="{{ settings.promo_deadline }}"{% endif %}>
+    <p><strong>{{ settings.promo_text }}</strong>{% if settings.promo_countdown %} <span class="promo-sep">·</span> Termina en <span class="promo-clock" data-clock>--:--:--</span>{% endif %}</p>
   </div>
+  {%- endif -%}
 
   <header class="nav" data-nav>
     <a class="nav-logo" href="{{ routes.root_url }}" aria-label="Calora, inicio">CALORA<sup>®</sup></a>
@@ -93,7 +95,7 @@
     <footer class="cart-foot">
       <p class="cart-total"><span>Total</span><strong data-cart-total>{{ cart.total_price | money }}</strong></p>
       <a class="btn btn-fire btn-block cart-checkout" href="{{ routes.root_url }}checkout" data-cart-checkout{% if cart.item_count == 0 %} aria-disabled="true"{% endif %}>Finalizar compra →</a>
-      <p class="cart-note">🔒 Pago 100% seguro · Devolución en 30 días</p>
+      <p class="cart-note">🔒 Pago 100% seguro · {{ settings.return_days }} días para devolverlo</p>
     </footer>
   </aside>
 

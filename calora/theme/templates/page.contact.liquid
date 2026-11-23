@@ -1,0 +1,14 @@
+<section class="page-simple">
+  <h1 class="sec-title">{{ page.title }}</h1>
+  {%- if page.content != blank -%}<div class="rte">{{ page.content }}</div>{%- endif -%}
+  {%- form 'contact', class: 'contact-form' -%}
+    {%- if form.posted_successfully? -%}<p class="form-ok" role="status">Gracias. Te responderemos lo antes posible.</p>{%- endif -%}
+    {%- if form.errors -%}<p class="form-err" role="alert">{{ form.errors | default_errors }}</p>{%- endif -%}
+    <label class="field"><span>Nombre</span><input class="select" name="contact[name]" autocomplete="name" required value="{{ form.name }}"></label>
+    <label class="field"><span>Email</span><input class="select" type="email" name="contact[email]" autocomplete="email" required value="{{ form.email }}"></label>
+    <label class="field"><span>Número de pedido (si lo tienes)</span><input class="select" name="contact[pedido]" placeholder="#1007"></label>
+    <label class="field"><span>Mensaje</span><textarea class="select" name="contact[body]" rows="6" required>{{ form.body }}</textarea></label>
+    <p class="form-note">Usaremos tus datos solo para responder a tu consulta.{% if shop.privacy_policy %} <a href="{{ shop.privacy_policy.url }}">{{ shop.privacy_policy.title }}</a>{% endif %}</p>
+    <button class="btn btn-fire btn-lg" type="submit">Enviar</button>
+  {%- endform -%}
+</section>
