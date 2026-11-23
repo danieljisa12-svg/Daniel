@@ -5,6 +5,11 @@ Estado a **23/11/2026**. Este documento se actualiza al cerrar cada fase.
 
 ---
 
+> **Cambio de rumbo (23/11/2026):** el titular quiere una **tienda de un solo producto: Calora**.
+> - La tienda usará el tema `calora/theme` (página de venta única). El tema "Palazzo (desarrollo)" se conserva sin publicar por si en el futuro se quiere una tienda con varios productos.
+> - Lanzamiento, en un solo paso y con aprobación: (1) retirar del canal Tienda online todos los productos salvo Calora, sin borrarlos; (2) publicar el tema Calora. Se hacen a la vez para que la web publicada (tema Limer) no quede rota.
+> - Antes del lanzamiento: compra de prueba desde España (mercados), decidir el precio tachado de Calora (Omnibus) y los días de devolución.
+
 ## 1. Qué he comprobado realmente
 
 | Elemento | Cómo | Resultado |
