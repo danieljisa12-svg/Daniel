@@ -1,0 +1,13 @@
+# Documentos reales de clientes: nunca al repositorio (protección de datos)
+referencias/*
+!referencias/README.md
+informes/
+datos/
+*.sqlite
+*.db
+__pycache__/
+*.pyc
+.pytest_cache/
+build/
+dist/
+.env

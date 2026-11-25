@@ -1,0 +1,53 @@
+# Catálogo de códigos LER (Lista Europea de Residuos, Decisión 2014/955/UE).
+# Subconjunto inicial: capítulo 17 (construcción y demolición) y códigos
+# frecuentes en obra. Las descripciones son las oficiales abreviadas.
+# IMPORTANTE: la descripción que la empresa usa en la columna F del archivo
+# cronológico puede ser distinta; esa equivalencia se configura aparte
+# (config/equivalencias_ler.yaml) y NO se deduce de este catálogo.
+# Revisar contra el texto oficial antes del uso en producción.
+"17 01 01": {descripcion: "Hormigón"}
+"17 01 02": {descripcion: "Ladrillos"}
+"17 01 03": {descripcion: "Tejas y materiales cerámicos"}
+"17 01 06*": {descripcion: "Mezclas o fracciones separadas de hormigón, ladrillos, tejas y materiales cerámicos que contienen sustancias peligrosas", peligroso: true}
+"17 01 07": {descripcion: "Mezclas de hormigón, ladrillos, tejas y materiales cerámicos distintas de las especificadas en el código 17 01 06"}
+"17 02 01": {descripcion: "Madera"}
+"17 02 02": {descripcion: "Vidrio"}
+"17 02 03": {descripcion: "Plástico"}
+"17 02 04*": {descripcion: "Vidrio, plástico y madera que contienen sustancias peligrosas o están contaminados por ellas", peligroso: true}
+"17 03 01*": {descripcion: "Mezclas bituminosas que contienen alquitrán de hulla", peligroso: true}
+"17 03 02": {descripcion: "Mezclas bituminosas distintas de las especificadas en el código 17 03 01"}
+"17 03 03*": {descripcion: "Alquitrán de hulla y productos alquitranados", peligroso: true}
+"17 04 01": {descripcion: "Cobre, bronce, latón"}
+"17 04 02": {descripcion: "Aluminio"}
+"17 04 03": {descripcion: "Plomo"}
+"17 04 04": {descripcion: "Zinc"}
+"17 04 05": {descripcion: "Hierro y acero"}
+"17 04 06": {descripcion: "Estaño"}
+"17 04 07": {descripcion: "Metales mezclados"}
+"17 04 09*": {descripcion: "Residuos metálicos contaminados con sustancias peligrosas", peligroso: true}
+"17 04 10*": {descripcion: "Cables que contienen hidrocarburos, alquitrán de hulla y otras sustancias peligrosas", peligroso: true}
+"17 04 11": {descripcion: "Cables distintos de los especificados en el código 17 04 10"}
+"17 05 03*": {descripcion: "Tierra y piedras que contienen sustancias peligrosas", peligroso: true}
+"17 05 04": {descripcion: "Tierra y piedras distintas de las especificadas en el código 17 05 03"}
+"17 05 05*": {descripcion: "Lodos de drenaje que contienen sustancias peligrosas", peligroso: true}
+"17 05 06": {descripcion: "Lodos de drenaje distintos de los especificados en el código 17 05 05"}
+"17 05 07*": {descripcion: "Balasto de vías férreas que contiene sustancias peligrosas", peligroso: true}
+"17 05 08": {descripcion: "Balasto de vías férreas distinto del especificado en el código 17 05 07"}
+"17 06 01*": {descripcion: "Materiales de aislamiento que contienen amianto", peligroso: true}
+"17 06 03*": {descripcion: "Otros materiales de aislamiento que consisten en, o contienen, sustancias peligrosas", peligroso: true}
+"17 06 04": {descripcion: "Materiales de aislamiento distintos de los especificados en los códigos 17 06 01 y 17 06 03"}
+"17 06 05*": {descripcion: "Materiales de construcción que contienen amianto", peligroso: true}
+"17 08 01*": {descripcion: "Materiales de construcción a base de yeso contaminados con sustancias peligrosas", peligroso: true}
+"17 08 02": {descripcion: "Materiales de construcción a base de yeso distintos de los especificados en el código 17 08 01"}
+"17 09 01*": {descripcion: "Residuos de construcción y demolición que contienen mercurio", peligroso: true}
+"17 09 02*": {descripcion: "Residuos de construcción y demolición que contienen PCB", peligroso: true}
+"17 09 03*": {descripcion: "Otros residuos de construcción y demolición (incluidos los residuos mezclados) que contienen sustancias peligrosas", peligroso: true}
+"17 09 04": {descripcion: "Residuos mezclados de construcción y demolición distintos de los especificados en los códigos 17 09 01, 17 09 02 y 17 09 03"}
+"15 01 01": {descripcion: "Envases de papel y cartón"}
+"15 01 02": {descripcion: "Envases de plástico"}
+"15 01 03": {descripcion: "Envases de madera"}
+"15 01 06": {descripcion: "Envases mezclados"}
+"20 02 01": {descripcion: "Residuos biodegradables"}
+"20 02 02": {descripcion: "Tierra y piedras"}
+"20 03 01": {descripcion: "Mezclas de residuos municipales"}
+"20 03 07": {descripcion: "Residuos voluminosos"}

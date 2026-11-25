@@ -1,0 +1,43 @@
+# Mapeo de los campos extraídos a las 26 columnas de AGENTE_Y_TRANSPORTISTA.
+#
+# Cada columna indica, por formato, qué campo extraído la alimenta.
+#   confirmado: false  → hipótesis pendiente de validar con PRUEBA.ods y con el usuario.
+#   manual             → la columna no se deduce del documento; se rellena por regla
+#                        configurada con el usuario o a mano en la revisión.
+#
+# HIPÓTESIS H1 (pendiente): por el orden y los sufijos de las cabeceras,
+#   G–K  = productor / origen (nombre, dirección, NIF, NIMA, inscripción)
+#   L–P  = gestor / instalación de destino (con dirección)
+#   Q–T  = transportista (sin dirección)
+# Se confirmará leyendo los registros existentes de PRUEBA.ods.
+
+unidad_cantidad: pendiente     # 'kg' o 't' – confirmar con los registros existentes
+formato_fecha: pendiente       # fecha real de hoja de cálculo o texto dd/mm/aaaa
+
+columnas:
+  A: {manual: true, nota: "NUMERO: correlativo interno – regla por definir con el usuario"}
+  B: {hj_carta_porte: numero_ticket, recytrack_di: numero_ticket, confirmado: false, nota: "Nunca se inventa"}
+  C: {hj_carta_porte: fecha_traslado, recytrack_di: fecha_traslado, confirmado: false}
+  D: {hj_carta_porte: di, recytrack_di: di, confirmado: true}
+  E: {hj_carta_porte: codigo_ler, recytrack_di: codigo_ler, confirmado: true}
+  F: {equivalencia: true, nota: "Descripción interna de la empresa: tabla de equivalencias, no catálogo LER"}
+  G: {hj_carta_porte: cliente_nombre, recytrack_di: origen_nombre, confirmado: false}
+  H: {hj_carta_porte: obra_direccion, recytrack_di: origen_direccion, confirmado: false}
+  I: {hj_carta_porte: cliente_nif, recytrack_di: origen_nif, confirmado: false}
+  J: {hj_carta_porte: cliente_nima, recytrack_di: origen_nima, confirmado: false}
+  K: {recytrack_di: origen_inscripcion, confirmado: false}
+  L: {hj_carta_porte: destino_marcado, recytrack_di: destino_nombre, confirmado: false}
+  M: {recytrack_di: destino_direccion, confirmado: false}
+  N: {recytrack_di: destino_nif, confirmado: false}
+  O: {recytrack_di: destino_nima, confirmado: false}
+  P: {recytrack_di: destino_inscripcion, confirmado: false}
+  Q: {hj_carta_porte: operador_nombre, recytrack_di: transportista_nombre, confirmado: false}
+  R: {hj_carta_porte: operador_nif, recytrack_di: transportista_nif, confirmado: false}
+  S: {hj_carta_porte: operador_nima, recytrack_di: transportista_nima, confirmado: false}
+  T: {recytrack_di: transportista_inscripcion, confirmado: false}
+  U: {hj_carta_porte: tratamiento, recytrack_di: tratamiento, confirmado: false}
+  V: {regla: cantidad_recibida, confirmado: true, nota: "Peso real (F1) / peso de aceptación (F2)"}
+  W: {hj_carta_porte: fecha_entrega, confirmado: false}
+  X: {recytrack_di: fecha_aceptacion, confirmado: false}
+  Y: {regla: aceptacion, confirmado: false, nota: "Requiere criterio aprobado por el usuario"}
+  Z: {manual: true}

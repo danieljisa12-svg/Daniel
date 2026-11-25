@@ -1,0 +1,61 @@
+# FORMATO 1 – Documento Identificativo y Carta de Porte de Hermanos Jiménez
+# ESTADO: borrador. Etiquetas redactadas a partir de la especificación del proyecto;
+# NO validadas todavía contra la fotografía real. Al recibir el documento se ajustarán
+# las etiquetas exactas con tools/analizar_referencias.py y se cambiará a 'validado'.
+id: hj_carta_porte
+nombre: "Documento Identificativo y Carta de Porte – Hermanos Jiménez"
+estado: borrador
+version: 1
+
+deteccion:
+  # Todas las 'obligatorias' deben aparecer (coincidencia aproximada tolerante a OCR).
+  obligatorias: ["CARTA DE PORTE"]
+  indicativas: ["DOCUMENTO IDENTIFICATIVO", "HERMANOS JIMENEZ", "KILOS ESTIMADOS", "KILOS REALES", "INSTALACION DE DESTINO"]
+  excluyentes: ["RECYTRACK"]
+  umbral: 0.6
+
+secciones:
+  - {id: cabecera, inicio: ["DOCUMENTO IDENTIFICATIVO", "CARTA DE PORTE"]}
+  - {id: operador, inicio: ["OPERADOR"]}
+  - {id: origen, inicio: ["ORIGEN", "CLIENTE"]}
+  - {id: obra, inicio: ["OBRA", "DIRECCION DE LA OBRA"]}
+  - {id: residuo, inicio: ["RESIDUO", "CODIGO LER"]}
+  - {id: destino, inicio: ["INSTALACION DE DESTINO", "DESTINO"]}
+  - {id: sello, inicio: ["SELLO", "RECEPCION"], posicion: final}
+
+campos:
+  di:            {tipo: di, etiquetas: ["N DI", "Nº DI", "NUMERO DI", "N DOCUMENTO", "DI N"]}
+  fecha_traslado: {tipo: fecha, etiquetas: ["FECHA DE TRASLADO", "FECHA TRASLADO", "FECHA"]}
+  operador_nombre: {tipo: texto, seccion: operador, etiquetas: ["RAZON SOCIAL", "NOMBRE", "OPERADOR"]}
+  operador_nif:  {tipo: nif, seccion: operador, etiquetas: ["NIF", "CIF"]}
+  operador_nima: {tipo: nima, seccion: operador, etiquetas: ["NIMA"]}
+  cliente_nombre: {tipo: texto, seccion: origen, etiquetas: ["RAZON SOCIAL", "NOMBRE", "CLIENTE"]}
+  cliente_nif:   {tipo: nif, seccion: origen, etiquetas: ["NIF", "CIF"]}
+  cliente_nima:  {tipo: nima, seccion: origen, etiquetas: ["NIMA"]}
+  obra_direccion: {tipo: texto, seccion: obra, etiquetas: ["DIRECCION DE LA OBRA", "DIRECCION", "OBRA"]}
+  codigo_ler:    {tipo: ler, etiquetas: ["CODIGO LER", "LER"]}
+  descripcion_residuo: {tipo: texto, etiquetas: ["DESCRIPCION DEL RESIDUO", "DESCRIPCION"]}
+  kilos_estimados: {tipo: peso, etiquetas: ["KILOS ESTIMADOS", "KG ESTIMADOS", "PESO ESTIMADO"]}
+  kilos_reales:  {tipo: peso, etiquetas: ["KILOS REALES", "KG REALES", "PESO REAL"]}
+  tratamiento:   {tipo: operacion, etiquetas: ["TRATAMIENTO", "OPERACION DE TRATAMIENTO"]}
+  fecha_entrega: {tipo: fecha, etiquetas: ["FECHA DE ENTREGA", "FECHA ENTREGA"]}
+  numero_ticket: {tipo: ticket, etiquetas: ["TICKET", "N TICKET", "Nº TICKET", "ALBARAN"]}
+  # Instalación de destino marcada con X: se resuelve con detección de casillas
+  # (fase 2) sobre las opciones listadas aquí cuando se conozca el documento real.
+  destino_marcado: {tipo: casilla, opciones: []}
+  sello_texto:   {tipo: sello}
+
+reglas:
+  cantidad_recibida:
+    usar: kilos_reales
+    nunca: [kilos_estimados]
+    si_ausente: pendiente
+    # Ejemplo de referencia: 8.500 kg estimados / 11.440 kg reales → 11.440
+  numero_ticket: {si_ausente: pendiente}
+  aceptacion:
+    si_ausente: pendiente
+    nota: "Una firma o sello no implica aceptación sin regla aprobada por el usuario."
+  coherencia_destino_sello: true
+
+ejemplos_referencia:
+  - {descripcion: "Documento de ejemplo de la especificación", kilos_estimados_kg: 8500, kilos_reales_kg: 11440, cantidad_recibida_kg: 11440}

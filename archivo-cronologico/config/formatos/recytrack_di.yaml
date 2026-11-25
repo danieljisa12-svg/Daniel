@@ -1,0 +1,65 @@
+# FORMATO 2 – Documento de Identificación de Residuos RECYTRACK
+# ESTADO: borrador. Apartados según la especificación y el modelo oficial de DI;
+# etiquetas pendientes de validar con el documento real.
+id: recytrack_di
+nombre: "Documento de Identificación de Residuos – RECYTRACK"
+estado: borrador
+version: 1
+
+deteccion:
+  obligatorias: ["DOCUMENTO DE IDENTIFICACION"]
+  indicativas: ["RECYTRACK", "OPERADOR DEL TRASLADO", "ORIGEN DEL TRASLADO", "DESTINO DEL TRASLADO", "CARACTERISTICAS DEL RESIDUO", "ACEPTACION"]
+  excluyentes: ["CARTA DE PORTE"]
+  umbral: 0.6
+
+secciones:
+  - {id: cabecera, inicio: ["DOCUMENTO DE IDENTIFICACION"]}
+  - {id: operador, inicio: ["OPERADOR DEL TRASLADO", "OPERADOR DE TRASLADO"]}
+  - {id: origen, inicio: ["ORIGEN DEL TRASLADO"]}
+  - {id: destino, inicio: ["DESTINO DEL TRASLADO"]}
+  - {id: residuo, inicio: ["CARACTERISTICAS DEL RESIDUO"]}
+  - {id: transportista, inicio: ["TRANSPORTISTA"]}
+  - {id: aceptacion, inicio: ["DATOS DE ACEPTACION", "ACEPTACION O RECHAZO", "ACEPTACION/RECHAZO"]}
+
+campos:
+  di:              {tipo: di, seccion: cabecera, etiquetas: ["N DI", "Nº DI", "NUMERO DE DOCUMENTO", "DOCUMENTO N", "CODIGO DI"]}
+  fecha_traslado:  {tipo: fecha, etiquetas: ["FECHA DE INICIO DEL TRASLADO", "FECHA DEL TRASLADO", "FECHA INICIO"]}
+  operador_nombre: {tipo: texto, seccion: operador, etiquetas: ["RAZON SOCIAL", "NOMBRE"]}
+  operador_nif:    {tipo: nif, seccion: operador, etiquetas: ["NIF"]}
+  operador_nima:   {tipo: nima, seccion: operador, etiquetas: ["NIMA"]}
+  operador_inscripcion: {tipo: texto, seccion: operador, etiquetas: ["N INSCRIPCION", "Nº INSCRIPCION", "INSCRIPCION"]}
+  origen_nombre:   {tipo: texto, seccion: origen, etiquetas: ["RAZON SOCIAL", "NOMBRE"]}
+  origen_direccion: {tipo: texto, seccion: origen, etiquetas: ["DIRECCION", "DOMICILIO"]}
+  origen_nif:      {tipo: nif, seccion: origen, etiquetas: ["NIF"]}
+  origen_nima:     {tipo: nima, seccion: origen, etiquetas: ["NIMA"]}
+  origen_inscripcion: {tipo: texto, seccion: origen, etiquetas: ["N INSCRIPCION", "Nº INSCRIPCION", "INSCRIPCION"]}
+  destino_nombre:  {tipo: texto, seccion: destino, etiquetas: ["RAZON SOCIAL", "NOMBRE"]}
+  destino_direccion: {tipo: texto, seccion: destino, etiquetas: ["DIRECCION", "DOMICILIO"]}
+  destino_nif:     {tipo: nif, seccion: destino, etiquetas: ["NIF"]}
+  destino_nima:    {tipo: nima, seccion: destino, etiquetas: ["NIMA"]}
+  destino_inscripcion: {tipo: texto, seccion: destino, etiquetas: ["N INSCRIPCION", "Nº INSCRIPCION", "INSCRIPCION"]}
+  codigo_ler:      {tipo: ler, seccion: residuo, etiquetas: ["CODIGO LER", "LER"]}
+  descripcion_residuo: {tipo: texto, seccion: residuo, etiquetas: ["DESCRIPCION", "DENOMINACION"]}
+  cantidad_estimada: {tipo: peso, seccion: residuo, etiquetas: ["CANTIDAD", "PESO", "KG"]}
+  tratamiento:     {tipo: operacion, seccion: destino, etiquetas: ["OPERACION DE TRATAMIENTO", "TRATAMIENTO"]}
+  transportista_nombre: {tipo: texto, seccion: transportista, etiquetas: ["RAZON SOCIAL", "NOMBRE"]}
+  transportista_nif: {tipo: nif, seccion: transportista, etiquetas: ["NIF"]}
+  transportista_nima: {tipo: nima, seccion: transportista, etiquetas: ["NIMA"]}
+  transportista_inscripcion: {tipo: texto, seccion: transportista, etiquetas: ["N INSCRIPCION", "Nº INSCRIPCION", "INSCRIPCION"]}
+  cantidad_aceptada: {tipo: peso, seccion: aceptacion, etiquetas: ["CANTIDAD RECIBIDA", "CANTIDAD ACEPTADA", "CANTIDAD", "PESO", "KG"]}
+  fecha_aceptacion: {tipo: fecha, seccion: aceptacion, etiquetas: ["FECHA DE ACEPTACION", "FECHA DE RECHAZO", "FECHA"]}
+  aceptacion_marca: {tipo: casilla, seccion: aceptacion, opciones: ["ACEPTADO", "RECHAZADO"]}
+  numero_ticket:   {tipo: ticket, etiquetas: ["TICKET", "N TICKET", "Nº TICKET"]}
+
+reglas:
+  cantidad_recibida:
+    usar: cantidad_aceptada          # peso del apartado de aceptación o rechazo
+    nunca: [cantidad_estimada]       # el de características es orientativo
+    si_ausente: pendiente
+    # Ejemplo de referencia: 3.500 kg en características / 4.340 kg en aceptación → 4.340
+  numero_ticket: {si_ausente: pendiente, nota: "No se inventa si no aparece."}
+  tratamiento: {si_ausente: pendiente, nota: "Solo se completa con regla autorizada y verificada."}
+  aceptacion: {si_ausente: pendiente}
+
+ejemplos_referencia:
+  - {descripcion: "Documento de ejemplo de la especificación", cantidad_estimada_kg: 3500, cantidad_aceptada_kg: 4340, cantidad_recibida_kg: 4340}
